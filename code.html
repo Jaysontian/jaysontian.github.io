@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+<html>
+<link rel="stylesheet" href='portfolio.css'>
+<link href="https://fonts.googleapis.com/css?family=Varela+Round|Sintony" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="portfolio.js"></script>
+<head>
+<body>
+<div id="line">
+    <div class="topnav" id="myTopnav">
+        <a class="nava" onclick="home()"> JAYSON TIAN</a>
+        <div class="topnav-right">
+            <a class="dropdown">
+                <button class="dropbtn">WORKS </button>
+                <div class="dropdown-content">
+                  <div onclick="code()" href="#">CODE</div>
+                  <div onclick="music()"href="#">MUSIC</div>
+                  <div href="#">ART</div>
+                  <div onclick="admin()"href="#">ADMIN</div>
+                </div>
+            </a> 
+            <a class="dropdown2">
+                <button class="dropbtn2">NOTES </button>
+                <div class="dropdown-content2">
+                  <div onclick="code()" href="#">HOSA</div>
+                </div>
+            </a> 
+            <a class="nava" href="#contact">CONTACT</a>
+        </div>
+    </div>
+    </div>
+
+<div class="textcontainer">
+    <h2>Code Projects</h2>
+    <p>I have been trying to explore a wide range of different programming languages. I am working from Python, HTML, CSS, Javascript, to C++ and Unity. I would like to see what I enjoy the most. Here are some of my recent projects:<p>
+    <br>
+    <table>
+      <tr>
+        <th style="width:20%">Project</th>
+        <th>Description</th>
+        <th>Link</th>
+      </tr>
+      <tr>
+        <td>Bunker Game</td>
+        <td>A html/javascript incremental game where the player is trying to keep people in a bunker from dying by clicking to generate coins. I coded a login page for this using Firebase authentication. The user can now create an account, verify their email, and then login again.</td>
+        <td><a href="https://bunkergame.github.io/">Here</a></td>
+      </tr>
+      <tr>
+        <td>Old Page</td>
+        <td>Put a lot of effort on CSS styling and animations to configure my old page. Wanted a more simple design so I redesigned it to this. Check it out if you want though.</td>
+        <td>Here</td>
+      </tr>
+      <tr>
+        <td>Tasks</td>
+        <td>To-Do list that was designed while focusing on learning about Firebase realtime database, as well as storing and accessing cookies on the users computer so the list items are not deleted everytime the user closes that tab. It does not work yet.  </td>
+        <td><a href="codepages/tasks.html">Here</a></td>
+      </tr>
+      <tr>
+        <td>Echo <a style="font-size:12px;padding-left:10px;color:green;font-style: bold;"> NEW!</a></td>
+        <td>A minimalist memory game based on the classic, Simon. Mostly focused on JavaScript variables, configuration, lists, and game logic while coding this. I think the final design looks pretty enjoyable. Also had fun creating the sounds and music in the game. Listen to it <a href="music.html">here</a>.</td>
+        <td><a href="codepages/echo.html">Here</a></td>
+      </tr>
+    </table>
+</div>
+
+<br>
+<br>
+<div class="footer">
+    <p> Content © 2019 Jayson Tian, unless otherwise specified
+</div>
+</body>
+
+</html>
