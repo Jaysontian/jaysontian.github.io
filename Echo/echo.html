@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="echo.css">
+<link rel="stylesheet" href="animate.css">
+<link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou|Quicksand|Montserrat|Lato" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="echo.js"></script>
+<title> Echo </title>
+<head>
+
+<body style="overflow:hidden;" oncontextmenu="return false;" onkeydown="return false;">
+<div id="load" class="fade" style="z-index:1000; background-color: black;">
+	<div style='align-content: center;' class="special">
+		<h1 id="loadtext">ECHO</h1>
+		<p id="loadsmalltext">BY JAYSON TIAN </p>
+		<audio style="display:none;" autoplay controls> 
+			<source src="load.mp3">
+			<p>Your browser doens't support audio files.</p>
+		</audio>
+	</div>
+</div>
+<div style="position: fixed; top: 0; width: 100%; height: 100%; z-index: -1;">
+ <video style="display:none"id="vid"src="bg.mp4" width="100%" height="100%" autoplay loop>
+ Your browser does not support the video tag.
+ </video>
+</div>
+<div id="body1" style='display:none;z-index:1'>
+	<div class="sidenav" id="yo">
+		<p id="logo"> ECHO. </p>
+		<p id='creator'>By Jayson Tian </p>
+		<br>
+		<a onclick="newGame()">Start</a>
+		<a onclick="settings()">Settings</a>
+		<a onclick="help()">Help</a>
+		<a onclick="github()">Github</a>
+		<a style="color:white"href="#scoreboard">Scores</a>
+	</div>
+
+	<div class="row">
+	    <div class="col-md-12">
+	      <div class="gamefield">
+	        
+	       	<div class="btn-sett" data-toggle="modal" data-target="#myModal"> 
+	        </div>
+
+	        <div id="buttoncontainer">
+		        <div class="top-row">
+		          <div id= "blue"class="blue gamebutton" onClick="addToPlayer(this.id)"></div>
+		        </div>
+		        <div class="top2-row">
+		          <div id= "green"class="green gamebutton" onClick="addToPlayer(this.id)"></div>
+		          <div id= "pink"class="pink gamebutton" onClick="addToPlayer(this.id)"></div>
+		        </div>
+		        <div class="middle-row">
+		        <div id="gameNumber">
+		            <h2 id="clickNumber">Level 0</h2></div> </div>
+
+		        <div class="bottom2-row">
+		          <div id= "yellow"class="yellow gamebutton" onClick="addToPlayer(this.id)"></div>
+		          <div id= "purple"class="purple gamebutton" onClick="addToPlayer(this.id)"></div>
+		        </div>
+		        <div class="bottom-row">
+		          <div id= "orange"class="orange gamebutton" onClick="addToPlayer(this.id)"></div>
+		          <div></div>
+		        </div>
+		    </div>
+	  	</div>
+	</div>
+
+	<div id="snackbar"> Correct </div>
+	<div id="snackbar2"> Incorrect - Please Restart</div>
+
+
+	<div id="myModal" class="modal">
+	  <div class="modal-content">
+	    <h2 class="heading-text">HELP</h2>
+	    <p class="normal-text">This is a more simplistic adaption of the classic game, Simon. The rules are simple. A series of tones and lights called echoes will be created. The player must repeat the sequence. If the player succeeds, the series becomes progressively longer and more complex. Once the player fails or the time limit runs out, the game is over.</p>
+	    <br>
+	    <p class="normal-text"> Created by Jayson Tian in Grade 9. I used some resources to help with the JavaScript code. Linked in the Github Pages.</p>
+	  </div>
+	</div>
+
+	<div id='settingsdiv' class="cover">
+		<div class="settings-content">
+			<h2 class="heading-text">SETTINGS</h2>
+			<p class="normal-text" style="padding-top:10px"> Sound Effects <span id="rightfloater"> <label class="switch"><input type="checkbox" id="sfx"><span class="slider round"></span></label> </span></p>
+
+			<p class="normal-text"> Background Music <span id="rightfloater"> <label class="switch"><input type="checkbox" id="bgmusic"><span class="slider round"></span></label> </span></p>
+
+			<p class="normal-text" style="padding-top:0px"> Light Mode <span id="rightfloater"> <label class="switch"><input type="checkbox" id="lightmode"><span class="slider round"></span></label> </span></p>
+			
+
+			<button style="padding:10px; margin-bottom:25px;outline: none;font-size:15px; width:100px; border-radius: 12px; background-color: lightgray;"onclick="closesettings()"> Submit </button>
+		</div>
+	</div>
+
+	</div>
+</div>
+</body>
+</html>
