@@ -1,4 +1,43 @@
-body {margin:0; font-family:"Sintony"; font-size:14px;}
+body {margin:0; font-family:"Sintony"; font-size:14px;min-width:800px;}
+
+#morebtn {
+  float:right;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:13px;
+  padding-bottom:33px;
+  margin-left:60px;
+  border-radius: 120px;
+  font-size:25pt;
+  line-height: 0px;
+  position: fixed;
+  outline: none;
+  transition: box-shadow 1s;
+
+
+}
+#morebtn:hover {
+  transition: box-shadow 1s;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+}
+
+
+#moreitems{
+  position: fixed;
+  float:right;
+  margin-top:70px;
+  margin-left:35px;
+  text-align:center;
+  line-height: 35px;
+  display: none;
+  color: rgba(0,0,0,0.7);
+  cursor:pointer;
+}
+.moreit{transition: background-color 1s;width:100px;}
+.moreit:hover {
+  transition: background-color 2s;
+  background-color: rgba(0,0,0,0.08);
+}
 
 #loadtext {
 	text-align: center;
@@ -7,12 +46,9 @@ body {margin:0; font-family:"Sintony"; font-size:14px;}
 	letter-spacing: 1.5px;
 }
 #loadimage {
-	zoom:0.6;
-	margin-left:48vw;
-	margin-right:48vw;
-	margin-top: 0px;
+	zoom:0.4;
+	margin-top: -70px;
 	z-index:-1;
-	letter-spacing: 1.5px;
 	filter:grayscale(100%);
 }
 .fader {
@@ -30,7 +66,7 @@ body {margin:0; font-family:"Sintony"; font-size:14px;}
 .fade {
   animation-name: fade;
   animation-delay: 0s;
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
@@ -41,7 +77,7 @@ body {margin:0; font-family:"Sintony"; font-size:14px;}
 }
 
 .topnav {
-cursor:pointer;
+  cursor:pointer;
   overflow: hidden;
   border-bottom: solid 1px;
   border-bottom-color: #555;
@@ -63,6 +99,7 @@ cursor:pointer;
   padding: 14px 16px;
   text-decoration: none;
   font-size: inherit;
+  transition: background-color 1s;
 }
 
 .active {
@@ -76,6 +113,7 @@ cursor:pointer;
 
 .dropdown {
   overflow: hidden;
+  transition: background-color 1s;
 }
 
 .dropdown .dropbtn {
@@ -106,10 +144,10 @@ cursor:pointer;
   display: block;
   text-align: left;
 }
-
+.dropbtn{transition: background-color 1s;}
 .nava:hover, .dropdown:hover .dropbtn {
   background-color: #dddd;
-  transition: all 1s;
+  transition: background-color 1s;
 }
 
 .dropdown-content div:hover {
@@ -252,4 +290,200 @@ td, th {
 	margin-top:30px;
 	margin-bottom:20px;
 	object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+/* LOGIN FORM     */
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 40px 0 12px 0;
+  position: relative;
+}
+
+.container {padding: 16px;}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 25%;
+  border-radius: 10px;
+}
+.close {
+  position: absolute;
+  right: 8px;
+  top: -62px;
+  zoom:0.7;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+#loginbtn {
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  border-radius: 10px;
+  margin-bottom:15px;
+  margin-top:20px;
+  outline: none;
+}
+#centerbtn {text-align:center;}
+
+
+
+
+
+
+#share {
+  text-align: center;
+}
+
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+.modal-content2 {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%;
+  padding:50px 0px;
+  border-radius: 10px;
+}
+.imgcontainer2 {
+  text-align: center;
+  margin: -26px 0 12px 0;
+  margin-bottom: 40px;
+  position: relative;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 15px;
+  height: 15px;
+  zoom:1.5;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: linear-gradient( #400080, transparent), linear-gradient( 200deg, #d047d1, #ff0000, #ffff00);
+  color: white;
+}
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+
+
+
+
+.modal3 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+.modal-content3 {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%;
+  padding:50px 0px;
+  border-radius: 10px;
+  min-width:300px;
+}
+.imgcontainer3 {
+  text-align: center;
+  margin: -26px 0 12px 0;
+  margin-bottom: 40px;
+  position: relative;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-container > div {
+  height:200px;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .flex-container {
+  flex-direction:column;
+}
 }

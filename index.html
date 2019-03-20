@@ -2,20 +2,32 @@
 <html>
 <link rel="stylesheet" href='portfolio.css'>
 <link href="https://fonts.googleapis.com/css?family=Varela+Round|Sintony" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="portfolio.js"></script>
 <head>
 <body>
+    <title>Jayson Tian </title>
 
 <div id="load" class="fade">
     <div>
         <p id="loadtext"> JAYSON TIAN</p>
-        <image id="loadimage"src="media/images/load.gif"></image>
+        <div style="text-align: center;">
+            <image id="loadimage"src="media/images/load.gif"></image> </script>
+        </div>
     </div>
 </div>
 
+
 <div id="body1" style="display:none">
+    <button id="morebtn" onclick="showmore()"> ... </button>
+    <div id="moreitems">
+        <div onclick="showsignin()"class="moreit">SIGN IN</div>
+        <div onclick="showwhatsnew()"class="moreit">WHAT'S NEW</div>
+        <div onclick="showshare()"class="moreit">SHARE</div>
+        <div class="moreit">SETTINGS</div>
+    </div>
     <div id="line">
     <div class="topnav" id="myTopnav">
         <a class="nava" onclick="home()"> JAYSON TIAN</a>
@@ -48,12 +60,68 @@
     </div>
 
     <div class="textcontainer">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis libero et lorem ullamcorper mollis. Mauris volutpat, purus sit amet pretium volutpat, metus ligula dictum metus, a accumsan turpis nulla et urna. Pellentesque convallis porta orci, nec tempor libero tincidunt imperdiet. Quisque aliquam quam sed facilisis malesuada. Aliquam eros purus, ultrices eget finibus vel, semper vitae nunc. Donec pharetra dolor eget turpis condimentum, eu auctor sem tincidunt. Vivamus blandit fringilla leo, vitae malesuada quam feugiat nec. Nullam id suscipit diam. Nullam faucibus urna vel sapien commodo tristique. Suspendisse potenti. Phasellus accumsan tempor nulla vitae lobortis. Mauris finibus quis odio non vehicula. Maecenas ultricies interdum pharetra. Nunc et diam hendrerit, bibendum velit quis, convallis leo. Integer nec risus ut sem vehicula tempor sit amet eget arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis libero et lorem ullamcorper mollis. Mauris volutpat, purus sit amet pretium volutpat, metus ligula dictum metus, a accumsan turpis nulla et urna. Pellentesque convallis porta orci, nec tempor libero tincidunt imperdiet. Quisque aliquam quam sed facilisis malesuada. Aliquam eros purus, ultrices eget finibus vel, semper vitae nunc. Donec pharetra dolor eget turpis condimentum, eu auctor sem tincidunt. Vivamus blandit fringilla leo, vitae malesuada quam feugiat nec. Nullam id suscipit diam. Nullam faucibus urna vel sapien commodo tristique. Suspendisse potenti. Phasellus accumsan tempor nulla vitae lobortis. Mauris finibus quis odio non vehicula. Maecenas ultricies interdum pharetra. Nunc et diam hendrerit, bibendum velit quis, convallis leo. Integer nec risus ut sem vehicula tempor sit amet eget arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis libero et lorem ullamcorper mollis. Mauris volutpat, purus sit amet pretium volutpat, metus ligula dictum metus, a accumsan turpis nulla et urna. Pellentesque convallis porta orci, nec tempor libero tincidunt imperdiet. Quisque aliquam quam sed facilisis malesuada. Aliquam eros purus, ultrices eget finibus vel, semper vitae nunc. Donec pharetra dolor eget turpis condimentum, eu auctor sem tincidunt. Vivamus blandit fringilla leo, vitae malesuada quam feugiat nec. Nullam id suscipit diam. Nullam faucibus urna vel sapien commodo tristique. Suspendisse potenti. Phasellus accumsan tempor nulla vitae lobortis. Mauris finibus quis odio non vehicula. Maecenas ultricies interdum pharetra. Nunc et diam hendrerit, bibendum velit quis, convallis leo. Integer nec risus ut sem vehicula tempor sit amet eget arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis libero et lorem ullamcorper mollis. Mauris volutpat, purus sit amet pretium volutpat, metus ligula dictum metus, a accumsan turpis nulla et urna. Pellentesque convallis porta orci, nec tempor libero tincidunt imperdiet. Quisque aliquam quam sed facilisis malesuada. Aliquam eros purus, ultrices eget finibus vel, semper vitae nunc. Donec pharetra dolor eget turpis condimentum, eu auctor sem tincidunt. Vivamus blandit fringilla leo, vitae malesuada quam feugiat nec. Nullam id suscipit diam. Nullam faucibus urna vel sapien commodo tristique. Suspendisse potenti. Phasellus accumsan tempor nulla vitae lobortis. Mauris finibus quis odio non vehicula. Maecenas ultricies interdum pharetra. Nunc et diam hendrerit, bibendum velit quis, convallis leo. Integer nec risus ut sem vehicula tempor sit amet eget arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
     </div>
     <br>
     <br>
     <div class="footer">
         <p> Content © 2019 Jayson Tian, unless otherwise specified
+    </div>
+</div>
+
+
+
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content">
+    <div class="imgcontainer">
+
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <p> LOGIN </p>
+      
+    </div>
+
+    <div class="container">
+      <input type="text" placeholder="Username" name="uname" required>
+      <input type="password" placeholder="Password" name="psw" required>
+        <div id="centerbtn">
+            <button id = "loginbtn"type="submit">Login</button>
+        </div>
+    </div>
+    </div>
+  </form>
+</div>
+
+
+<div id="share" class="modal2">
+    <form class="modal-content2">
+        <div class="imgcontainer2">
+            <span onclick="document.getElementById('share').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <p> SHARE </p>
+        </div>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=jaysontian.github.io" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/jaezun/" class="fa fa-instagram"></a>
+        <a href="https://twitter.com/home?status=Check%20out%20Jayson's%20website%20and%20his%20works!" class="fa fa-twitter"></a>
+        <a onclick="error." class="fa fa-snapchat-ghost"></a>
+    </form>
+</div>
+
+
+<div id="whatsnew" class="modal3">
+    <div class="modal-content3">
+        <div class="imgcontainer3">
+            <span onclick="document.getElementById('whatsnew').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <p> WHAT'S NEW </p>
+        </div>
+        <div class="flex-container">
+            <image style="margin:30px;height:40vh;width:40vh;"src="media/images/echo_sc.jpg"></image>
+            <div>
+                <p style="width:100%; font-size:12pt;"> New Game: Echo </p>
+                <button id = "loginbtn" onclick="echopage()"> Play </button>
+            <div>
+        </div>   
     </div>
 </div>
 </body>
