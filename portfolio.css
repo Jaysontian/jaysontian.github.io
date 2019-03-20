@@ -1,4 +1,4 @@
-body {margin:0; font-family:"Sintony"; font-size:14px;min-width:800px;}
+body {margin:0; font-family:"Sintony"; font-size:14px;min-width:600px;}
 
 #morebtn {
   float:right;
@@ -32,6 +32,7 @@ body {margin:0; font-family:"Sintony"; font-size:14px;min-width:800px;}
   display: none;
   color: rgba(0,0,0,0.7);
   cursor:pointer;
+  background-color: white;
 }
 .moreit{transition: background-color 1s;width:100px;}
 .moreit:hover {
@@ -485,5 +486,21 @@ input[type=text], input[type=password] {
 @media only screen and (max-width: 800px) {
   .flex-container {
   flex-direction:column;
+}
+}
+
+@media only screen and (max-width: 1000px) {
+  .topnav{
+    width:88%;
+  }
+  .photo{
+    width:88%;
+  }
+  .textcontainer{
+    width:88%;
+  }
+  .footer{
+    width:88%;
+  }
 }
 }

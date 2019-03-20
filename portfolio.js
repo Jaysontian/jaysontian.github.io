@@ -4,10 +4,19 @@ function backtocode() {window.location.href="../code.html"}
 function backtohome() {window.location.href="index.html"}
 function music() {window.location.href="music.html"}
 function hosa() {window.location.href="notes/hosa.html"}
+function oldpage() {
+	var pswrd2 = prompt("Password:", "")
+
+	if (pswrd2 == '348761156') {
+		window.location.href="oldpage/index.html"}
+	else {
+		alert("Password incorrect.")}
+}
+
 function echopage() {
 	var pswrd1 = prompt("Password:", "")
 
-	if (pswrd1 == '828ny74r') {
+	if (pswrd1 == '348761156') {
 		window.location.href="codepages/echo.html"}
 	else {
 		alert("Password incorrect.")}
@@ -16,7 +25,7 @@ function echopage() {
 function admin() {
 	var pswrd = prompt("Password:", "")
 
-	if (pswrd == '828ny74r') {
+	if (pswrd == '348761156') {
 		window.location.href="081y2hjad.html"}
 	else if(pswrd == '348761156'){
 		window.location.href="081y2hjad.html"}
