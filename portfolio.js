@@ -4,6 +4,7 @@ function backtocode() {window.location.href="../code.html"}
 function backtohome() {window.location.href="index.html"}
 function music() {window.location.href="music.html"}
 function hosa() {window.location.href="notes/hosa.html"}
+function notes() {window.location.href="notes.html"}
 function oldpage() {
 	var pswrd2 = prompt("Password:", "")
 
@@ -17,7 +18,7 @@ function echopage() {
 	var pswrd1 = prompt("Password:", "")
 
 	if (pswrd1 == '348761156') {
-		window.location.href="codepages/echo.html"}
+		window.open("echo/echo.html")}
 	else {
 		alert("Password incorrect.")}
 }
