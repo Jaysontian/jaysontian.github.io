@@ -6,21 +6,11 @@ function music() {window.location.href="music.html"}
 function hosa() {window.location.href="notes/hosa.html"}
 function notes() {window.location.href="notes.html"}
 function oldpage() {
-	var pswrd2 = prompt("Password:", "")
-
-	if (pswrd2 == '348761156') {
-		window.location.href="oldpage/index.html"}
-	else {
-		alert("Password incorrect.")}
+	window.location.href="oldpage/index.html"}
 }
 
 function echopage() {
-	var pswrd1 = prompt("Password:", "")
-
-	if (pswrd1 == '348761156') {
-		window.open("echo/echo.html")}
-	else {
-		alert("Password incorrect.")}
+	window.open("Echo/echo.html")}
 }
 
 function admin() {
