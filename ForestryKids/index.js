@@ -1,11 +1,11 @@
 document.getElementById('topbar').onmouseover = function(){
-	document.getElementById("mySidenav").style.height = "250px";
+	document.getElementById("mySidenav").style.height = "300px";
 	document.getElementById("mySidenav").style.opacity = "1";
 
 };
 
 document.getElementById('mySidenav').onmouseover = function(){
-	document.getElementById("mySidenav").style.height = "250px";
+	document.getElementById("mySidenav").style.height = "300px";
 	document.getElementById("mySidenav").style.opacity = "1";
 };
 
@@ -48,3 +48,19 @@ var help_note = document.getElementById("tip-help");
 help.onmouseover = function(){help_note.style.display = "block"};
 help.onmouseleave = function(){help_note.style.display = "none"};
 help.onclick = function(){help_note.style.display = "none";};
+
+
+
+function change() {
+			var sel = document.getElementById('selection');
+
+    		var data1 = document.getElementById('piechart');
+    		var data2 = document.getElementById('data2');
+
+    		if(sel.value=='data2'){
+        	data1.style.display = 'block';
+        	data2.style.display = 'none';}
+	    	else{
+	        	data1.style.display = 'none';
+	        	data2.style.display = 'block';}
+    	}
