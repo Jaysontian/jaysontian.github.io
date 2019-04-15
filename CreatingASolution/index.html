@@ -6,49 +6,103 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
 
-<body>
+<body onload="openNav()">
+  <div><span style="font-size:30px;cursor:pointer; position:fixed; left:20px;" onclick="openNav()">&#9776;</span></div>
   <div id="head1"> CREATING A SOLUTION </div>
   <div class='text'> Jayson Tian // Planning and progress page </div>
 
   <div id='row' style = "margin-top:80px;">
 
-    <div>
-      <h2>ABOUT PAGE FINISHED </h2>
-      <h3> April 11, 2019 </h3>
-      <p>I finished the about page, including text, images, and interactive activities. I have also finished a post about why external css is better choice in this assignment than inline css. I have not uploaded that yet.</p>
+    <div id="4">
+      <h2>iv. CHANGES MADE TO DESIGN / CODE EXPLANATION </h2>
+      <h3>Page Navigation </h3>
+      <p> I made some changes to the page navigation style. First, I decided that having a fixed headbar was not efficient because it took up a lot of space for the page and may not be useful for the user all the time. Second, I decided that the flip boxes will turn into buttons which will redirect the user to the page they want. This is because there is not enough space to fit the info within the small boxes. It was not an intellegant design choice. Finally, I got rid of the next page for my main page and included it in my information pages because the purpose of the main page is to introduce to the users the sections and categories of my website. I also included a footer because I did not want to cram all the buttons into one section.</p>
+      <div style="display:flex; margin-left:20px;"><image width=48% height=30% src="01.jpg"></image> <image width=48% height=120% src="02.jpg"></image></div>
+      <h3>External CSS and Javascript </h3>
+      <p> There are many benefits of an external CSS and Javascript file in most web developing situations so I decided to scrap the idea of inline CSS and Javascript (In most files, when appropriate). External CSS and JS is so effective because 1) everything is stored in one file 2) once changed and saved, the changes are applied to all html files that reference to that css or js file 3) pages load quicker once main css file is loaded.</p>
+      <h3>Design (Animations, Color, Responsivness) </h3>
+      <p> I decided upon a design/theme that I have not prepared in my developing ideas section. I choose the color of green because it reflects upon the color of forests, leaves, nature, and trees. My original design was to create a colorful background image for children because it is very colorful, however I tried that and it did not work. It was too distracting and the color palatte did not match up. The page looked messy. So i decided to stay with a simplistic white background with animated leaves falling down, giving the page the feeling as if the user is in the forest trying to learn things. Students will definitely be interested and the design looks very appealing and professional for a kids website. The reponsiveness of pages was also important because I also wanted the page to work on a smaller window or if viewing it from a device, like an ipad or phone because those devices are more accessible to students than computers. I learned about @media and styling certain id and classes under the condition that the screen is at a certain width or height. </p>
+      <p> My overall experience coding this site was amazing, as I learned a lot about web development through this. I realized that making many design changes are normal and that I have to learn while creating the final solution. 
     </div>
 
     <div>
-      <h2>TOPBAR AND BACKGROUND ANIMATIONS </h2>
-      <h3> April 4, 2019 </h3>
-      <p>I decided to start wodking on the topbar and background first. I used keyframes to animated the leaves in the background. I had trouble with z-indexes because my divs were not organized. I made a footer as well with sign in and parent buttons (placeholders that will do nothing). As the user hovers over the topbar or the menu icon, the side navigation will show. </p> <p> Next I am going to get the buttons working. I am also going to start working on the main information page which displays the data in a interactive manner.</p>
+      <h2>SUCCESS OF TIMELINE COMMENTARY</h2>
+      <p> Overall I think I followed my plan quite well as I organized all of this beforehand, however, sometimes I forgot to fill in some info for classes and had to do it many classes later, and by then my descriptions and notes were undetailed because it happended a long time ago. As a next step I will start each class by doing it and then end each class taking some timeline commentary (in the future). The plan however did help me organize what steps I would have to take in a non overwhelming manner on how I can complete my site.</p>
     </div>
 
     <div>
-      <h2>SIDE NAVIGATION MENU </h2>
-      <h3> March 31, 2019 </h3>
+      <h2>PROCESS: CLASS 8 </h2>
+      <h3> All Data Graphs Finished </h3>
+      <p><b>Goal:</b> Finish the API graph, Embeded Graph, and the Javascript Graph. Finish a selection dropdown so the user can select which data the user wants.</p>
+      <p><b>What I Completed:  </b>I finished two graphs. I will try to finish the last Javascript graph. Explained in the iv. Changes section.</p>
+      <p><b>Prep: </b></p>
+    </div>
+    <div>
+      <h2>PROCESS: CLASS 7 </h2>
+      <h3>Making Pages Responsive </h3>
+      <p><b>Goal: </b>To make the divs responsive and fit (work) according to the change of size of the window. For example, making the width of the window below 500px currently will make text flow onto other divs, making it looking very unprofessional. Using @media max/min width again (as mentioned before) as well as using more flex boxes, I will be able to make the elements fit within the window. I also plan on finishing the parents page. The page will look more organized and completely different in design, smaller text because it is no longer the kids who are the audience. It will look more serious however will still fit the color palatte. </p>
+      <p><b>What I Completed: </b>  I am half done. I only finished the about page and UN pages for responsiveness. I also used auto for height which helped. </p>
+      <p><b>Prep: </b> For next class, I will start on my graphs and attempt to finish all three graphs with a selection filter so the user could choose which graph they would like to look at.  </p>
+    </div>
+    <div>
+      <h2>PROCESS: CLASS 6 </h2>
+      <h3> Finish Help, UN Pages, Sign In Pages </h3>
+      <p><b>Goal: </b>I am going to finish the help, UN pages, and Sign In Pages through using the already styled divs (using the class "sections". Through this, I can use the information that I have already prepared and then put the placeholder text and images into the templates taht I have just created. Many of the styled buttons and texts have the same look because I wanted to keep the theme and look consistant so that the website looks monolithic.</p> </p>
+      <p><b>Prep: </b>For next class I will do some research on the responsiveness of webpages as well as finish my "parents" page.</p>
+    </div>
+
+    <div>
+      <h2>PROCESS: CLASS 5 </h2>
+      <h3> Start Image Gallery </h3>
+      <p><b>Goal:</b> to complete a working image gallery that is responsive to the size of the window. 10 images minimum about trees as well as captions. When the image is clicked it can expand. Use w3Schools for reference.</p>
+      <p><b>What I Completed: </b>w3Schools helped a lot with this one. I learned how I can use @media and max/min width to make a webpage responsive. I am now done the Image Gallery.</p>
+      <p><b>Prep: </b>Next I need to prep for the information and placeholder images/text for the un pages, help page, as well as the sign in page. I plan on finishing those in one class as I can use previously styled divs through class and id. </p>
+    </div>
+
+    <div>
+      <h2>PROCESS: CLASS 4 </h2>
+      <h3> Start "About" Page </h3>
+      <p><b>Goal: </b>Start customizing the theme, colors, responsiveness and css for the div elements (set in classes) so that it can be used for the other pages as well. Then insert the informtion specifically for the ABOUT page.</p>
+      <p><b>What I Completed:  </b>I finsihed the entire page including images, colors, design, videos, and information. The buttons are not yet styled though.</p>
+      <p><b>Prep: </b>Start looking at flex box containers, responsiveness of a grid layout and images, download images and prepare information for the image gallery page.</p>
+    </div>
+
+    <div>
+      <h2>PROCESS: CLASS 3 </h2>
+      <h3> Main Page Finished  </h3>
+      <p>I decided to start working on the topbar and background first. I used keyframes to animated the leaves in the background. I had trouble with z-indexes because my divs were not organized. I made a footer as well with sign in and parent buttons (placeholders that will do nothing). As the user hovers over the topbar or the menu icon, the side navigation will show. </p> <p> Next I am going to get the buttons working. I am also going to start working on the main information page which displays the data in a interactive manner.</p>
+    </div>
+
+    <div>
+      <h2>PROCESS: CLASS 2</h2>
+      <h3> Navigation Menus Completed </h3>
       <p>I completed the side navigation menu. My original design was a side menu that was fixed on the screen. I decided that the side menu will only show if the user either clicks or hovers over a certain element. The side navigation will also be in the theme of branches, as my original design 3 stated. Another change I made was that I decided to organize the information through category instead of just a jumble of media (likely will confuse the student). The splash page is where the student can access all the pages of the site in an organized manner.</p><p> My next step is to start making interactive buttons. I'm thinking of putting an animation in the background so that the site will be more interesting to look at appearence wise.
     </div>
 
-    <div style="margin-bottom:90px">
-      <h2>REDESIGNED SLASH PAGE </h2>
-      <h3> March 28, 2019 </h3>
+    <div id="3">
+      <h2>PROCESS: CLASS 1 </h2>
+      <h3>Design and External CSS and Javascript File </h3>
       <p>I fishined designing the main page as of what elements I would like to use and where I would like to place it. I think for a kids site a splash page would be extremely helpful because it organizes the information in way a kid would understand. I also decided that the entire theme would be about trees and the color palette of the page would be mostly green, brown, and other more bright colors. GIF's would also be interesting.</p>
       <p> My next step will be starting to make a navigation menu and buttons.</p>
+    </div>
+
+    <div style="margin-bottom:90px" id="1">
+      <h2> I. DETAILED PLAN </h2>
+      <p> 1. Start with designing elements on the page and deciding what will go where. Do some research on how these can be achieved in html. Use W3Schools. <br><br> 2. Begin on the <b>main page</b> so <b>I can establish my color palatte, themes and also styles on this first page, and then the design for the other pages will be more efficient. </b> On the main page, I will start with the top bar and side bar navigation menus, then continue to the main background. I will then finish the main buttons for the main page that direct the user to the other pages. Finally, I will work on the animations ajd footer which holds the parent and sign up buttons.<br><br> 3.<b> One external CSS file will be created and one external Javascript file will be created and every page will be referenced to that. </b>This is much more time and resource efficient because if I need to change the topbar color, all my pages will be changed instead of just changing the pages one by one. (Talked more about this in iv. Changes made to design) <br><br> 4. I will then start on my media page, which holds the image gallery. Then the about information page, where I will make <b>div elements that has the class "sections". section1 and section2 classes will be used through all the pages for sections of the website.</b> This is much more efficient. <br><br> 5. After using the same styling and classes for designing the UN goal 13 page, help pages, sign up page, and parents page, I will start coding the data (graphs). <br><br> 6. For my three data sets, one will be an <b>embedded </b>interactive data graph showing world forestry cover differentiations. The second will be a Google run API which helps will pie chart calculations and making. I will then show an interactive pie chart which will present to the user the top 10 forest cutting countries. For the last graph the user will choose from a dropdown of all the countries and for the selected country, the amount of trees cut annually will be shown in a visulization of forests and trees. <br><br>  </p>
     </div>
 
   </div>
 
   <div id='column'>
-    <div>
+    <div id="2">
       <h2 style="padding-bottom:20px;"><i class="fa fa-mouse-pointer" style="margin-right:10px;font-size:20px;font-weight:100;"></i>Final Site</h2>
        <a href="https://jaysontian.github.io/ForestryKids/index.html" style="text-align:center; border: 2px solid; padding:10px; margin-left:20px;"> Forestry Kids </a>
     </div>
 
     <div>
-      <h2 style="padding-bottom:20px;"><i class="fa fa-tasks" style="margin-right:10px;font-size:20px;font-weight:100;"></i>Progress</h2>
-      <li>&#x275F; Interactive Media</li>
-      <li>&#x275F; About Page and Graphs</li>
+      <h2 style="padding-bottom:20px;"><i class="fa fa-tasks" style="margin-right:10px;font-size:20px;font-weight:100;"></i> Plan and Progress</h2>
+      <li>&#10003; Interactive Media</li>
+      <li>&#10003; About Page and Graphs</li>
       <li>&#10003; Interactive Buttons</li>
       <li>&#10003; Background Leaf Animations</li>
       <li>&#10003; Created Topbar and Footer</li>
@@ -56,17 +110,50 @@
       <li>&#10003; Designed Splash Page</li>
     </div>
 
+    <div id="5">
+      <h2 style="padding-bottom:20px;"><i class="fa fa-tasks" style="margin-right:10px;font-size:20px;font-weight:100;"></i> Pages in Final Site</h2>
+      <li>Main</li>
+      <li>About</li>
+      <li>Media</li>
+      <li>Graph</li>
+      <li>Sign Up</li>
+      <li>Parents</li>
+      <li>UN Goal 13</li>
+      <li>UN Goal 15</li>
+      <li>Help</li>
+      <li>Games</li>
+    </div>
+
     <div>
       <h2 style="padding-bottom:20px;"><i class="fa fa-link" style="margin-right:10px;font-size:20px;font-weight:100;"></i>Links</h2>
 
       <a href= "https://github.com/Jaysontian"><i class="fa fa-github" style="margin-right:10px;font-size:20px;font-weight:100;"></i> Github</a> <br/>
       <a href='https://sites.google.com/ucc.on.ca/year9designcoding-jtian'><i class="fa fa-google" style="margin-right:10px;font-size:20px;font-weight:100;"></i>Google Site</a><br/>
-      <a href='https://www.instagram.com/jaezun/'><i class="fa fa-instagram" style="margin-right:10px;font-size:20px;font-weight:100;"></i>Instagram</a><br/>
-      <a href='https://jaysontian.github.io/'><i class="fa fa-mouse-pointer" style="margin-right:10px;font-size:20px;font-weight:100;"></i>Website</a><br/>
       <a href='mailto:jayson.tian@ucc.on.ca?subject=Information%20Request&body='><i class="fa fa-envelope" style="margin-right:10px;font-size:20px;font-weight:100;"></i>Email</a><br/>
 
     </div>
   </div>
 
+  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a onclick="closeNav()"href="#1">i. Detailed Plan</a>
+    <a onclick="closeNav()"href="#2">ii. Final Site</a>
+    <a onclick="closeNav()"href="#3">iii. Process (Class 1-8)</a>
+    <a onclick="closeNav()"href="#4">iv. Changes Made to Design</a>
+    <a onclick="closeNav()"href="#5"> Pages in Final Site</a>
+  </div>
+</div>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
 </body>
+
+
 </html>
