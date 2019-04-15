@@ -7,7 +7,6 @@ function hosa() {window.location.href="notes/hosa.html"}
 function notes() {window.location.href="notes.html"}
 function oldpage() {
 	window.location.href="oldpage/index.html"}
-}
 
 function echopage() {
 	window.open("Echo/echo.html")}
