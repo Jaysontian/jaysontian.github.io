@@ -10,7 +10,6 @@ function oldpage() {
 
 function echopage() {
 	window.open("Echo/echo.html")}
-}
 
 function admin() {
 	var pswrd = prompt("Password:", "")
