@@ -1,0 +1,225 @@
+
+
+/* ******************************* Start  ************************************************* */
+
+
+#blabla {
+  background: none; /* Green background */
+  border: none; /* Remove borders */
+  color: white;
+  font-size:18pt; /* White text */ /* Some padding */ /* Set a font-size */
+  opacity: 1;
+  margin:275px;
+  padding-top: 0px;
+  left:300px;
+  font-family: courier new;
+}
+
+#text1 {
+	color:white;
+	font-size:13pt;
+	text-align: center;
+	top:50%;
+	font-family: courier new;
+	padding-top:275px;
+}
+#text2 {
+	color:white;
+	font-size:13pt;
+	text-align: center;
+	top:50%;
+	font-family: courier new;
+	padding-top:275px;
+	padding-left:275px;
+	max-width:800px;
+	line-height: 30px;
+
+}
+#text3 {
+	color:white;
+	font-size:13pt;
+	text-align: center;
+	font-family: courier new;
+	padding-top:175px;
+	padding-left:275px;
+	max-width:800px;
+	line-height: 30px;
+
+}
+
+
+/*#next{
+	background:none;
+	border:none;
+	font-family: courier new;
+	color:white;
+	font-size:13pt;
+	align-content:center;
+} */
+
+#next2button {
+  border: none;
+  background: none;
+  border: none;
+  color: white;
+  align-content:center;
+  text-align: center;
+  font-size: 13pt;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: courier new;
+  padding-left: 645px;
+
+}
+
+.next{
+  border: none;
+  background: none;
+  border: none;
+  color: white;
+  align-content:center;
+  text-align: center;
+  font-size: 13pt;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: courier new;
+}
+.next span {
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+}
+
+.next span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.next:hover span {
+  padding-right: 25px;
+}
+
+.next:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+
+/* ******************************* TAX SLIDER ************************************************* */
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 10px; /* Specified height */
+  background: white; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.5; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .1s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+.slider:hover {
+  opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+-webkit-appearance: none; /* Override default look */
+appearance: none;
+width: 25px; /* Set a specific slider handle width */
+height: 17.5px; /* Slider handle height */
+background: #4CAF50; /* Green background */
+cursor: pointer; /* Cursor on hover */
+}
+
+#taxtext {
+	color:white;
+	font-size:12pt;
+}
+
+
+
+
+
+
+/* ******************************* STAT 4 ************************************************* */
+#co {
+	color:white;
+	font-size:12pt;
+}
+#mental {
+	color:white;
+	font-size:12pt;
+}
+#stat4 {
+  border-radius: 25px;
+  margin: 10px;
+  border: 2px solid black;
+  background:black;
+  padding: 4px; 
+  width: 200px;
+  height: 115px;
+  align-content: center; 
+}
+
+/* ******************************* STAGE 2 ALERT ************************************************* */
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: lightgreen;
+  color: black;
+  stroke:black;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 90px;
+  top: 60px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 1s, fadeout 1s 2.5s;
+  animation: fadein 1s, fadeout 1s 2.5s;
+}
+@-webkit-keyframes fadein {
+  from {left: 0; opacity: 0;} 
+  to {left: 90px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {left: 0; opacity: 0;}
+  to {left: 90px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {left: 90px; opacity: 1;} 
+  to {left: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {left: 90px; opacity: 1;}
+  to {left: 0; opacity: 0;}
+}
+
+
+
