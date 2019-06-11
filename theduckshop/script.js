@@ -64,7 +64,7 @@ function deletedialog() {
 
 //make duck
 
-var money = 2000;
+var money = 0;
 
 var demand = 1000;
 var speed = 1;
