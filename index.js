@@ -55,6 +55,7 @@ facts = [
 	'Ketchup was once sold as medicine.',
 	'No piece of square paper can be folded more than 7 times in half.',
 	'Minnie Mouses\' name is a nickname. Her official name is Minerva.',
+	'Burger King apparently gives out marinara sauce packets. I dont know why that\'s so amusing to me.',
 	];
 
 i = 0;
