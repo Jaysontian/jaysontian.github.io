@@ -56,6 +56,9 @@ facts = [
 	'No piece of square paper can be folded more than 7 times in half.',
 	'Minnie Mouses\' name is a nickname. Her official name is Minerva.',
 	'Burger King apparently gives out marinara sauce packets. I dont know why that\'s so amusing to me.',
+	'The worlds oldest tortoise is twice the age of Queen Elizabeth.',
+	'Your hearing is affected by the amount of food you eat.',
+	'Crocs swallow rocks to help them dive deeper',
 	];
 
 i = 0;
