@@ -28,7 +28,7 @@ a {
 	flex-direction: row;
 	justify-content: space-around;
 	font-family:Montserrat;
-	font-size:25pt;
+	font-size:35pt;
 	transition: text-decoration 1s;
 	color:white;
 }
@@ -54,31 +54,31 @@ a {
 }
 
 #info {
-	line-height: 35px;
+	line-height: 53px;
 	font-family:Montserrat;
-	font-size:24px;
+	font-size:24pt;
 	width:95%;
 	margin-top:70px;
 }
 #topics{
-	line-height: 35px;
+	line-height: 53px;
 	font-family:Montserrat;
-	font-size:24px;
+	font-size:24pt;
 	width:100%;
 	margin-top:70px;
 }
 
 #rates{
-	line-height: 35px;
+	line-height: 53px;
 	font-family:Montserrat;
-	font-size:24px;
+	font-size:24pt;
 	width:95%;
 	margin-top:70px;
 }
 
 
 #contact{
-	line-height: 35px;
+	line-height: 53px;
 	font-family:Montserrat;
 	font-size:24px;
 	width:90%;
