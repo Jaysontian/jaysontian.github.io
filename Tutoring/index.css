@@ -113,3 +113,10 @@ a {
 h2{
 	text-align: center;
 }
+
+
+input{
+	font-size:20pt;
+	padding:15px;
+	margin-bottom:10px;
+}
