@@ -1,7 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Lato&display=swap');
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+img{
+	opacity:0.8;
+}
+#headiframe{
+	border:none;
+	width:680px;
+
+}
+
 
 body {
-	font-family:Lato;
+	font-family:Inter var;
 	font-size:11pt;
 	color:rgba(0,0,0,0.65);
 	line-height: 21px;
@@ -11,7 +25,7 @@ body {
 	margin: 60px auto;
 	width:150px;
 	text-align:center;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Inter var', sans-serif;
 	font-weight:500;
 	font-size:20pt;
 	color:rgba(0,0,0,0.65);
@@ -37,7 +51,7 @@ body {
 
 #navbar a{
 	color:rgba(0,0,0,0.65);
-	font-family:Lato;
+	font-family:Inter var;
 	font-size:11pt;
 	cursor:pointer;
 	height:30px;
@@ -55,7 +69,7 @@ body {
 
 
 #search {
-	font-family:Lato;
+	font-family:Inter var;
 	border:none;
 	outline:none;
 	font-size:11pt;
@@ -78,7 +92,8 @@ body {
 
 #home div{
 	margin:auto;
-	width:700px;
+	width:500px;
+	margin-left:120px;
 	text-align:justify;
 }
 
@@ -87,6 +102,7 @@ body {
 }
 #contact{
 	width:100%;
+	display:none;
 }
 
 #form {
@@ -100,7 +116,7 @@ body {
 	margin-bottom:20px;
 	border:none;
 	color:rgba(0,0,0,0.65);
-	font-family:Lato;
+	font-family:Inter var;
 	font-size:11pt;
 	text-align: center;
 	border-width: 0px;

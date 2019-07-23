@@ -1,0 +1,136 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }}
+
+@media screen and (max-width: 600px){
+	.image{
+		display:none;
+	}
+	.padding{
+		padding:0px;
+	}
+	.about{
+		width:80%;
+	}
+
+}
+
+body{
+	font-family:Inter var;
+	font-weight:400;
+	line-height: 1.4;
+	letter-spacing: .03em;
+	font-size:15px;
+}
+
+.padding{
+	max-width: 1000px;
+    padding: 1.2em;
+    margin:0 auto;
+}
+/************************************** HEADER ********************************/
+
+#navbar {
+	width:600px;
+	height:40px;
+	display:flex;
+	flex-direction:row;
+	justify-content: space-evenly;
+}
+
+#navbar a{
+	color:rgba(0,0,0,0.85);
+	font-family:Inter var;
+	font-size:11pt;
+	cursor:pointer;
+	height:30px;
+	transition: border-bottom 0.5s ease-in-out;
+}
+
+#navbar a .selected{
+	border-bottom: 2px solid rgba(0,0,0,0.4);
+}
+
+#navbar a:hover{
+	border-bottom: 2px solid rgba(0,0,0,0.4);
+}
+
+#search {
+	font-family:Inter var;
+	border:none;
+	outline:none;
+	font-size:11pt;
+	color:rgba(0,0,0,1);
+	width:50px;
+	cursor:text;
+	transition: width 0.5s ease-in-out;
+}
+
+#search:focus{
+	width:130px;
+	padding-bottom:13px;
+	border-bottom: 2px solid rgba(0,0,0,0.4);
+}
+
+#iframe{
+	border:none;
+	width:680px;
+	height:100px;
+}
+
+/************************************** ABOUT ********************************/
+
+
+#about{
+	display:flex;
+	margin-left:80px;
+	color:rgba(0,0,0,0.85);
+	line-height: 24px;
+	justify-content: space-around;
+}
+
+#about h3{
+	color:rgba(0,0,0,0.8);
+	font-size:20pt;
+}
+
+#bio{
+	width:500px;
+}
+
+.image{
+	margin-top:50px;
+	margin-left:60px;
+	opacity:0.85;
+	max-width: 400px;
+	width: 100%;
+  	height: auto;
+}
+
+#atom{
+	transition: all 0.4s ease-in-out 0s;
+}
+
+#atom:hover{
+	 cursor: default; 
+	 transform: rotate(100deg);
+	 transform-origin: 50% 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
