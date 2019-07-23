@@ -17,7 +17,7 @@ html { font-family: 'Inter', sans-serif; }
 }
 
 body{
-	font-family:Inter var;
+	font-family:Inter var, Lato, Helvetica;
 	font-weight:400;
 	line-height: 1.4;
 	letter-spacing: .03em;
@@ -32,6 +32,8 @@ body{
 /************************************** HEADER ********************************/
 
 #navbar {
+	margin-left:35px;
+	margin-top:60px;
 	width:600px;
 	height:40px;
 	display:flex;
@@ -45,15 +47,15 @@ body{
 	font-size:11pt;
 	cursor:pointer;
 	height:30px;
-	transition: border-bottom 0.5s ease-in-out;
+	transition: transform 0.5s ease-in-out;
 }
 
-#navbar a .selected{
+.selected{
 	border-bottom: 2px solid rgba(0,0,0,0.4);
 }
 
 #navbar a:hover{
-	border-bottom: 2px solid rgba(0,0,0,0.4);
+	transform:translateY(-15px);
 }
 
 #search {
@@ -110,6 +112,7 @@ body{
 
 #atom{
 	transition: all 0.4s ease-in-out 0s;
+	width: 60%;
 }
 
 #atom:hover{
@@ -118,10 +121,99 @@ body{
 	 transform-origin: 50% 50%;
 }
 
+#contact{
+	display:flex;
+	width:300px;
+	justify-content: space-around;
+	margin-left:65px;
+}
+
+#contact span{
+	font-size:30px;
+	color:rgba(0,0,0,0.8);
+	transition: transform ease-in-out 0.5s;
+}
+
+#contact span:hover{
+	transform: translateY(-15px);
+	cursor:pointer;
+}
+
+#contact a{
+	color:rgba(0,0,0,0.8);
+	text-decoration: none;
+}
 
 
+/***************************** ADMIN *********************/
 
+.panel {
+	display:flex;
+}
+.sidebar{
+	margin-top:50px;
+	display:flex;
+	flex-direction: column;
+	width:140px;
+	border-right: solid 1px black;
+}
 
+.sidebar a{
+	padding-top:10px;
+	cursor:pointer;
+}
+
+.sidebar a:hover{
+	text-decoration: underline;
+}
+
+.editor{
+	margin-left:30px;
+	width:50%;
+	min-width:300px;
+}
+
+#blog input{
+	font-size:15px;
+	height:25px;
+	outline:none;
+	width:80%;
+	min-width:300px;
+	font-size:15px;
+}
+
+#stuff{
+	width:140%;
+	height:400px;
+	outline:none;
+	font-size:15px;
+	padding:10px;
+	border: 1px black solid;
+}
+
+.input{
+	margin-top:10px;
+	outline:none;
+}
+
+#btn-publish{
+	padding:7px 13px;
+	font-size:15px;
+	font-weight:400;
+	border: solid 1.5px rgba(0,0,0,0.85);
+	outline:none;
+	transition: background-color 0.5s ease-in-out;
+	border-radius: 30px;
+	margin-top:20px;
+	background-color:rgba(0,0,0,0.85);
+	color:white;
+}
+
+#btn-publish:hover{
+	cursor:pointer;
+	color:black;
+	background-color:white;
+}
 
 
 

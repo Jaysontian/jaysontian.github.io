@@ -3,27 +3,37 @@
 <head>
 	<title>Jayson Tian </title>
 	<link rel="stylesheet" href="main.css">
+	<script src="https://kit.fontawesome.com/e8c8e8e543.js"></script>
 	<script
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous">
 	</script>
-	<script> 
-	$(function(){
-	  $("#header").load("header.html");  
-	});
-	</script> 
+
 </head>
 <body>
 	<div class='padding'>
-		<div id="header"></div>
+		<div id='navbar'>
+			<a onclick="window.location.assign('index.html')" class='selected'> About </a>
+			<a onclick="window.location.assign('projects.html')"> Projects </a>
+			<a onclick="window.location.assign('blog.html')"> Blog </a>
+			<a onclick="window.location.assign('randomfacts.html')"> Random Facts </a>
+			<a> <input autocomplete="off" placeholder="Search" id='search'> </a>
+		</div>
 		<div id='about'>
 			<div id='bio'>
 				<h3>👋  Howdy, I'm Jayson. </h3><br>
-				<p> Most of the time I'm occupied downloading info onto a hard drive called my brain. <br><br>When there's a bad connection, I am playing volleyball, creating music (mostly EDM, Rap, and Piano Ballads), watching a whole lot of anime and netflix, sleeping (never gets enough though), and coding shtuffs like websites and designing things.</p>
-
+				<p> Most of the time I'm occupied downloading info onto a hard drive called my brain. <br><br>While downloading, I am playing volleyball, creating music (mostly EDM, Rap, and Piano Ballads), watching a whole lot of anime and netflix, sleeping (never gets enough though), and coding shtuffs like websites and designing things.</p>
 			</div>
-			<div class='image'><img id='atom' src='sketch.png'></div>
+			<div class='image'><img id='atom' src='sketch3.jpg'></div>
+		</div>
+		<div id='contact'>
+			<span><a class="fab fa-instagram" href='https://www.instagram.com/jaezun/?hl=en'></a></span>
+			<span><a class="fab fa-github" href='https://github.com/Jaysontian'></a></span>
+			<span><a class="fab fa-soundcloud" href='https://soundcloud.com/picxight-productions'></a></span>
+			<span><i class="fab fa-discord" onclick='alert("Sorry, link isn&#39t there.")'></i></span>
+			<span><i class="fas fa-envelope-square" onclick='alert("Sorry, link isn&#39t there.")'></i></span>
+			
 		</div>
 	</div>
 	
