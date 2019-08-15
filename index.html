@@ -5,35 +5,96 @@
 	<link rel="stylesheet" href="main.css">
 	<script src="https://kit.fontawesome.com/e8c8e8e543.js"></script>
 	<script
-    src="https://code.jquery.com/jquery-3.3.1.js"
+	src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous">
 	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script>$(window).scroll(function() {     
+    var scroll = $(window).scrollTop();
+    if (scroll > 0) {
+        $("#navbar").addClass("active");
+    }
+    else {
+        $("#navbar").removeClass("active");
+    }
+	});</script>
 
 </head>
 <body>
 	<div class='padding'>
 		<div id='navbar'>
-			<a onclick="window.location.assign('index.html')" class='selected'> About </a>
-			<a onclick="window.location.assign('projects.html')"> Projects </a>
-			<a onclick="window.location.assign('blog.html')"> Blog </a>
-			<a onclick="window.location.assign('randomfacts.html')"> Random Facts </a>
-			<a> <input autocomplete="off" placeholder="Search" id='search'> </a>
-		</div>
-		<div id='about'>
-			<div id='bio'>
-				<h3>👋  Howdy, I'm Jayson. </h3><br>
-				<p> Most of the time I'm occupied downloading info onto a hard drive called my brain. <br><br>While downloading, I am playing volleyball, creating music (mostly EDM, Rap, and Piano Ballads), watching a whole lot of anime and netflix, sleeping (never gets enough though), and coding shtuffs like websites and designing things.</p>
+			<div id='navcon'>
+				<a id='logo' style='font-size:24px; margin-right:10px'>🔬 </a>
+				<a id='logo'> Jayson Tian</a>
+				<div id='right'>
+					<a onclick="window.location.assign('index.html')" class='hover'> About </a>
+					<a onclick="window.location.assign('projects.html')" class='hover'> Projects </a>
+					<a onclick="window.location.assign('blog.html')" class='hover'> Notebook </a>
+					<!-- <a> <input autocomplete="off" placeholder="Search" id='search'> </a> -->
+				</div>
 			</div>
-			<div class='image'><img id='atom' src='sketch3.jpg'></div>
 		</div>
-		<div id='contact'>
-			<span><a class="fab fa-instagram" href='https://www.instagram.com/jaezun/?hl=en'></a></span>
-			<span><a class="fab fa-github" href='https://github.com/Jaysontian'></a></span>
-			<span><a class="fab fa-soundcloud" href='https://soundcloud.com/picxight-productions'></a></span>
-			<span><i class="fab fa-discord" onclick='alert("Sorry, link isn&#39t there.")'></i></span>
-			<span><i class="fas fa-envelope-square" onclick='alert("Sorry, link isn&#39t there.")'></i></span>
-			
+
+		<div class='main-content'>
+			<div id='lead'>
+				<a href=''><img id='icon' src='sketch.jpg'></a>
+				<div id='bio'>
+					<h3>Howdy, I'm Jayson 👋 </h3><br>
+					<p> I'm a high school student who's concerned about the death and regeneration of my brain cells. When distracted, I'm either playing volleyball, creating <a href='https://soundcloud.com/picxight-productions'>music</a>, drawing digitally, reading some biology articles on <a href='https://www.sciencedaily.com/'>ScienceDaily</a>, or coding and designing some programs & websites. You can learn more about me below:</p>
+				</div>
+				<div id='contact'>
+					<button class='btn' title='review my code!' onclick="window.location.assign('https://github.com/Jaysontian')"> <i class="fab fa-github"></i>  Github</button>
+					<button class='btn' title='review my code!' onclick="window.location.assign('https://github.com/Jaysontian')"> <i class="far fa-comment-alt"></i>  Notes and Blog</button>
+					
+				</div>
+			</div>
+
+			<div id='facts'>
+				<h3>Random Facts 🔮 </h3>
+				<p>Here's a random fact generator assembled through the collection of information from random experiences I've had in the past few years.</p>
+				<button class='btn2'>Generate Random Fact</button>
+			</div>
+
+			<section class='projects-con'>
+				<h3>Recent Projects 📁</h3>
+				<section>
+					<div class='project'>
+						<h4>📝 Notelog</h4>
+						<p>A minimalistic markdown based notetaking software made with electron and Angular JS. </p>
+						<button class='btn3'>Site</button> <a class="fab fa-github"></a> </button>
+					</div>
+
+					<div class='project'>
+						<h4>🌲 Forestry Kids</h4>
+						<p>Kids informative website made with focus on CSS floats, animation, and responsiveness. </p>
+						<button class='btn3'>Site</button> <a class="fab fa-github"></a> </button>
+					</div>
+
+					<div class='project'>
+						<h4>🎮 Memoir </h4>
+						<p>A mini 2D RPG adventure made using Unity 2D and C# code. </p>
+						<button class='btn3'>Site</button> <a class="fab fa-itch-io"></a> </button>
+					</div>
+
+					<div class='project'>
+						<h4>🔑 BunkerGame </h4>
+						<p>Incremental game and online chatroom made w/ JS and Firebase Authentication + Database. </p>
+						<button class='btn3'>Site</button> <a class="fab fa-github"></a> </button>
+					</div>
+				</section>
+			</section>
+
+			<section id='social'>
+				<h3>Get In Touch 🤙</h3>
+				<p>Feel free to annoy me anytime via the following accounts:</p>
+				<button class='btn2' title='slide into my DMs!' onclick="window.location.assign('https://www.instagram.com/jaezun/?hl=en')"> <i class="fab fa-instagram"></i>  Instagram</button>
+				<button class='btn2' title='review my code!' onclick="window.location.assign('https://github.com/Jaysontian')"> <i class="fab fa-github"></i>  Github</button>
+				<button class='btn2' title='listen to some of my dope tracks!'onclick="window.location.assign('https://soundcloud.com/picxight-productions')"> <i class="fab fa-soundcloud"></i>  Soundcloud</button>
+				<button class='btn2' title='listen to some of my dope tracks!'onclick="window.location.assign('https://soundcloud.com/picxight-productions')"> <i class="fas fa-envelope"></i>  Email</button>
+			</section>
+
 		</div>
 	</div>
 	
