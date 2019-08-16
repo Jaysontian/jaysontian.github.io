@@ -19,6 +19,14 @@ body{
 	font-size:15px;
 	color:rgba(0,0,0,0.8);
 	margin-bottom:100px;
+		-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+                                  
 }
 
 a{
@@ -435,8 +443,8 @@ a{
 .article{
 	border-top: 2px solid rgba(0,0,0,0.65);
 	cursor:pointer;
+	max-height: 100px;
 	transition:all 0.4s ease-in-out;
-	padding-bottom:10px;
 	overflow: hidden;
 }
 
@@ -473,7 +481,33 @@ a{
 
 
 #article-container{
+
 	display:none;
 	margin-top:150px;
 }
+
+
+.article-title{
+	font-size:38px;
+	padding-top:40px;
+	margin-bottom:40px;
+}
+
+.article-date{
+	padding-bottom:10px;
+	color:rgba(0,0,0,0.55);
+}
+
+.article-body{
+	max-width:600px;
+	margin-top:80px;
+}
+
+.article-body p{
+	font-family:Inter var;
+	line-height: 25px;
+}
+
+
+
 
