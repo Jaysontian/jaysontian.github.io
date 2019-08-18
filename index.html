@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
 
 
 </head>
@@ -17,8 +18,8 @@
 				<a id='logo' onclick='display_home()'>🔬 </a>
 				<a id='logo-text' onclick='display_home()'> Jayson Tian</a>
 				<div id='right'>
-					<a onclick="window.location.assign('index.html')" class='hover'> About </a>
-					<a onclick="window.location.assign('projects.html')" class='hover'> Projects </a>
+					<a onclick="display_article('😎 Yo. This is Jayson.')" class='hover'> About </a>
+					<a onclick="display_project()" class='hover'> Projects </a>
 					<a onclick='display_notebook()' class='hover'> Notebook </a>
 					<!-- <a> <input autocomplete="off" placeholder="Search" id='search'> </a> -->
 				</div>
@@ -35,15 +36,18 @@
 					</div>
 					<div id='contact'>
 						<button class='btn' title='review my code!' onclick="window.location.assign('https://github.com/Jaysontian')"> <i class="fab fa-github"></i>  Github</button>
-						<button class='btn' title='review my code!' onclick="window.location.assign('https://github.com/Jaysontian')"> <i class="far fa-comment-alt"></i>  Notes and Blog</button>
+						<button class='btn' title='review my code!' onclick="display_notebook()"> <i class="far fa-comment-alt"></i>  Notes and Blog</button>
 						
 					</div>
 				</div>
 
 				<div id='facts'>
-					<h3>Random Facts 🔮 </h3>
-					<p>Here's a random fact generator assembled through the collection of information from random experiences I've had in the past few years.</p>
-					<button class='btn2'>Generate Random Fact</button>
+					<h3>Honestly Facts 🔮 </h3>
+					<p>Here's a random fact generator that I assembled through the collection of information from random experiences I've had in the past few years.</p>
+					<div id='fact-flex'>
+						<button class='btn5' onclick='newfact()'>Generate Random Fact</button>
+						<p id='fact'></p>
+					</div>
 				</div>
 
 				<section class='projects-con'>
@@ -52,25 +56,25 @@
 						<div class='project'>
 							<h4>📝 Notelog</h4>
 							<p>A minimalistic markdown based notetaking software made with electron and Angular JS. </p>
-							<button class='btn3'>Site</button> <a class="fab fa-github"></a> </button>
+							<button onclick="display_project_page('📝 Notelog')" class='btn3'>Site</button> <a class="fab fa-github"></a> </button>
 						</div>
 
 						<div class='project'>
 							<h4>🌲 Forestry Kids</h4>
 							<p>Kids informative website made with focus on CSS floats, animation, and responsiveness. </p>
-							<button class='btn3'>Site</button> <a class="fab fa-github"></a> </button>
+							<button onclick="display_project_page('🌲 Forestry Kids')" class='btn3'>Site</button> <a class="fab fa-github"></a> </button>
 						</div>
 
 						<div class='project'>
 							<h4>🎮 Memoir </h4>
 							<p>A mini 2D RPG adventure made using Unity 2D and C# code. </p>
-							<button class='btn3'>Site</button> <a class="fab fa-itch-io"></a> </button>
+							<button onclick="display_project_page('🔮 Memoir')" class='btn3'>Site</button> <a class="fab fa-itch-io"></a> </button>
 						</div>
 
 						<div class='project'>
 							<h4>🔑 BunkerGame </h4>
 							<p>Incremental game and online chatroom made w/ JS and Firebase Authentication + Database. </p>
-							<button class='btn3'>Site</button> <a class="fab fa-github"></a> </button>
+							<button onclick="display_project_page('🔑 Bunkergame')" class='btn3'>Site</button> <a class="fab fa-github"></a> </button>
 						</div>
 					</section>
 				</section>
@@ -101,6 +105,21 @@
 			<div id='article-container'>
 				
 			</div>
+
+			<div id='container'>
+				<h3 class='header'>🗄 Projects</h3>
+				<p> Here are some things that I am working on: </p>
+				<div id='categories'>
+					<select id='projectfilter'>
+						<option>All </option>
+					</select>
+				</div>
+
+				<section class='projects'></section>
+			</div>
+
+			<div id='project-page'>
+
 		</div>
 	</div>
 

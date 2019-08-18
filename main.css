@@ -7,6 +7,7 @@ html { font-family: 'Inter', sans-serif; }
 
 
 
+
 h3{
 	font-size:20px;
 }
@@ -30,7 +31,6 @@ body{
 }
 
 a{
-	color:#0e407d;
 	text-decoration: none;
 }
 
@@ -80,7 +80,6 @@ a{
 }
 
 .hover{
-	color:rgba(0,0,0,0.85);
 	transition: transform 0.3s ease-in-out;
 	margin-left:15px;
 	padding: 12px;
@@ -88,21 +87,18 @@ a{
 
 .hover:hover{
 	transform:translateY(-10px);
-	color:rgba(0,0,0,0.6);
 }
 
 #logo{
 	font-size: 17px;
   	font-weight: bold;
   	padding:12px 0px;
-  	color:rgba(0,0,0,0.75);
   	transition: color 0.5s ease-in-out;
 }
 #logo-text{
 	font-size: 17px;
   	font-weight: bold;
   	padding:12px 0px;
-  	color:rgba(0,0,0,0.75);
   	transition: color 0.5s ease-in-out;
 }
 #logo-text:hover{
@@ -113,28 +109,7 @@ a{
 	float:right;
 }
 
-#search {
-	padding: 12px;
-	margin-left:15px;
-	font-family:Inter var;
-	border:none;
-	outline:none;
-	font-size:11pt;
-	color:rgba(0,0,0,1);
-	width:50px;
-	cursor:text;
-	padding-bottom:13px;
-	transition: width 0.5s ease-in-out;
-}
 
-#search:hover{
-	border-bottom: 2px solid rgba(0,0,0,0.4);
-}
-
-#search:focus{
-	width:130px;
-	border-bottom: 2px solid rgba(0,0,0,0.4);
-}
 
 
 /************************************** ABOUT ********************************/
@@ -186,6 +161,13 @@ a{
 	color:white;
 }
 
+#fact {
+	margin-left:20px;
+	text-align:center;
+	max-width:90%;
+	font-family:Indie Flower;
+	font-size:22px;
+}
 .btn2{
 	outline:none;
 	margin-right:13px;
@@ -202,6 +184,31 @@ a{
 	margin-right:7px;
 }
 .btn2:hover{
+	background-color: white;
+	border: rgba(0,0,0,0.85) 1.5px solid;
+	color:rgba(0,0,0,0.85);
+}
+
+.btn5{
+	min-width:210px;
+	max-width: 210px;
+	max-height:53px;
+	min-height:53px;
+	outline:none;
+	margin-right:13px;
+	color:white;
+	padding: 11px 15px;
+	border: white 1.5px solid;
+	border-radius:5px;
+	font-size:15px;
+	cursor:pointer;
+	background-color: rgba(0,0,0,0.85);
+	transition: all 0.4s ease-in-out;
+}
+.btn5 i{
+	margin-right:7px;
+}
+.btn5:hover{
 	background-color: white;
 	border: rgba(0,0,0,0.85) 1.5px solid;
 	color:rgba(0,0,0,0.85);
@@ -240,6 +247,8 @@ a{
 	padding-bottom:20px;
 	color:white;
 }
+
+
 
 .project {
 	display:flex;
@@ -376,9 +385,15 @@ a{
 	background-color:white;
 }
 
-
+#fact-flex{
+	display:flex;
+}
 
 @media screen and (max-width: 800px){
+
+	#fact-flex{
+		display:block;
+	}
 
 	.padding{
 		padding:30px;
@@ -420,7 +435,7 @@ a{
 	font-size:30px;
 }
 
-#categories select{
+#sorting{
 	width:100px;
 	text-align: center;
 	height:35px;
@@ -438,10 +453,11 @@ a{
 
 #articles{
 	margin-top:30px;
+	border-bottom: 2px solid rgba(0,0,0,0.35);
 }
 
 .article{
-	border-top: 2px solid rgba(0,0,0,0.65);
+	border-top: 2px solid rgba(0,0,0,0.35);
 	cursor:pointer;
 	max-height: 100px;
 	transition:all 0.4s ease-in-out;
@@ -467,7 +483,7 @@ a{
 }
 
 .article h3{
-	width:50%;
+	width:70%;
 	float:left;
 }
 
@@ -491,6 +507,7 @@ a{
 	font-size:38px;
 	padding-top:40px;
 	margin-bottom:40px;
+	line-height:50px;
 }
 
 .article-date{
@@ -499,15 +516,106 @@ a{
 }
 
 .article-body{
-	max-width:600px;
+	max-width:650px;
 	margin-top:80px;
 }
 
-.article-body p{
+.article-body p, div{
 	font-family:Inter var;
-	line-height: 25px;
+	line-height: 27px;
+}
+
+.article-body pre{
+	background-color:rgba(0,0,0,0.8);
+	border-radius:10px;
+	padding:15px;
+	color:white;
+}
+
+.article-body h3{
+	margin-bottom:20px;
 }
 
 
+
+
+
+
+
+
+
+/* ************************************************************ Projects **************************************************/
+
+#container{
+	display:none;
+	margin-top:150px;
+}
+
+
+.projects{
+	background-color: rgba(0,0,0,0.85);
+	max-width: 750px;
+	margin-top:60px;
+	padding:10px 35px;
+	border:2px solid rgba(0,0,0,0.6);
+	border-radius:5px;
+	padding-bottom:20px;
+	color:white;
+}
+
+
+#projectfilter{
+	width:100px;
+	text-align: center;
+	height:35px;
+	outline:none;
+	line-height: 0px;
+	color: rgba(0,0,0,0.85);
+	border: rgba(0,0,0,0.85) 1.5px solid;
+	border-radius:50px;
+	font-size:15px;
+	cursor:pointer;
+	background-color: rgba(0,0,0,0);
+	transition: all 0.4s ease-in-out;
+	margin-top:12px;
+}
+
+#project-page{
+	display:none;
+	margin-top:150px;
+}
+
+.project-title{
+	font-size:38px;
+	padding-top:40px;
+	margin-bottom:40px;
+	line-height:50px;
+}
+
+.project-date{
+	padding-bottom:10px;
+	color:rgba(0,0,0,0.55);
+}
+
+.project-body{
+	max-width:100%;
+	margin-top:80px;
+}
+
+.project-body p, div{
+	font-family:Inter var;
+	line-height: 27px;
+}
+
+.project-body pre{
+	background-color:rgba(0,0,0,0.8);
+	border-radius:10px;
+	padding:15px;
+	color:white;
+}
+
+.project-body h3{
+	margin-bottom:20px;
+}
 
 
