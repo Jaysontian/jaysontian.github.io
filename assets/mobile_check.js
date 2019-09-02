@@ -5,5 +5,5 @@ if( navigator.userAgent.match(/Android/i)
  || navigator.userAgent.match(/iPod/i)
  || navigator.userAgent.match(/BlackBerry/i)
  || navigator.userAgent.match(/Windows Phone/i)){
-	window.location.assign('mobile.html');
+	window.location.assign('jaysontian.github.io/assets/mobile.html');
  }
