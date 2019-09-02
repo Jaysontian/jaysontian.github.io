@@ -1,1 +1,342 @@
-$(window).scroll(function(){$(window).scrollTop()>0?$("#navbar").addClass("active"):$("#navbar").removeClass("active")});var firebaseConfig={apiKey:"AIzaSyBpmB_S3_Af0dxjlQr5Vv7VcWcgnNtFM4k",authDomain:"jayson-tian.firebaseapp.com",databaseURL:"https://jayson-tian.firebaseio.com",projectId:"jayson-tian",storageBucket:"jayson-tian.appspot.com",messagingSenderId:"248992686521",appId:"1:248992686521:web:b037d9f7b3c36f2f"};firebase.initializeApp(firebaseConfig);var firestore=firebase.firestore();const docRef=firestore.collection("Notebook"),projRef=firestore.collection("Projects");function clear(){document.body.scrollTop=0,document.documentElement.scrollTop=0,$("#home").css("display","none"),$("#notebook").css("display","none"),$("#article-container").css("display","none"),$("#article-container").empty(),$("#container").css("display","none"),$("#project-page").css("display","none"),$("#project-page").empty()}function display_home(){clear(),$("#home").css("display","block")}function display_project(){clear(),$("#container").css("display","block")}function display_home(){clear(),$("#home").css("display","block")}function display_notebook(){clear(),$("#notebook").css("display","block")}function display_article(e){clear(),$("#article-container").css("display","block"),docRef.doc(e).get().then(function(e){if(e.exists){console.log("Document data:",e.data());let t=document.createElement("div"),a=document.createElement("h1"),n=document.createElement("I"),o=document.createElement("div"),i=document.createElement("p");a.textContent=e.data().title,o.innerHTML=e.data().body,n.textContent=e.data().date+" | Written by "+e.data().author,i.textContent=e.data().category,a.setAttribute("class","article-title"),n.setAttribute("class","article-date"),i.setAttribute("class","article-tag"),o.setAttribute("class","article-body"),t.appendChild(a),t.appendChild(n),t.appendChild(o),$("#article-container").append(t)}else console.log("No such document!")}).catch(function(e){console.log("Error getting document:",e)})}function display_project_page(e){clear(),$("#project-page").css("display","block"),projRef.doc(e).get().then(function(e){if(e.exists){console.log("Document data:",e.data());let t=document.createElement("div"),a=document.createElement("div");a.innerHTML=e.data().body,a.setAttribute("class","project-body"),t.appendChild(a),$("#project-page").append(t)}else console.log("No such document!")}).catch(function(e){console.log("Error getting document:",e)})}var i;function appendfilter(){docRef.onSnapshot(function(e){articles.textContent="",e.docs.forEach(function(e){null!=e.data().category&&""!=e.data().category&&$("#sorting").append($("<option>",{text:e.data().category,value:e.data().category}))});var t=new Array;$("#sorting").children("option").each(function(e){for(test=!1,b=t[e]=$(this).val(),i=0;i<t.length-1;i++)b==t[i]&&(test=!0);test&&$(this).remove()})}),projRef.onSnapshot(function(e){e.docs.forEach(function(e){null!=e.data().category&&""!=e.data().category&&$("#projectfilter").append($("<option>",{text:e.data().category,value:e.data().category}))});var t=new Array;$("#projectfilter").children("option").each(function(e){for(test=!1,b=t[e]=$(this).val(),i=0;i<t.length-1;i++)b==t[i]&&(test=!0);test&&$(this).remove()})})}function updatearticles(e){var t,a=document.getElementById("articles").children;for(t=0;t<a.length;t++)a[t].getAttribute("tag")!=e&&(a[t].style.display="none"),a[t].getAttribute("tag")==e&&(a[t].style.display="block"),"All"==e&&(a[t].style.display="block")}function updateprojects(e){var t,a=$(".project").siblings();for(t=0;t<a.length;t++)a[t].getAttribute("tag")!=e&&(a[t].style.display="none"),a[t].getAttribute("tag")==e&&(a[t].style.display="flex"),"All"==e&&(a[t].style.display="flex")}appendfilter(),$("#sorting").on("change",function(){updatearticles(this.value)}),$("#projectfilter").on("change",function(){updateprojects(this.value)});const articles=document.querySelector("#articles");function render(e){let t=document.createElement("div"),a=document.createElement("div");a.setAttribute("class","title-date"),t.setAttribute("class","article");let n=document.createElement("h3"),o=document.createElement("I");t.setAttribute("article",e.id),t.setAttribute("tag",e.data().category),t.setAttribute("onclick","display_article('"+e.id+"')"),n.textContent=e.data().title,o.textContent=e.data().date,a.appendChild(n),a.appendChild(o),t.appendChild(a),articles.appendChild(t)}function render_project(e){let t=document.createElement("div");t.setAttribute("class","project");let a=document.createElement("h4"),n=document.createElement("p"),o=document.createElement("button");t.setAttribute("project",e.id),t.setAttribute("tag",e.data().category),o.setAttribute("class","btn3"),o.setAttribute("onclick","display_project_page('"+e.id+"')"),a.textContent=e.data().title,n.textContent=e.data().description,o.textContent="View",t.appendChild(a),t.appendChild(n),t.appendChild(o),$(".projects").append(t)}function update(){docRef.onSnapshot(function(e){articles.textContent="",e.docs.forEach(function(e){render(e)})}),projRef.onSnapshot(function(e){$(".projects").empty(),e.docs.forEach(function(e){render_project(e)})})}function newfact(){document.getElementById("fact").innerHTML='"Apparently, '+facts[i]+'"',++i==facts.length&&(i=0)}update(),facts=["in 2007, an American man named Corey Taylor tried to fake his own death in order to get out of his cell phone contract without paying a fee. It didn't work.","in 1567, the man said to have the longest beard in the world died after he tripped over his beard running away from a fire.","in 2008 scientists discovered a new species of bacteria that lives in hairspray.","animals can be allergic to humans.","most of your brain is fat.","oranges are not a natural fruit. Also, the OG bananas had gigantic seeds in them.","Queen Elizabeth is a trained car mechanic.","hot water freezes faster than cold water.","dolphins have names for each other.","hullaballoo is a legit english word - it means an altercation / dispute.","sea otters hold hands as they sleep","toilets flush in the note E flat.","about fourty thousand people are injured by toilets every year.","ketchup was once sold as medicine.","no piece of square paper can be folded more than 7 times in half.","Minnie Mouses' name is a nickname. Her official name is Minerva.","Burger King apparently gives out marinara sauce packets. I dont know why that's so amusing to me.","the worlds oldest tortoise is twice the age of Queen Elizabeth.","your hearing is affected by the amount of food you eat.","crocs swallow rocks to help them dive deeper"],i=0;
+  
+
+
+// EDITOR 
+
+
+var oDoc, sDefTxt;
+
+function showtools(){
+	$("#tools").fadeToggle();
+}
+
+$(document).keypress(function(event){
+
+  	if (event.which == 26){
+  		$("#tools").fadeToggle();
+  	}
+
+});
+
+$(document).mouseup(function(e)
+{
+    var container = $("#tools");
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    {
+        container.fadeOut();
+    }
+});
+
+
+document.execCommand('enableObjectResizing');
+
+
+function insertimage() {
+	var sLnk=prompt('Source:');
+	if(sLnk&&sLnk!=''&&sLnk!='http://'){
+		formatDoc('insertImage',sLnk)};
+}
+
+function initDoc() {
+  oDoc = document.getElementById("body");
+  sDefTxt = oDoc.innerHTML;
+  if (document.compForm.switchMode.checked) { setDocMode(true); }
+}
+
+function formatDoc(sCmd, sValue) {
+  if (validateMode()) { document.execCommand(sCmd, false, sValue); oDoc.focus(); }
+}
+
+function validateMode() {
+  if (!document.compForm.switchMode.checked) { return true ; }
+  alert("Uncheck \"Show HTML\".");
+  oDoc.focus();
+  return false;
+}
+
+function setDocMode(bToSource) {
+  var oContent;
+  if (bToSource) {
+    oContent = document.createTextNode(oDoc.innerHTML);
+    oDoc.innerHTML = "";
+    var oPre = document.createElement("pre");
+    oDoc.contentEditable = false;
+    oPre.id = "sourceText";
+    oPre.contentEditable = true;
+    oPre.appendChild(oContent);
+    oDoc.appendChild(oPre);
+    document.execCommand("defaultParagraphSeparator", false, "div");
+  } else {
+    if (document.all) {
+      oDoc.innerHTML = oDoc.innerText;
+    } else {
+      oContent = document.createRange();
+      oContent.selectNodeContents(oDoc.firstChild);
+      oDoc.innerHTML = oContent.toString();
+    }
+    oDoc.contentEditable = true;
+  }
+  oDoc.focus();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// FIRESTORE
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyBpmB_S3_Af0dxjlQr5Vv7VcWcgnNtFM4k",
+    authDomain: "jayson-tian.firebaseapp.com",
+    databaseURL: "https://jayson-tian.firebaseio.com",
+    projectId: "jayson-tian",
+    storageBucket: "jayson-tian.appspot.com",
+    messagingSenderId: "248992686521",
+    appId: "1:248992686521:web:b037d9f7b3c36f2f"
+  };
+  firebase.initializeApp(firebaseConfig);
+
+  
+var username = $('#username');
+var password = $('#password');
+var btnlogin = $('#login-btn');
+
+
+$("#login-btn").on("click", function(){ 
+	const email = username.val();
+	const pass = password.val();
+	const auth = firebase.auth();
+	const promise = auth.signInWithEmailAndPassword(email, pass);
+	promise.catch(e => console.log(e.message));
+});
+
+
+firebase.auth().onAuthStateChanged(function(user) {
+	var btnlogin = $('#display-login');
+	var btnlogout = $('#logout')
+
+  if (user) {
+  	btnlogin.css('display','none');
+  	btnlogout.css('display','block');
+    alert('Successfully signed in.'); 
+    realtime();
+    $('#id01').css('display','none');
+  } else {
+  	newarticle();
+  	btnlogin.css('display','block');
+  	btnlogout.css('display','none');
+    alert('Logged out. Please sign in to publish and access articles.');
+  }
+});
+
+function logout(){
+	firebase.auth().signOut().then(function() {
+
+	}).catch(function(error) {
+	  // An error happened.
+	});
+}
+
+
+
+  var firestore = firebase.firestore();
+  var docRef = firestore.collection($('#select-collection').val());
+
+$('#select-collection').change(function(){
+	docRef = firestore.collection($('#select-collection').val());
+	newarticle();
+	if ($('#select-collection').val() == 'Notebook'){
+		$('#description').css('display','none');
+	};
+	if ($('#select-collection').val() == 'Projects'){
+		$('#description').css('display','block');
+	};
+})  
+
+
+function hi(){
+
+	if ($('#title').val() == '' || $('#title').val() == undefined) {
+		alert("There is not title!");
+		return;
+	}
+
+	//Recording Date (Timestamp)
+	var monthNames = [ "January", "February", "March", "April", "May", "June", 
+                       "July", "August", "September", "October", "November", "December" ];
+	var dateObj = new Date();
+	newdate = monthNames[dateObj.getUTCMonth()] + '  ' + dateObj.getUTCDate() + ', ' + dateObj.getUTCFullYear();
+
+	//Adding to firestore
+
+  	docRef.doc($('#title').val()).set({
+    title: $('#title').val(),
+    body: document.getElementById('body').innerHTML,
+    author: "Jayson Tian",
+    timestamp: Date.now(),
+    category: $('#tag').val(),
+    description: $('#description').val(),
+    date: newdate
+	})
+
+	.then(function(docRef) {
+	    console.log("Published sucessfully!");
+	    newarticle();
+	})
+	.catch(function(error) {
+	    console.error("Error adding document: ", error);
+	});
+}
+
+
+
+
+
+
+
+const articles = document.querySelector('#articles');
+
+function render(doc){
+
+	let div = document.createElement('div');
+	div.setAttribute("class", "article");
+
+	let title = document.createElement('h3');
+	let date = document.createElement('I');
+
+	div.setAttribute('article', doc.id);
+	div.setAttribute('onclick', 'showarticle(\''+ doc.id+'\')');
+
+	title.textContent = doc.data().title;
+	date.textContent = doc.data().date;
+
+	div.appendChild(title);
+	div.appendChild(date);
+
+
+
+	articles.appendChild(div);
+
+}
+
+function load(){
+	articles.textContent = '';
+
+	docRef.get().then(function(querySnapshot) {
+    	querySnapshot.docs.forEach(function(doc) {
+        	render(doc);
+    });
+});}
+
+
+function realtime(){
+	articles.textContent = '';
+
+	docRef.onSnapshot(function(querySnapshot) {
+		articles.textContent = '';
+    	querySnapshot.docs.forEach(function(doc) {
+        	render(doc);
+    });
+});}
+
+
+
+
+
+
+
+
+
+const page = document.querySelector('#page');
+
+function showarticle(docId){
+	docRef.doc(docId).get().then(function(doc){
+		if (doc.exists) {
+	        console.log("Document data:", doc.data());
+
+	        var titleedit = document.getElementById('title');
+	        var bodyedit = document.getElementById('body');
+	        var tagedit = document.getElementById('tag');
+	        var descedit = document.getElementById('description');
+
+
+			titleedit.value = doc.data().title;
+			bodyedit.innerHTML = doc.data().body;
+			tagedit.value = doc.data().category;
+			descedit.value = doc.data().description;
+
+	    } else {
+	        // doc.data() will be undefined in this case
+	        console.log("No such document!");
+	    }
+	}).catch(function(error) {
+	    console.log("Error getting document:", error);
+	});
+}
+
+
+function newarticle(){
+	$('#title').val('');
+	$('#body').text('');
+	$('#tag').val('');
+	$('#description').val('');
+	load();
+}
+
+
+function deletearticle(){
+
+	var docId = $('#title').val();
+
+	var r = confirm("Article will be deleted forever. Are you sure?");
+			if (r == true) {
+			  docRef.doc(docId).delete().then(function() {			
+				newarticle();
+		    	console.log("Document successfully deleted!");
+		}).catch(function(error) {
+		    alert('There was an error. Check logs for more info.')
+		});
+		}
+		else {
+			  return;
+			}
+	} 
+
+var open = -1;
+
+function toggleNav(){
+	if (open == -1){
+		document.getElementById("articles").style.marginLeft = "0px";
+  		document.getElementById("padding").style.paddingLeft = "250px";
+  		open *= -1;
+  		return;
+	}
+	if (open == 1){
+		document.getElementById("articles").style.marginLeft = "-250px";
+  		document.getElementById("padding").style.paddingLeft = "0px";
+  		open *= -1;
+  		return;
+	}
+}
+
+
+
+	

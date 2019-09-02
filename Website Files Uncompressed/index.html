@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jayson Tian </title>
+	<script src='assets/mobile_check.js'></script>
+	<link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/e8c8e8e543.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+	<div class='padding'>
+		<div id='navbar'>
+			<div id='navcon'>
+				<a id='logo' onclick='display_home()'> <img src='images/icon_atom.png'></img> </a>
+				<a id='logo-text' onclick='display_home()'> Jayson Tian</a>
+				<div id='right'>
+					<a onclick="display_article('😎 Yo. This is Jayson.')" class='hover'> About </a>
+					<a onclick="display_project()" class='hover'> Projects </a>
+					<a onclick='display_notebook()' class='hover'> Notebook </a>
+					<!-- <a> <input autocomplete="off" placeholder="Search" id='search'> </a> -->
+				</div>
+			</div>
+		</div>
+
+		<div class='main-content'>
+			<div id='home'>
+				<div id='lead'>
+					<a href=''>
+						<?xml version="1.0" encoding="UTF-8"?>
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200px" height="200px" viewBox="0 0 500 500" version="1.1">
+						<g id="surface149632">
+						<path class='path' fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M 160.820312 40.15625 C 155.3125 40.546875 149.921875 41.953125 145 44.453125 C 134.765625 49.6875 128.28125 59.492188 124.648438 70.820312 C 120.976562 82.148438 119.726562 95.390625 120 110.15625 C 120.3125 127.65625 122.96875 147.421875 127.265625 168.085938 C 110.820312 171.171875 95.742188 175.117188 82.382812 179.84375 C 64.53125 186.132812 49.6875 193.789062 38.632812 203.242188 C 27.578125 212.65625 20.078125 224.492188 19.375 237.929688 C 18.632812 251.875 26.445312 264.21875 36.953125 274.53125 C 47.5 284.804688 61.367188 293.476562 76.367188 299.335938 C 79.726562 300.703125 83.515625 300.15625 86.367188 297.890625 C 89.179688 295.664062 90.585938 292.070312 90.039062 288.476562 C 89.453125 284.921875 87.03125 281.953125 83.632812 280.664062 C 71.054688 275.78125 59.101562 268.242188 50.9375 260.234375 C 42.8125 252.226562 39.0625 244.179688 39.375 238.945312 C 39.726562 232.226562 43.320312 225.507812 51.640625 218.4375 C 59.921875 211.328125 72.734375 204.414062 89.023438 198.710938 C 101.40625 194.335938 115.820312 190.585938 131.757812 187.65625 C 136.367188 205.820312 142.03125 224.375 148.710938 242.617188 C 116.445312 300.585938 99.335938 351.992188 100 390.15625 C 100.390625 413.632812 108.789062 432.96875 124.53125 443.203125 C 135.273438 450.15625 148.203125 452.773438 161.679688 450.039062 C 175.15625 447.304688 189.257812 439.960938 205.78125 428.125 C 208.789062 426.09375 210.429688 422.617188 210.117188 418.984375 C 209.804688 415.390625 207.539062 412.226562 204.257812 410.78125 C 200.9375 409.296875 197.109375 409.6875 194.21875 411.875 C 178.867188 422.773438 166.835938 428.59375 157.695312 430.46875 C 148.554688 432.304688 142.421875 430.976562 135.46875 426.40625 C 126.601562 420.664062 120.3125 408.867188 120 389.84375 C 119.492188 360.9375 132.421875 317.382812 158.28125 267.148438 C 161.640625 275.234375 165.15625 283.164062 168.867188 290.898438 C 195.546875 346.953125 229.140625 392.851562 261.875 422.8125 C 278.242188 437.773438 294.375 448.789062 309.921875 454.882812 C 325.46875 460.976562 341.132812 462.226562 354.335938 455.507812 L 354.882812 455.195312 L 355.390625 454.882812 C 366.601562 447.304688 373.554688 434.765625 377.34375 419.726562 C 381.09375 404.726562 381.914062 386.875 380.15625 366.757812 C 376.679688 326.5625 362.890625 277.304688 339.0625 225.78125 C 336.757812 220.78125 330.820312 218.59375 325.78125 220.9375 C 320.78125 223.242188 318.59375 229.179688 320.9375 234.21875 C 343.90625 283.945312 357.03125 331.484375 360.234375 368.515625 C 361.835938 387.03125 360.9375 402.890625 357.929688 414.84375 C 355 426.445312 350.234375 433.789062 344.6875 437.8125 C 338.085938 440.898438 329.179688 440.976562 317.226562 436.25 C 305.039062 431.445312 290.46875 421.835938 275.351562 408.007812 C 245.15625 380.390625 212.617188 336.25 186.875 282.304688 C 181.132812 270.15625 175.78125 257.304688 170.78125 244.21875 C 176.875 233.554688 183.320312 222.695312 190.507812 211.601562 C 197.65625 200.625 205 190.117188 212.5 180.15625 C 215 180.117188 217.5 180 220.039062 180 C 230.78125 179.960938 241.835938 180.273438 253.085938 180.859375 C 312.96875 183.984375 366.757812 195.46875 404.414062 211.171875 C 423.28125 219.023438 438.046875 227.96875 447.382812 236.796875 C 456.71875 245.625 460.351562 253.632812 460 261.015625 C 459.609375 267.773438 456.523438 274.335938 449.453125 281.210938 C 442.34375 288.085938 431.25 294.921875 416.40625 300.664062 C 412.929688 301.875 410.351562 304.84375 409.765625 308.476562 C 409.140625 312.109375 410.546875 315.78125 413.476562 318.046875 C 416.367188 320.273438 420.234375 320.78125 423.59375 319.335938 C 440.234375 312.851562 453.632812 305.039062 463.398438 295.585938 C 473.125 286.09375 479.296875 274.53125 479.960938 262.03125 C 480.703125 247.226562 473.085938 233.59375 461.09375 222.226562 C 449.140625 210.898438 432.460938 201.171875 412.148438 192.695312 C 371.445312 175.742188 315.898438 164.101562 254.101562 160.898438 C 245.351562 160.429688 236.796875 160.3125 228.242188 160.195312 C 244.726562 140.234375 261.523438 122.851562 277.65625 108.90625 C 306.445312 84.140625 333.515625 70.625 350.351562 70 L 350.390625 70 C 356.640625 69.765625 361.328125 71.015625 365.234375 73.515625 C 377.890625 81.757812 388.515625 103.828125 371.25 135.15625 C 369.335938 138.320312 369.296875 142.265625 371.171875 145.429688 C 373.007812 148.59375 376.445312 150.507812 380.117188 150.390625 C 383.789062 150.234375 387.109375 148.125 388.75 144.84375 C 409.84375 106.5625 398.476562 71.25 376.132812 56.757812 L 376.09375 56.757812 C 368.359375 51.71875 359.101562 49.648438 349.648438 50 L 349.609375 50 C 324.023438 50.976562 295.15625 67.460938 264.609375 93.75 C 244.023438 111.523438 222.851562 134.140625 202.5 160.351562 C 183.046875 160.976562 164.492188 162.5 147.1875 164.882812 C 142.929688 144.804688 140.273438 125.859375 140 109.84375 C 139.765625 96.445312 141.054688 85.078125 143.671875 76.953125 C 146.289062 68.867188 149.804688 64.492188 154.0625 62.304688 C 156.5625 61.054688 159.179688 60.3125 162.304688 60.078125 C 172.539062 59.296875 192.617188 70.273438 213.59375 87.695312 C 216.367188 90.039062 220.15625 90.703125 223.515625 89.453125 C 226.914062 88.242188 229.375 85.273438 229.960938 81.71875 C 230.546875 78.164062 229.179688 74.570312 226.40625 72.304688 C 204.296875 53.984375 183.085938 38.476562 160.820312 40.15625 Z M 187.070312 181.09375 C 182.578125 187.5 178.125 193.984375 173.75 200.742188 C 169.609375 207.109375 165.859375 213.398438 162.03125 219.6875 C 158.125 207.851562 154.765625 196.132812 151.757812 184.53125 C 163.007812 183.007812 174.804688 181.875 187.070312 181.09375 Z M 250 220 C 233.4375 220 220 233.4375 220 250 C 220 266.5625 233.4375 280 250 280 C 266.5625 280 280 266.5625 280 250 C 280 233.4375 266.5625 220 250 220 Z M 250 220 "/>
+						</g>
+						</svg>
+
+
+					</a>
+					<div id='bio'>
+						<h3>Howdy, I'm Jayson 👋 </h3><br>
+						<p> I'm a high school student who's concerned about the death and regeneration of my brain cells. When distracted, I'm either playing volleyball, creating <a href='https://soundcloud.com/picxight-productions'>music</a>, drawing digitally, reading some biology articles on <a href='https://www.sciencedaily.com/'>ScienceDaily</a>, or coding and designing some programs & websites. You can learn more about me below:</p>
+					</div>
+					<div id='contact'>
+						<button class='btn' title='review my code!' onclick="window.location.assign('https://github.com/Jaysontian')"> <i class="fab fa-github"></i>  Github</button>
+						<button class='btn' title='review my code!' onclick="display_notebook()"> <i class="far fa-comment-alt"></i>  Notes and Blog</button>
+						
+					</div>
+				</div>
+
+				<div id='facts'>
+					<h3>Honestly Facts 🔮 </h3>
+					<p>Here's a random fact generator that I assembled through the collection of information from random experiences I've had in the past few years.</p>
+					<div id='fact-flex'>
+						<button class='btn5' onclick='newfact()'>Generate Random Fact</button>
+						<p id='fact'></p>
+					</div>
+				</div>
+
+				<section class='projects-con'>
+					<h3>Recent Projects 📁</h3>
+					<section>
+						<div class='project'>
+							<h4>📝 Notelog</h4>
+							<p>A minimalistic markdown based notetaking software made with electron and Angular JS. </p>
+							<button onclick="display_project_page('📝 Notelog')" class='btn3'>Site</button> <a class="fab fa-github"></a> </button>
+						</div>
+
+						<div class='project'>
+							<h4>🌲 Forestry Kids</h4>
+							<p>Kids informative website made with focus on CSS floats, animation, and responsiveness. </p>
+							<button onclick="display_project_page('🌲 Forestry Kids')" class='btn3'>Site</button> <a class="fab fa-github"></a> </button>
+						</div>
+
+						<div class='project'>
+							<h4>🎮 Memoir </h4>
+							<p>A mini 2D RPG adventure made using Unity 2D and C# code. </p>
+							<button onclick="display_project_page('🔮 Memoir')" class='btn3'>Site</button> <a class="fab fa-itch-io"></a> </button>
+						</div>
+
+						<div class='project'>
+							<h4>🔑 BunkerGame </h4>
+							<p>Incremental game and online chatroom made w/ JS and Firebase Authentication + Database. </p>
+							<button onclick="display_project_page('🔑 Bunkergame')" class='btn3'>Site</button> <a class="fab fa-github"></a> </button>
+						</div>
+					</section>
+				</section>
+
+				<section id='social'>
+					<h3>Get In Touch 🤙</h3>
+					<p>Feel free to annoy me anytime via the following accounts:</p>
+					<button class='btn2' title='slide into my DMs!' onclick="window.location.assign('https://www.instagram.com/jaezun/?hl=en')"> <i class="fab fa-instagram"></i>  Instagram</button>
+					<button class='btn2' title='review my code!' onclick="window.location.assign('https://github.com/Jaysontian')"> <i class="fab fa-github"></i>  Github</button>
+					<button class='btn2' title='listen to some of my dope tracks!'onclick="window.location.assign('https://soundcloud.com/picxight-productions')"> <i class="fab fa-soundcloud"></i>  Soundcloud</button>
+					<button class='btn2' title='bug me'onclick="window.location.assign('mailto:jaysontian444@gmail.com')"> <i class="fas fa-envelope"></i>  Email</button>
+					<button class='btn2' title='watch me'onclick="window.location.assign('https://www.youtube.com/channel/UCdwsgMvJzdwnKI8WM5kYO5A/')"> <i class="fab fa-youtube"></i>  Youtube</button>
+				</section>
+			</div>
+
+			<div id='notebook'>
+				<h3 class='header'>📒 Notebook</h3>
+				<p> This is a section filled with random thoughts, notes, information, and articles written by me. 99% is probably arbitrary and useless, but hey -- that 1% is probably worth checking this out for.</p>
+				<div id='categories'>
+					<select id='sorting'>
+						<option>All </option>
+					</select>
+				</div>
+
+				<section id='articles'></section>
+			</div>
+
+			<div id='article-container'>
+				
+			</div>
+
+			<div id='container'>
+				<h3 class='header'>🗄 Projects</h3>
+				<p> Here are some things that I am working on: </p>
+				<div id='categories'>
+					<select id='projectfilter'>
+						<option>All </option>
+					</select>
+				</div>
+
+				<section class='projects'></section>
+			</div>
+
+			<div id='project-page'>
+
+		</div>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src='script.js'></script>
+	
+	
+</body>
+</html>
