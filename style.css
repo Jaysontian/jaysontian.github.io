@@ -1,4 +1,4 @@
-@import url(https://rsms.me/inter/inter.css);
+/*@import url(https://rsms.me/inter/inter.css);
 html {
     font-family: Inter, sans-serif
 }
@@ -7,6 +7,11 @@ html {
     html {
         font-family: 'Inter var', sans-serif
     }
+}*/
+
+@font-face {
+    font-family: Avenir Pro;
+    src: url("fonts/AvenirNextLTPro-Regular.woff") format("woff");
 }
 
 h3 {
@@ -14,7 +19,7 @@ h3 {
 }
 
 body {
-    font-family: Inter var, Lato, Helvetica;
+    font-family: "Avenir Pro";
     font-weight: 400;
     line-height: 25px;
     letter-spacing: .03em;
@@ -30,7 +35,7 @@ body {
 }
 
 a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 .padding {
@@ -125,6 +130,12 @@ a {
     font-size: 25pt
 }
 
+#bio a{
+    color:rgba(0,0,0,0.85);
+    border-bottom:1px solid;
+    padding-bottom:2.12px;
+}
+
 svg {
     float: right;
     margin-left: 3.5rem;
@@ -144,8 +155,8 @@ svg {
     outline: 0;
     margin-right: 13px;
     padding: 11px 15px;
-    border: rgba(0, 0, 0, .6) 1.5px solid;
-    border-radius: 5px;
+    border: rgba(0, 0, 0, .85) 1.5px solid;
+    border-radius: 24px;
     font-size: 15px;
     cursor: pointer;
     transition: all .4s ease-in-out
