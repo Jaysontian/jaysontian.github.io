@@ -11,7 +11,6 @@ $(window).scroll(function() {
     }
 	});
 
-//firebase 
 
 
 var firebaseConfig = {
