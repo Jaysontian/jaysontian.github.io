@@ -6,6 +6,7 @@ function submitData(event) {
 
 dataout = {};
 species = 0;
+di=0;
 
 function onReaderLoad(event){
     var obj = JSON.parse(event.target.result);
@@ -25,26 +26,22 @@ function onReaderLoad(event){
             species++;
         }
     }
-
-    document.getElementById('species').innerHTML = "Species Count: "+species;
-    
     numer = species*(species - 1);
     denom = 0;
-
-    var datafinal = JSON.stringify(dataout, null, 4);
-    $('#dataset').text(datafinal);
-
     p = Object.values(dataout);
-
     var k;
     for (k=0;k<p.length;k++){
         denom += p[k]*(p[k]-1);
     }
-
     di = numer/denom;
-
-    document.getElementById('diversity').innerHTML = "Simpson's Diversity Index: "+di;
+    print();
 }
 
+function print(){
+    document.getElementById('species').innerHTML = "Species Count: "+species;
+    document.getElementById('diversity').innerHTML = "Simpson's Diversity Index: "+di;
+    var datafinal = JSON.stringify(dataout, null, 4);
+    $('#dataset').text(datafinal);
+}
 
 
