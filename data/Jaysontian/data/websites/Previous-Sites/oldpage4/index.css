@@ -1,0 +1,231 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+img{
+	opacity:0.8;
+}
+#headiframe{
+	border:none;
+	width:680px;
+
+}
+
+
+body {
+	font-family:Inter var;
+	font-size:11pt;
+	color:rgba(0,0,0,0.65);
+	line-height: 21px;
+}
+
+#masthead {
+	margin: 60px auto;
+	width:150px;
+	text-align:center;
+	font-family: 'Inter var', sans-serif;
+	font-weight:500;
+	font-size:20pt;
+	color:rgba(0,0,0,0.65);
+	font-family: 'Kaushan Script', cursive;
+	cursor:pointer;
+	transition: transform 0.3s ease-in-out;
+}
+
+#masthead:hover{
+	transform: scale(1.2);
+}
+
+
+
+#navbar {
+	width:500px;
+	height:40px;
+	display:flex;
+	flex-direction:row;
+	justify-content: space-evenly;
+	margin-bottom:30px;
+}
+
+#navbar a{
+	color:rgba(0,0,0,0.65);
+	font-family:Inter var;
+	font-size:11pt;
+	cursor:pointer;
+	height:30px;
+	transition: border-bottom 0.5s ease-in-out;
+}
+
+#navbar a .selected{
+	border-bottom: 2px solid rgba(0,0,0,0.4);
+}
+
+#navbar a:hover{
+	border-bottom: 2px solid rgba(0,0,0,0.4);
+}
+
+
+
+#search {
+	font-family:Inter var;
+	border:none;
+	outline:none;
+	font-size:11pt;
+	color:rgba(0,0,0,1);
+	width:50px;
+	cursor:text;
+	transition: width 0.5s ease-in-out;
+}
+
+#search:focus{
+	width:130px;
+	padding-bottom:13px;
+	border-bottom: 2px solid rgba(0,0,0,0.4);
+}
+
+#home {
+	display:flex;
+	color:rgba(0,0,0,0.75);
+}
+
+#home div{
+	margin:auto;
+	width:500px;
+	margin-left:120px;
+	text-align:justify;
+}
+
+#cont-con a{
+	color:rgba(0,0,0,0.65);
+}
+#contact{
+	width:100%;
+	display:none;
+}
+
+#form {
+	margin-top:20px;
+}
+
+#input{
+	padding:10px;
+	outline:none;
+	width:80px;
+	margin-bottom:20px;
+	border:none;
+	color:rgba(0,0,0,0.65);
+	font-family:Inter var;
+	font-size:11pt;
+	text-align: center;
+	border-width: 0px;
+	transition: border-bottom 0.5s ease-in-out;
+	transition: width 0.5s ease-in-out;
+}
+
+#input:focus{
+	width:160px;
+	padding-bottom:13px;
+	border-bottom: 2px solid rgba(0,0,0,0.4);
+}
+
+#form {
+	margin-top:50px;
+}
+
+#form textarea{
+	overflow: scroll
+	padding:20px;
+	border:none;
+	border: 2px solid rgba(0,0,0,0.2);
+	color:rgba(0,0,0,0.65);
+	font-family:Lato;
+	font-size:11pt;
+	outline:none;
+	width:220px;
+	height:150px;
+	margin-bottom:10px;
+}
+
+#form textarea:focus {
+	border: dotted 2px rgba(0,0,0,0.2);
+}
+
+#submit {
+	border:none;
+	color:rgba(0,0,0,0.65);
+	font-family:Lato;
+	font-size:11pt;
+	cursor:pointer;
+	padding-bottom:10px;
+	transition: border-bottom 0.5s ease-in-out;
+	outline:none;
+}
+
+#submit:hover {
+	border-bottom: 2px solid rgba(0,0,0,0.4);
+}
+
+#cont-con{
+	display:flex;
+	width:400px;
+	flex-direction:row;
+	justify-content:center;
+}
+.center {
+	display:flex;
+	justify-content: center;
+}
+
+
+#work-con{
+	display:flex;
+	text-align: center;
+	margin-left:50px;
+}
+
+#work-con div{width:25%;margin:2.5%;}
+
+#work-con p{margin:0;line-height: 0px;}
+
+#work-con a{color:rgba(0,0,0,0.65);}
+
+
+
+
+
+
+
+
+/* blog */
+
+#blog-con{
+	width:700px;
+}
+
+#blogfilter{
+	width:130px;
+	height:30px;
+	outline:none;
+	font-family:Lato;
+	font-size:11pt;
+	color:rgba(0,0,0,0.65);
+}
+
+#post-con{
+	margin-top:60px;
+}
+
+.post{
+	padding-bottom:20px;
+	border-bottom: 2px solid rgba(0,0,0,0.4);
+}
+
+.post-btn{
+	cursor:pointer;
+	padding:10px;
+	margin:10px;
+}
+
+

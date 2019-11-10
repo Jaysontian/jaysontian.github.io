@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> The Duck Shop </title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+</head>
+<body onload='load()'>
+	<div style='display:flex; flex-direction: column;'>
+		<div>
+			<div id='navbar'>
+				<div class='tab' onclick="scenechange(event, 'projects')">Projects</div><a> | </a>
+				<div class='tab selected' onclick="scenechange(event, 'duckshop')">The Duck Shop </div><a> | </a>
+				<div class='tab' onclick="scenechange(event, 'town')" id='towntab'>The Town</div>
+				<div class='tab' onclick="scenechange(event, 'metropolis')" id='metropolis'>Metropolis</div>
+			</div>
+
+			<p><b> Ducks Sold:</b> <a id='duckssold'>0</a></p> <br><br>
+
+			<fieldset id='stats' style='width:140px'>
+				<legend>Stats</legend>
+				<p>Money: $ <a id='money'>0</a></p>
+			</fieldset>
+
+			<div style='width:150px'>
+	<PRE class='floating'>         
+    ,~~.
+ ___( <a id='eye'>⤺</a>)>
+ \ <_. )
+  `   '</PRE><div style='overflow:hidden;width:140px;transform: translateY(-36px)'><PRE class='slide'>
+~'`~'`~'`~'`~~'`~'`~'`~'`~~'`~'`~'`~'`~~'`~'
+</PRE></div></div>
+
+			<div style='width:150px; transform:translateY(-30px); height:300px;' id='text'>
+				A wandering traveller decides to open up a new duck shop, quack.
+			</div>
+		</div>
+
+		<div>
+
+			<div style='display:fixed;margin-left:200px;margin-top:-520px;'>
+
+				<div id='projects' class='page'>
+
+				</div>
+
+				<div id='duckshop' class='page'>
+						<fieldset>
+							<legend>Handcrafting</legend>
+							<button onclick='Duck.make()'>Make Duck</button>
+							<p>Unsold Ducks: <a id='duck'>0</a></p>
+						</fieldset>
+
+						<fieldset id='production'><legend>Production</legend>
+							<button onclick='Duck.make_rubber()'> Buy Rubber</button>
+							<p>Rubber: <a id='rubber'>0</a></p>
+						</fieldset>
+
+						<fieldset id='buisness'><legend>Buisness</legend>
+							<div id='price-slider'class="slidecontainer">
+								<input type="range" min="0.5" max="2" value="0.75" step='0.01' class="slider" id="myRange">
+							</div>
+							<p> Sale Price: $ <a id='price'></a></p>
+							<p> Sale Demand: <a id='demand'>83</a>%</p>
+						</fieldset>
+
+						<fieldset id='employment' style='display:none'><legend>Employment</legend>
+							<p>Ducksmith: $<a id='price-ducksmith'>25</a></p>
+							<button onclick='Duck.ducksmith()'>Hire</button>
+							<p>Ducks per second: <a id='count-ducksmith'>0</a></p>
+						</fieldset>
+
+						<fieldset id='advertisement' style='display:none'><legend>Advertising</legend>
+							<button onclick='Duck.campaign()'>Host</button> $<a id='price-campaign'>53.26</a>
+							<p>Campagins: <a id='count-campaign'>0</a></p>
+						</fieldset>
+						
+				</div>
+
+				<div id='town' class='page' style='display:none'>
+					<pre id='townart'>
+                 \                   \                 \
+                 ))     ** *         ))                ))
+             .---#-.   ******  .-----#-.            ___I_
+   _u_      /_______\   ****  /_[Store]_\          /\-_--\
+  /___\     |[] _ []|    ||   |+~..~.-.~|   **    /  \_-__\
+..<a onclick="scenechange(event, 'duckshop')">|"#"|</a>,,.,.<a onclick='townhall()'>|  |*|  |</a>,,.,||.,.<a onclick='townshop()'>|+    |*| |</a>.,****.,.<a onclick='townlocked'>|[]| [] |</a>.,.,.
+</pre>
+				</div>
+
+				<div id='quest' class='page' style='display:none'>
+					<fieldset id='sophist' ><legend>The Sophist</legend>
+						<button onclick='Quest.init()'>Begin Quest</button>
+						<p>The sophist sits eyes closed, pondering about theories hard to decipher.</p>
+					</fieldset>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+		
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="projects.js"></script>
+<script src="quest.js"></script>
+<script src="duck.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

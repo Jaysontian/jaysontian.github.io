@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<h1>{{ page.tag | capitalize }}</h1>
+{{content}}
+
+
+<div class='postholder'>
+		<hr>
+		{% for post in site.categories[page.tag] %}
+			<a class='postitem' href="{{ post.url | prepend: site.baseurl }}">
+				<h3>{{post.title }}</h3>
+				<time> 
+				{% capture words %}
+					{{ post.content | number_of_words}}
+				{% endcapture %} {{ words | append: " words" }}
+				| {{ post.date | date: "%b %-d, %Y" }}
+			</time>
+			</a>
+			<hr>
+		{% endfor %}
+</div>

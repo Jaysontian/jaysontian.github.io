@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)file:///Users/jayson.tian/Desktop/bunker/index.html# -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="file:///Users/jayson.tian/Desktop/bunker/style/index.css">
+<link href="./index.html#_files/css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./index.html#_files/jquery.min.js"></script>
+</head>
+<body style="margin:0">
+
+<ul>
+  <li style="margin-left:10px;"><a href="file:///Users/jayson.tian/Desktop/bunker/index.html#home">Home</a></li>
+  <li><a href="file:///Users/jayson.tian/Desktop/bunker/index.html#news">News</a></li>
+  <li><a href="file:///Users/jayson.tian/Desktop/bunker/index.html#contact">Help</a></li>
+  <li style="float: right; margin-right: 20px; display: block;" id="btnlogin"><a onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;block&#39;" class="active">Login</a></li>
+  
+  <li class="dropdown" style="display: none;">
+    <button id="btnuser"> ERROR LOAD </button>
+    <span class="caret"></span>
+    <div id="dropmenu" style="display: none;">
+      <a onclick="logout()">My Games</a>
+      <a onclick="logout()">Settings</a>
+      <a onclick="logout()">Logout</a>
+    </div>
+</li></ul>
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade" style="display: block;">
+    <h1 class="text1">The Bunker Game</h1>
+    <div class="numbertext">1 / 3</div>
+    <img src="file:///Users/jayson.tian/Desktop/bunker/img/01.png" style="width:100%">
+    <div class="text">Minimalistic clicking game of survival.</div>
+  </div>
+
+  <div class="mySlides fade" style="display: none;">
+    <h1 class="text1"> Echo </h1>
+    <div class="text">A game of memory and sounds.</div>
+    <div class="numbertext">2 / 3</div>
+    <img src="file:///Users/jayson.tian/Desktop/bunker/img/04.png" style="width:100%">
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot active" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+  </div>
+
+
+  <div id="flex1">
+    <div>
+      <h3>About</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel orci porta non pulvinar. Ultrices neque ornare aenean euismod elementum nisi quis. Eu turpis egestas pretium aenean pharetra. </p>
+    </div>
+    <div>
+      <center><button id="btn">Play Now</button></center>
+    </div>
+  </div>
+
+  <div id="id01" class="modal" style="display: block;">
+  
+  <div class="modal-content animate">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById(&#39;id01&#39;).style.display=&#39;none&#39;" class="close" title="Close Modal">×</span>
+      <h2>Login</h2>
+      <p style="font-size:11.5px">Login Required To Play Games</p>
+    </div>
+
+    <div class="container">
+      <input id="email_field" type="text" placeholder="Username" name="uname" required="">
+      <input id="password_field" type="password" placeholder="Password" name="psw" required="">
+        
+      <button style="font-size:14px" type="submit" onclick="login()">Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="signup()" class="cancelbtn">Sign Up</button>
+      <span style="font-size:12px" class="psw">Forgot <a href="file:///Users/jayson.tian/Desktop/bunker/index.html#">password?</a></span>
+    </div>
+  </div>
+
+
+</div>
+<p> </p>
+
+<script src="./index.html#_files/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBAM0eaGV63hHd1HEiotMsrf9UacBk8P4g",
+      authDomain: "login-bunker.firebaseapp.com",
+      databaseURL: "https://login-bunker.firebaseio.com",
+      projectId: "login-bunker",
+      storageBucket: "",
+      messagingSenderId: "551492806119"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="file:///Users/jayson.tian/Desktop/bunker/index.js"></script>
+
+
+
+
+ 
+</body></html>

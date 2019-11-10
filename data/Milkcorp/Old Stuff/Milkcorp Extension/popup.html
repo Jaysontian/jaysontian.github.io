@@ -1,0 +1,78 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo&display=swap">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/popup.css">
+	<!--<script src="js/bootstrap.bundle.min.js"></script>-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/data.js" ></script>
+	<script src="js/popup.js"></script>
+	<script src="js/game.js"></script>
+	<script src="js/icons.js"></script>
+	<script src="js/extension.js"></script>
+</head>
+<body>
+	<div id="notify" class="modal">
+	  <div class="modal-content">
+	  	<h4 id='notify-title'></h4>
+	    <p id='notify-text'></p>
+	    <button id='clickclosenotify'>OK</button>
+	  </div>
+	</div>
+
+	<div class='container-fluid pl-5' id='home'>
+		<div id='shop'>
+			<div id="Actions" class="tabcontent">
+				<button id='clickah'></button>
+			</div>
+			<div id="Jobs" class="tabcontent"><!--
+			  <div class='item'>
+			  	<img src='images/items/upgrades/0.png'>
+			  	<div class='column'>
+			  		<h2>Max Level Up</h2>
+			  		<p>Upgrade max level of cow by 1.</p>
+			  	</div>
+			  	<button>$20</button>
+			  </div>-->
+			</div>
+
+			<div id="Research" class="tabcontent"></div>
+
+			<div id="Items" class="tabcontent"></div>
+
+			<div id="Diamonds" class="tabcontent"></div>
+
+			<div class="tab">
+				<button class="tablinks actions" onclick="openCity(event, 'Actions')"><i class="fas fa-dumbbell"></i><br>Actions</button>
+			  	<button class="tablinks jobs" onclick="openCity(event, 'Jobs')"><i class="fas fa-arrow-alt-circle-up"></i><br>Jobs</button>
+			  	<button class="tablinks research" onclick="openCity(event, 'Research')"><i class="fas fa-apple-alt"></i><br>Research</button>
+			  	<button class="tablinks" onclick="openCity(event, 'Items')"><i class="fas fa-spray-can"></i><br>Items</button>
+			  	<button class="tablinks" onclick="openCity(event, 'Diamonds')"><i class="fas fa-gem"></i><br>Diamonds</button>
+			</div>
+
+		</div>
+		<div id='feeder'>
+			<div class='feed' id='milk-div'>Milk <span id='milk'>0</span> <a id='farmerrate'>(0.5/s)</a></div>
+			<div class='feed' id='price-div'>Price <span id='milkcost'>$1</span></div>
+			<div class='feed' id='coins-div'>Coins <span id='coins'>0</span> <a id='vendorrate'>(0.5/s)</a></div>
+			<div class='feed' id='farmers-div'>Farmers <span id='farmers'>1</span></div>
+			<div class='feed' id='vendors-div'>Vendors <span id='vendors'>0</span></div>
+			<div class='feed' id='scientists-div'>Scientists <span id='scientists'>0</span></div>
+			<div class='feed' id='research-div'>Research <span id='research'>0</span> <a id='scientistrate'>(0.5/s)</a></div>
+		</div>
+		<img id='pic' src='images/giphy.gif'>
+	</div>
+
+
+	<div id='settings'>
+		<button onclick="save()"><br>Save</button>
+		<button onclick="restartgame()"><br>Restart</button>
+	</div>
+
+
+	<div id='navbar'>
+	    <button id='homenav' onclick="show('#home')"><i class="fas fa-home"></i></button>
+	    <button id='settingsnav' onclick="show('#settings')"><i class="fas fa-cog"></i></button>
+	  </div>
+</body>
+</html>

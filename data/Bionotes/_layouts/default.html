@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body>
+	<div class='padding'>
+		{% include header.html %}
+		<main class='movedown'>
+			<article>
+				{{ content }}
+			</article>
+			{% include footer.html %}
+		</main>
+	</div>
+</body>
+
+</html>

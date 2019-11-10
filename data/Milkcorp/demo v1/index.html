@@ -1,0 +1,85 @@
+<html>
+<head>
+	<script>window.$ = window.jQuery = require('jquery');</script>
+	<link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="script/icons.js"></script>
+	<script type="text/javascript" src="script/data.js"></script>
+	<script type="text/javascript" src="script/script.js"></script>
+	<script type="text/javascript" src="script/game.js"></script>
+	<script type="text/javascript" src="script/story.js"></script>
+	<script type="text/javascript" src="script/notifications.js"></script>
+	<script type="text/javascript" src="style/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="style/bootstrap.min.css">
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body onkeydown="KeyDownFn(event)">
+	<div id="notify" class="modal">
+	  <div class="modal-content" id='notify-modal'>
+	  	<h4 id='notify-title'></h4>
+	    <p id='notify-text'></p>
+	    <button onclick='closenotify()'>OK</button>
+	  </div>
+	</div>
+
+	<div id="storymodal" class="modal">
+	  <div class="modal-content">
+	  	<h4></h4>
+	    <p id='story-text'></p>
+	    <button onclick='storynext()'>Next</button>
+	  </div>
+	</div>
+
+	<div id='startscreen'>
+		<h1>Milk Corp.</h1>
+		<h5>Demo Version</h5>
+		<button onclick='startgame()' class='actionbtn'>New Game</button>
+		<!--<button onclick="" class='actionbtn'>Load Save</button>-->
+	</div>
+
+	<div class='container-fluid pl-5' id='home'>
+		<div id='shop'>
+			<div id="Actions" class="tabcontent active" style='display:block'></div>
+			<div id="Jobs" class="tabcontent"></div>
+			<div id="Research" class="tabcontent"></div>
+			<div id="Items" class="tabcontent"></div>
+			<div id="Diamonds" class="tabcontent"></div>
+			<div class="tab"> 
+				<button class="tablinks actions" onclick="openCity(event, 'Actions')"><i class="fas fa-dumbbell"></i><br>Actions</button>
+			  	<button class="tablinks jobs" onclick="openCity(event, 'Jobs')"><i class="fas fa-arrow-alt-circle-up"></i><br>Jobs</button>
+			  	<button class="tablinks research" onclick="openCity(event, 'Research')"><i class="fas fa-apple-alt"></i><br>Research</button>
+			  	<button class="tablinks" onclick="openCity(event, 'Items')"><i class="fas fa-spray-can"></i><br>Items</button>
+			  	<button class="tablinks" onclick="openCity(event, 'Diamonds')"><i class="fas fa-gem"></i><br>Diamonds</button>
+			</div>
+		</div>
+
+		<div id='feeder'>
+			<div class='feed' id='milk-div'>Milk <span id='milk'>0</span> <a id='farmerrate'>(0.5/s)</a></div>
+			<div class='feed' id='price-div'>Price <span id='milkcost'>$1</span></div>
+			<div class='feed' id='cowcount-div'>Cows <span id='cowcount'>1</span></div>
+			<div class='feed' id='coins-div'>Coins <span id='coins'>0</span> <a id='vendorrate'>(0.5/s)</a></div>
+			<div class='feed' id='farmers-div'>Farmers <span id='farmers'>1</span></div>
+			<div class='feed' id='vendors-div'>Vendors <span id='vendors'>0</span></div>
+			<div class='feed' id='scientists-div'>Scientists <span id='scientists'>0</span></div>
+			<div class='feed' id='research-div'>Research <span id='research'>0</span> <a id='scientistrate'>(0.5/s)</a></div>
+			<div class='feed' id='capacity-div'>Capacity <span id='capacity'>0</span></div>
+		</div>
+
+		<img id='pic' onclick='jumpcow()' src='style/giphy.gif'>
+
+	</div>
+
+
+	<div id='settings'>
+		<button onclick="save()"><br>Save</button>
+		<button onclick="restartgame()"><br>Restart</button>
+	</div>
+
+
+	<div id='navbar'>
+	    <button id='homenav' onclick="show('#home')"><i class="fas fa-home"></i></button>
+	    <button id='homenav' onclick="show('#home')"><i class="fas fa-store"></i></button>
+	    <button id='settingsnav' onclick="show('#settings')"><i class="fas fa-cog"></i></button>
+	</div>
+</body>
+</html>

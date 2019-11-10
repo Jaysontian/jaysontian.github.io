@@ -1,0 +1,106 @@
+<html>
+	<head>
+		<script src="jquery.min.js"></script>
+		<script src="data.js" ></script>
+		<script type="text/javascript" src="main.js"></script>
+		<script src="bootstrap.bundle.min.js"></script>
+		<link rel="stylesheet" href="bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+	<div class='container-fluid ml-5'>
+		<div class='row'>
+			<div class='col-5'>
+				<div class="card bg-light px-0 mb-4">
+				  <div class="card-header">Status</div>
+				  	<div class='row m-0'>
+					  	<ul class="list-group col">
+						  <li class="list-group-item pt-1 pb-1">
+						  	<div>Coins: <span id='coins'>100</span></div>
+						  </li>
+						  <li class="list-group-item pt-1 pb-1">
+						  	<div>XP: <span id='coins'>0</span></div>
+						  </li>
+						</ul>
+						<ul class="list-group col"><!--
+						  <li class="list-group-item pt-2 pb-2">
+							  	<div class="progress">
+								  <div class="progress-bar troophp" id='progress' role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:70%">20 HP
+								  </div>
+								</div>
+						  	</li>-->
+						  	<li class="list-group-item pt-1 pb-1">
+						  		<div>Attack <span id='tattack' class='float-right'>1</span></div>
+						 	</li>
+						  	<li class="list-group-item pt-1 pb-1">
+						  		<div>CPS <span id='tspeed' class='float-right'>0</span></div>
+						  	</li>
+						</ul>
+					</div>
+				</div>
+			
+
+				<div class="card px-0 mb-4">
+					<ul class="nav nav-tabs bg-light">
+					  <li class="nav-item">
+					    <a class="nav-link active" data-toggle="tab" href='#upgrades'>Upgrades</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" data-toggle="tab" href='#shop'>Shop</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" data-toggle="tab" href='#settings'>Settings</a>
+					  </li>
+					</ul>
+
+					<div class="tab-content">
+					  <div class="tab-pane container active p-0" id="upgrades">
+					  	<ul class='list-group' id='cow-list'>
+					  		<li class='list-group-item'>
+					  		</li>
+					  	</ul>
+					  </div>
+					  <div class="tab-pane container fade" id="shop">...</div>
+					  <div class="tab-pane container fade" id="settings">...</div>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="card bg-light px-0 col-sm-3 mb-4">
+			  <div class="card-header">Enemy Statistics</div>
+			  	<ul class="list-group">
+			  		<li class="list-group-item">
+			  			<div class="row">
+						  	<div class='col-sm'> <span id='name'></span> </div>
+						  	<div class='col-sm'> <span class='float-right' id='zone'></span> </div>
+						</div>
+			  		</li>
+				  <li class="list-group-item pt-1 pb-1">
+				  	<div class="row">
+					  	<div class='col-sm'>Lv. <span id='level'>0</span></div>
+					  	<div class='col-sm'>Attack <span id='eattack'>0</span></div>
+					</div>
+				  </li>
+				  <li class="list-group-item">
+				  	<div class="progress">
+					  <div class="progress-bar bg-danger enemyhp" id='progress' role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+					  </div>
+					</div>
+				  </li>
+				  <li class="list-group-item" id='scene'>
+				  	<div onclick='attack(1)'>
+				  		<img id='enemyimage' src='http://cowclicker.com/images/cows/0f81049eaaa295ebc92575077e72587f.png'></li>
+				  	</div>
+				  </li>
+				</ul>
+			</div>
+		</div>
+
+
+
+	</div>
+	</body>
+</html>

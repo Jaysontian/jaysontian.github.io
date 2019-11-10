@@ -1,0 +1,14 @@
+[
+ {
+   "name": "Creeper",
+   "hp": "20",
+   "level": "5",
+   "special": false
+ },
+ {
+   "name": "Demygorgon",
+   "hp": "30",
+   "level": "6",
+   "special": true
+ },
+ ]

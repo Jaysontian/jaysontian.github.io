@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title>Stage 3</title>
+</head>
+<body>
+
+
+
+
+
+<script>
+	var myData = "";
+	var staticUrl = 'https://raw.githubusercontent.com/PMiskew/pmiskew.github.io/master/Activity%202/data/HIVinfection.json'; 
+	$.getJSON(staticUrl, function(data) {
+        
+        console.log(data)
+        console.log(data.fact[1].dims.COUNTRY);
+        console.log(data.fact[1].dims.GHO);
+        console.log(data.fact[1].dims.YEAR);
+ 		console.log(data.fact[31].dims.COUNTRY);
+        console.log(data.fact[31].dims.GHO);
+        console.log(data.fact[31].dims.YEAR);
+    
+    });
+</script>
+</body>
+</html>
