@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="/indexcss/main.css">
+	<!-- Place this tag in your head or just before your close body tag. -->
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/e8c8e8e543.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<title>Rambling About Arbitrary Topics - Jayson Tian</title>
+	<link rel="canonical" href="http://localhost:4000/index/life/2015/11/30/first-post.html">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+
+	<style>
+
+		@import url(https://rsms.me/inter/inter.css);
+html {
+    font-family: Inter, sans-serif
+}
+
+@supports (font-variation-settings:normal) {
+    html {
+        font-family: 'Inter var', sans-serif
+    }
+
+
+
+/*@font-face {
+    font-family: Avenir Pro;
+    src: url("fonts/AvenirNextLTPro-Regular.woff") format("woff");
+}*/
+.movedown{
+    margin-top:160px;
+}
+html{
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: black;
+    margin:0px;
+}
+
+p {
+    box-sizing:border-box;
+    color:rgb(20, 20, 20);
+    display:block;
+    font-family:"Inter var", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-feature-settings:"kern", "liga", "clig", "calt";
+    font-kerning:normal;
+    font-size:16.78px;
+    font-stretch:100%;
+    font-style:normal;
+    font-variant-caps:normal;
+    font-variant-east-asian:normal;
+    font-variant-ligatures:normal;
+    font-variant-numeric:normal;
+    font-weight:400;
+    line-height:27.9552px;
+    margin-block-end:26.88px;
+    text-size-adjust:100%;
+    -webkit-font-smoothing:antialiased;
+}
+
+
+
+li {
+    color:rgb(20, 20, 20);
+    font-size:16.78px;
+    font-stretch:100%;
+    font-weight:400;
+    line-height:27.9552px;
+    margin-block-end:26.88px;
+    -webkit-font-smoothing:antialiased;
+    margin:0px;
+}
+
+.category{
+    padding: 5px 15px;
+    font-size:16.7px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:5px;
+}
+
+.category:hover{
+    opacity:0.8;
+}
+
+.category:nth-child(1){
+    background-color: #ffd9e3;
+    color:#b04561;
+}
+
+.category:nth-child(2){
+    background-color: #ffe4bf;
+    color:#cf8115;
+}
+
+.post-body a {
+  color:#ff5289;
+  text-decoration: none;
+  font-weight:bold;
+  border-bottom:2px #faacc5 solid;
+}
+
+.post-body a:hover{
+  background-color:#fadce6;
+}
+
+.postholder{
+    margin-top:50px;
+    max-width:750px;
+    color:rgba(0,0,0,0.85); 
+}
+
+.postitem{
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+    text-decoration: none;
+    padding:15px 10px;
+    border-radius:8px;
+    transition:0.3s ease-in-out all;
+   
+}
+
+.postitem:hover{
+    background-color:rgba(0,0,0,0.1);
+}
+
+.postitem:hover h3{
+    color:#1783ff;
+}
+
+.postitem h3{
+    margin-top:0px;
+    height:20px;
+    font-size:20px;
+    font-weight: 600;
+    color:rgba(0,0,0,0.85);
+    margin:0px;
+    transition:0.3s ease-in-out all;
+}
+
+.postitem time{
+    color:rgba(0,0,0,0.45);
+    float:right;
+    height:20px;
+    font-weight:bold;
+}
+
+h1 {
+    margin-bottom: 40px;
+    color: rgba(0, 0, 0, .8);
+    font-size: 22pt;
+    font-weight:700;
+}
+
+h2 {
+    margin-top: 40px;
+    color: rgba(0, 0, 0, .8);
+    font-size: 16pt;
+    font-weight:700;
+}
+
+h3 {
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, .8);
+    font-size: 16pt;
+    font-weight:500;
+}
+
+h4{
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, .8);
+    font-size: 13pt;
+    font-weight:600;
+}
+
+hr {
+    height: 2px;
+    background-color:rgba(0,0,0,0.08);
+    border-radius:30px;
+    border:none;
+}
+
+img{
+    width:100%;
+}
+
+.ais-search-box{
+    margin-top:20px;
+    margin-bottom:100px;
+}
+
+.divider{
+    height: 2px;
+    background-color:rgba(0,0,0,0.25);
+    border-radius:30px;
+    border:none;
+}
+
+.post-title{
+    font-size:35px;
+    margin-bottom:25px;
+}
+
+.post-detail{
+    font-weight:bold;
+    color:rgba(0,0,0,0.75);
+    margin-bottom:30px;
+}
+
+#markdown-toc{
+    padding:12px;
+    border:2px solid rgba(0,0,0,0.1);
+    border-radius:5px;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+.btn{
+    height:27px;
+    padding:0px 20px;
+    outline: 0;
+    line-height: 0;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin-top: 1.3rem;
+    margin-left: 1.3rem;
+    background-color:#f5f7fa;
+    border-radius:3.5px;
+    color: #242a2e;
+    border:1px solid #bcc0c4;
+    font-weight:600;
+}
+
+.btn:hover {
+    background-color: #e5e7ea;
+    border:1px solid #93979b;
+}
+
+.btn-modern {
+    padding:5px 10px;
+    outline: 0;
+    line-height: 0;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin-top: 1.3rem;
+    margin-left: 1.3rem;
+    background-color:rgba(0,0,0,0.05);
+    border:none;
+    border-radius:3.5px;
+    color: #242a2e;
+    font-weight:500;
+    text-decoration: none;
+}
+
+.btn-modern:hover {
+    background-color: rgba(0,0,0,0.13);
+}
+
+.padding {
+    max-width: 750px;
+    padding: 1.2em;
+    padding-top: 0px;
+    margin: 0 auto
+}
+
+
+#navbar {
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    height: 50px;
+    top: 0;
+    padding-top: 55px;
+    z-index: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+#navbar.active {
+    box-shadow: 0 4px 10px -2px rgba(0, 0, 0, .2);
+    padding-top: 10px;
+    height: 46px
+}
+
+#navcon {
+    max-width: 750px;
+    margin: auto
+}
+
+.links {
+    cursor: pointer;
+    float: left;
+    line-height: 10px;
+    text-align: center;
+    color:rgba(0,0,0,0.65);
+    transition: all .3s ease-in-out;
+    margin-left: 15px;
+    padding: 12px;
+    border-radius:14px;
+    text-decoration: none;
+}
+
+.links:hover {
+    background-color:rgba(0,0,0,0.08);
+    color:rgb(64, 64, 64)
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+    color:rgba(0,0,0,0.8);
+    text-decoration: none;
+    transform:translateX(-25px);
+}
+
+#logo:hover {
+    opacity:0.3;
+}
+
+.right {
+    float: right
+}
+
+
+
+
+
+
+#home {
+    margin-top: 200px;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+#bio{
+  max-width:530px;
+}
+
+#bio a{
+    color:#e39044;
+  text-decoration: none;
+  font-weight:bold;
+  border-bottom:2px #fad8b9 solid;
+}
+
+#bio a:hover{
+    background-color:#ffe2c7;
+}
+
+#image {
+    float: right;
+    margin-left: 3.5rem;
+    margin-bottom: 0;
+    max-width: 190px;
+    z-index: 0;
+    border-radius:100px;
+    transition: 0.2s all ease-in-out;
+}
+
+#image:hover{
+  transform:scale(1.1);
+}
+
+#contact {
+    margin-top: 50px;
+    display: flex;
+    width: 500px
+}
+
+
+#fact {
+    margin-left: 20px;
+    text-align: center;
+    max-width: 90%;
+    font-family: Indie Flower;
+    font-size: 22px
+}
+
+
+
+#social {
+    max-width: 750px;
+    margin-top: 60px;
+    padding: 10px 35px;
+    border: 2px solid rgba(0, 0, 0, .6);
+    border-radius: 5px;
+    padding-bottom: 20px
+}
+
+#social button{
+    height:35px;
+    padding:10px 15px;
+    outline: 0;
+    line-height: 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin-top: 1.3rem;
+    margin-left: 1.3rem;
+    background-color:rgba(0,0,0,0.05);
+    border:none;
+    border-radius:3.5px;
+    color: #242a2e;
+    font-weight:500;
+    border:1px solid #bcc0c4;
+}
+
+.projects-con {
+    max-width: 750px;
+    margin-top: 115px;
+    padding-bottom: 20px;
+}
+
+.projects-con div{
+  border-bottom:2px solid rgba(0,0,0,0.1);
+}
+
+.projects-con div:first-child{
+ margin-top:16px;
+}
+
+.projects-con div:last-child{
+  border-bottom:none;
+}
+
+.project {
+    display: flex;
+    width:100%;
+    max-height:80px;
+}
+
+.project h4 {
+    width: 25%;
+}
+
+.project p {
+    width: 50%;
+    margin-right:40px;
+}
+
+.project i {
+    font-size: 26px;
+    color: rgba(0,0,0,0.8);
+    margin-top: 1.3rem;
+    margin-left: 1.3rem
+}
+
+
+.footer{
+    display:flex;
+  width:100%;
+  height:120px;
+  margin-top:40px;
+  margin-bottom:0px;
+  border-top:2px solid rgba(0,0,0,0.25);
+  padding-top:10px;
+}
+
+.footer-text{
+    width:70%;
+}
+
+.footer-text p{
+    font-size:15px;
+    line-height: 22px;
+    color:rgba(0,0,0,0.77);
+}
+
+.socialmedia {
+    width:30%;
+    display:flex;
+    justify-content: space-around;
+    margin-top:24px;
+}
+
+.socialmedia a{
+    color:rgba(0,0,0,0.75);
+    font-size:26px;
+}
+
+
+.footer a{
+  text-decoration: none;
+}
+
+.footer a:hover{
+  color:rgba(0,0,0,0.7);
+}
+
+
+
+
+	</style>
+
+</head> 
+
+
+<body>
+	<div class='padding'>
+		
+<script>
+	$(window).scroll(function() {     
+    var scroll = $(window).scrollTop();
+    if (scroll > 0) {
+        $("#navbar").addClass("active");
+    }
+    else {
+        $("#navbar").removeClass("active");
+    }
+	});
+</script>
+
+<div id='navbar'>
+    <div id='navcon'>
+        <a class='links logo' href="/index/index">Jayson Tian</a>
+
+        <div class='right'>
+            <a class='links' href="/index/about">About</a>
+			<a class='links' href="/index/projects">Projects</a>
+            <a class='links' href="/index/blog">Blog</a>
+    	</div>
+    </div>
+</div>
+
+
+
+
+ 
+		<main class='movedown'>
+			<article>
+				<h1 class='post-title'>Rambling About Arbitrary Topics</h1>
+<div class='post-detail'>Nov 30, 2015 |       
+	
+      
+        6 min. read
+      
+
+      <div class='right'>
+			<a class="category" href="/index/category/life.html">Life</a>
+      </div>
+
+  </div>
+
+<hr class='divider'>
+<div class='post-body'>
+	<br>
+<h2 id="customizing-your-jekyll-theme">Customizing your Jekyll Theme</h2>
+
+<p>The default styles try to be basic, but they’re still far too stylized for my liking. We’re going to override all the styles and make them much more simple. You can turn off the Jekyll serve at this point and just start saving files. We’ll go from top to bottom alphabetically.</p>
+
+<p>I’m using my own name as an example, but obviously change everything to match you.</p>
+
+<h3 id="hello">Hello</h3>
+
+<p>In Jekyll, <strong>_includes</strong> are files that should show up on every page - header, footer, etc.</p>
+
+<h4 id="footerhtml">footer.html</h4>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<h4 id="headhtml">head.html</h4>
+
+<p>Any <code class="highlighter-rouge">head</code> metadata.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<h4 id="headerhtml">header.html</h4>
+
+<p>Your navigation and header. I will dynamically load all pages into the navigation bar, except for the blog page, which I will load manually.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<h3 id="layouts"><em>layouts</em></h3>
+
+<p>The layout that your content will conform to.</p>
+
+<h4 id="defaulthtml">default.html</h4>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<h4 id="pagehtml">page.html</h4>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<p>All the dashes at the top are <strong>mandatory</strong>. If you don’t include them, the website won’t work properly. For pages and posts, the default layout gets loaded, plus any additional layout information you desire.</p>
+
+<h4 id="posthtml">post.html</h4>
+
+<p>Same as the page, but with date and author metadata.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<h3 id="pages"><em>pages</em></h3>
+
+<p>The default Jekyll website does not come with a <strong>_pages</strong> directory, but I like to include it so the main directory stays clean.</p>
+
+<h4 id="01_aboutmd">01_about.md</h4>
+
+<p>Now we’re creating the markdown files. Prepending them with a number ensures that they appear in the order you specify.</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<h4 id="02_contactmd">02_contact.md</h4>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<h3 id="_posts">_posts</h3>
+
+<p>I’m going to leave the post exactly as it is.</p>
+
+<p>Delete about.md from the main directory, since we’ve put it in the <strong>_pages</strong> directory.</p>
+
+<h3 id="indexhtml">index.html</h3>
+
+<p><strong>index.html</strong> in the main directory will be the main page of the site.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<h3 id="blog">blog</h3>
+
+<p>Create a new directory called <strong>blog</strong>. Inside, create an <strong>index.html</strong>. This will be the main blog page that will contain all your posts.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<h3 id="css">css</h3>
+
+<p>The <strong>css</strong> directory in the root should contain one file - <strong>main.scss</strong>. Edit it to contain the following:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<p>Leave the top part exactly as is.</p>
+
+<h3 id="_sass">_sass</h3>
+
+<p>The absolute last directory that we need to edit - the sass partials. Create each of these files in the <code class="highlighter-rouge">_sass</code> directory.</p>
+
+<h4 id="_basescss">_base.scss</h4>
+
+<p>Variables, mixins, and resets will go here.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<h4 id="_syntax-highlightingscss">_syntax-highlighting.scss</h4>
+
+<p>Simply remove this line from the file:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<h4 id="_layoutscss">_layout.scss</h4>
+
+<p>All my styles will go in here. I made a simple, responsive website that doesn’t rely on any frameworks.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<h2 id="serve-jekyll">Serve Jekyll</h2>
+
+<p>At this point, all the files are ready and jekyll can be served.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<p>If you inserted all the code exactly as above, the sass partials will compile into the main.scss. All the rest of the files will write to <strong>_site</strong> site, which is the distribution folder.</p>
+
+<p>Server running… press ctrl-c to stop.</p>
+
+<p>If I make a change to any of the sass files, they should compile.</p>
+
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">
+</span></code></pre></div></div>
+
+<h2 id="pushing-jekyll-site-to-github-pages">Pushing Jekyll site to GitHub pages</h2>
+
+<p>Create an empty repository in GitHub. Mine is <strong>startjekyll</strong>, so the Git repo URL is <code class="highlighter-rouge">https://github.com/taniarascia/startjekyll</code>.</p>
+
+<p>There is one change that needs to be made in order to have one site for both your local Jekyll and the live GitHub pages.</p>
+
+<p>Duplicate your <strong>_config.yml</strong> and call it <strong>_config_dev.yml</strong>.</p>
+
+<p>Leave the <strong>_config_dev.yml</strong> as is, and change <strong>_config.yml</strong> for the live site.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<p>Now, when you want to work on the site locally, you will run the following command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<p>And it will load the information from the dev config.</p>
+
+<p>Serve your Jekyll one last time to ensure all the final changes have been updated. Here are the commands to push the site to GitHub pages:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<p>Add the GitHub repository.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<p>Ensures that you’re on the <code class="highlighter-rouge">gh-pages</code> branch, not <code class="highlighter-rouge">master</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<p>Track all files.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<p>Commit all files.</p>
+
+</div>
+
+<div class='postholder' style='margin-bottom:0px'>
+		<hr class='divider'>
+		<p> Thanks for reading <b>Rambling About Arbitrary Topics</b> written by Jayson Tian. It has 732 words and is categorized under <b>life</b>. You might also enjoy:</p>
+		
+		
+		
+
+		
+
+		    
+		    
+
+		    
+
+		    
+
+		  
+
+		    
+		    
+
+		    
+
+		    
+
+		  
+
+		    
+		    
+
+		    
+
+		    
+			      <a class='postitem' href="/index/life/2019/06/12/vacation-summer-ontario.html">
+					<h3>Vacationing in Ontario</h3>
+					<time> 
+					
+				      
+				        7 min. read
+				      
+
+					| Jun 12, 2019
+				</time>
+				</a>
+		      
+		      
+		    
+
+		  
+
+		    
+		    
+
+		    
+
+		    
+
+		  
+</div>
+			</article>
+		</main>
+			
+
+<footer class='footer'>
+	<div class='footer-text'>
+		<p><b>Jayson Tian</b> jots down his arbitrary thoughts on this website.
+		<br>He likes to doodle digitally, create music, binge netflix, experiment biology, design web stuff, and write about himself in third person.</p>
+	</div>
+	<div class='socialmedia'>
+		<a href='https://www.instagram.com/jaezun/?hl=en'><i class="fab fa-instagram"></i></a>
+		<a href='https://github.com/Jaysontian'><i class="fab fa-github"></i></a>
+		<a href='https://soundcloud.com/picxight-productions'><i class="fab fa-soundcloud"></i></a>
+		<a href='https://www.youtube.com/channel/UCdwsgMvJzdwnKI8WM5kYO5A/'><i class="fab fa-youtube"></i></a>
+	</div>
+</footer>
+
+	</div>
+</body>
+
+</html>

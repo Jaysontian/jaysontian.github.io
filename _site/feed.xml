@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jayson Tian</title>
+    <description>My blog site.
+</description>
+    <link>http://localhost:4000/index/</link>
+    <atom:link href="http://localhost:4000/index/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 10 Nov 2019 18:22:46 -0500</pubDate>
+    <lastBuildDate>Sun, 10 Nov 2019 18:22:46 -0500</lastBuildDate>
+    <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>ELISA Testing of Lyme Disease</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#interpreting-elisa-tests&quot; id=&quot;markdown-toc-interpreting-elisa-tests&quot;&gt;Interpreting ELISA Tests&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;An enzyme-linked immunosorbent assay (ELISA) is a test that uses enzymes and colour changes to identify a substance.&lt;/p&gt;
+
+&lt;p&gt;It can be used to identify specific surface markers or metabolites associated with particular diseases. Different variations of the ELISA test exist, but one of the most common protocols involves the sandwich method:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Known monoclonal antibodies are affixed to wells in a plate (these are the ‘capture antibodies’)&lt;/li&gt;
+  &lt;li&gt;A sample to be tested is added to the wells and any antigens present will bind to the appropriate capture antibody&lt;/li&gt;
+  &lt;li&gt;The plates are then washed to remove any unbound antigen&lt;/li&gt;
+  &lt;li&gt;A second set of monoclonal antibodies linked to colour-changing enzymes are then added to the wells&lt;/li&gt;
+  &lt;li&gt;These ‘detection antibodies’ will bind to any antigens captured, creating a sandwich (antibody - antigen - antibody)&lt;/li&gt;
+  &lt;li&gt;The wells are then washed again to remove any unbound detection antibodies&lt;/li&gt;
+  &lt;li&gt;When an appropriate substrate is added to the wells, the enzyme-linked detection antibodies will trigger a colour change&lt;/li&gt;
+  &lt;li&gt;Only wells in which a sandwich complex has formed will show a colour change, hence identifying the presence of an antigen&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://ib.bioninja.com.au/_Media/elisa_med.jpeg&quot; alt=&quot;Image&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;interpreting-elisa-tests&quot;&gt;Interpreting ELISA Tests&lt;/h2&gt;
+
+&lt;p&gt;ELISA tests can be used to diagnose disease conditions based on the presence of disease markers (antigens, metabolites)&lt;/p&gt;
+
+&lt;p&gt;Samples taken from infected patients will induce a colour change when treated with appropriate detection antibodies
+The amount of colour change can be used to signify rate of disease progression (more marker = more colour change)&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 06 Nov 2019 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/index/biology/2019/11/06/lyme-disease.html</link>
+        <guid isPermaLink="true">http://localhost:4000/index/biology/2019/11/06/lyme-disease.html</guid>
+        
+        
+        <category>biology</category>
+        
+      </item>
+    
+      <item>
+        <title>Diseases and Global Warming</title>
+        <description>&lt;p&gt;I recently read an article writing about how new diseases are popping up from random places never seen before. Apparently, they have a significantly higher viral resistance than other common bacteria, and 75% of treatment and vaccines are ineffective against them.&lt;/p&gt;
+
+&lt;p&gt;So I thought it was interesting as most diseases these days can be treated pretty easily. The article did not seem to cite or credit where they got the statistics so I did a little bit of digging on the internet and discovered that these types of bacteria actually carry ancient viruses that are rarely seen present day.&lt;/p&gt;
+
+&lt;p&gt;The cycle of life and evolution is actually pretty dope. We evolve to become resistant to many pathogens through immune response and B lymphocytes but in return, the pathogens – bacteria and viruses evolve and develop new strats to infect us again. This coexisting cycle seems to be continuous until most of us die from disease or we manage to kill off the disease.&lt;/p&gt;
+
+&lt;p&gt;Anyways, for now in the 21st century most of us are safe from any deadly virus raging to infect us and kill us, but will it always be like that?&lt;/p&gt;
+
+&lt;p&gt;Scientists have started to discover certain forms of archaic viruses from places of the most unimaginable. These include underground caves miles deep with no sunlight 24/7 (anaerobic bacteria), mummies from pyramids, and one fairly recent location of discovery: the arctic.&lt;/p&gt;
+
+&lt;p&gt;Of course we see the cliché ice cap melting and polar bear cub dying commercial and also hear about our sea levels rising but nobody has really considered another big effect of global warming: What would happen when we are suddenly exposed to the outbreak of nocuous diseases and prehistoric viruses that most modern vaccines have no effect on? Well, we basically have a post-apocalyptic world. Damn, what if the viruses were zombie diseases and we basically have a real life Walking Dead?&lt;/p&gt;
+
+&lt;p&gt;It’s actually the thought of how nobody is concerned about all this that is actually scary. Most people believe that they won’t be affected as long as they are far away. Well, think about the Walking Dead again 🧟‍♂️. In 2007, &lt;a href=&quot;http://www.bbc.com/earth/story/20170504-there-are-diseases-hidden-in-ice-and-they-are-waking-up&quot;&gt;a group of scientists revived a 8 million year old bacterium frozen in dormant ice at Beacon Valley in Antarctica&lt;/a&gt;. Honestly, the entire point is to show that the melting of ice will ultimately release terrible difficult-to-treat viruses into our international population and infect most people. Some of us will be able to become resistant and fight it off while some of us may die.&lt;/p&gt;
+
+&lt;p&gt;Long story short, don’t contribute to global warming 🔥&lt;/p&gt;
+
+&lt;p&gt;What I read on permafrost melting: [article here]&lt;/p&gt;
+</description>
+        <pubDate>Sat, 17 Aug 2019 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/index/biology/2019/08/17/global-warming-diseases.html</link>
+        <guid isPermaLink="true">http://localhost:4000/index/biology/2019/08/17/global-warming-diseases.html</guid>
+        
+        
+        <category>biology</category>
+        
+      </item>
+    
+      <item>
+        <title>Vacationing in Ontario</title>
+        <description>&lt;p&gt;Though Ontario seems like a pretty cold place during the winter and the busy city of Toronto has many things that may be quite typical or sometimes boring, there are actuall many places in Ontario that have more spotlight on mother nature and provide for a wilderness vacation outlet.&lt;/p&gt;
+
+&lt;p&gt;Enjoyed most in the summer times, the following places are literally in our backyards! There’s no need to travel to another province or country when you only have one week of summer left for vacationing!&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Blue Mountains, Collingwood&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Bruce Peninsula, Tobermory&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sauble Beach&lt;/p&gt;
+
+&lt;p&gt;Saugeen Shores&lt;/p&gt;
+
+&lt;p&gt;Point Farms Provincial Park&lt;/p&gt;
+
+&lt;p&gt;Goderich, Ontario&lt;/p&gt;
+
+&lt;p&gt;Bayfield, Bluewater&lt;/p&gt;
+
+&lt;p&gt;Grand Bend, Lambton Shores&lt;/p&gt;
+
+&lt;p&gt;Websters Falls, Dundas Peak&lt;/p&gt;
+
+&lt;p&gt;image-20190824193933495&lt;/p&gt;
+
+&lt;p&gt;Stop 1: Blue Mountain Resort
+Typical resort with attractions such as hiking, treetop trekking, great food, and possible camping sites. There is also a mountain coaster and village for shopping. Perfect summer time resort to relax at for a few days.&lt;/p&gt;
+
+&lt;p&gt;Stop 2: Town of Tobermory
+Tobermory is a harbour village on the Bruce Peninsula in the province of Ontario. Just southeast, Bruce Peninsula National Park is known for the Bruce Trail footpath on the craggy Niagara Escarpment, and the Grotto, a wave-carved cave in Georgian Bay. The village lies next to Fathom Five National Marine Park, which is home to the Flowerpot Island sea stacks, 19th-century lighthouses and multiple shipwreck dive sites. Order of travel:&lt;/p&gt;
+
+&lt;p&gt;Singing Sands [40 minutes]&lt;/p&gt;
+
+&lt;p&gt;Bruce Peninsula National Park [4 hours]&lt;/p&gt;
+
+&lt;p&gt;Fathom Five National marine Park [3 hours]&lt;/p&gt;
+
+&lt;p&gt;Read more&lt;/p&gt;
+
+&lt;p&gt;Stop 3: Sauble Beach
+Sauble Beach is a beach community and unincorporated area in the town of South Bruce Peninsula, Bruce County, in the northern area of southwestern Ontario, Canada. It is on the Bruce Peninsula, along the eastern shore of Lake Huron, on the north edge of the Saugeen Nation. The beach takes its name from that given by early French explorers to the sandy Sauble River, originally “La Rivière Au Sable” also indicating that the river emptied into Lake Huron at a sandy beach. The river was labelled with the French name on maps until 1881, when it became the Sauble River; in early years, a sawmill was built on the river, and later, a hydro electric plant.&lt;/p&gt;
+
+&lt;p&gt;Stop 4: Saugeen Shores
+Saugeen Shores is a town in Bruce County, Ontario, Canada, formed in 1998. On January 30, 1998, the provincial government amalgamated the Towns of Southampton and Port Elgin, together with Saugeen Township, to form the Town of Port Elgin-Saugeen-Southampton. On December 17, 1998, the Province renamed the entity as the Town of Saugeen Shores. The primary employment categories are agriculture, small business, tourism and work at the Bruce Power nuclear power station. The population doubles in the summer due to cottagers and campers who arrive in the area. Close to MacGregor Point Provincial Park, the town has several beaches on Lake Huron. In addition to the two main population centres of Southampton and Port Elgin, the town includes a portion of the village of Burgoyne and the North Bruce area, straddling the municipal eastern and southern boundary respectively. In 2016, the permanent population of Saugeen Shores was 13,715, in a land area of 171.05 square kilometres.&lt;/p&gt;
+
+&lt;p&gt;Stop 5: Town of Goderich
+Goderich is a town in the Canadian province of Ontario and is the county seat of Huron County. The town was founded by John Galt and William “Tiger” Dunlop of the Canada Company in 1827. First laid out in 1828, the town is named after Frederick John Robinson, 1st Viscount Goderich, who was British prime minister at the time. The town was officially incorporated in 1850. As of the Canada 2016 Census, the population is 7,628 in a land area of 8.64 square kilometres. Located on the eastern shore of Lake Huron at the mouth of the Maitland River, Goderich faces the lake to the west and is notable for its sunsets. Some claim that Queen Elizabeth II once commented that Goderich was “the prettiest town in Canada” although no reigning monarch has ever visited Goderich. The town indicates that tourism is among its important industries. It has been named one of Ontario’s best small towns by Comfort Life, a website for retirement living in Canada. The town participates yearly in the Communities in Bloom competition; and has won awards in many categories. In 2012, Goderich was a National Finalist in the competition, and was also part of the Circle of excellence.&lt;/p&gt;
+
+&lt;p&gt;Stop 6: Bayfield, Bluewater
+Bayfield is a community in Bluewater, Ontario, Canada in Huron County with a 2016 population of 1,112. It is on the eastern shore of Lake Huron at the mouth of Bayfield River. Bayfield is a popular tourist destination.&lt;/p&gt;
+
+&lt;p&gt;Stop 7: Grand Bend
+Grand Bend is a community located on the shores of Lake Huron in Southwestern Ontario, Canada. It is part of the Municipality of Lambton Shores in Lambton County.&lt;/p&gt;
+
+&lt;p&gt;Pinery Provincial Park&lt;/p&gt;
+
+&lt;p&gt;Grand Bend Beach&lt;/p&gt;
+
+&lt;p&gt;Horse Winery&lt;/p&gt;
+
+&lt;p&gt;Lambton Heritage Museum&lt;/p&gt;
+
+&lt;p&gt;Image result for grand bend beach&lt;/p&gt;
+
+&lt;p&gt;Stop 8: Websters Falls
+A beautiful trail hiking along a mountain up to Dundas peak, which is where the scenery of trees captures the view of many hikers. This is a great spot for viewing Hamilton as a whole.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 12 Jun 2019 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/index/life/2019/06/12/vacation-summer-ontario.html</link>
+        <guid isPermaLink="true">http://localhost:4000/index/life/2019/06/12/vacation-summer-ontario.html</guid>
+        
+        
+        <category>life</category>
+        
+      </item>
+    
+      <item>
+        <title>Rambling About Arbitrary Topics</title>
+        <description>&lt;h2 id=&quot;customizing-your-jekyll-theme&quot;&gt;Customizing your Jekyll Theme&lt;/h2&gt;
+
+&lt;p&gt;The default styles try to be basic, but they’re still far too stylized for my liking. We’re going to override all the styles and make them much more simple. You can turn off the Jekyll serve at this point and just start saving files. We’ll go from top to bottom alphabetically.&lt;/p&gt;
+
+&lt;p&gt;I’m using my own name as an example, but obviously change everything to match you.&lt;/p&gt;
+
+&lt;h3 id=&quot;hello&quot;&gt;Hello&lt;/h3&gt;
+
+&lt;p&gt;In Jekyll, &lt;strong&gt;_includes&lt;/strong&gt; are files that should show up on every page - header, footer, etc.&lt;/p&gt;
+
+&lt;h4 id=&quot;footerhtml&quot;&gt;footer.html&lt;/h4&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;headhtml&quot;&gt;head.html&lt;/h4&gt;
+
+&lt;p&gt;Any &lt;code class=&quot;highlighter-rouge&quot;&gt;head&lt;/code&gt; metadata.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;headerhtml&quot;&gt;header.html&lt;/h4&gt;
+
+&lt;p&gt;Your navigation and header. I will dynamically load all pages into the navigation bar, except for the blog page, which I will load manually.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;layouts&quot;&gt;&lt;em&gt;layouts&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;The layout that your content will conform to.&lt;/p&gt;
+
+&lt;h4 id=&quot;defaulthtml&quot;&gt;default.html&lt;/h4&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;pagehtml&quot;&gt;page.html&lt;/h4&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;All the dashes at the top are &lt;strong&gt;mandatory&lt;/strong&gt;. If you don’t include them, the website won’t work properly. For pages and posts, the default layout gets loaded, plus any additional layout information you desire.&lt;/p&gt;
+
+&lt;h4 id=&quot;posthtml&quot;&gt;post.html&lt;/h4&gt;
+
+&lt;p&gt;Same as the page, but with date and author metadata.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;pages&quot;&gt;&lt;em&gt;pages&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;The default Jekyll website does not come with a &lt;strong&gt;_pages&lt;/strong&gt; directory, but I like to include it so the main directory stays clean.&lt;/p&gt;
+
+&lt;h4 id=&quot;01_aboutmd&quot;&gt;01_about.md&lt;/h4&gt;
+
+&lt;p&gt;Now we’re creating the markdown files. Prepending them with a number ensures that they appear in the order you specify.&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;02_contactmd&quot;&gt;02_contact.md&lt;/h4&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;_posts&quot;&gt;_posts&lt;/h3&gt;
+
+&lt;p&gt;I’m going to leave the post exactly as it is.&lt;/p&gt;
+
+&lt;p&gt;Delete about.md from the main directory, since we’ve put it in the &lt;strong&gt;_pages&lt;/strong&gt; directory.&lt;/p&gt;
+
+&lt;h3 id=&quot;indexhtml&quot;&gt;index.html&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;index.html&lt;/strong&gt; in the main directory will be the main page of the site.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;blog&quot;&gt;blog&lt;/h3&gt;
+
+&lt;p&gt;Create a new directory called &lt;strong&gt;blog&lt;/strong&gt;. Inside, create an &lt;strong&gt;index.html&lt;/strong&gt;. This will be the main blog page that will contain all your posts.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;css&quot;&gt;css&lt;/h3&gt;
+
+&lt;p&gt;The &lt;strong&gt;css&lt;/strong&gt; directory in the root should contain one file - &lt;strong&gt;main.scss&lt;/strong&gt;. Edit it to contain the following:&lt;/p&gt;
+
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Leave the top part exactly as is.&lt;/p&gt;
+
+&lt;h3 id=&quot;_sass&quot;&gt;_sass&lt;/h3&gt;
+
+&lt;p&gt;The absolute last directory that we need to edit - the sass partials. Create each of these files in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_sass&lt;/code&gt; directory.&lt;/p&gt;
+
+&lt;h4 id=&quot;_basescss&quot;&gt;_base.scss&lt;/h4&gt;
+
+&lt;p&gt;Variables, mixins, and resets will go here.&lt;/p&gt;
+
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;_syntax-highlightingscss&quot;&gt;_syntax-highlighting.scss&lt;/h4&gt;
+
+&lt;p&gt;Simply remove this line from the file:&lt;/p&gt;
+
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;_layoutscss&quot;&gt;_layout.scss&lt;/h4&gt;
+
+&lt;p&gt;All my styles will go in here. I made a simple, responsive website that doesn’t rely on any frameworks.&lt;/p&gt;
+
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;serve-jekyll&quot;&gt;Serve Jekyll&lt;/h2&gt;
+
+&lt;p&gt;At this point, all the files are ready and jekyll can be served.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you inserted all the code exactly as above, the sass partials will compile into the main.scss. All the rest of the files will write to &lt;strong&gt;_site&lt;/strong&gt; site, which is the distribution folder.&lt;/p&gt;
+
+&lt;p&gt;Server running… press ctrl-c to stop.&lt;/p&gt;
+
+&lt;p&gt;If I make a change to any of the sass files, they should compile.&lt;/p&gt;
+
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;pushing-jekyll-site-to-github-pages&quot;&gt;Pushing Jekyll site to GitHub pages&lt;/h2&gt;
+
+&lt;p&gt;Create an empty repository in GitHub. Mine is &lt;strong&gt;startjekyll&lt;/strong&gt;, so the Git repo URL is &lt;code class=&quot;highlighter-rouge&quot;&gt;https://github.com/taniarascia/startjekyll&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;There is one change that needs to be made in order to have one site for both your local Jekyll and the live GitHub pages.&lt;/p&gt;
+
+&lt;p&gt;Duplicate your &lt;strong&gt;_config.yml&lt;/strong&gt; and call it &lt;strong&gt;_config_dev.yml&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Leave the &lt;strong&gt;_config_dev.yml&lt;/strong&gt; as is, and change &lt;strong&gt;_config.yml&lt;/strong&gt; for the live site.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now, when you want to work on the site locally, you will run the following command:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And it will load the information from the dev config.&lt;/p&gt;
+
+&lt;p&gt;Serve your Jekyll one last time to ensure all the final changes have been updated. Here are the commands to push the site to GitHub pages:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Add the GitHub repository.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Ensures that you’re on the &lt;code class=&quot;highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch, not &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Track all files.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Commit all files.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 30 Nov 2015 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/index/life/2015/11/30/first-post.html</link>
+        <guid isPermaLink="true">http://localhost:4000/index/life/2015/11/30/first-post.html</guid>
+        
+        
+        <category>life</category>
+        
+      </item>
+    
+  </channel>
+</rss>

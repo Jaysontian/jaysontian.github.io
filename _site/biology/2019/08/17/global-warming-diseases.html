@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="/indexcss/main.css">
+	<!-- Place this tag in your head or just before your close body tag. -->
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/e8c8e8e543.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<title>Diseases and Global Warming - Jayson Tian</title>
+	<link rel="canonical" href="http://localhost:4000/index/biology/2019/08/17/global-warming-diseases.html">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+
+	<style>
+
+		@import url(https://rsms.me/inter/inter.css);
+html {
+    font-family: Inter, sans-serif
+}
+
+@supports (font-variation-settings:normal) {
+    html {
+        font-family: 'Inter var', sans-serif
+    }
+
+
+
+/*@font-face {
+    font-family: Avenir Pro;
+    src: url("fonts/AvenirNextLTPro-Regular.woff") format("woff");
+}*/
+.movedown{
+    margin-top:160px;
+}
+html{
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: black;
+    margin:0px;
+}
+
+p {
+    box-sizing:border-box;
+    color:rgb(20, 20, 20);
+    display:block;
+    font-family:"Inter var", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-feature-settings:"kern", "liga", "clig", "calt";
+    font-kerning:normal;
+    font-size:16.78px;
+    font-stretch:100%;
+    font-style:normal;
+    font-variant-caps:normal;
+    font-variant-east-asian:normal;
+    font-variant-ligatures:normal;
+    font-variant-numeric:normal;
+    font-weight:400;
+    line-height:27.9552px;
+    margin-block-end:26.88px;
+    text-size-adjust:100%;
+    -webkit-font-smoothing:antialiased;
+}
+
+
+
+li {
+    color:rgb(20, 20, 20);
+    font-size:16.78px;
+    font-stretch:100%;
+    font-weight:400;
+    line-height:27.9552px;
+    margin-block-end:26.88px;
+    -webkit-font-smoothing:antialiased;
+    margin:0px;
+}
+
+.category{
+    padding: 5px 15px;
+    font-size:16.7px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:5px;
+}
+
+.category:hover{
+    opacity:0.8;
+}
+
+.category:nth-child(1){
+    background-color: #ffd9e3;
+    color:#b04561;
+}
+
+.category:nth-child(2){
+    background-color: #ffe4bf;
+    color:#cf8115;
+}
+
+.post-body a {
+  color:#ff5289;
+  text-decoration: none;
+  font-weight:bold;
+  border-bottom:2px #faacc5 solid;
+}
+
+.post-body a:hover{
+  background-color:#fadce6;
+}
+
+.postholder{
+    margin-top:50px;
+    max-width:750px;
+    color:rgba(0,0,0,0.85); 
+}
+
+.postitem{
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+    text-decoration: none;
+    padding:15px 10px;
+    border-radius:8px;
+    transition:0.3s ease-in-out all;
+   
+}
+
+.postitem:hover{
+    background-color:rgba(0,0,0,0.1);
+}
+
+.postitem:hover h3{
+    color:#1783ff;
+}
+
+.postitem h3{
+    margin-top:0px;
+    height:20px;
+    font-size:20px;
+    font-weight: 600;
+    color:rgba(0,0,0,0.85);
+    margin:0px;
+    transition:0.3s ease-in-out all;
+}
+
+.postitem time{
+    color:rgba(0,0,0,0.45);
+    float:right;
+    height:20px;
+    font-weight:bold;
+}
+
+h1 {
+    margin-bottom: 40px;
+    color: rgba(0, 0, 0, .8);
+    font-size: 22pt;
+    font-weight:700;
+}
+
+h2 {
+    margin-top: 40px;
+    color: rgba(0, 0, 0, .8);
+    font-size: 16pt;
+    font-weight:700;
+}
+
+h3 {
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, .8);
+    font-size: 16pt;
+    font-weight:500;
+}
+
+h4{
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, .8);
+    font-size: 13pt;
+    font-weight:600;
+}
+
+hr {
+    height: 2px;
+    background-color:rgba(0,0,0,0.08);
+    border-radius:30px;
+    border:none;
+}
+
+img{
+    width:100%;
+}
+
+.ais-search-box{
+    margin-top:20px;
+    margin-bottom:100px;
+}
+
+.divider{
+    height: 2px;
+    background-color:rgba(0,0,0,0.25);
+    border-radius:30px;
+    border:none;
+}
+
+.post-title{
+    font-size:35px;
+    margin-bottom:25px;
+}
+
+.post-detail{
+    font-weight:bold;
+    color:rgba(0,0,0,0.75);
+    margin-bottom:30px;
+}
+
+#markdown-toc{
+    padding:12px;
+    border:2px solid rgba(0,0,0,0.1);
+    border-radius:5px;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+.btn{
+    height:27px;
+    padding:0px 20px;
+    outline: 0;
+    line-height: 0;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin-top: 1.3rem;
+    margin-left: 1.3rem;
+    background-color:#f5f7fa;
+    border-radius:3.5px;
+    color: #242a2e;
+    border:1px solid #bcc0c4;
+    font-weight:600;
+}
+
+.btn:hover {
+    background-color: #e5e7ea;
+    border:1px solid #93979b;
+}
+
+.btn-modern {
+    padding:5px 10px;
+    outline: 0;
+    line-height: 0;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin-top: 1.3rem;
+    margin-left: 1.3rem;
+    background-color:rgba(0,0,0,0.05);
+    border:none;
+    border-radius:3.5px;
+    color: #242a2e;
+    font-weight:500;
+    text-decoration: none;
+}
+
+.btn-modern:hover {
+    background-color: rgba(0,0,0,0.13);
+}
+
+.padding {
+    max-width: 750px;
+    padding: 1.2em;
+    padding-top: 0px;
+    margin: 0 auto
+}
+
+
+#navbar {
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    height: 50px;
+    top: 0;
+    padding-top: 55px;
+    z-index: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+#navbar.active {
+    box-shadow: 0 4px 10px -2px rgba(0, 0, 0, .2);
+    padding-top: 10px;
+    height: 46px
+}
+
+#navcon {
+    max-width: 750px;
+    margin: auto
+}
+
+.links {
+    cursor: pointer;
+    float: left;
+    line-height: 10px;
+    text-align: center;
+    color:rgba(0,0,0,0.65);
+    transition: all .3s ease-in-out;
+    margin-left: 15px;
+    padding: 12px;
+    border-radius:14px;
+    text-decoration: none;
+}
+
+.links:hover {
+    background-color:rgba(0,0,0,0.08);
+    color:rgb(64, 64, 64)
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+    color:rgba(0,0,0,0.8);
+    text-decoration: none;
+    transform:translateX(-25px);
+}
+
+#logo:hover {
+    opacity:0.3;
+}
+
+.right {
+    float: right
+}
+
+
+
+
+
+
+#home {
+    margin-top: 200px;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+#bio{
+  max-width:530px;
+}
+
+#bio a{
+    color:#e39044;
+  text-decoration: none;
+  font-weight:bold;
+  border-bottom:2px #fad8b9 solid;
+}
+
+#bio a:hover{
+    background-color:#ffe2c7;
+}
+
+#image {
+    float: right;
+    margin-left: 3.5rem;
+    margin-bottom: 0;
+    max-width: 190px;
+    z-index: 0;
+    border-radius:100px;
+    transition: 0.2s all ease-in-out;
+}
+
+#image:hover{
+  transform:scale(1.1);
+}
+
+#contact {
+    margin-top: 50px;
+    display: flex;
+    width: 500px
+}
+
+
+#fact {
+    margin-left: 20px;
+    text-align: center;
+    max-width: 90%;
+    font-family: Indie Flower;
+    font-size: 22px
+}
+
+
+
+#social {
+    max-width: 750px;
+    margin-top: 60px;
+    padding: 10px 35px;
+    border: 2px solid rgba(0, 0, 0, .6);
+    border-radius: 5px;
+    padding-bottom: 20px
+}
+
+#social button{
+    height:35px;
+    padding:10px 15px;
+    outline: 0;
+    line-height: 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin-top: 1.3rem;
+    margin-left: 1.3rem;
+    background-color:rgba(0,0,0,0.05);
+    border:none;
+    border-radius:3.5px;
+    color: #242a2e;
+    font-weight:500;
+    border:1px solid #bcc0c4;
+}
+
+.projects-con {
+    max-width: 750px;
+    margin-top: 115px;
+    padding-bottom: 20px;
+}
+
+.projects-con div{
+  border-bottom:2px solid rgba(0,0,0,0.1);
+}
+
+.projects-con div:first-child{
+ margin-top:16px;
+}
+
+.projects-con div:last-child{
+  border-bottom:none;
+}
+
+.project {
+    display: flex;
+    width:100%;
+    max-height:80px;
+}
+
+.project h4 {
+    width: 25%;
+}
+
+.project p {
+    width: 50%;
+    margin-right:40px;
+}
+
+.project i {
+    font-size: 26px;
+    color: rgba(0,0,0,0.8);
+    margin-top: 1.3rem;
+    margin-left: 1.3rem
+}
+
+
+.footer{
+    display:flex;
+  width:100%;
+  height:120px;
+  margin-top:40px;
+  margin-bottom:0px;
+  border-top:2px solid rgba(0,0,0,0.25);
+  padding-top:10px;
+}
+
+.footer-text{
+    width:70%;
+}
+
+.footer-text p{
+    font-size:15px;
+    line-height: 22px;
+    color:rgba(0,0,0,0.77);
+}
+
+.socialmedia {
+    width:30%;
+    display:flex;
+    justify-content: space-around;
+    margin-top:24px;
+}
+
+.socialmedia a{
+    color:rgba(0,0,0,0.75);
+    font-size:26px;
+}
+
+
+.footer a{
+  text-decoration: none;
+}
+
+.footer a:hover{
+  color:rgba(0,0,0,0.7);
+}
+
+
+
+
+	</style>
+
+</head> 
+
+
+<body>
+	<div class='padding'>
+		
+<script>
+	$(window).scroll(function() {     
+    var scroll = $(window).scrollTop();
+    if (scroll > 0) {
+        $("#navbar").addClass("active");
+    }
+    else {
+        $("#navbar").removeClass("active");
+    }
+	});
+</script>
+
+<div id='navbar'>
+    <div id='navcon'>
+        <a class='links logo' href="/index/index">Jayson Tian</a>
+
+        <div class='right'>
+            <a class='links' href="/index/about">About</a>
+			<a class='links' href="/index/projects">Projects</a>
+            <a class='links' href="/index/blog">Blog</a>
+    	</div>
+    </div>
+</div>
+
+
+
+
+ 
+		<main class='movedown'>
+			<article>
+				<h1 class='post-title'>Diseases and Global Warming</h1>
+<div class='post-detail'>Aug 17, 2019 |       
+	
+      
+        3 min. read
+      
+
+      <div class='right'>
+			<a class="category" href="/index/category/biology.html">Biology</a>
+      </div>
+
+  </div>
+
+<hr class='divider'>
+<div class='post-body'>
+	<br>
+<p>I recently read an article writing about how new diseases are popping up from random places never seen before. Apparently, they have a significantly higher viral resistance than other common bacteria, and 75% of treatment and vaccines are ineffective against them.</p>
+
+<p>So I thought it was interesting as most diseases these days can be treated pretty easily. The article did not seem to cite or credit where they got the statistics so I did a little bit of digging on the internet and discovered that these types of bacteria actually carry ancient viruses that are rarely seen present day.</p>
+
+<p>The cycle of life and evolution is actually pretty dope. We evolve to become resistant to many pathogens through immune response and B lymphocytes but in return, the pathogens – bacteria and viruses evolve and develop new strats to infect us again. This coexisting cycle seems to be continuous until most of us die from disease or we manage to kill off the disease.</p>
+
+<p>Anyways, for now in the 21st century most of us are safe from any deadly virus raging to infect us and kill us, but will it always be like that?</p>
+
+<p>Scientists have started to discover certain forms of archaic viruses from places of the most unimaginable. These include underground caves miles deep with no sunlight 24/7 (anaerobic bacteria), mummies from pyramids, and one fairly recent location of discovery: the arctic.</p>
+
+<p>Of course we see the cliché ice cap melting and polar bear cub dying commercial and also hear about our sea levels rising but nobody has really considered another big effect of global warming: What would happen when we are suddenly exposed to the outbreak of nocuous diseases and prehistoric viruses that most modern vaccines have no effect on? Well, we basically have a post-apocalyptic world. Damn, what if the viruses were zombie diseases and we basically have a real life Walking Dead?</p>
+
+<p>It’s actually the thought of how nobody is concerned about all this that is actually scary. Most people believe that they won’t be affected as long as they are far away. Well, think about the Walking Dead again 🧟‍♂️. In 2007, <a href="http://www.bbc.com/earth/story/20170504-there-are-diseases-hidden-in-ice-and-they-are-waking-up">a group of scientists revived a 8 million year old bacterium frozen in dormant ice at Beacon Valley in Antarctica</a>. Honestly, the entire point is to show that the melting of ice will ultimately release terrible difficult-to-treat viruses into our international population and infect most people. Some of us will be able to become resistant and fight it off while some of us may die.</p>
+
+<p>Long story short, don’t contribute to global warming 🔥</p>
+
+<p>What I read on permafrost melting: [article here]</p>
+
+</div>
+
+<div class='postholder' style='margin-bottom:0px'>
+		<hr class='divider'>
+		<p> Thanks for reading <b>Diseases and Global Warming</b> written by Jayson Tian. It has 440 words and is categorized under <b>biology</b>. You might also enjoy:</p>
+		
+		
+		
+
+		
+
+		    
+		    
+
+		    
+
+		    
+			      <a class='postitem' href="/index/biology/2019/11/06/lyme-disease.html">
+					<h3>ELISA Testing of Lyme Disease</h3>
+					<time> 
+					
+				      
+				        2 min. read
+				      
+
+					| Nov 6, 2019
+				</time>
+				</a>
+		      
+		      
+		    
+
+		  
+
+		    
+		    
+
+		    
+
+		    
+
+		  
+
+		    
+		    
+
+		    
+
+		    
+
+		  
+
+		    
+		    
+
+		    
+
+		    
+
+		  
+</div>
+			</article>
+		</main>
+			
+
+<footer class='footer'>
+	<div class='footer-text'>
+		<p><b>Jayson Tian</b> jots down his arbitrary thoughts on this website.
+		<br>He likes to doodle digitally, create music, binge netflix, experiment biology, design web stuff, and write about himself in third person.</p>
+	</div>
+	<div class='socialmedia'>
+		<a href='https://www.instagram.com/jaezun/?hl=en'><i class="fab fa-instagram"></i></a>
+		<a href='https://github.com/Jaysontian'><i class="fab fa-github"></i></a>
+		<a href='https://soundcloud.com/picxight-productions'><i class="fab fa-soundcloud"></i></a>
+		<a href='https://www.youtube.com/channel/UCdwsgMvJzdwnKI8WM5kYO5A/'><i class="fab fa-youtube"></i></a>
+	</div>
+</footer>
+
+	</div>
+</body>
+
+</html>

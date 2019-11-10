@@ -1,0 +1,74 @@
+---
+layout: default
+---
+
+
+<h1 class='post-title'>{{ page.title }}</h1>
+<div class='post-detail'>{{ page.date | date: "%b %-d, %Y" }} |       
+	{% capture words %}
+        {{ page.content | number_of_words | minus: 250 }}
+      {% endcapture %}
+      {% if words contains "-" %}
+        Quick read
+      {% else %}
+        {{ words | plus: 250 | divided_by: 120 | append: " min. read" }}
+      {% endif %}
+
+      <div class='right'>
+			<a class="category" href="{{site.baseurl}}/category/{{ page.categories | first }}.html">{{ page.categories | first | capitalize }}</a>
+      </div>
+
+  </div>
+
+<hr class='divider'>
+<div class='post-body'>
+	<br>
+{{ content }}
+</div>
+
+<div class='postholder' style='margin-bottom:0px'>
+		<hr class='divider'>
+		<p> Thanks for reading <b>{{page.title}}</b> written by Jayson Tian. It has {{page.content | number_of_words}} words and is categorized under <b>{{page.categories}}</b>. You might also enjoy:</p>
+		{% assign maxRelated = 3 %}
+		{% assign minCommonTags =  1 %}
+		{% assign maxRelatedCounter = 0 %}
+
+		{% for post in site.posts %}
+
+		    {% assign sameTagCount = 0 %}
+		    {% assign commonTags = '' %}
+
+		    {% for category in post.categories %}
+		      {% if post.url != page.url %}
+		        {% if page.categories contains category %}
+		          {% assign sameTagCount = sameTagCount | plus: 1 %}
+		          {% capture tagmarkup %} <span class="label label-default">{{ category }}</span> {% endcapture %}
+		          {% assign commonTags = commonTags | append: tagmarkup %}
+		        {% endif %}
+		      {% endif %}
+		    {% endfor %}
+
+		    {% if sameTagCount >= minCommonTags %}
+			      <a class='postitem' href="{{ post.url | prepend: site.baseurl }}">
+					<h3>{{post.title }}</h3>
+					<time> 
+					{% capture words %}
+				        {{ post.content | number_of_words | minus: 250 }}
+				      {% endcapture %}
+				      {% if words contains "-" %}
+				        Quick read
+				      {% else %}
+				        {{ words | plus: 250 | divided_by: 120 | append: " min. read" }}
+				      {% endif %}
+
+					| {{ post.date | date: "%b %-d, %Y" }}
+				</time>
+				</a>
+		      {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+		      {% if maxRelatedCounter >= maxRelated %}
+		        {% break %}
+		      {% endif %}
+		    {% endif %}
+
+		  {% endfor %}
+</div>
