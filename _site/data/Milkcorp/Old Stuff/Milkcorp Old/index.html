@@ -1,0 +1,109 @@
+<html>
+<head>
+	<script src="jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
+	<script src="data.js" ></script>
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="game.js"></script>
+	<script src="bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="icons.js"></script>
+</head>
+<body>
+	<div id="notify" class="modal">
+	  <div class="modal-content">
+	  	<h4 id='notify-title'></h4>
+	    <p id='notify-text'></p>
+	    <button onclick='closenotify()'>OK</button>
+	  </div>
+	</div>
+
+
+	<!--<div id='topbar'>
+	   	<div class='topbar-top-div'>
+	   		<div id='power-div'>MP <span class='mp'>300</span></div>
+	   		<div id='coinsndiamonds'>
+	   			<div class='coinsndiamonds'>
+	   				<i class="fas fa-coins"></i>
+	   				<span id='coins'>250</span>
+	   			</div>
+	   			<div class='coinsndiamonds'>
+	   				<i class="fa fa-gem gemicon"></i>
+	   				<span id='diamonds'>250</span>
+	   			</div>
+	   		</div>
+	   	</div>-
+	   	<div class='topbar-bottom-div'>
+		   	<div class='progress-row'>
+		   		<div id='level-div'>HP <span id='hp'>1</span><span id='maxhp'> / 20</div>
+		   		<div class="progress">
+			  		<div class="progress-bar pbar-hp" id='progress' role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:70%">20 HP
+				  	</div>
+				</div>
+		   	</div>--> <!--
+		   	<div class='progress-row' style='margin-top:5px'>
+		   		<div id='level-div'>Lv. <span id='level'>1</span><span id='maxlevel'> / 5</span></div>
+		   		<div class="progress">
+			  		<div class="progress-bar pbar-mp" id='progress' role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+				  	</div>
+				</div>
+		   	</div>
+		</div>
+	</div>-->
+
+	<div class='container-fluid pl-5' id='home'>
+		<div id='shop'>
+			<div id="Actions" class="tabcontent"></div>
+			<div id="Jobs" class="tabcontent"><!--
+			  <div class='item'>
+			  	<img src='images/items/upgrades/0.png'>
+			  	<div class='column'>
+			  		<h2>Max Level Up</h2>
+			  		<p>Upgrade max level of cow by 1.</p>
+			  	</div>
+			  	<button>$20</button>
+			  </div>-->
+			</div>
+
+			<div id="Research" class="tabcontent"></div>
+
+			<div id="Items" class="tabcontent"></div>
+
+			<div id="Diamonds" class="tabcontent"></div>
+
+			<div class="tab">
+				<button class="tablinks actions" onclick="openCity(event, 'Actions')"><i class="fas fa-dumbbell"></i><br>Actions</button>
+			  	<button class="tablinks jobs" onclick="openCity(event, 'Jobs')"><i class="fas fa-arrow-alt-circle-up"></i><br>Jobs</button>
+			  	<button class="tablinks research" onclick="openCity(event, 'Research')"><i class="fas fa-apple-alt"></i><br>Research</button>
+			  	<button class="tablinks" onclick="openCity(event, 'Items')"><i class="fas fa-spray-can"></i><br>Items</button>
+			  	<button class="tablinks" onclick="openCity(event, 'Diamonds')"><i class="fas fa-gem"></i><br>Diamonds</button>
+			</div>
+
+		</div>
+		<div id='feeder'>
+			<div class='feed' id='milk-div'>Milk <span id='milk'>0</span> <a id='farmerrate'>(0.5/s)</a></div>
+			<div class='feed' id='price-div'>Price <span id='milkcost'>$1</span></div>
+			<div class='feed' id='coins-div'>Coins <span id='coins'>0</span> <a id='vendorrate'>(0.5/s)</a></div>
+			<div class='feed' id='farmers-div'>Farmers <span id='farmers'>1</span></div>
+			<div class='feed' id='vendors-div'>Vendors <span id='vendors'>0</span></div>
+			<div class='feed' id='scientists-div'>Scientists <span id='scientists'>0</span></div>
+			<div class='feed' id='research-div'>Research <span id='research'>0</span> <a id='scientistrate'>(0.5/s)</a></div>
+		</div>
+		<img id='pic' src='giphy.gif'>
+	</div>
+
+
+	<div id='settings'>
+		<button onclick="save()"><br>Save</button>
+		<button onclick="restartgame()"><br>Restart</button>
+	</div>
+
+
+	<div id='navbar'>
+	    <button id='homenav' onclick="show('#home')"><i class="fas fa-home"></i></button>
+	    <button id='settingsnav' onclick="show('#settings')"><i class="fas fa-cog"></i></button>
+	  </div>
+</body>
+</html>
