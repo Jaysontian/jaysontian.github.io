@@ -17,7 +17,11 @@ This page contains most of my work. I just want to keep stuff here no matter if 
 
 I like to [compose music](https://soundcloud.com/picxight-productions) when I'm bored. I like to make calming piano and guitar pieces, but I also experiment with other genres.
 
-- 
+- [A Warm Place](https://soundcloud.com/picxight-productions/a-warm-place)
+- [The Best of Us](https://soundcloud.com/picxight-productions/the-best-of-us)
+- [All The Best](https://soundcloud.com/picxight-productions/all-the-best)
+- [Somewhere in the Sky](https://soundcloud.com/picxight-productions/somewhere-in-the-sky)
+- [Imaginary](https://soundcloud.com/picxight-productions/imaginary)
 
 ## Websites
 

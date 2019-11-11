@@ -13,12 +13,12 @@ I spent some time trying to make this website look nice and simple. I believe in
 
 Because this page is about me, I'm going to be as narcissistic as possible. I like:
 
-- Binging tons of Netflix - I need to start watching [suits](https://en.wikipedia.org/wiki/Suits_(American_TV_series)).
+- Binging tons of Netflix - I need to start watching [Suits](https://en.wikipedia.org/wiki/Suits_(American_TV_series)).
 - Watching good horror movies the day they come out.
 - Drinking, rating, and finding the best milk tea in Toronto.
 - Watching TikToks even though it's a waste of time.
-- Playing a lot of incremental games or games that use up minimal brain cells.
-- Spending more time sorting music and making playlists than listening to it on Spotify.
+- Playing a lot of incremental games like [this one](http://cirri.al/sharks/) or games that use up minimal brain cells.
+- Spending more time sorting music and making playlists than listening to it on [Spotify](https://open.spotify.com/user/jaezun?si=15-y63SAQIWCmJ2yh4g8Rg).
 - Reading psychology or biology news.
 - I can't for the life of me keep Snapchat streaks for more than a week.
 - I am not a morning person and need at least 8 hours of sleep minimum.
