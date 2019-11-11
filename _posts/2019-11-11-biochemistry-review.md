@@ -6,17 +6,28 @@ categories: biology
 published: true
 ---
 
-## collapsible markdown?
+## Biochemistry Review Questions
 
-<details><summary>CLICK ME</summary>
+<details><summary>How common are the elements that living systems are made out of?  What are these elements?</summary>
 <p>
 
-#### yes, even hidden code blocks!
+**Hydrogen, Carbon, Oxygen, Nitrogen**  
 
-```python
-print("hello world!")
-```
+</p></details>
 
-</p>
-</details>
+<details><summary>Explain the cause of molecular polarity. </summary>
+<p>
+
+**Molecular polarity occurs when there is an unequal sharing of covalent bonding electrons between two non-metals. When one has a greater/stronger electronegativity (hold of electrons) than another, a polar bond occurs.**    
+
+</p></details>
+
+<details><summary>Why are radioactive elements useful for the study of biological systems?  </summary>
+<p>
+
+**Scientists can tag specific molecules without alternating the structure or function of the studied compounds.**     
+
+</p></details>
+
+
 
