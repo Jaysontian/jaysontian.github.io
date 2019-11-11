@@ -11,21 +11,21 @@ published: true
 <details><summary>How common are the elements that living systems are made out of?  What are these elements?</summary>
 <p>
 
-Hydrogen, Carbon, Oxygen, Nitrogen
+> Hydrogen, Carbon, Oxygen, Nitrogen
 
 </p></details>
 
 <details><summary>Explain the cause of molecular polarity. </summary>
 <p>
 
-Molecular polarity occurs when there is an unequal sharing of covalent bonding electrons between two non-metals. When one has a greater/stronger electronegativity (hold of electrons) than another, a polar bond occurs.
+> Molecular polarity occurs when there is an unequal sharing of covalent bonding electrons between two non-metals. When one has a greater/stronger electronegativity (hold of electrons) than another, a polar bond occurs.
 
 </p></details>
 
 <details><summary>Why are radioactive elements useful for the study of biological systems?  </summary>
 <p>
 
-Scientists can tag specific molecules without alternating the structure or function of the studied compounds.   
+> Scientists can tag specific molecules without alternating the structure or function of the studied compounds.   
 
 </p></details>
 
@@ -47,14 +47,14 @@ Scientists can tag specific molecules without alternating the structure or funct
 <details><summary>Why is carbon central to the structure of all biological molecules?   </summary>
 <p>
 
-It has four valence electrons which means it can form single, double, and triple bonds! That means many elements can bond to it. Carbon-carbon bonds are extremely strong.
+> It has four valence electrons which means it can form single, double, and triple bonds! That means many elements can bond to it. Carbon-carbon bonds are extremely strong.
 
 </p></details>
 
 <details><summary>What are functional groups and why are they important in biochemistry?</summary>
 <p>
 
-They act as chemical motifs and their presence allows us to predict properties and behaviours of those molecules.
+> They act as chemical motifs and their presence allows us to predict properties and behaviours of those molecules.
 
 </p></details>
 
