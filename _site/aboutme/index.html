@@ -53,7 +53,7 @@ body {
 
 p {
     box-sizing:border-box;
-    color:rgb(20, 20, 20);
+    color:rgb(50, 50, 50);
     display:block;
     font-family:"Inter var", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
     font-feature-settings:"kern", "liga", "clig", "calt";
@@ -74,15 +74,29 @@ p {
 
 
 
+
 li {
-    color:rgb(20, 20, 20);
+    color:rgb(50, 50, 50);
     font-size:16.78px;
     font-stretch:100%;
     font-weight:400;
-    line-height:27.9552px;
+    line-height:30px;
     margin-block-end:26.88px;
     -webkit-font-smoothing:antialiased;
     margin:0px;
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: rgba(0,0,0,0.3); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
 .category{
@@ -552,22 +566,40 @@ img{
 				   <div class='post-body'>
     <h1 id="about-me">About Me</h1>
 
-<p><em>Warning: This page is about me being narcissistic.</em> I’m Jayson Tian, and I have this website up as a place to record my <strong>hobbies</strong>, things I’ve <strong>learned</strong>, and my <strong>thoughts</strong>. I want to keep a digital account of my high school life so I can look back it in the future (like in uni).</p>
+<p>Aloha! I’m Jayson Tian, and I have this website up as a place to record my <strong>hobbies</strong>, things I’ve <strong>learned</strong>, and my <strong>thoughts</strong>. I want to keep a digital account of my high school life so I can look back it in the future (like in uni).</p>
 
 <p>I spent some time trying to make this website look nice and simple. I believe in minimalism and I also enjoy learning about web design and development (It’s kinda cool).</p>
 
-<h2 id="newsletter">Newsletter</h2>
+<p>Because this page is about me, I’m going to be as narcissistic as possible. I like:</p>
 
-<p>I send out a message whenever I write something new. Sign up for the newsletter to get notified.</p>
+<ul>
+  <li>Binging tons of Netflix - I need to start watching <a href="https://en.wikipedia.org/wiki/Suits_(American_TV_series)">suits</a>.</li>
+  <li>Watching good horror movies the day they come out.</li>
+  <li>Drinking, rating, and finding the best milk tea in Toronto.</li>
+  <li>Watching TikToks even though it’s a waste of time.</li>
+  <li>Playing a lot of incremental games or games that use up minimal brain cells.</li>
+  <li>Spending more time sorting music and making playlists than listening to it on Spotify.</li>
+  <li>Reading psychology or biology news.</li>
+  <li>I can’t for the life of me keep Snapchat streaks for more than a week.</li>
+  <li>I am not a morning person and need at least 8 hours of sleep minimum.</li>
+</ul>
 
-<section id="social">
-    <h3>Get In Touch 🤙</h3>
-    <p>Feel free to annoy me anytime via the following accounts:</p>
-    <button class="btn2" title="slide into my DMs!" onclick="window.location.assign('https://www.instagram.com/jaezun/?hl=en')"> <i class="fab fa-instagram"></i> Instagram</button>
-    <button class="btn2" title="review my code!" onclick="window.location.assign('https://github.com/Jaysontian')"> <i class="fab fa-github"></i> Github</button>
-    <button class="btn2" title="listen to some of my dope tracks!" onclick="window.location.assign('https://soundcloud.com/picxight-productions')"> <i class="fab fa-soundcloud"></i> Soundcloud</button>
-    <button class="btn2" title="watch me" onclick="window.location.assign('https://www.youtube.com/channel/UCdwsgMvJzdwnKI8WM5kYO5A/')"> <i class="fab fa-youtube"></i> Youtube</button>
-</section>
+<h2 id="future-posts">Future Posts</h2>
+
+<p>I am going to try to write about something every week as a way to get my ideas out of my head and onto paper (‘digitally’). Ideas list to write about:</p>
+
+<ul>
+  <li>Milk tea in the GTA</li>
+  <li>Rating horror movies and talking about psychological horror</li>
+  <li>Building a jekyll site like this one</li>
+  <li>Cheatsheet for the minimal amount of steps to make an electron application</li>
+  <li>Setting up Google API’s, firebase, and firestore minimal steps</li>
+  <li>learning mindsets</li>
+  <li>Incremental games - theory, game design, logic, and math</li>
+  <li>Music harmony and progression of current pop music culture in comparison to the 90s.</li>
+  <li>Productivity and School</li>
+  <li>Developing interests and extracurriculars in high school</li>
+</ul>
 
 </div>
 

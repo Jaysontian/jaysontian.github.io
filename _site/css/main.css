@@ -28,13 +28,12 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    color: black;
     margin:0px;
 }
 
 p {
     box-sizing:border-box;
-    color:rgb(20, 20, 20);
+    color:blue;
     display:block;
     font-family:"Inter var", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
     font-feature-settings:"kern", "liga", "clig", "calt";
@@ -56,7 +55,6 @@ p {
 
 
 li {
-    color:rgb(20, 20, 20);
     font-size:16.78px;
     font-stretch:100%;
     font-weight:400;
@@ -199,7 +197,6 @@ img{
 
 .post-detail{
     font-weight:bold;
-    color:rgba(0,0,0,0.75);
     margin-bottom:30px;
 }
 

@@ -51,7 +51,7 @@ body {
 
 p {
     box-sizing:border-box;
-    color:rgb(20, 20, 20);
+    color:rgb(50, 50, 50);
     display:block;
     font-family:"Inter var", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
     font-feature-settings:"kern", "liga", "clig", "calt";
@@ -72,15 +72,29 @@ p {
 
 
 
+
 li {
-    color:rgb(20, 20, 20);
+    color:rgb(50, 50, 50);
     font-size:16.78px;
     font-stretch:100%;
     font-weight:400;
-    line-height:27.9552px;
+    line-height:30px;
     margin-block-end:26.88px;
     -webkit-font-smoothing:antialiased;
     margin:0px;
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: rgba(0,0,0,0.3); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
 .category{

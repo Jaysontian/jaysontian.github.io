@@ -53,7 +53,7 @@ body {
 
 p {
     box-sizing:border-box;
-    color:rgb(20, 20, 20);
+    color:rgb(50, 50, 50);
     display:block;
     font-family:"Inter var", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
     font-feature-settings:"kern", "liga", "clig", "calt";
@@ -74,15 +74,29 @@ p {
 
 
 
+
 li {
-    color:rgb(20, 20, 20);
+    color:rgb(50, 50, 50);
     font-size:16.78px;
     font-stretch:100%;
     font-weight:400;
-    line-height:27.9552px;
+    line-height:30px;
     margin-block-end:26.88px;
     -webkit-font-smoothing:antialiased;
     margin:0px;
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: rgba(0,0,0,0.3); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
 .category{
@@ -552,22 +566,44 @@ img{
 				   <div class='post-body'>
     <h1 id="projects">Projects</h1>
 
-<p>This page contains the things that I’ve been working on recently. In terms of coding, I have been focusing on Javascript mostly and also learning a bit of Java, Python, and C# on the side. I find that most of the things I do on the web and learning about computer science mostly focuses on more applicable topics rather than learning about every detail. I also upload recent music and artwork here.</p>
+<p>This page contains most of my work. I just want to keep stuff here no matter if its done or not, successful or failed, so I can reflect back on it and see my changes and growth.</p>
 
 <h2 id="recent-work">Recent Work</h2>
 
 <ul>
-  <li><a href="'https://jaysontian.github.io/MilkCorp/index.html'">Milk Corp</a> - A desktop incremental game exploring the math and logic behind the idle genre. Click cows to create more milk!</li>
-  <li><a href="">Forgotten Memories</a> - A nostalgic solo guitar piece with a bittersweet vibe</li>
+  <li><a href="https://jaysontian.github.io/data/Milkcorp/site/index.html">🥛 Milk Corp</a> - A desktop incremental game exploring the math and logic behind the idle genre. Click cows to create more milk!</li>
+  <li><a href="https://soundcloud.com/picxight-productions/forgotten-promises">Forgotten Promises</a> - A nostalgic solo guitar piece with a bittersweet vibe.</li>
 </ul>
 
 <h2 id="music">Music</h2>
 
-<h2 id="artwork">Artwork</h2>
+<p>I like to <a href="https://soundcloud.com/picxight-productions">compose music</a> when I’m bored. I like to make calming piano and guitar pieces, but I also experiment with other genres.</p>
+
+<ul>
+  <li></li>
+</ul>
 
 <h2 id="websites">Websites</h2>
 
-<h2 id="coding">Coding</h2>
+<ul>
+  <li><a href="https://jaysontian.github.io/data/websites/ForestryKids/index.html">🌲 Forestry Kids</a> - I used this creation as an opportunity to develop my CSS skills. I learned a lot on web design doing this project.</li>
+  <li>Check out my Old Websites. Feel free to use them as templates.</li>
+  <li><a href="https://jaysontian.github.io/data/websites/Previous-Sites/oldpage/index.html">Website 1</a> - These are my old websites.</li>
+  <li><a href="https://jaysontian.github.io/data/websites/Previous-Sites/oldpage2/oldpage2.html">Website 2</a> - Feel free to use them as templates.</li>
+  <li><a href="https://jaysontian.github.io/data/websites/Previous-Sites/oldpage3/oldpage3.html">Website 3</a> - I tried to implement blogging features.</li>
+  <li><a href="https://jaysontian.github.io/data/websites/Previous-Sites/oldpage4/index.html">Website 4</a> - Edit the blog posts with <a href="https://jaysontian.github.io/data/websites/Previous-Sites/oldpage4/editor/editor.html">the editor</a>.</li>
+</ul>
+
+<h2 id="games">Games</h2>
+
+<ul>
+  <li><a href="https://jaysontian.github.io/data/games_successful/BooCrasher/index.html">Boo Crasher</a> - I can’t even call this a game… Something weird I made on Unity.</li>
+  <li><a href="https://jaysontian.github.io/data/games_successful/Echo/echo.html">Echo</a> - Simon inspired Javascript game with minimalist design.</li>
+  <li><a href="https://jaezun.itch.io/memoir">Memoir</a>- A RPG unity game that’s inspired by RPG’s in the 90s</li>
+  <li><a href="https://jaysontian.github.io/data/games_successful/bunkergame/index.html">Bunkergame</a> - The first clicker game I ever made using firebase and firestore.</li>
+  <li><a href="https://jaysontian.github.io/data/games_failed/theduckshop/test.html">The Duck Shop</a> - The ‘original’ <a href="https://jaysontian.github.io/data/Milkcorp/site/index.html">Milk Corp</a> that was never finished.</li>
+  <li><a href="https://jaysontian.github.io/data/games_failed/A%20Tiny%20Village/index.html">A Tiny Village</a> - The original duck shop that was also never finished. You can tell by the exact same design.</li>
+</ul>
 
 </div>
 
