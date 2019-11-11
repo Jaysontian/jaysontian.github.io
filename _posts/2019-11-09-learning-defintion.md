@@ -3,7 +3,7 @@ layout: post
 title: "The Definition of Learning"
 date:   2019-11-09
 categories: life
-published: false
+published: true
 ---
 
 Recently, I have been thinking a lot about personal growth and achievement. Of course, the adage of how the journey is more beutiful than the destination is true, it can't be denied that sometimes achievement really does matter.
@@ -14,6 +14,9 @@ Don't get me wrong- competition can be beneficial and great in its own way, but 
 
 ## Self-Development
 
-I have been reflecting on my self-development goals for the past week. I realized how misleading our academic culture can be in this time and age. All of us, as students of some sort, are so accustomed to the achievement-oriented mentality that we often forget the reason behind our motives and actions. To learn, is to experience and understand something unbeknownst to you. At school, especially in competitive schools, we find ourselves seeping into the sinkhole of mindless learning- where we don't think but only remember and regurgitate information and strive for the marks.
-When that happens, I believe that we begin to perceive learning opportunities as tasks. We start acting for the purpose of finishing an assignment, getting full marks on a test. 
+I have been reflecting on my self-development goals for the past week. I realized how misleading our academic culture can be in this time and age. All of us, as students of some sort, are so accustomed to the achievement-oriented mentality that we often forget the reason behind our motives and actions. To learn, is to experience and understand something unbeknownst to you. At school, especially in competitive environments, we find ourselves seeping into the sinkhole of mindless learning - we don't think but only remember and regurgitate information to obtain the high marks.
+When that happens, I believe that we begin to perceive learning opportunities as tasks. We act to fulfill the purpose of completion while disregarding the process.
+
+It is natural to be competitive. As human beings, most of us have egos that makes us believe we are superior to others. But truth said, there must be a line drawn between healthy and unhealthy competition. I now think that it's important for a student to recognize whether the learning environment they are in is beneficial or harmful to them.
+When we are under so much pressure and stress that all we see In our head is a never ending todo list that needs to be completed, I believe one must take a break and rewind their thoughts. It is that balance between how much of the external pressures a student wants to internalize that decides upon whether they learn for self-development or result.
 
