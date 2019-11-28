@@ -10,7 +10,8 @@ This page contains most of my work. I just want to keep stuff here no matter if 
 
 ## Recent Work
 
-- [🥛 Milk Corp](https://jaysontian.github.io/data/Milkcorp/site/index.html) - A desktop incremental game exploring the math and logic behind the idle genre. Click cows to create more milk!
+- [🥛 Milk Corp](https://milk-crop.github.io/index.html) - A desktop incremental game exploring the math and logic behind the idle genre. Click cows to create more milk!
+- [Productive Milk](https://jaysontian.github.io/data/productive-milk/index.html) - An online agenda with a more colorful take on google tasks.
 - [Forgotten Promises](https://soundcloud.com/picxight-productions/forgotten-promises) - A nostalgic solo guitar piece with a bittersweet vibe.
 
 ## Music
