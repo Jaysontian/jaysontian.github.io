@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- Place this tag in your head or just before your close body tag. -->
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/e8c8e8e543.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<title>Why Smart People Do Stupid Things - Jayson Tian</title>
+	<link rel="canonical" href="http://localhost:4000/psychology/2019/12/05/art-knowledge.html">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+
+	<style>
+
+		@import url(https://rsms.me/inter/inter.css);
+html {
+    font-family: Inter, sans-serif
+}
+
+@supports (font-variation-settings:normal) {
+    html {
+        font-family: 'Inter var', sans-serif
+    }
+
+
+
+/*@font-face {
+    font-family: Avenir Pro;
+    src: url("fonts/AvenirNextLTPro-Regular.woff") format("woff");
+}*/
+.movedown{
+    margin-top:160px;
+}
+html{
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: black;
+    margin:0px;
+}
+
+p {
+    box-sizing:border-box;
+    color:rgb(50, 50, 50);
+    display:block;
+    font-family:"Inter var", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-feature-settings:"kern", "liga", "clig", "calt";
+    font-kerning:normal;
+    font-size:16.78px;
+    font-stretch:100%;
+    font-style:normal;
+    font-variant-caps:normal;
+    font-variant-east-asian:normal;
+    font-variant-ligatures:normal;
+    font-variant-numeric:normal;
+    font-weight:400;
+    line-height:27.9552px;
+    margin-block-end:26.88px;
+    text-size-adjust:100%;
+    -webkit-font-smoothing:antialiased;
+}
+
+
+
+
+li {
+    color:rgb(50, 50, 50);
+    font-size:16.78px;
+    font-stretch:100%;
+    font-weight:400;
+    line-height:30px;
+    margin-block-end:26.88px;
+    -webkit-font-smoothing:antialiased;
+    margin:0px;
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: rgba(0,0,0,0.3); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.category{
+    padding: 5px 15px;
+    font-size:16.7px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:5px;
+}
+
+.category:hover{
+    opacity:0.8;
+}
+
+.category:nth-child(1){
+    background-color: #ffd9e3;
+    color:#b04561;
+}
+
+.category:nth-child(2){
+    background-color: #ffe4bf;
+    color:#cf8115;
+}
+
+.post-body a {
+  color:#ff5289;
+  text-decoration: none;
+  font-weight:bold;
+  border-bottom:2px #faacc5 solid;
+}
+
+.post-body a:hover{
+  background-color:#fadce6;
+}
+
+.postholder{
+    margin-top:50px;
+    max-width:750px;
+    color:rgba(0,0,0,0.85); 
+}
+
+.postitem{
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+    text-decoration: none;
+    padding:15px 10px;
+    border-radius:8px;
+    transition:0.3s ease-in-out all;
+   
+}
+
+.postitem:hover{
+    background-color:rgba(0,0,0,0.1);
+}
+
+.postitem:hover h3{
+    color:#1783ff;
+}
+
+.postitem h3{
+    margin-top:0px;
+    height:20px;
+    font-size:20px;
+    font-weight: 600;
+    color:rgba(0,0,0,0.85);
+    margin:0px;
+    transition:0.3s ease-in-out all;
+}
+
+.postitem time{
+    color:rgba(0,0,0,0.45);
+    float:right;
+    height:20px;
+    font-weight:bold;
+}
+
+h1 {
+    margin-bottom: 40px;
+    color: rgba(0, 0, 0, .8);
+    font-size: 22pt;
+    font-weight:700;
+}
+
+h2 {
+    margin-top: 40px;
+    color: rgba(0, 0, 0, .8);
+    font-size: 16pt;
+    font-weight:700;
+}
+
+h3 {
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, .8);
+    font-size: 16pt;
+    font-weight:500;
+}
+
+h4{
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, .8);
+    font-size: 13pt;
+    font-weight:600;
+}
+
+hr {
+    height: 2px;
+    background-color:rgba(0,0,0,0.08);
+    border-radius:30px;
+    border:none;
+}
+
+img{
+    width:100%;
+}
+
+.ais-search-box{
+    margin-top:20px;
+    margin-bottom:100px;
+}
+
+.divider{
+    height: 2px;
+    background-color:rgba(0,0,0,0.25);
+    border-radius:30px;
+    border:none;
+}
+
+.post-title{
+    font-size:35px;
+    margin-bottom:25px;
+}
+
+.post-detail{
+    font-weight:bold;
+    color:rgba(0,0,0,0.75);
+    margin-bottom:30px;
+}
+
+#markdown-toc{
+    padding:12px;
+    border:2px solid rgba(0,0,0,0.1);
+    border-radius:5px;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+.btn{
+    height:27px;
+    padding:0px 20px;
+    outline: 0;
+    line-height: 0;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin-top: 1.3rem;
+    margin-left: 1.3rem;
+    background-color:#f5f7fa;
+    border-radius:3.5px;
+    color: #242a2e;
+    border:1px solid #bcc0c4;
+    font-weight:600;
+}
+
+.btn:hover {
+    background-color: #e5e7ea;
+    border:1px solid #93979b;
+}
+
+.btn-modern {
+    padding:5px 10px;
+    outline: 0;
+    line-height: 0;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin-top: 1.3rem;
+    margin-left: 1.3rem;
+    background-color:rgba(0,0,0,0.05);
+    border:none;
+    border-radius:3.5px;
+    color: #242a2e;
+    font-weight:500;
+    text-decoration: none;
+}
+
+.btn-modern:hover {
+    background-color: rgba(0,0,0,0.13);
+}
+
+.padding {
+    max-width: 750px;
+    padding: 1.2em;
+    padding-top: 0px;
+    margin: 0 auto
+}
+
+
+#navbar {
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    height: 50px;
+    top: 0;
+    padding-top: 55px;
+    z-index: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+#navbar.active {
+    box-shadow: 0 4px 10px -2px rgba(0, 0, 0, .2);
+    padding-top: 10px;
+    height: 46px
+}
+
+#navcon {
+    max-width: 750px;
+    margin: auto
+}
+
+.links {
+    cursor: pointer;
+    float: left;
+    line-height: 10px;
+    text-align: center;
+    color:rgba(0,0,0,0.65);
+    transition: all .3s ease-in-out;
+    margin-left: 15px;
+    padding: 12px;
+    border-radius:14px;
+    text-decoration: none;
+}
+
+.links:hover {
+    background-color:rgba(0,0,0,0.08);
+    color:rgb(64, 64, 64)
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+    color:rgba(0,0,0,0.8);
+    text-decoration: none;
+    transform:translateX(-25px);
+}
+
+#logo:hover {
+    opacity:0.3;
+}
+
+.right {
+    float: right
+}
+
+
+
+
+
+
+#home {
+    margin-top: 200px;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+#bio{
+  max-width:530px;
+}
+
+#bio a{
+    color:#e39044;
+  text-decoration: none;
+  font-weight:bold;
+  border-bottom:2px #fad8b9 solid;
+}
+
+#bio a:hover{
+    background-color:#ffe2c7;
+}
+
+#image {
+    float: right;
+    margin-left: 3.5rem;
+    margin-bottom: 0;
+    max-width: 190px;
+    z-index: 0;
+    border-radius:100px;
+    transition: 0.2s all ease-in-out;
+}
+
+#image:hover{
+  transform:scale(1.1);
+}
+
+#contact {
+    margin-top: 50px;
+    display: flex;
+    width: 500px
+}
+
+
+#fact {
+    margin-left: 20px;
+    text-align: center;
+    max-width: 90%;
+    font-family: Indie Flower;
+    font-size: 22px
+}
+
+
+
+#social {
+    max-width: 750px;
+    margin-top: 60px;
+    padding: 10px 35px;
+    border: 2px solid rgba(0, 0, 0, .6);
+    border-radius: 5px;
+    padding-bottom: 20px
+}
+
+#social button{
+    height:35px;
+    padding:10px 15px;
+    outline: 0;
+    line-height: 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin-top: 1.3rem;
+    margin-left: 1.3rem;
+    background-color:rgba(0,0,0,0.05);
+    border:none;
+    border-radius:3.5px;
+    color: #242a2e;
+    font-weight:500;
+    border:1px solid #bcc0c4;
+}
+
+.projects-con {
+    max-width: 750px;
+    margin-top: 115px;
+    padding-bottom: 20px;
+}
+
+.projects-con div{
+  border-bottom:2px solid rgba(0,0,0,0.1);
+}
+
+.projects-con div:first-child{
+ margin-top:16px;
+}
+
+.projects-con div:last-child{
+  border-bottom:none;
+}
+
+.project {
+    display: flex;
+    width:100%;
+    max-height:80px;
+}
+
+.project h4 {
+    width: 25%;
+}
+
+.project p {
+    width: 50%;
+    margin-right:40px;
+}
+
+.project i {
+    font-size: 26px;
+    color: rgba(0,0,0,0.8);
+    margin-top: 1.3rem;
+    margin-left: 1.3rem
+}
+
+
+.footer{
+    display:flex;
+  width:100%;
+  height:120px;
+  margin-top:40px;
+  margin-bottom:0px;
+  border-top:2px solid rgba(0,0,0,0.25);
+  padding-top:10px;
+}
+
+.footer-text{
+    width:70%;
+}
+
+.footer-text p{
+    font-size:15px;
+    line-height: 22px;
+    color:rgba(0,0,0,0.77);
+}
+
+.socialmedia {
+    width:30%;
+    display:flex;
+    justify-content: space-around;
+    margin-top:24px;
+}
+
+.socialmedia a{
+    color:rgba(0,0,0,0.75);
+    font-size:26px;
+}
+
+
+.footer a{
+  text-decoration: none;
+}
+
+.footer a:hover{
+  color:rgba(0,0,0,0.7);
+}
+
+
+
+
+	</style>
+
+</head> 
+
+
+<body>
+	<div class='padding'>
+		
+<script>
+	$(window).scroll(function() {     
+    var scroll = $(window).scrollTop();
+    if (scroll > 0) {
+        $("#navbar").addClass("active");
+    }
+    else {
+        $("#navbar").removeClass("active");
+    }
+	});
+</script>
+
+<div id='navbar'>
+    <div id='navcon'>
+        <a class='links logo' href="/index">Jayson Tian</a>
+
+        <div class='right'>
+            <a class='links' href="/aboutme">About</a>
+			<a class='links' href="/projects">Projects</a>
+            <a class='links' href="/_pages/blog">Blog</a>
+    	</div>
+    </div>
+</div>
+
+
+
+
+ 
+		<main class='movedown'>
+			<article>
+				<h1 class='post-title'>Why Smart People Do Stupid Things</h1>
+<div class='post-detail'>Dec 5, 2019 |       
+	
+      
+        16 min. read
+      
+
+      <div class='right'>
+			<a class="category" href="/category/psychology.html">Psychology</a>
+      </div>
+
+  </div>
+
+<hr class='divider'>
+<div class='post-body'>
+	<br>
+<p>In my life, I have had the privilege of working with many incredibly talented, ambitious, and intelligent individuals across various industries. There is no shortage of smart people in this world, yet surprisingly there is no shortage of stupid decisions, either.</p>
+
+<p>Why is this the case?</p>
+
+<p>In his <a href="https://fs.blog/2019/01/how-not-to-be-stupid/">interview</a> with Shane Parrish, Adam Robinson notes that stupidity is not the opposite of intelligence: “In fact, stupidity is the cost of intelligence operating in a complex environment. It’s almost inevitable.”</p>
+
+<hr />
+
+<p>Nearly two years ago, I was presented with a unique opportunity to advise on what might have become one of the most extravagant music festivals of our time. Fueled by an ingenious marketing campaign that tapped into the modern millennial zeitgeist, Fyre Festival completely sold out after only a few days. However, with just one month to go until showtime, management was still seeking consultants to help with production. That’s when they found me.</p>
+
+<p>If you’re reading this, you likely already know <a href="https://www.bbc.com/news/newsbeat-46904445">how that story ended</a>. I was hired as a consultant to try to rescue what is now one of the most highly publicized failures in our cultural memory. Many intelligent people were involved and of course, many stupid decisions were made.</p>
+
+<p>According to <a href="https://en.wikipedia.org/wiki/James_Russell_Lowell">James Russel Lowell</a>: “One thorn of experience is worth a whole wilderness of warning.”</p>
+
+<p>That said, I hope that sharing my experience (and utilizing the mental model of <a href="https://twitter.com/IAmAdamRobinson?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Adam Robinson</a>), might be enough to help you (the reader) make better decisions in the future, too.</p>
+
+<h2 id="the-stupidity-checklist">The Stupidity Checklist</h2>
+
+<blockquote>
+  <p>“Acting alone any of these are powerful enough, but together they dramatically increase the odds you are unaware that you’ve been cognitively compromised.”</p>
+
+  <p>— Shane Parrish, Farnam Street</p>
+</blockquote>
+
+<p>Adam Robinson defines stupidity as overlooking or dismissing conspicuously crucial information. I believe that stupidity arises when one acts out of alignment with one’s internal compass.</p>
+
+<p>No matter how prepared or how smart you might be, the presence of any one of the following seven factors can lead to stupid decisions:</p>
+
+<ol>
+  <li>Being outside of your comfort zone</li>
+  <li>Rushing or urgency</li>
+  <li>Stress, fatigue, or illness</li>
+  <li>Fixation on an outcome</li>
+  <li>Information overload</li>
+  <li>Being in a group where social cohesion matters (susceptible to “group think”)</li>
+  <li>Being in the presence of an “authority”</li>
+</ol>
+
+<p>Literally all of these factors were present during my time at Fyre:</p>
+
+<ol>
+  <li>We were living out of our comfort zone in a foreign country and</li>
+  <li>working on an urgent timeline (probably six months too short).</li>
+  <li>We were stressed and as the festival drew near, we were running on little to no sleep.</li>
+  <li>In the end, we were fixated on producing an event, any event,</li>
+  <li>and we were overwhelmed by the number of variables that continued to stack against us.</li>
+  <li>We contractors were united in our mission of not wanting to let each other down.</li>
+  <li>We were in the presence of an authority who held the final veto on all decisions and who would not take no for an answer.</li>
+</ol>
+
+<p>Many nights, I’d ask myself, “How the hell did I get here?” When it was all said and done, I asked myself, “Why did I stay?”</p>
+
+<h1 id="what-con-artists-do">What con artists do</h1>
+
+<p>Con artists capitalize on our inherent psychological and emotional flaws. And since we are all human, we all have them. Perhaps we hold dreams of unparalleled success or a desire for untold riches. Otherwise, we may have deep-rooted self-doubt or an uncontrollable sense that we are not enough.</p>
+
+<p>When I agreed to work on Fyre, I carried this sort of psychological baggage with me, which helped lead me into the maelstrom. More specifically, I was fixated on an outcome (see number four above), and my self-doubt helped to turn an unlikely character into an authority figure in my life (see number seven).</p>
+
+<p>While it is proven that any of the factors in the above checklist can contribute to stupid decisions, I believe that these two, in particular, may be the most destructive.</p>
+
+<blockquote>
+  <p>“As the ignorant perform their duties with attachment to results, similarly the learned may also act, but without attachment, for the sake of leading people on the right path.”</p>
+
+  <p>— The Bhagavad Gita, Chapter 3: Karma Yoga, Verse 25</p>
+</blockquote>
+
+<p>Many of us cling to overly-ambitious dreams that are hard to release. I have always carried what I sometimes call my “delusion of grandeur.” When I was a child, I wanted to be the president of the United States or a famous actor. Random? Or is there something these two have in common? I recognize that in those childhood dreams there was desire to be recognized by others for greatness.</p>
+
+<p>As a teenager, I quickly learned that in our society, one of the most valued measures of greatness is wealth. If you are a self-made millionaire (or better yet, a billionaire) in the United States today, then you have won “the game.” Your wealth becomes the points you post on an imaginary scoreboard that proves your worth to your peers.</p>
+
+<p>A fixation on the dual outcomes of greatness and riches helped to make me an easy target for a con artist.</p>
+
+<blockquote>
+  <p>I have always carried what I sometimes call my “delusion of grandeur.”</p>
+</blockquote>
+
+<p>By the time I was asked to join the Fyre Festival team, my second startup, 90sFest, was teetering on the edge. I was now facing what I then believed to be my second major failure in life, and I had the credit card debt to prove it. My self-confidence was broken, and I felt that I badly needed to post a win on that societal scoreboard. This put me in a dangerous position.</p>
+
+<p>When I first heard of Fyre Festival, I laughed. My intuition said that there would be no way for them to pull off a festival of that scale on a remote island in four months.</p>
+
+<p>But only one month later, like many of you, I saw the infamous promo video. I witnessed many of my own peers scrambling to find now sold-out tickets so that they could participate in this once-in-a-lifetime event.</p>
+
+<p>And then, struggling financially, self-confidence at a nadir, and fixated on rerouting my career, I was introduced to Fyre Festival founder Billy McFarland. After our first phone call, I was captivated. I could already visualize my future success: It looked just like the promo video but I was there, too.</p>
+
+<p>I would contribute to one of the most special events of our time, achieving public greatness and repute. I would repay all of my credit card debt. The icing on the cake was that if the festival were a success, I might be asked to join one of the hottest tech startups in a leadership role.</p>
+
+<p>I was fixated on this outcome. I could see myself with my new influencer friends, the money in my bank account. I could feel my reputation on the rise. As a result, though the production challenges were seemingly insurmountable with one month left until showtime, I started to believe that I could help them fix the mess.</p>
+
+<p>When we desire something so strongly that we become blind to the problems in front of us and the character of those around us, in spite of our own intuition, that’s a sign of trouble to come.</p>
+
+<h1 id="objectifying-the-authority">Objectifying the authority</h1>
+
+<blockquote>
+  <p>“What the superior man seeks is in himself; what the small man seeks is in others.” — Confucius</p>
+</blockquote>
+
+<p>Many of us trust others more than we trust ourselves, and so we seek validation from the external. I believe that from a young age, we are programmed to feel this way. The external is offered to us as a measurement of how well we are doing.</p>
+
+<p>In his work <a href="https://www.spiritualityandpractice.com/book-reviews/view/9499/paths-to-god">Paths to God</a>, Ram Dass explains this phenomenon much better than I can:</p>
+
+<blockquote>
+  <p>“To socialize a child, you need to instill in him only three basic principles: to accept his information from the outside; to look outside for his rewards; and to ignore his inner voice if it conflicts with what comes from outside authority. That’s the way you train a child to be a member of a society — so that when Mother says, “Do this,” you do it, even if in your heart it doesn’t feel right. If you get good enough at doing that, you become a “success” in the society; if you don’t, you’re an outcast.”</p>
+</blockquote>
+
+<p>So there I am, at the tail end of two failed startups, flat broke, and right in front of me is the opportunity to change my fate. The man (boy) offering me this chance is someone who seemingly has everything that I desire: the money, the success, and the respect of some of the top minds in the business world.</p>
+
+<p>Instantly, I trust him more than I trust myself. I assimilate his vision of success into my own and ignore all of the red flags right in front of my eyes — especially the impossible task of producing anything near the marketing videos that Fyre had released only one month before.</p>
+
+<p>I take the bait.</p>
+
+<p>Hours after signing my agreement with Fyre, I join my first production call and more signs of dysfunction quickly arise: missed payments, delayed orders, and last minute changes.</p>
+
+<blockquote>
+  <p>Anyone can become an authority on any subject when we do not trust ourselves.</p>
+</blockquote>
+
+<p>At this point, I have a sense that I shouldn’t go to the Bahamas, but the #FOMO is too strong. If I turn this offer down and the festival is a success, I’ll forever ask “What if?” Plus, it’s only four weeks of my life. What’s the worst that could happen? That we can’t pull it off in time and cancel? One day later, I’m on a flight from Los Angeles to Great Exumas, and well, you know the rest of the story.</p>
+
+<p>I believe that when we suffer from low self-confidence, sometimes caused by factors outside of our control, we actually seek the authority figure. Anyone can become an authority on any subject when we do not trust ourselves. The presence of an authority figure allows us to minimize our cognitive load by deferring responsibility to the other.</p>
+
+<p>In a way, we begin to objectify the authority. The closer we get, the more we see their flaws, but we still ignore them. We get closer, but further away at the same time. This distance helps us reserve the right to later tear down these false idols, knowing all along that we have ourselves to blame for the position we give them in our hearts.</p>
+
+<p>Once the con artist has established his position of authority over you, It’s too late. You are in his grasp.</p>
+
+<h2 id="moving-on">Moving on</h2>
+
+<p>It has been over two years since my brief four weeks on Great Exumas working on Fyre, and it has taken quite a bit of effort to put the past behind me. The resurgence of interest created by the “dueling documentaries” on Netflix and Hulu extended my reflection. For that, I am grateful. These films also helped to raise awareness for the local workers who were negatively impacted. There is still a live GoFundMe campaign to support them and you can donate <a href="https://www.gofundme.com/the-exuma-foundation-for-victims-of-fyre-festival">here</a>.</p>
+
+<p>Fyre was an intense, and at times painful, experience for the contractors (like me) who were not paid, the guests who were misled, and the local Bahamians who were left to clean up the mess.</p>
+
+<p>Yet it also offers many invaluable lessons and warnings. In a phrase: Learn from my mistakes so you don’t have to live them yourself.</p>
+
+<hr />
+
+<p><em>This article was inspired by my own experience at Fyre Festival as well as one of my favorite podcast conversations between </em><a href="https://twitter.com/IAmAdamRobinson?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><em>Adam Robinson</em></a><em> and </em><a href="https://twitter.com/farnamstreet?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><em>Shane Parris</em></a><em>h for the </em><a href="https://fs.blog/"><em>Farnam Street blog</em></a><em> (a must read, or </em><a href="https://fs.blog/the-knowledge-project/"><em>listen</em></a><em>, if you don’t already subscribe) called </em><a href="https://fs.blog/2019/01/how-not-to-be-stupid/"><em>How Not to Be Stupid</em></a><em>.</em></p>
+
+<hr />
+
+<p><em>This story is part of </em><a href="https://medium.com/human-parts/art-of/home"><em>The Art Of</em></a><em>, an ongoing series that supplies you with instructions for living.</em></p>
+
+</div>
+
+<div class='postholder' style='margin-bottom:0px'>
+		<hr class='divider'>
+		<p> Thanks for reading <b>Why Smart People Do Stupid Things</b> written by Jayson Tian. It has 1983 words and is categorized under <b>psychology</b>. You might also enjoy:</p>
+		
+		
+		
+
+		
+
+		    
+		    
+
+		    
+
+		    
+
+		  
+
+		    
+		    
+
+		    
+
+		    
+
+		  
+
+		    
+		    
+
+		    
+
+		    
+
+		  
+
+		    
+		    
+
+		    
+
+		    
+
+		  
+
+		    
+		    
+
+		    
+
+		    
+
+		  
+
+		    
+		    
+
+		    
+
+		    
+
+		  
+
+		    
+		    
+
+		    
+
+		    
+
+		  
+
+		    
+		    
+
+		    
+
+		    
+
+		  
+
+		    
+		    
+
+		    
+
+		    
+
+		  
+</div>
+			</article>
+		</main>
+			
+
+<footer class='footer'>
+	<div class='footer-text'>
+		<p><b>Jayson Tian</b> jots down his arbitrary thoughts on this website.
+		<br>He likes to doodle digitally, create music, binge netflix, experiment biology, design web stuff, and write about himself in third person.</p>
+	</div>
+	<div class='socialmedia'>
+		<a href='https://www.instagram.com/jaezun/?hl=en'><i class="fab fa-instagram"></i></a>
+		<a href='https://github.com/Jaysontian'><i class="fab fa-github"></i></a>
+		<a href='https://soundcloud.com/picxight-productions'><i class="fab fa-soundcloud"></i></a>
+		<a href='https://www.youtube.com/channel/UCdwsgMvJzdwnKI8WM5kYO5A/'><i class="fab fa-youtube"></i></a>
+	</div>
+</footer>
+
+	</div>
+</body>
+
+</html>

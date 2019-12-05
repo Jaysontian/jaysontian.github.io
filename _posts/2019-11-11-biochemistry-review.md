@@ -2,7 +2,7 @@
 layout: post
 title: "Biochemistry Review"
 date:   2019-11-11
-categories: biology
+categories: misc
 published: true
 ---
 

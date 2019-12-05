@@ -50,6 +50,7 @@ function updateSigninStatus(isSignedIn) {
   if (isSignedIn) {
     authorizeButton.style.display = 'none';
     signoutButton.style.display = 'block';
+    defaultlist();
     listTaskLists();
   } else {
     authorizeButton.style.display = 'block';
@@ -130,27 +131,56 @@ function listTaskLists() {
 } 
 */
 
-var currentlist = 'MTIxMDc5MzQ3MjU3NzA3MzgyNjI6MDow'
+var currentlist = '';
+
+function defaultlist(){
+  gapi.client.tasks.tasklists.list({
+      'maxResults': 10
+  }).then(function(response) {
+    var taskLists = response.result.items;
+    alert('Your default list is: ' + taskLists[0].title);
+    currentlist = taskLists[0].id;
+    listTasks(taskLists[0].id);
+  });
+}
+
 
 function listTaskLists() {
   $('.mainlist').empty();
+  $('#selectlist').empty();
 
+  gapi.client.tasks.tasklists.list({
+      'maxResults': 10
+  }).then(function(response) {
+    var taskLists = response.result.items;
+    if (taskLists && taskLists.length > 0) {
+      for (var i = 0; i < taskLists.length; i++) {
+        var taskList = taskLists[i];
+        $('<option>').attr({'value':taskList.id}).text(taskList.title).appendTo('#selectlist');
+      }
+    } else {
+      appendPre('No task lists found.');
+    }
+  });
+}
+
+function listTasks(listid){
+  $('.mainlist').empty();
   gapi.client.tasks.tasks.list({
-      'tasklist':'MTIxMDc5MzQ3MjU3NzA3MzgyNjI6MDow',
+      'tasklist':listid,
       'showCompleted':false
     }).then(function(response){
-
       var taskItems = response.result.items;
       if (taskItems && taskItems.length > 0) {
         for (var i = 0; i < taskItems.length; i++) {
           var taskItem = taskItems[i];
-          $('<li>').text(taskItem.title).appendTo('.mainlist').attr('id',taskItem.id);;
+          $('<li>').text(taskItem.title).appendTo('.mainlist').attr('id',taskItem.id);
         }
       } else {
         appendPre('No tasks found.');
       }
     })
-} 
+}
 
 $('.input').keypress(function (e) {
   if (e.which == 13) {
@@ -161,14 +191,14 @@ $('.input').keypress(function (e) {
 
 function addTask(name){
   tsk = {
-    'tasklist':'MTIxMDc5MzQ3MjU3NzA3MzgyNjI6MDow',
+    'tasklist':currentlist,
     'title':name,
   }
 
   gapi.client.tasks.tasks.insert(tsk).then(function(){
       update();
       $('.input').val('');
-      $('<li>').appendTo('.mainlist').text(name).attr('onclick','remove(id'+name+')');
+      $('<li>').appendTo('.mainlist').text(name);
   });
 }
 
@@ -176,7 +206,7 @@ function addTask(name){
 
 function update(){
     gapi.client.tasks.tasklists.update({
-      'tasklist':'MTIxMDc5MzQ3MjU3NzA3MzgyNjI6MDow'
+      'tasklist':currentlist
     }).then()
 }
 
@@ -184,12 +214,17 @@ $('.mainlist').on('click',function(e){
     var t = e.target;
     $(t).remove();
     var taskid = $(t).attr('id');
-
-    tsk = {
+    console.log('deleted: '+ taskid)
+    gapi.client.tasks.tasks.delete({
     'task':taskid,
-    'tasklist':'MTIxMDc5MzQ3MjU3NzA3MzgyNjI6MDow'
-    }
-
-    gapi.client.tasks.tasks.delete(tsk).then(update());
+    'tasklist':currentlist
+    }).then(update());
   })
+
+$('#selectlist').change(function(){
+    listid = $(this).children("option:selected").val();
+    listTasks(listid);
+    currentlist = listid;
+})
+
 

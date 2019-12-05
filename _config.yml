@@ -11,9 +11,3 @@ github_username:  jaysontian
 
 include: ['_pages']
 markdown: kramdown
-
-algolia:
-   application_id: CUT8XL0OGP
-   index_name: test_POST
-   search_only_api_key: 242bb95a4fb16f386ad5af06195a9331
-   ADMIN_apikey: ALGOLIA_API_KEY='293a9e423c5292a6b46700be433a21bd' bundle exec jekyll algolia

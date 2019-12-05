@@ -86,6 +86,11 @@ li {
     color:#cf8115;
 }
 
+.category:nth-child(3){
+    background-color: #fffca8;
+    color:#bda02f;
+}
+
 .post-body a {
   color:#ff5289;
   text-decoration: none;
