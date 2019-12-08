@@ -3,7 +3,6 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<link rel="stylesheet" href="css/main.css">
 	<!-- Place this tag in your head or just before your close body tag. -->
 	<script async defer src="https://buttons.github.io/buttons.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,8 +14,9 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
 
-	<style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism-tomorrow.min.css">
 
+<style>
 		@import url(https://rsms.me/inter/inter.css);
 html {
     font-family: Inter, sans-serif
@@ -51,6 +51,7 @@ body {
     margin:0px;
 }
 
+
 p {
     box-sizing:border-box;
     color:rgb(50, 50, 50);
@@ -73,7 +74,13 @@ p {
 }
 
 
+:not(pre)>code[class*=language-], pre[class*=language-] {
+    border-radius:5px;
+}
 
+code{
+	background-color:rgba(0,0,0,0.12)
+}
 
 li {
     color:rgb(50, 50, 50);
@@ -99,6 +106,46 @@ ul li::before {
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
+blockquote {
+    border-left:5px solid #6ebdff;
+    border-radius:5px;
+    padding: 5px 3em;
+    margin:0px;
+    background-color:#d4ebff;
+
+}
+
+dl{
+    display:block;
+    font-family:"Inter var", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-feature-settings:"kern", "liga", "clig", "calt";
+    font-kerning:normal;
+    font-size:16.78px;
+    font-stretch:100%;
+    font-style:normal;
+    font-variant-caps:normal;
+    font-variant-east-asian:normal;
+    font-variant-ligatures:normal;
+    font-variant-numeric:normal;
+    font-weight:400;
+    line-height:27.9552px;
+    margin-block-end:26.88px;
+    text-size-adjust:100%;
+    -webkit-font-smoothing:antialiased;
+    border-left:5px solid #ff5e80;
+    border-radius:5px;
+    padding: 10px 3em;
+    margin:0px;
+    background-color:#ffd4dd;
+    box-sizing:border-box;
+    color:rgb(50, 50, 50);
+}
+
+dt{
+    font-weight: bold;
+    padding: 5px 0px;
+}
+
 .category{
     padding: 5px 15px;
     font-size:16.7px;
@@ -111,14 +158,26 @@ ul li::before {
     opacity:0.8;
 }
 
-.category:nth-child(1){
+.category:nth-child(5){
     background-color: #ffd9e3;
     color:#b04561;
 }
 
 .category:nth-child(2){
+    background-color: #c5ffc4;
+    color:#4ea64c;
+}
+.category:nth-child(3){
     background-color: #ffe4bf;
     color:#cf8115;
+}
+.category:nth-child(4){
+    background-color: #cfe9ff;
+    color:#3377b0;
+}
+.category:nth-child(1){
+    background-color: #e7c7ff;
+    color:#753ba1;
 }
 
 .post-body a {
@@ -135,7 +194,7 @@ ul li::before {
 .postholder{
     margin-top:50px;
     max-width:750px;
-    color:rgba(0,0,0,0.85); 
+    color:rgba(0,0,0,0.85);
 }
 
 .postitem{
@@ -146,7 +205,7 @@ ul li::before {
     padding:15px 10px;
     border-radius:8px;
     transition:0.3s ease-in-out all;
-   
+
 }
 
 .postitem:hover{
@@ -236,12 +295,20 @@ img{
     margin-bottom:30px;
 }
 
+#tocbtn{
+
+}
+
+#tocbtn:hover + #markdown-toc{
+	display:block;
+}
+
 #markdown-toc{
+
     padding:12px;
     border:2px solid rgba(0,0,0,0.1);
     border-radius:5px;
-    list-style-type: decimal;
-    list-style-position: inside;
+    padding-left:30px
 }
 
 .btn{
@@ -527,14 +594,14 @@ img{
 
 	</style>
 
-</head> 
+</head>
 
 
 <body>
 	<div class='padding'>
 		
 <script>
-	$(window).scroll(function() {     
+	$(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll > 0) {
         $("#navbar").addClass("active");
@@ -544,6 +611,10 @@ img{
     }
 	});
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-jsx.min.js"></script>
+
 
 <div id='navbar'>
     <div id='navcon'>
@@ -557,10 +628,6 @@ img{
     </div>
 </div>
 
-
-
-
- 
 		<main class='movedown'>
 			<article>
 				<h1>Life</h1>
@@ -571,8 +638,8 @@ img{
 <div class='postholder'>
 		<hr>
 		
-			<a class='postitem' href="/life/2019/12/05/integrity.html">
-				<h3>Overthinking Thinking</h3>
+			<a class='postitem' href="/life/2019/12/05/overthinking.html">
+				<h3>Overthinking</h3>
 				<time> 
 				 
 					1394
@@ -589,28 +656,6 @@ img{
 					397
 				 words
 				| Nov 9, 2019
-			</time>
-			</a>
-			<hr>
-		
-			<a class='postitem' href="/life/2019/06/12/vacation-summer-ontario.html">
-				<h3>Vacationing in Ontario</h3>
-				<time> 
-				 
-					869
-				 words
-				| Jun 12, 2019
-			</time>
-			</a>
-			<hr>
-		
-			<a class='postitem' href="/life/2015/11/30/first-post.html">
-				<h3>Rambling About Arbitrary Topics</h3>
-				<time> 
-				 
-					732
-				 words
-				| Nov 30, 2015
 			</time>
 			</a>
 			<hr>

@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!-- Place this tag in your head or just before your close body tag. -->
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/e8c8e8e543.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<title>React JS Beginner Notes - Jayson Tian</title>
+	<link rel="canonical" href="http://localhost:4000/dev/2019/12/07/react-js-notes.html">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism-tomorrow.min.css">
+
+<style>
+		@import url(https://rsms.me/inter/inter.css);
+html {
+    font-family: Inter, sans-serif
+}
+
+@supports (font-variation-settings:normal) {
+    html {
+        font-family: 'Inter var', sans-serif
+    }
+
+
+
+/*@font-face {
+    font-family: Avenir Pro;
+    src: url("fonts/AvenirNextLTPro-Regular.woff") format("woff");
+}*/
+.movedown{
+    margin-top:160px;
+}
+html{
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: black;
+    margin:0px;
+}
+
+
+p {
+    box-sizing:border-box;
+    color:rgb(50, 50, 50);
+    display:block;
+    font-family:"Inter var", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-feature-settings:"kern", "liga", "clig", "calt";
+    font-kerning:normal;
+    font-size:16.78px;
+    font-stretch:100%;
+    font-style:normal;
+    font-variant-caps:normal;
+    font-variant-east-asian:normal;
+    font-variant-ligatures:normal;
+    font-variant-numeric:normal;
+    font-weight:400;
+    line-height:27.9552px;
+    margin-block-end:26.88px;
+    text-size-adjust:100%;
+    -webkit-font-smoothing:antialiased;
+}
+
+
+:not(pre)>code[class*=language-], pre[class*=language-] {
+    border-radius:5px;
+}
+
+code{
+	background-color:rgba(0,0,0,0.12)
+}
+
+li {
+    color:rgb(50, 50, 50);
+    font-size:16.78px;
+    font-stretch:100%;
+    font-weight:400;
+    line-height:30px;
+    margin-block-end:26.88px;
+    -webkit-font-smoothing:antialiased;
+    margin:0px;
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: rgba(0,0,0,0.3); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+blockquote {
+    border-left:5px solid #6ebdff;
+    border-radius:5px;
+    padding: 5px 3em;
+    margin:0px;
+    background-color:#d4ebff;
+
+}
+
+dl{
+    display:block;
+    font-family:"Inter var", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-feature-settings:"kern", "liga", "clig", "calt";
+    font-kerning:normal;
+    font-size:16.78px;
+    font-stretch:100%;
+    font-style:normal;
+    font-variant-caps:normal;
+    font-variant-east-asian:normal;
+    font-variant-ligatures:normal;
+    font-variant-numeric:normal;
+    font-weight:400;
+    line-height:27.9552px;
+    margin-block-end:26.88px;
+    text-size-adjust:100%;
+    -webkit-font-smoothing:antialiased;
+    border-left:5px solid #ff5e80;
+    border-radius:5px;
+    padding: 10px 3em;
+    margin:0px;
+    background-color:#ffd4dd;
+    box-sizing:border-box;
+    color:rgb(50, 50, 50);
+}
+
+dt{
+    font-weight: bold;
+    padding: 5px 0px;
+}
+
+.category{
+    padding: 5px 15px;
+    font-size:16.7px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:5px;
+}
+
+.category:hover{
+    opacity:0.8;
+}
+
+.category:nth-child(5){
+    background-color: #ffd9e3;
+    color:#b04561;
+}
+
+.category:nth-child(2){
+    background-color: #c5ffc4;
+    color:#4ea64c;
+}
+.category:nth-child(3){
+    background-color: #ffe4bf;
+    color:#cf8115;
+}
+.category:nth-child(4){
+    background-color: #cfe9ff;
+    color:#3377b0;
+}
+.category:nth-child(1){
+    background-color: #e7c7ff;
+    color:#753ba1;
+}
+
+.post-body a {
+  color:#ff5289;
+  text-decoration: none;
+  font-weight:bold;
+  border-bottom:2px #faacc5 solid;
+}
+
+.post-body a:hover{
+  background-color:#fadce6;
+}
+
+.postholder{
+    margin-top:50px;
+    max-width:750px;
+    color:rgba(0,0,0,0.85);
+}
+
+.postitem{
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+    text-decoration: none;
+    padding:15px 10px;
+    border-radius:8px;
+    transition:0.3s ease-in-out all;
+
+}
+
+.postitem:hover{
+    background-color:rgba(0,0,0,0.1);
+}
+
+.postitem:hover h3{
+    color:#1783ff;
+}
+
+.postitem h3{
+    margin-top:0px;
+    height:20px;
+    font-size:20px;
+    font-weight: 600;
+    color:rgba(0,0,0,0.85);
+    margin:0px;
+    transition:0.3s ease-in-out all;
+}
+
+.postitem time{
+    color:rgba(0,0,0,0.45);
+    float:right;
+    height:20px;
+    font-weight:bold;
+}
+
+h1 {
+    margin-bottom: 40px;
+    color: rgba(0, 0, 0, .8);
+    font-size: 22pt;
+    font-weight:700;
+}
+
+h2 {
+    margin-top: 40px;
+    color: rgba(0, 0, 0, .8);
+    font-size: 16pt;
+    font-weight:700;
+}
+
+h3 {
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, .8);
+    font-size: 16pt;
+    font-weight:500;
+}
+
+h4{
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, .8);
+    font-size: 13pt;
+    font-weight:600;
+}
+
+hr {
+    height: 2px;
+    background-color:rgba(0,0,0,0.08);
+    border-radius:30px;
+    border:none;
+}
+
+img{
+    width:100%;
+}
+
+.ais-search-box{
+    margin-top:20px;
+    margin-bottom:100px;
+}
+
+.divider{
+    height: 2px;
+    background-color:rgba(0,0,0,0.25);
+    border-radius:30px;
+    border:none;
+}
+
+.post-title{
+    font-size:35px;
+    margin-bottom:25px;
+}
+
+.post-detail{
+    font-weight:bold;
+    color:rgba(0,0,0,0.75);
+    margin-bottom:30px;
+}
+
+#tocbtn{
+
+}
+
+#tocbtn:hover + #markdown-toc{
+	display:block;
+}
+
+#markdown-toc{
+
+    padding:12px;
+    border:2px solid rgba(0,0,0,0.1);
+    border-radius:5px;
+    padding-left:30px
+}
+
+.btn{
+    height:27px;
+    padding:0px 20px;
+    outline: 0;
+    line-height: 0;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin-top: 1.3rem;
+    margin-left: 1.3rem;
+    background-color:#f5f7fa;
+    border-radius:3.5px;
+    color: #242a2e;
+    border:1px solid #bcc0c4;
+    font-weight:600;
+}
+
+.btn:hover {
+    background-color: #e5e7ea;
+    border:1px solid #93979b;
+}
+
+.btn-modern {
+    padding:5px 10px;
+    outline: 0;
+    line-height: 0;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin-top: 1.3rem;
+    margin-left: 1.3rem;
+    background-color:rgba(0,0,0,0.05);
+    border:none;
+    border-radius:3.5px;
+    color: #242a2e;
+    font-weight:500;
+    text-decoration: none;
+}
+
+.btn-modern:hover {
+    background-color: rgba(0,0,0,0.13);
+}
+
+.padding {
+    max-width: 750px;
+    padding: 1.2em;
+    padding-top: 0px;
+    margin: 0 auto
+}
+
+
+#navbar {
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    height: 50px;
+    top: 0;
+    padding-top: 55px;
+    z-index: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+#navbar.active {
+    box-shadow: 0 4px 10px -2px rgba(0, 0, 0, .2);
+    padding-top: 10px;
+    height: 46px
+}
+
+#navcon {
+    max-width: 750px;
+    margin: auto
+}
+
+.links {
+    cursor: pointer;
+    float: left;
+    line-height: 10px;
+    text-align: center;
+    color:rgba(0,0,0,0.65);
+    transition: all .3s ease-in-out;
+    margin-left: 15px;
+    padding: 12px;
+    border-radius:14px;
+    text-decoration: none;
+}
+
+.links:hover {
+    background-color:rgba(0,0,0,0.08);
+    color:rgb(64, 64, 64)
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+    color:rgba(0,0,0,0.8);
+    text-decoration: none;
+    transform:translateX(-25px);
+}
+
+#logo:hover {
+    opacity:0.3;
+}
+
+.right {
+    float: right
+}
+
+
+
+
+
+
+#home {
+    margin-top: 200px;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+#bio{
+  max-width:530px;
+}
+
+#bio a{
+    color:#e39044;
+  text-decoration: none;
+  font-weight:bold;
+  border-bottom:2px #fad8b9 solid;
+}
+
+#bio a:hover{
+    background-color:#ffe2c7;
+}
+
+#image {
+    float: right;
+    margin-left: 3.5rem;
+    margin-bottom: 0;
+    max-width: 190px;
+    z-index: 0;
+    border-radius:100px;
+    transition: 0.2s all ease-in-out;
+}
+
+#image:hover{
+  transform:scale(1.1);
+}
+
+#contact {
+    margin-top: 50px;
+    display: flex;
+    width: 500px
+}
+
+
+#fact {
+    margin-left: 20px;
+    text-align: center;
+    max-width: 90%;
+    font-family: Indie Flower;
+    font-size: 22px
+}
+
+
+
+#social {
+    max-width: 750px;
+    margin-top: 60px;
+    padding: 10px 35px;
+    border: 2px solid rgba(0, 0, 0, .6);
+    border-radius: 5px;
+    padding-bottom: 20px
+}
+
+#social button{
+    height:35px;
+    padding:10px 15px;
+    outline: 0;
+    line-height: 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin-top: 1.3rem;
+    margin-left: 1.3rem;
+    background-color:rgba(0,0,0,0.05);
+    border:none;
+    border-radius:3.5px;
+    color: #242a2e;
+    font-weight:500;
+    border:1px solid #bcc0c4;
+}
+
+.projects-con {
+    max-width: 750px;
+    margin-top: 115px;
+    padding-bottom: 20px;
+}
+
+.projects-con div{
+  border-bottom:2px solid rgba(0,0,0,0.1);
+}
+
+.projects-con div:first-child{
+ margin-top:16px;
+}
+
+.projects-con div:last-child{
+  border-bottom:none;
+}
+
+.project {
+    display: flex;
+    width:100%;
+    max-height:80px;
+}
+
+.project h4 {
+    width: 25%;
+}
+
+.project p {
+    width: 50%;
+    margin-right:40px;
+}
+
+.project i {
+    font-size: 26px;
+    color: rgba(0,0,0,0.8);
+    margin-top: 1.3rem;
+    margin-left: 1.3rem
+}
+
+
+.footer{
+    display:flex;
+  width:100%;
+  height:120px;
+  margin-top:40px;
+  margin-bottom:0px;
+  border-top:2px solid rgba(0,0,0,0.25);
+  padding-top:10px;
+}
+
+.footer-text{
+    width:70%;
+}
+
+.footer-text p{
+    font-size:15px;
+    line-height: 22px;
+    color:rgba(0,0,0,0.77);
+}
+
+.socialmedia {
+    width:30%;
+    display:flex;
+    justify-content: space-around;
+    margin-top:24px;
+}
+
+.socialmedia a{
+    color:rgba(0,0,0,0.75);
+    font-size:26px;
+}
+
+
+.footer a{
+  text-decoration: none;
+}
+
+.footer a:hover{
+  color:rgba(0,0,0,0.7);
+}
+
+
+
+
+	</style>
+
+</head>
+
+
+<body>
+	<div class='padding'>
+		
+<script>
+	$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll > 0) {
+        $("#navbar").addClass("active");
+    }
+    else {
+        $("#navbar").removeClass("active");
+    }
+	});
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-jsx.min.js"></script>
+
+
+<div id='navbar'>
+    <div id='navcon'>
+        <a class='links logo' href="/index">Jayson Tian</a>
+
+        <div class='right'>
+            <a class='links' href="/aboutme">About</a>
+			<a class='links' href="/projects">Projects</a>
+            <a class='links' href="/_pages/blog">Blog</a>
+    	</div>
+    </div>
+</div>
+
+		<main class='movedown'>
+			<article>
+				<h1 class='post-title'>React JS Beginner Notes</h1>
+<div class='post-detail'>Dec 7, 2019 |       
+	
+      
+        19 min. read
+      
+
+      <div class='right'>
+			<a class="category" href="/category/dev.html">Dev</a>
+      </div>
+
+  </div>
+
+<hr class='divider'>
+<div class='post-body'>
+	<br>
+<ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a>    <ul>
+      <li><a href="#what-is-react" id="markdown-toc-what-is-react">What is React?</a></li>
+      <li><a href="#why-is-it-useful" id="markdown-toc-why-is-it-useful">Why is it Useful?</a></li>
+    </ul>
+  </li>
+  <li><a href="#creating-a-new-react-app" id="markdown-toc-creating-a-new-react-app">Creating A New React App</a>    <ul>
+      <li><a href="#initiating-the-project" id="markdown-toc-initiating-the-project">Initiating the project</a></li>
+      <li><a href="#import-and-render" id="markdown-toc-import-and-render">Import and Render</a></li>
+      <li><a href="#separate-component-files" id="markdown-toc-separate-component-files">Separate Component files</a></li>
+    </ul>
+  </li>
+  <li><a href="#the-basics" id="markdown-toc-the-basics">The Basics</a>    <ul>
+      <li><a href="#jsx" id="markdown-toc-jsx">JSX</a></li>
+      <li><a href="#classname" id="markdown-toc-classname">ClassName</a></li>
+      <li><a href="#inline-styling" id="markdown-toc-inline-styling">Inline Styling</a></li>
+    </ul>
+  </li>
+  <li><a href="#props" id="markdown-toc-props">Props</a>    <ul>
+      <li><a href="#styling-and-props-example" id="markdown-toc-styling-and-props-example">Styling and Props Example</a></li>
+    </ul>
+  </li>
+  <li><a href="#mapping-for-loop" id="markdown-toc-mapping-for-loop">Mapping (For Loop)</a></li>
+  <li><a href="#class-based-components" id="markdown-toc-class-based-components">Class Based Components</a></li>
+  <li><a href="#state" id="markdown-toc-state">State</a>    <ul>
+      <li><a href="#changing-state" id="markdown-toc-changing-state">Changing State</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="introduction">Introduction</h1>
+
+<h2 id="what-is-react">What is React?</h2>
+
+<p>ReactJS is a JavaScript library framework that helps build user interfaces. It is open-source and created by Facebook. It is special as it uses the virtual JavaScript DOM and Web Components to make rendering code faster and easier.</p>
+
+<h2 id="why-is-it-useful">Why is it Useful?</h2>
+
+<p>Web Components allow for developers to create custom ‘elements’ for a webpage that can be rendered and returned. This also allows for reuse of elements without copying and pasting the code many times.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;MyCustomNavbar</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;ScaryStory</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;CoolSurvey</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+</code></pre></div></div>
+
+<p>Here, it can be seen that the component <code class="highlighter-rouge">&lt;MyCustomNavBar /&gt;</code> will be called from a function which will return all the HTML or JavaScript code to render that specific component. This makes web components that are reusable. Also, it is very fast as it uses the <a href="https://reactjs.org/docs/faq-internals.html">virtualDOM</a>.</p>
+
+<h1 id="creating-a-new-react-app">Creating A New React App</h1>
+
+<blockquote>
+  <p>Be sure you have <a href="https://www.npmjs.com/get-npm">npm installed</a> beforehand.</p>
+</blockquote>
+
+<h2 id="initiating-the-project">Initiating the project</h2>
+<p>Initiating the project with React is quite simple! Open up terminal and enter the following:</p>
+
+<pre><code class="language-command">npx create-react-app app-name
+cd app-name
+npm start
+</code></pre>
+<p>It’s incredibly straight forward. Now go into files and delete everything in the folder <code class="highlighter-rouge">src</code>.</p>
+
+<h2 id="import-and-render">Import and Render</h2>
+<p>Open up the src folder in a code editor and create a file named <code class="highlighter-rouge">index.js</code>.</p>
+
+<p>In every react file, there will be an import statement. This refers to the dependencies installed so that we can actually <strong>use</strong> react. And don’t forget the ReactDOM dependecy too.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">react</span><span class="dl">"</span>
+<span class="k">import</span> <span class="nx">ReactDOM</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">react-dom</span><span class="dl">"</span>
+</code></pre></div></div>
+<p>Now, we will use ReactDOM’s render method to render something to the screen.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">ReactDOM</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span>
+  <span class="cm">/* the component or HTML element that we want to render*/</span>
+  <span class="p">,</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">root</span><span class="dl">'</span><span class="p">)</span> <span class="c1">// styles it to the root element &lt;body&gt; in this case</span>
+<span class="p">)</span>
+
+<span class="c1">// for example</span>
+
+<span class="nx">ReactDOM</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello God<span class="p">&lt;</span><span class="nt">h1</span><span class="p">/&gt;</span>, document.getElementById('root')
+)
+</code></pre></div></div>
+
+<p>Now it is obvious it will become crowded when there are more than one element, so one can replace it with a component. We are going to call the component <code class="highlighter-rouge">&lt;App /&gt;</code> in this example and call it, which will return the block of HTML code.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">{</span>
+    <span class="o">&lt;</span><span class="nx">ul</span><span class="o">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Buy Milk<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Eat Spaghetti<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="err">/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  }
+}
+
+ReactDOM.render(
+  <span class="p">&lt;</span><span class="nc">App</span> <span class="p">/&gt;</span>, document.getElementById('root')
+)
+</code></pre></div></div>
+
+<h2 id="separate-component-files">Separate Component files</h2>
+
+<p>It is usual for there to be many components, which can be stored in their separate files.</p>
+
+<p>You must create a file with that name, using the example above, <code class="highlighter-rouge">App.js</code>. It is common to store many components in a folder called ‘components’. Then accessing this <code class="highlighter-rouge">App.js</code> file from <code class="highlighter-rouge">index.js</code>:</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">App</span> <span class="k">from</span> <span class="p">.</span><span class="o">/</span><span class="nx">components</span><span class="o">/</span><span class="nx">App</span>
+</code></pre></div></div>
+
+<p>it is already assumed that App is a JS file so no need to put <code class="highlighter-rouge">.js</code>.</p>
+
+<p>In the beggining of the new component file created, <code class="highlighter-rouge">App.js</code>, import React, as we want it to run not in vanilla JS. Copy the function returning the elements of the component into the main body and then conclude with an <strong>EXPORT</strong> statement. This part is crucial.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span>
+
+<span class="c1">// all of the body code</span>
+<span class="c1">// blah blah more code</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">App</span>
+</code></pre></div></div>
+<h1 id="the-basics">The Basics</h1>
+
+<h2 id="jsx">JSX</h2>
+
+<p>Note that React runs on JSX, which is a special version of vanilla JavaScript within brackets. For example, doing this would work:</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">userAge</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="kd">function</span> <span class="nx">App</span><span class="p">(){</span>
+  <span class="k">return</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>You are <span class="si">{</span><span class="nx">userAge</span><span class="si">}</span> years old.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="classname">ClassName</h2>
+
+<p>In regular HTML code, class = ‘navbar’ would work, however because jsx runs, it must be in Camel Case:</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">'</span><span class="s1">navbar</span><span class="dl">'</span><span class="o">&gt;</span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div></div>
+<blockquote>
+  <p>Only apply classname to react elements, NOT components!</p>
+</blockquote>
+
+<h2 id="inline-styling">Inline Styling</h2>
+
+<p>Inline styling is placed between double curly brackets, as this recognizes the first as JSX and the second as the data for the style.
+For example, <code class="highlighter-rouge">&lt;h1 style={'{font-size:5pt}}'&gt;&lt;/h1&gt;</code></p>
+
+<p>Notice that styling options with dash such as <code class="highlighter-rouge">background-color</code> must be camel cased, which now becomes <code class="highlighter-rouge">backgroundColor</code>.</p>
+
+<h1 id="props">Props</h1>
+
+<p>What are props? Short form for properties, commonly the different props that are in HTML elements, but can be customized and modified containing data for each:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">'title'</span> <span class="na">text=</span><span class="s">'Eat spaghetti'</span> <span class="na">checked=</span><span class="s">'true'</span> <span class="na">note=</span><span class="s">"Don't eat too much"</span><span class="nt">&gt;&lt;/p&gt;</span>
+</code></pre></div></div>
+
+<p>This example has the different props of class, text, checked, and note, which can have the values ‘title’, ‘eat spaghetti’, ‘true’, ‘dont eat too much’. This can be made into a JSON data:</p>
+
+<pre><code class="language-term">[
+  {
+    'props':'data',
+    'text':'eat spaghetti',
+    'checked':'true',
+    'note':'Dont eat too much'
+  }
+]
+</code></pre>
+
+<p>Why is this useful? We can have the same HTML framework or elements for different properties, like for a list of you tube videos, the list styles are all the same, but the name, links, and comments, of each video are different.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Contacts</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">{</span>
+    <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">job</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="err">/</span><span class="nt">div</span><span class="p">&gt;</span>
+  }
+}
+
+ReactDOM.render(<span class="p">&lt;</span><span class="nc">Contacts</span>
+  <span class="na">name=</span><span class="s2">"Mario"</span>
+  <span class="na">job=</span><span class="s2">"Chef"</span>
+<span class="p">/&gt;</span>)
+</code></pre></div></div>
+
+<p>Or the props can be stated as a JSON data, where I call the data info, and then call it as a prop parent:</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Contacts</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">{</span>
+    <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">info</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">info</span><span class="p">.</span><span class="nx">job</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="err">/</span><span class="nt">div</span><span class="p">&gt;</span>
+  }
+}
+
+ReactDOM.render(<span class="p">&lt;</span><span class="nc">Contacts</span>
+  <span class="nt">info</span> <span class="err">=</span> <span class="err">{</span> <span class="err">{</span>
+      <span class="err">'</span><span class="nt">name</span><span class="err">':'</span><span class="nc">Mario</span><span class="err">',</span>
+      <span class="err">'</span><span class="nt">job</span><span class="err">':'</span><span class="nc">Chef</span><span class="err">'</span>
+    <span class="err">}</span> <span class="err">}</span>
+<span class="p">/&gt;</span>)
+</code></pre></div></div>
+
+<h2 id="styling-and-props-example">Styling and Props Example</h2>
+
+<p>For example, if I have an app showing emails and I want to show any message that doesn’t have a reply to be red.</p>
+
+<p>Here will be <code class="highlighter-rouge">index.js</code>:</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span>
+<span class="k">import</span> <span class="nx">ReactDOM</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react-dom</span><span class="dl">'</span>
+
+<span class="k">import</span> <span class="nx">Email</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./Email</span><span class="dl">'</span>
+
+<span class="kd">function</span> <span class="nx">Inbox</span><span class="p">(){</span>
+  <span class="k">return</span><span class="p">(){</span>
+    <span class="p">&lt;</span><span class="nc">Email</span>
+      <span class="na">text=</span><span class="s1">'Call me back'</span>
+      <span class="na">reply=</span><span class="s1">'Ok boomer.'</span>
+    <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nc">Email</span>
+      <span class="na">text=</span><span class="s1">'Remember to send me links!'</span>
+      <span class="na">reply=</span><span class="s1">''</span>
+    <span class="p">/&gt;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">ReactDOM</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span>
+    <span class="p">&lt;</span><span class="nc">Inbox</span> <span class="p">/&gt;,</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">root</span><span class="dl">'</span><span class="p">)</span>
+  <span class="p">)</span>
+</code></pre></div></div>
+
+<p>This is <code class="highlighter-rouge">Email.js</code> for each email component:</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span>
+
+<span class="kd">function</span> <span class="nx">Email</span><span class="p">(</span><span class="nx">props</span><span class="p">){</span>
+  <span class="k">return</span><span class="p">(</span>
+      <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h1</span> <span class="nt">style</span> <span class="err">=</span> <span class="err">{</span> <span class="err">{</span><span class="nt">display</span><span class="err">:</span> <span class="err">!</span><span class="nt">props</span><span class="p">.</span><span class="nt">reply</span> <span class="err">&amp;&amp;</span> <span class="err">'</span><span class="nt">none</span><span class="err">'}</span> <span class="err">}</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">text</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span> <span class="nt">style</span> <span class="err">=</span> <span class="err">{</span> <span class="err">{</span><span class="nt">backgroundColor</span><span class="err">:</span> <span class="err">!</span><span class="nt">props</span><span class="p">.</span><span class="nt">reply</span> <span class="err">&amp;&amp;</span> <span class="nt">red</span><span class="err">}</span> <span class="err">}</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">reply</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">display: !props.reply &amp;&amp; 'none'</code> reads if there is no reply then display equals none.</p>
+
+<h1 id="mapping-for-loop">Mapping (For Loop)</h1>
+
+<p>Now with the email example above, it can be very inefficient if there were three hundred emails and I needed to copy and paste that component from 300 different emails.</p>
+
+<p>Mapping, is like the for loop where given an array of props, it will render a component for each in the list. For example, I have a JSON data named <code class="highlighter-rouge">inboxData.js</code> that contains a 300 properties for name and details, and I import it.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">inboxData</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./inboxData</span><span class="dl">'</span>
+
+<span class="kd">function</span> <span class="nx">App</span><span class="p">(){</span>
+    <span class="kd">const</span> <span class="nx">allEmails</span> <span class="o">=</span> <span class="nx">inboxData</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">item</span> <span class="o">=&gt;</span> <span class="p">&lt;</span><span class="nc">Email</span> <span class="na">sender=</span><span class="si">{</span><span class="nx">item</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span> <span class="na">message=</span><span class="si">{</span><span class="nx">item</span><span class="p">.</span><span class="nx">details</span><span class="si">}</span> <span class="err">)</span>
+<span class="err">}</span>
+
+<span class="nt">return</span> <span class="err">{</span>
+  <span class="err">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="si">{</span><span class="nx">allEmails</span><span class="si">}</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">.</span>
+<span class="err">}</span>
+</code></pre></div></div>
+<p>the <code class="highlighter-rouge">.map()</code> function looped through all the props of the data and then created a new component for each. Each was defined as item in this example, but it can really be any word. ‘Item’ represents each in data (inboxData) that is being mapped.</p>
+
+<h1 id="class-based-components">Class Based Components</h1>
+
+<p>Why is there a small blur into object oriented programming? Well React has a useful feature called state that can only be called within a class, so its useful to know how to make a class. Looking at this function-based code:</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">{</span>
+    <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+      <span class="p">&lt;</span><span class="nc">PizzaMenu</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="err">/</span><span class="nt">div</span><span class="p">&gt;</span>
+  }
+}
+</code></pre></div></div>
+<p>Can be converted to this class-based code:</p>
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">App</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+  <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">{</span>
+      <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+        <span class="p">&lt;</span><span class="nc">PizzaMenu</span> <span class="p">/&gt;</span>
+      <span class="p">&lt;</span><span class="err">/</span><span class="nt">div</span><span class="p">&gt;</span>
+    }
+  }
+}
+</code></pre></div></div>
+<p>When switching to a class, function parameters are recognized from <code class="highlighter-rouge">this</code>. For example in this function based component where a property is passed so that the name data can be accessed:</p>
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Header</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">{</span>
+    <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello <span class="si">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="err">/</span><span class="nt">div</span><span class="p">&gt;</span>
+  }
+}
+</code></pre></div></div>
+<p>is changed where props is recognized from <code class="highlighter-rouge">this</code> instead. So from <code class="highlighter-rouge">props.name</code> it is changed to <code class="highlighter-rouge">this.props.name</code>. Notice how there is still the render function.</p>
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Header</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
+  <span class="nx">render</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="p">{</span>
+      <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="err">/</span><span class="nt">div</span><span class="p">&gt;</span>
+    }
+  }
+}
+</code></pre></div></div>
+
+<h1 id="state">State</h1>
+
+<p>Props defined some part of a component that was unchangeable once it is rendered, as it will cause syntax errors when it is altered during the rendering process. However, state allows objects to be manipulative.</p>
+
+<p>States are only created in classes. Be aware that they cannot be made in functions. The constructor function creates a state.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">App</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span><span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(){</span>
+    <span class="k">super</span><span class="p">()</span>           <span class="c1">// include this! it's important!!</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">state</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="nx">answer</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">yes</span><span class="dl">'</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="nx">render</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Are you really that important? <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">answer</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nc">RandomComponent</span> <span class="nt">answer</span> <span class="err">=</span> <span class="err">{</span><span class="nt">this</span><span class="p">.</span><span class="nt">state</span><span class="p">.</span><span class="nt">answer</span><span class="err">}</span><span class="p">/&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Ok this might not seem that incredible but it is superb for uses when there needs to be different variables for one component.</p>
+
+<h2 id="changing-state">Changing State</h2>
+
+<p>What if there’s a number and you want it to go from 0 to 1 on click?</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">clicker</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span><span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(){</span>
+    <span class="k">super</span><span class="p">()</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">state</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="nx">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="p">}</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="k">this</span><span class="p">)</span>
+  <span class="p">}</span>
+
+  <span class="nx">handleClick</span><span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="na">count</span><span class="p">:</span><span class="mi">1</span><span class="p">})</span>
+  <span class="p">}</span>
+
+  <span class="nx">render</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="p">{</span>
+      <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">You</span> <span class="nx">have</span> <span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">count</span><span class="p">}</span> <span class="nx">coins</span><span class="p">.</span> <span class="o">&lt;</span><span class="sr">/h1</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span> <span class="o">=</span> <span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleClick</span><span class="p">}</span><span class="o">&gt;</span> <span class="nx">Add</span> <span class="mi">1</span> <span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
+</span>    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>What if you want the number to increment? This sets a function in setState where the previous state was referred to.</p>
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">handleClick</span><span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">(</span><span class="nx">prevState</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="p">{</span>
+        <span class="na">count</span><span class="p">:</span> <span class="nx">prevState</span><span class="p">.</span><span class="nx">count</span> <span class="o">+</span> <span class="mi">1</span>
+      <span class="p">}</span>
+    <span class="p">})</span>
+  <span class="p">}</span>
+</code></pre></div></div>
+
+</div>
+
+<div class='postholder' style='margin-bottom:0px'>
+		<hr class='divider'>
+		<p> Thanks for reading <b>React JS Beginner Notes</b> written by Jayson Tian. It has 2338 words and is categorized under <b>dev</b>. You might also enjoy:</p>
+		
+		
+		
+
+		
+
+		    
+		    
+
+		    
+
+		    
+
+		  
+
+		    
+		    
+
+		    
+
+		    
+
+		  
+
+		    
+		    
+
+		    
+
+		    
+
+		  
+
+		    
+		    
+
+		    
+
+		    
+
+		  
+
+		    
+		    
+
+		    
+
+		    
+
+		  
+
+		    
+		    
+
+		    
+
+		    
+
+		  
+
+		    
+		    
+
+		    
+
+		    
+
+		  
+</div>
+			</article>
+		</main>
+			
+
+<footer class='footer'>
+	<div class='footer-text'>
+		<p><b>Jayson Tian</b> jots down his arbitrary thoughts on this website.
+		<br>He likes to doodle digitally, create music, binge netflix, experiment biology, design web stuff, and write about himself in third person.</p>
+	</div>
+	<div class='socialmedia'>
+		<a href='https://www.instagram.com/jaezun/?hl=en'><i class="fab fa-instagram"></i></a>
+		<a href='https://github.com/Jaysontian'><i class="fab fa-github"></i></a>
+		<a href='https://soundcloud.com/picxight-productions'><i class="fab fa-soundcloud"></i></a>
+		<a href='https://www.youtube.com/channel/UCdwsgMvJzdwnKI8WM5kYO5A/'><i class="fab fa-youtube"></i></a>
+	</div>
+</footer>
+
+	</div>
+</body>
+
+</html>

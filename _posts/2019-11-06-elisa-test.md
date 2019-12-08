@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ELISA Testing of Lyme Disease"
+title: "What is the ELISA Test?"
 date:   2019-11-06
 categories: biology
 ---
@@ -28,6 +28,4 @@ It can be used to identify specific surface markers or metabolites associated wi
 ELISA tests can be used to diagnose disease conditions based on the presence of disease markers (antigens, metabolites)
 
 Samples taken from infected patients will induce a colour change when treated with appropriate detection antibodies
-The amount of colour change can be used to signify rate of disease progression (more marker = more colour change) 
-
-
+The amount of colour change can be used to signify rate of disease progression (more marker = more colour change)

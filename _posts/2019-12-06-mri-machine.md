@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "The MRI: The Next Generation"
-date:   2019-12-06
-categories: life
+title: "The MRI: A Spectroscopic Revolution"
+date:   2019-12-5
+categories: biology
 published: true
+
 ---
 
 ## A Technological Breakthrough
@@ -24,7 +25,7 @@ Following the recognition of NMR and uses in scientific laboratories, American s
 In 2003, Paul Lauterbur and Mansfield shared the Nobel Prize for medicine. They were awarded for the discovery of 2-dimensional image stacking through the utilization of magnetic field gradients recorded through NMR techniques  (Chang, 2007). Mansfield calculated the algorithm which analyzed MRI gradients mathematically. Through this advancement in NMR technology, the present-day MRI machine was born. 
 
 
-##The Concept Behind the MRI
+## The Concept Behind the MRI
 
 As a medical device that relies heavily on the assessment of the atomic structure of molecules and their magnetic resonance properties, the notion of connecting the laws of electromagnetism with the laws of atomic nuclear physics was heavily used. 
 
@@ -36,7 +37,7 @@ Though the idea of measuring magnetic energy change in protons to determine an u
 
 
 
-##Pushing Imaging to New Limits
+## Pushing Imaging to New Limits
 
 The MRI continues to be developed and improved, pushing internal human imaging to unprecedented levels of accuracy and precision. Through the use of MRI to further investigate unknown fields in science, more discoveries can be made. 
 
@@ -44,13 +45,13 @@ For example, neuroscientists developed an implantation needle that allows scient
 
 Other innovations stem from the constant improvement of the MRI machine to become more powerful. In 2018, the most potent MRI machine was built using a 10.5-tesla magnet, which is 50% more powerful than the strongest MRI signals approved for clinical use (Nowogrodzki, 2018). These ultra-high-field scanners increase the signal to noise ratio of radio frequencies during an assessment, allowing technology to resolve the details of the brain to as small as 0.5 mm, which was two times greater than the magnification 3T MRI machines provide. There are high neuroscience and clinical applications gains to this improvement. Clinicians can now guide electrons to more accurate degrees during treatments of using deep brain stimulation. Dr. Gregory Chang, a musculoskeletal radiologist at the New York University School of Medicine, used a 7T scanner to track sodium for changes that might foretell osteoarthritis. The evidence led him to conclude that “the sodium concentration in their cartilage goes down without any change in the structure of the cartilage,” which was a crucial discovery as now clinicians can diagnose earlier stages of the disease through the tracking of sodium concentrations (Nowogrodzki, 2018).
 
-##Considering the Ethical Risks
+## Considering the Ethical Risks
 
 Though MRI technology has a wide range of benefits in the scientific and medical fields, many implications arise through the use of this new technology. From an ethical perspective, there are concerns with the psychological and physical safety of patients or research participants. Additional limitations include the lack of accessibility for this technology for people due to the high cost or disability. A Canadian Research and Ethics Board investigation was performed on MRI technology to assess the risks of MRI research and use. Part of the study stated how participants could experience both anxiety and claustrophobia. The need for sedation to some participants for the reduction of body movement or the alleviation of stress can cause drowsiness, vomiting, respiratory depression, and possibly cardiac arrest (Marshall & Hadskis, 2009). A contrasting agent may be used to enhance image quality; however, some participants may have severe allergic reactions. These psychological risks, along with physical risks such as the attraction of ferromagnetic material in the environment or within the patient’s body, maybe pulled towards the magnet, which can cause severe injury or even death. These are possible dangers. However, it must be noted that any medical or scientific innovation entails some degree of risk.
 
 Participants who have ferromagnetic implants such as aneurysm clips are unable to use this technology, as the magnetic sections can be torn from bodily tissue (Edelman, 2014). The magnetic objects can also heat up to extreme temperatures, which can lead to internal damage to the body. Finally, as the machine is highly expensive are rare as only large medical centers can purchase it. The high cost for regular maintenance and the need for a radiologist to supervise the process skyrockets the fees for a scan to be performed (Baker, 2010). Both the limitation of both ferromagnetic implants and costs may pose issues of inaccessibility for people of a particular class, for example, those who are disabled or impoverished. The inequality for access to this technology raises another ethical question. Should this technology be used for only the affluent, or should it be accessible for any person?
 
-##A Miracle in Science and Healthcare
+## A Miracle in Science and Healthcare
 
 The MRI has been changing scientific and medical culture both on ethical and economic perspectives ever since its invention. From a scientific standpoint, it created a domino effect for many other inventions and discoveries, as it opened the doors to many new fields within neuroscience, allowing researchers to study the central nervous system with more precision (Khan Academy, n.d.). Many types of MRI’s were designed for different uses, including neuroimaging, cardiovascular, gastronomical, and many more. The diverse ways in which diseases and injuries could be scanned allowed doctors to help patients through diagnosing and for the detection of diseases at an earlier stage (Kakalios, 2017). For example, the MRI affected the field of oncology greatly as cancer was able to be determined before symptoms were even expressed, saving lives every day. Through significantly changing medicinal and scientific culture, this invention changed the way doctors and scientists diagnosed and viewed the human body. The Royal Swedish Academy shares this view while announcing the Nobel Prize to chemist Richard R. Ernst, a great contributor to the development of the MRI. They referred to the discovery of NMR spectroscopy and the invention of the MRI as “perhaps the most important instrumental measuring technique within chemistry.” (Brown, 2010).  Au contraire, it raises the polemic view of whether there should be equal opportunities and accessibility of new technology for every person in the world for disease diagnosis. Economically, it is a costly technology, and due to the increase in demand for production, medical billings for patients are high (Baker, 2010). Over the years, improvements in MRI manufacturing has decreased costs significantly. 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Overthinking Thinking"
+title: "Overthinking"
 date:   2019-12-5
 categories: life
 published: true
