@@ -375,3 +375,47 @@ What if you want the number to increment? This sets a function in setState where
     })
   }
 ```
+
+# Lifecycle Methods
+
+Lifecycle methods are function motifs that can be used to refer the different states of a component. For example, in the example below, the function `componentDidMount` will only return something once the component is mounted (loaded).
+
+The code below fetches for some api data and then turns it into accessible JSON data. Then, the character state is set as the data. If the data was 'name: John', then in code, `this.state.character.name` will return  `John`
+
+```jsx
+import React, {Component} from 'react'
+
+class App extends Component {
+  constructor(){
+    super()
+    this.state = {
+      loading: false,
+      character: {}
+    }
+  }
+
+  componentDidMount(){
+    this.setState({loading:true})
+    fetch()  // some api fetch url
+      .then(response => response.json)
+      .then(data => {
+          this.setState({
+              character:data,
+              loading:true
+            })
+        })
+  }
+
+  render(){
+    const text = this.state.loading ? "loading..." : this.state.character.name
+    return{
+      <div> {text} </div>
+    }
+  }
+}
+```
+
+This will return the character name when finished loading, but if there is slow internet, it will show the text loading while it loads.
+
+
+# Forms

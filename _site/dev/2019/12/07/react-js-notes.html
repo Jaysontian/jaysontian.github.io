@@ -634,7 +634,7 @@ img{
 <div class='post-detail'>Dec 7, 2019 |       
 	
       
-        19 min. read
+        21 min. read
       
 
       <div class='right'>
@@ -674,6 +674,8 @@ img{
       <li><a href="#changing-state" id="markdown-toc-changing-state">Changing State</a></li>
     </ul>
   </li>
+  <li><a href="#lifecycle-methods" id="markdown-toc-lifecycle-methods">Lifecycle Methods</a></li>
+  <li><a href="#forms" id="markdown-toc-forms">Forms</a></li>
 </ul>
 
 <h1 id="introduction">Introduction</h1>
@@ -1023,11 +1025,53 @@ ReactDOM.render(<span class="p">&lt;</span><span class="nc">Contacts</span>
   <span class="p">}</span>
 </code></pre></div></div>
 
+<h1 id="lifecycle-methods">Lifecycle Methods</h1>
+
+<p>Lifecycle methods are function motifs that can be used to refer the different states of a component. For example, in the example below, the function <code class="highlighter-rouge">componentDidMount</code> will only return something once the component is mounted (loaded).</p>
+
+<p>The code below fetches for some api data and then turns it into accessible JSON data. Then, the character state is set as the data. If the data was ‘name: John’, then in code, <code class="highlighter-rouge">this.state.character.name</code> will return  <code class="highlighter-rouge">John</code></p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span><span class="nx">Component</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span>
+
+<span class="kd">class</span> <span class="nx">App</span> <span class="kd">extends</span> <span class="nx">Component</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(){</span>
+    <span class="k">super</span><span class="p">()</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">state</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="na">loading</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+      <span class="na">character</span><span class="p">:</span> <span class="p">{}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="nx">componentDidMount</span><span class="p">(){</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span><span class="na">loading</span><span class="p">:</span><span class="kc">true</span><span class="p">})</span>
+    <span class="nx">fetch</span><span class="p">()</span>  <span class="c1">// some api fetch url</span>
+      <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">)</span>
+      <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
+          <span class="k">this</span><span class="p">.</span><span class="nx">setState</span><span class="p">({</span>
+              <span class="na">character</span><span class="p">:</span><span class="nx">data</span><span class="p">,</span>
+              <span class="na">loading</span><span class="p">:</span><span class="kc">true</span>
+            <span class="p">})</span>
+        <span class="p">})</span>
+  <span class="p">}</span>
+
+  <span class="nx">render</span><span class="p">(){</span>
+    <span class="kd">const</span> <span class="nx">text</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">loading</span> <span class="p">?</span> <span class="dl">"</span><span class="s2">loading...</span><span class="dl">"</span> <span class="p">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">character</span><span class="p">.</span><span class="nx">name</span>
+    <span class="k">return</span><span class="p">{</span>
+      <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span> <span class="p">{</span><span class="nx">text</span><span class="p">}</span> <span class="p">&lt;</span><span class="err">/</span><span class="nt">div</span><span class="p">&gt;</span>
+    }
+  }
+}
+</code></pre></div></div>
+
+<p>This will return the character name when finished loading, but if there is slow internet, it will show the text loading while it loads.</p>
+
+<h1 id="forms">Forms</h1>
+
 </div>
 
 <div class='postholder' style='margin-bottom:0px'>
 		<hr class='divider'>
-		<p> Thanks for reading <b>React JS Beginner Notes</b> written by Jayson Tian. It has 2338 words and is categorized under <b>dev</b>. You might also enjoy:</p>
+		<p> Thanks for reading <b>React JS Beginner Notes</b> written by Jayson Tian. It has 2622 words and is categorized under <b>dev</b>. You might also enjoy:</p>
 		
 		
 		
