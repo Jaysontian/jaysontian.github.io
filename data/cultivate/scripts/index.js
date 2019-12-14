@@ -892,16 +892,18 @@ const offline = {
       alert("This browser does not support desktop notification");
     }
     else if (Notification.permission === "granted") {
-      var notification = new Notification("Hi there!");
+      var notification = new Notification('Welcome Back', {
+       icon: 'img/cell.png',
+       body: '10000 cells were made while you were gone!',
+      });
     }
     else if (Notification.permission !== "denied") {
       Notification.requestPermission().then(function (permission) {
         if (permission === "granted") {
-          alert('cool!')
-          var notification = new Notification('Notification title', {
-   icon: 'img/cell.png',
-   body: 'Hey there! You\'ve been notified!',
-  });
+          var notification = new Notification('Achievement Unlocked!', {
+           icon: 'img/cell.png',
+           body: 'You cultivated a lot of cells!',
+          });
         }
       });
     }
