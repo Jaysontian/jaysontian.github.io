@@ -9,8 +9,8 @@ permalink: /projects/
 This page contains most of my work. I just want to keep stuff here no matter if its done or not, successful or failed, so I can reflect back on it and see my changes and growth.
 
 ## Recent Work
-- [🖲 Cultivate](https://jaysontian.github.io/data/cultivate/index.html) - PLAY IT. It starts off simple but it gets more and more interesting. Trust me. This project sums up all the clicker games I've tried and when I'm done with this I'm moving on to Object Oriented JS stuff.
 
+- [🖲 Cultivate](https://jaysontian.github.io/data/cultivate/index.html) - PLAY IT. It starts off simple but it gets more and more interesting. Trust me. This project sums up all the clicker games I've tried and when I'm done with this I'm moving on to Object Oriented JS stuff.
 - [Productive Milk](https://jaysontian.github.io/data/productive-milk/index.html) - An online agenda with a more colorful take on google tasks.
 - [Forgotten Promises](https://soundcloud.com/picxight-productions/forgotten-promises) - A nostalgic solo guitar piece with a bittersweet vibe.
 
