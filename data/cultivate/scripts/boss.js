@@ -53,7 +53,7 @@ var sbe = {
   auto:false,
   power: 0,
   level: 0,
-  cost: 600,
+  cost: 100000,
   stage: {
     0: 'Baby',
     1: 'First Anniversary',

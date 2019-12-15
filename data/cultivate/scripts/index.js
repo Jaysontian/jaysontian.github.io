@@ -19,7 +19,7 @@ state.config = {
 };
 
 state.clicks = {
-  current: 500,
+  current: 0,
   total: 0,
   cps: 0,
 };
@@ -632,8 +632,8 @@ state.projects = {
   funds: 0,
   affinity: 2,
   nextaffinity: 600,
-  speed: 50,
-  storage: 1000,
+  speed: 1,
+  storage: 100,
   tier1: {
     p1: {
       label:'Nanoparticle Discovery',
