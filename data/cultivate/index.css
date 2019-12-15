@@ -297,3 +297,86 @@ h3 {
 .project .details{
   margin-bottom:5px;
 }
+
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  max-width: 500px;
+  top:25px;
+  background-color: #363636;
+  border:2px solid #242424;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  right: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 4s;
+  animation: fadein 0.5s, fadeout 0.5s 4s;
+}
+
+@-webkit-keyframes fadein {
+  from {right: 0; opacity: 0;}
+  to {right: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {right: 0; opacity: 0;}
+  to {right: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {right: 30px; opacity: 1;}
+  to {right: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {right: 30px; opacity: 1;}
+  to {right: 0; opacity: 0;}
+}
+
+
+
+
+
+
+
+
+
+
+#terminal{
+  position:fixed;
+  width:100%;
+  height:70%;
+  background-color:black;
+  top:0px;
+  left:0px;
+  z-index:1000000;
+  color:#73f340;
+  font-family:'Inconsolata';
+  padding:30px;
+  cursor:wait;
+  overflow-y: auto;
+  padding-bottom:200px;
+}
+
+#terminal p{
+  letter-spacing:1px;
+  margin:2px 0px;
+}
+
+#terminal input{
+  background-color:black;
+  font-size:15px;
+  outline:none;
+  color:#73f340;
+  font-family:'Inconsolata';
+  border:none;
+}

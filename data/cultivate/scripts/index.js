@@ -14,6 +14,10 @@ const elements = {
 /** State. */
 const state = {};
 
+state.config = {
+  save:true,
+};
+
 state.clicks = {
   current: 500,
   total: 0,
@@ -405,22 +409,12 @@ const loadEventListeners = () => {
   });
 };
 
-/** Helpers. */
+/** =================== Helpers =================== */
 
-/**
- * @param  {Number} base
- * @param  {Number} rate
- * @param  {Number} owned
- * @return {Number}
- */
 const calculateNextCost = (base, rate, owned) => {
   return Math.floor(base * Math.pow(rate, owned));
 };
 
-/**
- * @param  {String}      id
- * @return {HTMLElement}
- */
 const getElementById = id => {
   return elements[id]
     ? elements[id]
@@ -444,23 +438,25 @@ Game.nArray = ["", " K", " M", " B", " T", " Qa", " Qi", " Sx", " Sp", " Oc", " 
    return r + Game.nArray[Game.floor(l / 3)];
  };
 
-/**
- * @param  {Number} clicks
- * @param  {Number} seconds
- * @return {String}
 
-const formatGeneratorOutput = (clicks, seconds) => {
-  return [
-    clicks.toLocaleString(),
-    clicks === 1 ? 'click' : 'clicks',
-    '/',
-    seconds.toLocaleString(),
-    seconds === 1 ? 's' : 's',
-  ].join(' ');
-};
-*/
 
-/** Views. */
+
+/** =================== Messages =================== */
+const message = (text, type) => {
+  var x = document.getElementById("snackbar");
+/*  switch (type) {
+    case 'danger': x.style.backgroundColor = '#e37878'; break;
+    case 'normal': x.style.backgroundColor = '#a1f0a5'; break;
+    case 'warning':x.style.backgroundColor = '#fce09a'; break;
+  }*/
+  x.innerText = text;
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 4300);
+}
+
+
+
+/** =================== Views =================== */
 const views = {
   renderCounter: () => {
     if (state.clicks.current > 999999){
@@ -636,45 +632,92 @@ state.projects = {
   funds: 0,
   affinity: 2,
   nextaffinity: 600,
-  speed: 1,
-  storage: 100,
+  speed: 50,
+  storage: 1000,
   tier1: {
     p1: {
       label:'Nanoparticle Discovery',
-      info:'The study of nanoparticles will allow for 25% more efficient cell engineering.',
+      info:'The study of nanoparticles will double cell engineering efficiency.',
+      message: 'Cell per clicks have doubled.',
       cost:34,
     },
     p2: {
       label:'Miracle Seed',
-      info:'A new fertilization technique attempts to cease disease inheritance. Gain 3000 cells. ',
+      info:'A new fertilization technique attempts to cease disease inheritance. Gain 5000 cells. ',
+      message: 'You obtained 5000 more cells.',
       cost:45,
     },
     p3: {
       label:'Lab Expansion',
-      info:'Make more room to hold more cells. ',
+      info:'Make more room to hold more cells. (Affinity +1)',
+      message:'You gained another affinity point! You should use it to upgrade storage.',
       cost:90,
     },
     p4: {
       label:'Micro Encapulation',
-      info:'Dissect cells to determine its inner secrets. Development efficiency increases. ',
+      info:'Dissect cells to identity protein receptors. Double the CPS amount. ',
+      message:'CPS amount doubled successfully.',
       cost:200,
     },
     p10: {
-      label:'Assemble SBE',
-      info:'Design blueprint for a Synthetic Biological Engine (SBE).',
+      label:'SBE Blueprint',
+      info:'Develop a computation engine to enable automation of cell engineering.',
+      message:'SBE has been built. Initialization enabled.',
       cost:400,
     },
     p11: {
       label:'Initialize SBE',
-      info:'Start up the engine for the artifical sythesis of cells with computated automation.',
+      info:'Initiate the Synthetic Biological Engine (SBE)',
       cost:500,
+      show:false,
     },
-    p11: {
+    p12: {
       label:'Andrew Shi',
       info:'A furious clicker. Increase click count by 50.',
       cost:1000,
+      show:false,
     }
   },
+
+  hello: 1,
+};
+
+state.projectUpgrades = {
+    p1: function(){
+      if (project.checkPurchase('p1')){
+        state.cursor.output.current *= 2;
+      }
+    },
+    p2: function(){
+      if (project.checkPurchase('p2')){
+        state.clicks.current += 5000;
+        views.renderCounter();
+      }
+    },
+    p3: function(){
+      if (project.checkPurchase('p3')){
+        state.projects.affinity += 1;
+        project.checkAffinity();
+        project.renderUpgrade();
+      }
+    },
+    p4: function(){
+      if (project.checkPurchase('p4')){
+        state.clicks.cps *= 2;
+        cellTick();
+      }
+    },
+    p10: function(){
+      if (project.checkPurchase('p10')){
+        state.projects.tier1.p11.show = true;
+        project.renderTier1();
+      }
+    },
+    p11: function(){
+      if (project.checkPurchase('p11')){
+        boss1.init();
+      }
+    },
 };
 
 
@@ -719,12 +762,13 @@ const project = {
 
   checkAffinity: () => {
     if (state.clicks.current >= state.projects.nextaffinity){
-      state.projects.nextaffinity = state.projects.nextaffinity * 1.5 ** state.projects.affinity;
+      state.projects.nextaffinity = state.projects.nextaffinity * 1.25 ** state.projects.affinity;
       state.projects.affinity ++;
       $('#speed').attr('disabled', state.speed + (state.storage/100) == state.affinity ? true : false);
       $('#storage').attr('disabled', state.speed + (state.storage/100) == state.affinity ? true : false);
       project.render();
       project.btnState();
+      project.renderUpgrade();
     }
   },
 
@@ -766,6 +810,7 @@ const project = {
       const img = projectElement.querySelector('.icon');
       const cost = projectElement.querySelector('.cost');
       const details = projectElement.querySelector('.details');
+      $(projectElement).attr('onclick',"state.projectUpgrades." + id + "()");
       img.setAttribute('src', 'img/projects/' + proj.label + '.png');
       name.innerText = proj.label;
       details.innerText = proj.info;
@@ -773,8 +818,7 @@ const project = {
       $(projectElement).appendTo('#project-con');
 
       $('#'+id).click(function(){
-        delete state.projects.tier1[id];
-        $('#'+id).remove();
+        project.action(id);
       })
     });
     var sample = document.getElementById('sample');
@@ -786,7 +830,27 @@ const project = {
     Object.keys(state.projects.tier1).forEach(id => {
       const proj = state.projects.tier1[id];
       if (proj.cost > state.projects.funds) {$('#'+id).addClass('locked')} else {$('#'+id).removeClass('locked')}
+      if (proj.show != undefined && proj.show == false) {$('#'+id).hide()}
+      else {$('#'+id).show()}
     });
+  },
+
+  action: id => {
+    var proj = state.projects.tier1[id];
+    if (state.projects.funds >= proj.cost){
+    }
+  },
+
+  checkPurchase: id => {
+    if (state.projects.funds >= state.projects.tier1[id].cost){
+      if (state.projects.tier1[id].message != undefined){
+        message(state.projects.tier1[id].message);
+      }
+      state.projects.funds -= state.projects.tier1[id].cost;
+      delete state.projects.tier1[id];
+      $('#' + id).remove();
+      return true;
+    }
   }
 
 };
@@ -799,11 +863,13 @@ const project = {
 
 const storage = {
   save: () => {
-    localStorage.setItem('clicks', JSON.stringify(state.clicks));
-    localStorage.setItem('cursor', JSON.stringify(state.cursor));
-    localStorage.setItem('generators', JSON.stringify(state.generators));
-    localStorage.setItem('projects', JSON.stringify(state.projects));
-    localStorage.setItem('messages', JSON.stringify(state.messages));
+    if (state.config.save){
+      localStorage.setItem('clicks', JSON.stringify(state.clicks));
+      localStorage.setItem('cursor', JSON.stringify(state.cursor));
+      localStorage.setItem('generators', JSON.stringify(state.generators));
+      localStorage.setItem('projects', JSON.stringify(state.projects));
+      localStorage.setItem('messages', JSON.stringify(state.messages));
+    }
   },
   load: () => {
     var tempClicks = JSON.parse(localStorage.getItem('clicks'));
@@ -876,12 +942,14 @@ const storage = {
     cellTick();
   },
   delete: () => {
+    state.config.save = false;
       clearInterval(tick);
       localStorage.removeItem('clicks');
       localStorage.removeItem('cursor');
       localStorage.removeItem('generators');
       localStorage.removeItem('projects');
       localStorage.removeItem('messages');
+      localStorage.removeItem('sbe');
       location.reload();
   },
 };
@@ -892,9 +960,9 @@ const offline = {
       alert("This browser does not support desktop notification");
     }
     else if (Notification.permission === "granted") {
-      var notification = new Notification('Welcome Back', {
+      var notification = new Notification('Cell Notification!', {
        icon: 'img/cell.png',
-       body: '10000 cells were made while you were gone!',
+       body: 'You will be alerted when tons of cells are made when you are gone!',
       });
     }
     else if (Notification.permission !== "denied") {
