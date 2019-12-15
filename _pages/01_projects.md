@@ -9,8 +9,8 @@ permalink: /projects/
 This page contains most of my work. I just want to keep stuff here no matter if its done or not, successful or failed, so I can reflect back on it and see my changes and growth.
 
 ## Recent Work
+- [🖲 Cultivate](https://jaysontian.github.io/data/cultivate/index.html) - PLAY IT. It starts off simple but it gets more and more interesting. Trust me. This project sums up all the clicker games I've tried and when I'm done with this I'm moving on to Object Oriented JS stuff.
 
-- [🥛 Milk Corp](https://milk-crop.github.io/index.html) - A desktop incremental game exploring the math and logic behind the idle genre. Click cows to create more milk!
 - [Productive Milk](https://jaysontian.github.io/data/productive-milk/index.html) - An online agenda with a more colorful take on google tasks.
 - [Forgotten Promises](https://soundcloud.com/picxight-productions/forgotten-promises) - A nostalgic solo guitar piece with a bittersweet vibe.
 
@@ -28,13 +28,14 @@ I like to [compose music](https://soundcloud.com/picxight-productions) when I'm 
 
 - [🌲 Forestry Kids](https://jaysontian.github.io/data/websites/ForestryKids/index.html) - I used this creation as an opportunity to develop my CSS skills. I learned a lot on web design doing this project.
 - Check out my Old Websites. Feel free to use them as templates.
-- [Website 1](https://jaysontian.github.io/data/websites/Previous-Sites/oldpage/index.html) - These are my old websites. 
+- [Website 1](https://jaysontian.github.io/data/websites/Previous-Sites/oldpage/index.html) - These are my old websites.
 - [Website 2](https://jaysontian.github.io/data/websites/Previous-Sites/oldpage2/oldpage2.html) - Feel free to use them as templates.
 - [Website 3](https://jaysontian.github.io/data/websites/Previous-Sites/oldpage3/oldpage3.html) - I tried to implement blogging features.
-- [Website 4](https://jaysontian.github.io/data/websites/Previous-Sites/oldpage4/index.html) - Edit the blog posts with [the editor](https://jaysontian.github.io/data/websites/Previous-Sites/oldpage4/editor/editor.html). 
+- [Website 4](https://jaysontian.github.io/data/websites/Previous-Sites/oldpage4/index.html) - Edit the blog posts with [the editor](https://jaysontian.github.io/data/websites/Previous-Sites/oldpage4/editor/editor.html).
 
 ## Games
 
+- [🥛 Milk Corp](https://milk-crop.github.io/index.html) - A desktop incremental game exploring the math and logic behind the idle genre. Click cows to create more milk!
 - [Boo Crasher](https://jaysontian.github.io/data/games_successful/BooCrasher/index.html) - I can't even call this a game... Something weird I made on Unity.
 - [Echo](https://jaysontian.github.io/data/games_successful/Echo/echo.html) - Simon inspired Javascript game with minimalist design.
 - [Memoir](https://jaezun.itch.io/memoir)- A RPG unity game that's inspired by RPG's in the 90s
