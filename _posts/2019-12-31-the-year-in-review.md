@@ -35,8 +35,3 @@ I like to overthink. Ok I understand that this completely contradicts my stateme
 
 All in all, there were quite a few morals to my life story this past year! 
 
-![Screen Shot 2020-01-01 at 11.04.42 PM](/Users/jayson.tian/Desktop/Screen Shot 2020-01-01 at 11.04.42 PM.png)
-
-### The End of the Decade
-
-We see this as a big deal. Wow. 2020. Double congruent digits (is that term correct?). So, I will take the time to look at my change from when I was 5 years old to now.
