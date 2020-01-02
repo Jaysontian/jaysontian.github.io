@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+    <title>Cultivation</title>
+    <link rel="icon" type="image/png" href="img/generatorB.png">
+    <meta name="description" content="A button clicker idle game.">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no, user-scalable=no, width=device-width">
+    <link  rel="stylesheet" href="index.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="snackbar">Some text some message..</div>
+    <div class='wrapper'>
+      <noscript>
+        You need to enable JavaScript to play this game.
+      </noscript>
+
+
+      <div class='clicker'>
+        <div id='cellholder'>
+          <img id="newcell" src='img/cell.png'></img>
+        </div>
+        <div>
+          <p><span id="counter">0</span> cells <span id='counter-fade'></span></p>
+          <p><span id="cps">0</span> cps</p>
+          <p id="message">Click the generator on the left to engineer an artificial cell.</p>
+        </div>
+      </div>
+
+      <div style='display:flex; margin-top:20px;'>
+        <div class="sidenav" id='nav'>
+          <a onclick="show('store')">Upgrades</a>
+          <a onclick="show('settings')">Settings</a>
+        </div>
+
+        <main id='main'>
+          <div id='store' class='tab'>
+            <div class='item' id='upgrade'>
+                <img class='icon' src='img/upgrade.png'></img>
+                <div class='item-detail'>
+                  <h3><span class='name'>Cursor</span></h3>
+                  <p><span class='cost'></span> cells</p>
+                  <p>+ <span class='output'>1 cell / click</span></p>
+                </div>
+                <div class='owned'>2</div>
+            </div>
+          </div>
+          <div id='settings' class='tab'>
+            <div class='container'>
+              <h4>Game Data</h4>
+              <p>
+                <button id="delete" class='red' title="Click Button">Restart</button>
+                <button onclick='offline.permission()' class='blue' title="Click Button">Notifications</button>
+                <!-- <button id="add" class='blue' onclick='state.clicks.current += 100'>Add 100</button>-->
+              </p>
+            </div>
+            <div class='container'>
+              <h4>Development Log</h4>
+              <p id='dev'></p>
+              <p>Game created by Jayson Tian</p> <a href='https://jaysontian.github.io'> Github </a>
+            </div>
+          </div>
+          <div id='Projects' class='tab'>
+            <div class='container'>
+              <h4>Funds: <span id='funding'>54</span> / <span id='maxfunds'>1000</span></h4>
+              <div style='display:flex; justify-content:space-between;'>
+                <div>
+                  <p>Affinity: <span id='affinity'>12</span></p>
+                  <p>+1 Infinity at <span id='nextaffinity'>400</span> cells</p>
+                </div>
+                <div>
+                  <button class='blue' id='speed-btn'>Speed</button> <br>
+                  <button class='blue' id='storage-btn' style='margin-top:5px'>Storage</button>
+                </div>
+                <div>
+                  <p id='speed'>7</p>
+                  <p id='storage'>5</p>
+                </div>
+                <div></div>
+              </div>
+            </div>
+            <div class='container' id='project-con'>
+              <div class='project' id='sample'>
+                <img class='icon' src='img/upgrade.png'></img>
+                <div class='project-text'>
+                  <h3><span class='name'>Nanoparticle Development</span> (<span class='cost'>25</span> Funds)</h3>
+                  <p class='details'>The discovery of liposomes has allowed for better understanding of nanoparticle development. +1 cell each click.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </main>
+    </div>
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/boss.js"></script>
+
+    <script>
+      function show(id){
+        var innerDiv = document.getElementsByClassName('tab');
+        for(var i = 0; i < innerDiv.length; i++){
+           var a = innerDiv[i];
+           a.style.display = 'none';
+        }
+        document.getElementById(id).style.display = 'block';
+      }
+    </script>
+  </body>
+</html>

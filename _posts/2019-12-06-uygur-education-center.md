@@ -4,7 +4,6 @@ title: "The Uygur Crisis in China"
 date:   2019-12-6
 categories: life
 published: false
-
 ---
 
 The recent crisis and debate over the "education centers" in China has been raising a lot of controversy among media in many countries.

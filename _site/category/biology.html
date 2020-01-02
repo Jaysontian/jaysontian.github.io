@@ -3,11 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<!-- Place this tag in your head or just before your close body tag. -->
 	<script async defer src="https://buttons.github.io/buttons.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://kit.fontawesome.com/e8c8e8e543.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 	<title>Jayson Tian - Jayson Tian</title>
 	<link rel="canonical" href="http://localhost:4000/category/biology">
@@ -17,6 +17,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism-tomorrow.min.css">
 
 <style>
+
+	/*
 		@import url(https://rsms.me/inter/inter.css);
 html {
     font-family: Inter, sans-serif
@@ -27,7 +29,7 @@ html {
         font-family: 'Inter var', sans-serif
     }
 
-
+*/
 
 /*@font-face {
     font-family: Avenir Pro;
@@ -35,9 +37,6 @@ html {
 }*/
 .movedown{
     margin-top:160px;
-}
-html{
-  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -47,30 +46,23 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    color: black;
     margin:0px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		color: rgb(51, 51, 51);
+		transition:all 0.4s ease-in-out;
 }
 
 
 p {
-    box-sizing:border-box;
-    color:rgb(50, 50, 50);
     display:block;
-    font-family:"Inter var", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
-    font-feature-settings:"kern", "liga", "clig", "calt";
-    font-kerning:normal;
-    font-size:16.78px;
-    font-stretch:100%;
-    font-style:normal;
-    font-variant-caps:normal;
-    font-variant-east-asian:normal;
-    font-variant-ligatures:normal;
-    font-variant-numeric:normal;
+    font-size:16.5px;
     font-weight:400;
-    line-height:27.9552px;
+    line-height:26px;
     margin-block-end:26.88px;
     text-size-adjust:100%;
-    -webkit-font-smoothing:antialiased;
+		text-align:justify;
+		letter-spacing:default;
 }
 
 
@@ -83,7 +75,6 @@ code{
 }
 
 li {
-    color:rgb(50, 50, 50);
     font-size:16.78px;
     font-stretch:100%;
     font-weight:400;
@@ -99,7 +90,6 @@ ul {
 
 ul li::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: rgba(0,0,0,0.3); /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
@@ -194,10 +184,10 @@ dt{
 .postholder{
     margin-top:50px;
     max-width:750px;
-    color:rgba(0,0,0,0.85);
 }
 
 .postitem{
+		color:inherit;
     display:flex;
     justify-content: space-between;
     padding:10px;
@@ -221,13 +211,11 @@ dt{
     height:20px;
     font-size:20px;
     font-weight: 600;
-    color:rgba(0,0,0,0.85);
     margin:0px;
     transition:0.3s ease-in-out all;
 }
 
 .postitem time{
-    color:rgba(0,0,0,0.45);
     float:right;
     height:20px;
     font-weight:bold;
@@ -235,28 +223,24 @@ dt{
 
 h1 {
     margin-bottom: 40px;
-    color: rgba(0, 0, 0, .8);
     font-size: 22pt;
     font-weight:700;
 }
 
 h2 {
     margin-top: 40px;
-    color: rgba(0, 0, 0, .8);
     font-size: 16pt;
     font-weight:700;
 }
 
 h3 {
-    margin-bottom: 0;
-    color: rgba(0, 0, 0, .8);
+    margin-bottom: 30px;
     font-size: 16pt;
-    font-weight:500;
+    font-weight:600;
 }
 
 h4{
     margin-bottom: 0;
-    color: rgba(0, 0, 0, .8);
     font-size: 13pt;
     font-weight:600;
 }
@@ -291,7 +275,6 @@ img{
 
 .post-detail{
     font-weight:bold;
-    color:rgba(0,0,0,0.75);
     margin-bottom:30px;
 }
 
@@ -328,8 +311,36 @@ img{
     font-weight:600;
 }
 
-.btn:hover {
-    background-color: #e5e7ea;
+.btnnew {
+	margin-top: 1.3rem;
+	margin-left: 1.3rem;
+	height:27px;
+	border:1px solid rgba(0,0,0,0.12);
+	border-radius:3px;
+	font-size:10pt;
+	font-weight:500;
+	padding:4px 10px;
+	color:rgba(0,0,0,0.75);
+	cursor:pointer;
+	outline:none;
+	transition: all .25s ease-in-out;
+}
+
+.btnintro{
+	margin-right:20px;
+	border:1px solid rgba(0,0,0,0.12);
+	border-radius:3px;
+	font-size:11pt;
+	font-weight:500;
+	padding:6px 15px;
+	color:rgba(0,0,0,0.75);
+	cursor:pointer;
+	outline:none;
+	transition: all .25s ease-in-out;
+}
+
+.btn:hover, .btnnew:hover, .btnintro:hover {
+    background-color: rgba(0,0,0,0.03);
     border:1px solid #93979b;
 }
 
@@ -355,7 +366,7 @@ img{
 }
 
 .padding {
-    max-width: 750px;
+    max-width: 700px;
     padding: 1.2em;
     padding-top: 0px;
     margin: 0 auto
@@ -374,6 +385,7 @@ img{
     padding-top: 55px;
     z-index: 1;
     transition: all 0.4s ease-in-out;
+		color:rgba(0,0,0,0.65);
 }
 
 #navbar.active {
@@ -383,7 +395,7 @@ img{
 }
 
 #navcon {
-    max-width: 750px;
+    max-width: 700px;
     margin: auto
 }
 
@@ -392,12 +404,12 @@ img{
     float: left;
     line-height: 10px;
     text-align: center;
-    color:rgba(0,0,0,0.65);
-    transition: all .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
     margin-left: 15px;
     padding: 12px;
     border-radius:14px;
     text-decoration: none;
+		color:inherit;
 }
 
 .links:hover {
@@ -408,8 +420,8 @@ img{
 .logo {
     font-size: 20px;
     font-weight: 500;
-    transition: all .3s ease-in-out;
-    color:rgba(0,0,0,0.8);
+    transition: background-color .3s ease-in-out;
+    color:inherit;
     text-decoration: none;
     transform:translateX(-25px);
 }
@@ -549,7 +561,8 @@ img{
 
 
 .footer{
-    display:flex;
+  display:flex;
+	justify-content:space-around;
   width:100%;
   height:120px;
   margin-top:40px;
@@ -559,7 +572,7 @@ img{
 }
 
 .footer-text{
-    width:70%;
+    width:60%;
 }
 
 .footer-text p{
@@ -589,6 +602,25 @@ img{
   color:rgba(0,0,0,0.7);
 }
 
+.dark-mode-btn{
+	position:fixed;
+	width:47px;
+	height:47px;
+	image-fit:cover;
+	font-size:25px;
+	color:rgba(0,0,0,0.5);
+	top:6px;
+	right:-40px;
+	border:none;
+	background-color:rgba(0,0,0,0);
+	cursor:pointer;
+	transition:all 0.5s ease-in-out;
+	outline:none;
+}
+
+.dark-mode-btn:hover{
+	opacity:0.4;
+}
 
 
 
@@ -605,11 +637,51 @@ img{
     var scroll = $(window).scrollTop();
     if (scroll > 0) {
         $("#navbar").addClass("active");
+				$('.dark-mode-btn').css('right','5px')
     }
     else {
         $("#navbar").removeClass("active");
+				$('.dark-mode-btn').css('right','-40px')
     }
 	});
+
+	var day = true;
+	function toggletheme(){
+		day = !day;
+		changetheme();
+	}
+	function changetheme(){
+		if (!day) {
+			$('body').css({
+				'background-color':'#080808',
+				'color':'#c9c9c9',
+			})
+			$('#navbar').css({
+				'background-color':'#181818',
+				'color':'#c9c9c9',
+			})
+			$('hr, .divider').css({
+				'background-color':'#121212',
+			})
+			$('.footer').hide();
+			$('.dark-mode-btn img').attr('src',"/css/moon.png")
+		}
+		else if (day){
+			$('body').css({
+				'background-color':'white',
+				'color':'rgba(0,0,0,0.85)',
+			})
+			$('#navbar').css({
+				'background-color':'white',
+				'color':'rgba(0,0,0,0.65)',
+			})
+			$('.footer').show()
+			$('.dark-mode-btn img').attr('src',"/css/sun.png")
+		}
+		else {
+			alert('error showing theme.')
+		}
+	}
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js"></script>
@@ -621,11 +693,12 @@ img{
         <a class='links logo' href="/index">Jayson Tian</a>
 
         <div class='right'>
-            <a class='links' href="/aboutme">About</a>
-			<a class='links' href="/projects">Projects</a>
-            <a class='links' href="/_pages/blog">Blog</a>
+          <a class='links' href="/aboutme">About</a>
+					<a class='links' href="/projects">Projects</a>
+          <a class='links' href="/_pages/blog">Blog</a>
     	</div>
     </div>
+		<button class='dark-mode-btn' onclick='toggletheme()'><img src="/css/sun.png"></img></button>
 </div>
 
 		<main class='movedown'>
@@ -637,17 +710,6 @@ img{
 
 <div class='postholder'>
 		<hr>
-		
-			<a class='postitem' href="/biology/2019/12/05/mri-machine.html">
-				<h3>The MRI: A Spectroscopic Revolution</h3>
-				<time> 
-				 
-					2586
-				 words
-				| Dec 5, 2019
-			</time>
-			</a>
-			<hr>
 		
 			<a class='postitem' href="/biology/2019/11/06/elisa-test.html">
 				<h3>What is the ELISA Test?</h3>
@@ -679,7 +741,7 @@ img{
 <footer class='footer'>
 	<div class='footer-text'>
 		<p><b>Jayson Tian</b> jots down his arbitrary thoughts on this website.
-		<br>He likes to doodle digitally, create music, binge netflix, experiment biology, design web stuff, and write about himself in third person.</p>
+		<br>He likes to doodle digitally, create music, binge netflix, learn biology, design web stuff, and write about himself in third person.</p>
 	</div>
 	<div class='socialmedia'>
 		<a href='https://www.instagram.com/jaezun/?hl=en'><i class="fab fa-instagram"></i></a>

@@ -4,23 +4,12 @@ layout: default
 
 
 <h1 class='post-title'>{{ page.title }}</h1>
-<div class='post-detail'>{{ page.date | date: "%b %-d, %Y" }} |       
-	{% capture words %}
-        {{ page.content | number_of_words | minus: 250 }}
-      {% endcapture %}
-      {% if words contains "-" %}
-        Quick read
-      {% else %}
-        {{ words | plus: 250 | divided_by: 120 | append: " min. read" }}
-      {% endif %}
-
+<div class='post-detail'>{{ page.date | date: "%b %-d, %Y" }}
       <div class='right'>
 			<a class="category" href="{{site.baseurl}}/category/{{ page.categories | first }}.html">{{ page.categories | first | capitalize }}</a>
       </div>
-
   </div>
 
-<hr class='divider'>
 <div class='post-body'>
 	<br>
 {{ content }}
@@ -51,7 +40,7 @@ layout: default
 		    {% if sameTagCount >= minCommonTags %}
 			      <a class='postitem' href="{{ post.url | prepend: site.baseurl }}">
 					<h3>{{post.title }}</h3>
-					<time> 
+					<time>
 					{% capture words %}
 				        {{ post.content | number_of_words | minus: 250 }}
 				      {% endcapture %}

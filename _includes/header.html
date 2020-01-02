@@ -4,11 +4,51 @@
     var scroll = $(window).scrollTop();
     if (scroll > 0) {
         $("#navbar").addClass("active");
+				$('.dark-mode-btn').css('right','5px')
     }
     else {
         $("#navbar").removeClass("active");
+				$('.dark-mode-btn').css('right','-40px')
     }
 	});
+
+	var day = true;
+	function toggletheme(){
+		day = !day;
+		changetheme();
+	}
+	function changetheme(){
+		if (!day) {
+			$('body').css({
+				'background-color':'#080808',
+				'color':'#c9c9c9',
+			})
+			$('#navbar').css({
+				'background-color':'#181818',
+				'color':'#c9c9c9',
+			})
+			$('hr, .divider').css({
+				'background-color':'#121212',
+			})
+			$('.footer').hide();
+			$('.dark-mode-btn img').attr('src',"{{ '/css/moon.png' | prepend: site.baseurl }}")
+		}
+		else if (day){
+			$('body').css({
+				'background-color':'white',
+				'color':'rgba(0,0,0,0.85)',
+			})
+			$('#navbar').css({
+				'background-color':'white',
+				'color':'rgba(0,0,0,0.65)',
+			})
+			$('.footer').show()
+			$('.dark-mode-btn img').attr('src',"{{ '/css/sun.png' | prepend: site.baseurl }}")
+		}
+		else {
+			alert('error showing theme.')
+		}
+	}
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js"></script>
@@ -20,9 +60,10 @@
         <a class='links logo' href="{{ '/index' | prepend: site.baseurl }}">Jayson Tian</a>
 
         <div class='right'>
-            <a class='links' href="{{ '/aboutme' | prepend: site.baseurl }}">About</a>
-			<a class='links' href="{{ '/projects' | prepend: site.baseurl }}">Projects</a>
-            <a class='links' href="{{ '/_pages/blog' | prepend: site.baseurl }}">Blog</a>
+          <a class='links' href="{{ '/aboutme' | prepend: site.baseurl }}">About</a>
+					<a class='links' href="{{ '/projects' | prepend: site.baseurl }}">Projects</a>
+          <a class='links' href="{{ '/_pages/blog' | prepend: site.baseurl }}">Blog</a>
     	</div>
     </div>
+		<button class='dark-mode-btn' onclick='toggletheme()'><img src="{{ '/css/sun.png' | prepend: site.baseurl }}"></img></button>
 </div>
