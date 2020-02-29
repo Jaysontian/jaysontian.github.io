@@ -1,71 +1,24 @@
 ---
-layout: default
-title: Home
+layout: page
 ---
 
-
-                <div id='home'>
-                    <a>
-                        <image id='image' src='css/screen.png' onclick="document.getElementById('flavor-text').innerHTML = 'Status: Pretty gucci since 2020 started.'"></image>
-                    </a>
-                    <div id='bio'>
-                        <h1>Howdy, I'm Jayson 👋 </h1>
-                        <br>
-                        <p style='text-align:left;'> I'm concerned about the death and regeneration of my brain cells. When I'm not mentally awake, I'm either playing volleyball, creating <a href='https://soundcloud.com/picxight-productions'>music</a>, drawing digitally, reading <a href='https://www.sciencedaily.com/releases/2019/11/191105133039.htm'>ScienceDaily</a>, or coding fun stuff.</p>
-                        <p id='flavor-text'></p>
-                    </div>
-                    <div id='contact'>
-                        <button class="btnintro" onclick="window.open('https://github.com/jaysontian')"><i style='margin-right:5px' class='fab fa-github'> </i>  Follow</button>
-                        <!-- Place this tag where you want the button to render. -->
-                        <button class="btnintro" onclick="window.open('http://drive.google.com/uc?export=download&id=1s8vKe2RiNcr2ctfGA9LCma2GEz0dfVhz')"><i class="fas fa-file-download" style='margin-right:5px'> </i>  Resume</button>
-                    </div>
-                </div>
-
-                <div class='projects-con'>
-                    <h2 class='heading'>🖋 Recent Articles <a href="/index/blog" class='btn-modern'>View More</a> </h2>
-                    <section>
-                        <hr>
-                        {% for post in site.posts limit:3 %}
-                            <a class='postitem' href="{{ post.url | prepend: site.baseurl }}">
-                                <h3>{{post.title }}</h3>
-                                <time>
-                                {% capture words %}{{ post.content | number_of_words | minus: 250 }}{% endcapture %}{% if words contains "-" %}
-                                        Quick read{% else %}{{ words | plus: 250 | divided_by: 120 | append: " min. read" }}{% endif %} | {{ post.date | date: "%b %-d, %Y" }}
-                                </time>
-                            </a>
-                            <hr>
-                        {% endfor %}
-                    </section>
-                </div>
-
-                <!--
-                <div class='projects-con' style='margin-top:0px'>
-                    <h2 class='heading'>⚙️ Recent Projects <a href="/index/projects" class='btn-modern'>View More</a> </h2>
-                    <section>
-                        <div class='project'>
-                            <h4>📝 Notelog</h4>
-                            <p>Minimalistic notetaking software made with electron and Angular JS. </p>
-                            <i class="fas fa-window-maximize"></i>
-                            <button onclick="display_project_page('🌲 Forestry Kids')" class='btnnew'>View</button>
-                        </div>
-                        <div class='project'>
-                            <h4>🌲 Forestry Kids</h4>
-                            <p>Kids website made with focus on CSS floats and anim. </p>
-                            <i class="fab fa-github"></i>
-                            <button onclick="display_project_page('🌲 Forestry Kids')" class='btnnew'>View</button>
-                        </div>
-                        <div class='project'>
-                            <h4>🎮 Memoir </h4>
-                            <p>A mini 2D RPG adventure made using Unity 2D and C# code. </p>
-                            <i class="fas fa-gamepad"></i>
-                            <button onclick="display_project_page('🔮 Memoir')" class='btnnew'>View</button>
-                        </div>
-                        <div class='project'>
-                            <h4>🔑 BunkerGame </h4>
-                            <p>Incremental game made w/ Firestore. </p>
-                            <i class="fab fa-github"></i>
-                            <button onclick="display_project_page('🔑 Bunkergame')" class='btnnew'>View</button>
-                        </div>
-                    </section>
-                </div>
-                -->
+<h2>Howdy, I'm Jayson 👋 </h2>
+<p style='text-align:left;'> I'm concerned about the death and regeneration of my brain cells. When I'm not mentally awake, I'm either playing volleyball, creating <a href='https://soundcloud.com/picxight-productions'>music</a>, drawing digitally, reading <a href='https://www.sciencedaily.com/releases/2019/11/191105133039.htm'>ScienceDaily</a>, or coding fun stuff.</p>
+<p id='flavor-text'></p>
+<div style='margin:25px 0px;'>
+  <button class="btnintro" onclick="window.open('https://github.com/jaysontian')"><i style='margin-right:5px' class='fab fa-github'> </i>  Follow</button>
+  <button class="btnintro" onclick="window.open('http://drive.google.com/uc?export=download&id=1s8vKe2RiNcr2ctfGA9LCma2GEz0dfVhz')" style='margin-left:20px;'><i class="fas fa-file-download" style='margin-right:5px;'> </i>  Resume</button>
+</div>
+<h2>Recent Articles</h2>
+<div class='recent-con'>
+{% for post in site.posts limit:3 %}
+  <a class='postitem' href="{{ post.url | prepend: site.baseurl }}">
+      <h3>{{post.title }}</h3>
+      <time>
+      {{ post.date | date: "%b %-d, %Y" }} |
+      {% capture words %}{{ post.content | number_of_words | minus: 250 }}{% endcapture %}{% if words contains "-" %}
+              Quick read{% else %}{{ words | plus: 250 | divided_by: 120 | append: " min. read" }}{% endif %}
+      </time>
+  </a>
+{% endfor %}
+</div>
