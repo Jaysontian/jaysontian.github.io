@@ -1,18 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Jayson Tian</title>
-    <description>My blog site.
-</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 02 Jan 2020 02:57:26 -0500</pubDate>
-    <lastBuildDate>Thu, 02 Jan 2020 02:57:26 -0500</lastBuildDate>
-    <generator>Jekyll v3.8.6</generator>
-    
-      <item>
-        <title>This Year In Retrospect</title>
-        <description>&lt;p&gt;&lt;em&gt;I’m going to be a better person… I’m going to refrain from bullying my sister… I’m going to get a 7 in every subject at school…&lt;/em&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-29T10:07:26-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jayson Tian</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">This Year In Retrospect</title><link href="http://localhost:4000/life/2019/12/31/the-year-in-review.html" rel="alternate" type="text/html" title="This Year In Retrospect" /><published>2019-12-31T00:00:00-05:00</published><updated>2019-12-31T00:00:00-05:00</updated><id>http://localhost:4000/life/2019/12/31/the-year-in-review</id><content type="html" xml:base="http://localhost:4000/life/2019/12/31/the-year-in-review.html">&lt;p&gt;&lt;em&gt;I’m going to be a better person… I’m going to refrain from bullying my sister… I’m going to get a 7 in every subject at school…&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;The typical quixotic resolutions of the new year. Screw that.&lt;/p&gt;
 
@@ -40,21 +26,7 @@
 
 &lt;p&gt;I like to overthink. Ok I understand that this completely contradicts my statement on how “I work without thinking”, but let me explain. When I actually have to descide on something, I have the tendency to consider every aspect of this descision and how it will affect me. This is a major problem as people are impatient (Fun fact: people are becoming more and more impatient according to a &lt;a href=&quot;https://www.bostonglobe.com/lifestyle/style/2013/02/01/the-growing-culture-impatience-where-instant-gratification-makes-crave-more-instant-gratification/q8tWDNGeJB2mm45fQxtTQP/story.html&quot;&gt;scientific study&lt;/a&gt;). I began to develop myself into being more bold in my descisions and just going for it. This is a long-term goal clearly as I still can’t decide if I want vanilla or chocolate when waiting in line at Baskin Robins. Maybe there are too many options nowadays. I will definitely talk about this in a future post.&lt;/p&gt;
 
-&lt;p&gt;All in all, there were quite a few morals to my life story this past year!&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 31 Dec 2019 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/life/2019/12/31/the-year-in-review.html</link>
-        <guid isPermaLink="true">http://localhost:4000/life/2019/12/31/the-year-in-review.html</guid>
-        
-        
-        <category>life</category>
-        
-      </item>
-    
-      <item>
-        <title>React JS Beginner Notes</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+&lt;p&gt;All in all, there were quite a few morals to my life story this past year!&lt;/p&gt;</content><author><name></name></author><summary type="html">I’m going to be a better person… I’m going to refrain from bullying my sister… I’m going to get a 7 in every subject at school…</summary></entry><entry><title type="html">React JS Beginner Notes</title><link href="http://localhost:4000/dev/2019/12/07/react-js-notes.html" rel="alternate" type="text/html" title="React JS Beginner Notes" /><published>2019-12-07T00:00:00-05:00</published><updated>2019-12-07T00:00:00-05:00</updated><id>http://localhost:4000/dev/2019/12/07/react-js-notes</id><content type="html" xml:base="http://localhost:4000/dev/2019/12/07/react-js-notes.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#introduction&quot; id=&quot;markdown-toc-introduction&quot;&gt;Introduction&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#what-is-react&quot; id=&quot;markdown-toc-what-is-react&quot;&gt;What is React?&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#why-is-it-useful&quot; id=&quot;markdown-toc-why-is-it-useful&quot;&gt;Why is it Useful?&lt;/a&gt;&lt;/li&gt;
@@ -473,20 +445,7 @@ ReactDOM.render(&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span cl
 
 &lt;p&gt;This will return the character name when finished loading, but if there is slow internet, it will show the text loading while it loads.&lt;/p&gt;
 
-&lt;h1 id=&quot;forms&quot;&gt;Forms&lt;/h1&gt;
-</description>
-        <pubDate>Sat, 07 Dec 2019 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/dev/2019/12/07/react-js-notes.html</link>
-        <guid isPermaLink="true">http://localhost:4000/dev/2019/12/07/react-js-notes.html</guid>
-        
-        
-        <category>dev</category>
-        
-      </item>
-    
-      <item>
-        <title>Overthinking</title>
-        <description>&lt;p&gt;Thinking about something in endless circles — is exhausting.&lt;/p&gt;
+&lt;h1 id=&quot;forms&quot;&gt;Forms&lt;/h1&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Overthinking</title><link href="http://localhost:4000/life/2019/12/05/overthinking.html" rel="alternate" type="text/html" title="Overthinking" /><published>2019-12-05T00:00:00-05:00</published><updated>2019-12-05T00:00:00-05:00</updated><id>http://localhost:4000/life/2019/12/05/overthinking</id><content type="html" xml:base="http://localhost:4000/life/2019/12/05/overthinking.html">&lt;p&gt;Thinking about something in endless circles — is exhausting.&lt;/p&gt;
 
 &lt;p&gt;While everyone overthinks a few things once in a while, chronic over-thinkers spend most of their waking time ruminating, which puts pressure on themselves. They then mistake that pressure to be stress.&lt;/p&gt;
 
@@ -556,34 +515,7 @@ ReactDOM.render(&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span cl
 
 &lt;p&gt;Like all habits, changing your destructive thought patterns can be a challenge, but it’s not impossible. With practice, you can train your brain to perceive things differently and reduce the stress of overthinking.&lt;/p&gt;
 
-&lt;p&gt;If overthinking is ruining your life, and if you think you may be spiralling into depression because of your thoughts, it pays to get professional help.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 05 Dec 2019 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/life/2019/12/05/overthinking.html</link>
-        <guid isPermaLink="true">http://localhost:4000/life/2019/12/05/overthinking.html</guid>
-        
-        
-        <category>life</category>
-        
-      </item>
-    
-      <item>
-        <title>Useful Bio Review Link</title>
-        <description>&lt;p&gt;https://www.jj-sct-bio.com/uploads/2/4/6/5/2465445/ap_chap_9_guide.pdf&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 04 Dec 2019 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/misc/2019/12/04/biology-text-link.html</link>
-        <guid isPermaLink="true">http://localhost:4000/misc/2019/12/04/biology-text-link.html</guid>
-        
-        
-        <category>misc</category>
-        
-      </item>
-    
-      <item>
-        <title>The Definition of Learning</title>
-        <description>&lt;h2 id=&quot;achievement-oriented-learning&quot;&gt;Achievement Oriented Learning&lt;/h2&gt;
+&lt;p&gt;If overthinking is ruining your life, and if you think you may be spiralling into depression because of your thoughts, it pays to get professional help.&lt;/p&gt;</content><author><name></name></author><summary type="html">Thinking about something in endless circles — is exhausting.</summary></entry><entry><title type="html">Useful Bio Review Link</title><link href="http://localhost:4000/misc/2019/12/04/biology-text-link.html" rel="alternate" type="text/html" title="Useful Bio Review Link" /><published>2019-12-04T00:00:00-05:00</published><updated>2019-12-04T00:00:00-05:00</updated><id>http://localhost:4000/misc/2019/12/04/biology-text-link</id><content type="html" xml:base="http://localhost:4000/misc/2019/12/04/biology-text-link.html">&lt;p&gt;https://www.jj-sct-bio.com/uploads/2/4/6/5/2465445/ap_chap_9_guide.pdf&lt;/p&gt;</content><author><name></name></author><summary type="html">https://www.jj-sct-bio.com/uploads/2/4/6/5/2465445/ap_chap_9_guide.pdf</summary></entry><entry><title type="html">The Definition of Learning</title><link href="http://localhost:4000/life/2019/11/09/learning-defintion.html" rel="alternate" type="text/html" title="The Definition of Learning" /><published>2019-11-09T00:00:00-05:00</published><updated>2019-11-09T00:00:00-05:00</updated><id>http://localhost:4000/life/2019/11/09/learning-defintion</id><content type="html" xml:base="http://localhost:4000/life/2019/11/09/learning-defintion.html">&lt;h2 id=&quot;achievement-oriented-learning&quot;&gt;Achievement Oriented Learning&lt;/h2&gt;
 
 &lt;p&gt;Recently, I have been thinking a lot about personal growth and achievement. Though the adage of how the journey is more beutiful than the destination is true, it can’t be denied that sometimes the outcome does matter.&lt;/p&gt;
 
@@ -597,21 +529,7 @@ ReactDOM.render(&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span cl
 
 &lt;p&gt;It is natural to be competitive. As human beings, most of us have egos that makes us believe we are superior to others. But truth said, there must be a line drawn between healthy and unhealthy competition. I now think that it’s important for a student to recognize whether the learning environment they are in is beneficial or harmful to them.&lt;/p&gt;
 
-&lt;p&gt;When we are under so much pressure and stress that all we see In our head is a never ending todo list that needs to be completed, I believe one must take a break and rewind their thoughts. It is that balance between how much of the external pressures a student wants to internalize that decides upon whether they learn for self-development or result.&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 09 Nov 2019 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/life/2019/11/09/learning-defintion.html</link>
-        <guid isPermaLink="true">http://localhost:4000/life/2019/11/09/learning-defintion.html</guid>
-        
-        
-        <category>life</category>
-        
-      </item>
-    
-      <item>
-        <title>What is the ELISA Test?</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+&lt;p&gt;When we are under so much pressure and stress that all we see In our head is a never ending todo list that needs to be completed, I believe one must take a break and rewind their thoughts. It is that balance between how much of the external pressures a student wants to internalize that decides upon whether they learn for self-development or result.&lt;/p&gt;</content><author><name></name></author><summary type="html">Achievement Oriented Learning</summary></entry><entry><title type="html">What is the ELISA Test?</title><link href="http://localhost:4000/biology/2019/11/06/elisa-test.html" rel="alternate" type="text/html" title="What is the ELISA Test?" /><published>2019-11-06T00:00:00-05:00</published><updated>2019-11-06T00:00:00-05:00</updated><id>http://localhost:4000/biology/2019/11/06/elisa-test</id><content type="html" xml:base="http://localhost:4000/biology/2019/11/06/elisa-test.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#interpreting-elisa-tests&quot; id=&quot;markdown-toc-interpreting-elisa-tests&quot;&gt;Interpreting ELISA Tests&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -637,20 +555,7 @@ ReactDOM.render(&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span cl
 &lt;p&gt;ELISA tests can be used to diagnose disease conditions based on the presence of disease markers (antigens, metabolites)&lt;/p&gt;
 
 &lt;p&gt;Samples taken from infected patients will induce a colour change when treated with appropriate detection antibodies
-The amount of colour change can be used to signify rate of disease progression (more marker = more colour change)&lt;/p&gt;
-</description>
-        <pubDate>Wed, 06 Nov 2019 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/biology/2019/11/06/elisa-test.html</link>
-        <guid isPermaLink="true">http://localhost:4000/biology/2019/11/06/elisa-test.html</guid>
-        
-        
-        <category>biology</category>
-        
-      </item>
-    
-      <item>
-        <title>Diseases and Global Warming</title>
-        <description>&lt;p&gt;I recently read an article writing about how new diseases are popping up from random places never seen before. Apparently, they have a significantly higher viral resistance than other common bacteria, and 75% of treatment and vaccines are ineffective against them.&lt;/p&gt;
+The amount of colour change can be used to signify rate of disease progression (more marker = more colour change)&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Diseases and Global Warming</title><link href="http://localhost:4000/biology/2019/08/17/global-warming-diseases.html" rel="alternate" type="text/html" title="Diseases and Global Warming" /><published>2019-08-17T00:00:00-04:00</published><updated>2019-08-17T00:00:00-04:00</updated><id>http://localhost:4000/biology/2019/08/17/global-warming-diseases</id><content type="html" xml:base="http://localhost:4000/biology/2019/08/17/global-warming-diseases.html">&lt;p&gt;I recently read an article writing about how new diseases are popping up from random places never seen before. Apparently, they have a significantly higher viral resistance than other common bacteria, and 75% of treatment and vaccines are ineffective against them.&lt;/p&gt;
 
 &lt;p&gt;So I thought it was interesting as most diseases these days can be treated pretty easily. The article did not seem to cite or credit where they got the statistics so I did a little bit of digging on the internet and discovered that these types of bacteria actually carry ancient viruses that are rarely seen present day.&lt;/p&gt;
 
@@ -666,16 +571,4 @@ The amount of colour change can be used to signify rate of disease progression (
 
 &lt;p&gt;Long story short, don’t contribute to global warming 🔥&lt;/p&gt;
 
-&lt;p&gt;What I read on permafrost melting: [article here]&lt;/p&gt;
-</description>
-        <pubDate>Sat, 17 Aug 2019 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/biology/2019/08/17/global-warming-diseases.html</link>
-        <guid isPermaLink="true">http://localhost:4000/biology/2019/08/17/global-warming-diseases.html</guid>
-        
-        
-        <category>biology</category>
-        
-      </item>
-    
-  </channel>
-</rss>
+&lt;p&gt;What I read on permafrost melting: [article here]&lt;/p&gt;</content><author><name></name></author><summary type="html">I recently read an article writing about how new diseases are popping up from random places never seen before. Apparently, they have a significantly higher viral resistance than other common bacteria, and 75% of treatment and vaccines are ineffective against them.</summary></entry></feed>
