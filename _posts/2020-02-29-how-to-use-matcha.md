@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "🍵 How to use Matcha"
+title: "🍵 Matcha Documentation"
 date:   2020-02-29
 categories: code
 ---
