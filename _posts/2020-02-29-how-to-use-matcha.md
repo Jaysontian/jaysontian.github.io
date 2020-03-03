@@ -26,3 +26,5 @@ Inspirations of this app include minimalist apps such as Notion, Bear, and Mochi
 - More Views
 - Task Details, Notes, Reminders
 - Mobile version
+
+# Changelog
