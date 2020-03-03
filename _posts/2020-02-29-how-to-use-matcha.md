@@ -5,12 +5,24 @@ date:   2020-02-29
 categories: code
 ---
 
-## What is Matcha?
+# What is Matcha?
 
-matcha is a program that I built for my friend because wundelist is apparently switching over to Microsoft todo, and there are a lot of disadvantages of this change. Microsoft to do isn't the simplest todo app out there.
+Matcha is an app that I built for my friend because Wunderlist is going away.
 
-Wunderlist was amazing because of it's flexibility in customization as well as simplicity to use. One can just quickly type up a task and record it. Microsoft Todo, on the other hand, has a lot to work with in that department.
+The goal of this app is to provide a clean, simple interface for users to store tasks, yet customizable to have more complex features.
 
-Hence, I made my own todo app!
+Inspirations of this app include minimalist apps such as Notion, Bear, and Mochi.
 
-## Why should I use Matcha?
+## Planned
+
+- Filter/Sorting System
+- Task Animation when Complete
+- Dropdown from Label
+- Improved Color Labeling System
+- Context Menu Fixes
+- Date Detection Response
+- Data Deletion Confirmation
+- Logbook Task Restoration
+- More Views
+- Task Details, Notes, Reminders
+- Mobile version
