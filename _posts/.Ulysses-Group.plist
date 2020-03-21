@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>resolutionData</key>
+	<dict>
+		<key>sheetClusters</key>
+		<dict/>
+		<key>userIconName</key>
+		<real>606436339.56757998</real>
+	</dict>
+	<key>sheetClusters</key>
+	<array/>
+	<key>storeFormatVersion</key>
+	<integer>1</integer>
+	<key>userIconName</key>
+	<string>Github</string>
+	<key>versioning</key>
+	<dict>
+		<key>sheetClusters</key>
+		<dict>
+			<key>01a0f89e88e3cf562b2c7ba86191f668c394cc70b6e6dbc84e1c12292ae2c3ff</key>
+			<integer>7</integer>
+		</dict>
+		<key>userIconName</key>
+		<dict>
+			<key>01a0f89e88e3cf562b2c7ba86191f668c394cc70b6e6dbc84e1c12292ae2c3ff</key>
+			<integer>15</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -6,7 +6,6 @@ categories: life
 published: false
 ---
 
-
 Though Ontario seems like a pretty cold place during the winter and the busy city of Toronto has many things that may be quite typical or sometimes boring, there are actuall many places in Ontario that have more spotlight on mother nature and provide for a wilderness vacation outlet.
 
 Enjoyed most in the summer times, the following places are literally in our backyards! There's no need to travel to another province or country when you only have one week of summer left for vacationing!

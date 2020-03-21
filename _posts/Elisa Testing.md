@@ -21,7 +21,7 @@ It can be used to identify specific surface markers or metabolites associated wi
 - When an appropriate substrate is added to the wells, the enzyme-linked detection antibodies will trigger a colour change
 - Only wells in which a sandwich complex has formed will show a colour change, hence identifying the presence of an antigen
 
-![Image](https://ib.bioninja.com.au/_Media/elisa_med.jpeg)
+![Image][image-1]
 
 ## Interpreting ELISA Tests
 
@@ -29,3 +29,5 @@ ELISA tests can be used to diagnose disease conditions based on the presence of 
 
 Samples taken from infected patients will induce a colour change when treated with appropriate detection antibodies
 The amount of colour change can be used to signify rate of disease progression (more marker = more colour change)
+
+[image-1]:	https://ib.bioninja.com.au/_Media/elisa_med.jpeg
