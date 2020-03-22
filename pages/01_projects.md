@@ -7,41 +7,73 @@ permalink: /projects/
 
 # Projects
 
-This page contains most of my work. I believe keeping an archived storage of projects is important, as I can reflect back and see my growth (or just laugh at how stupid I was).
+I make questionable things.
 
 ## Recent Work
 
-- [🍵 Matcha](https://jaysontian.github.io/Matcha/) - Efficient todo list app for MacOS and Windows.
-- [🗂 Memo Cards](https://jaysontian.github.io/Memo-Cards/)  Incomplete flashcard app using spaced repeitition.
-- [🥛 Milk Corp](https://milk-crop.github.io/index.html) - An incremental game exploring the math and logic behind the idle genre. Click cows to create more milk!
-
+- [🍵 Matcha][1] - Task manager app for MacOS.
+- [🥛 Milk Corp][2] - Milk flavoured cookie clicker game.
 
 ## Music
 
-I like to [compose music](https://soundcloud.com/picxight-productions) when I'm bored. I like to make calming piano and guitar pieces, but I also experiment with other genres.
+I [compose music][3]. I use MuseScore and GarageBand to make instrumental pieces.
 
-- [Forgotten Promises](https://soundcloud.com/picxight-productions/forgotten-promises) - A nostalgic guitar piece with a bittersweet vibe.
-- [A Warm Place](https://soundcloud.com/picxight-productions/a-warm-place)
-- [The Best of Us](https://soundcloud.com/picxight-productions/the-best-of-us)
-- [All The Best](https://soundcloud.com/picxight-productions/all-the-best)
-- [Somewhere in the Sky](https://soundcloud.com/picxight-productions/somewhere-in-the-sky)
-- [Imaginary](https://soundcloud.com/picxight-productions/imaginary)
+- [Forgotten Promises][4]
+- [A Warm Place][5]
+- [The Best of Us][6]
+- [All The Best][7]
+- [Somewhere in the Sky][8]
 
 ## Websites
 
-- [🌲 Forestry Kids](https://jaysontian.github.io/data/websites/ForestryKids/index.html) - I used this creation as an opportunity to develop my CSS skills. I learned a lot on web design doing this project.
-- Check out my Old Websites. Feel free to use them as templates.
-- [Website 1](https://jaysontian.github.io/data/websites/Previous-Sites/oldpage/index.html) - These are my old websites.
-- [Website 2](https://jaysontian.github.io/data/websites/Previous-Sites/oldpage2/oldpage2.html) - Feel free to use them as templates.
-- [Website 3](https://jaysontian.github.io/data/websites/Previous-Sites/oldpage3/oldpage3.html) - I tried to implement blogging features.
-- [Website 4](https://jaysontian.github.io/data/websites/Previous-Sites/oldpage4/index.html) - Edit the blog posts with [the editor](https://jaysontian.github.io/data/websites/Previous-Sites/oldpage4/editor/editor.html).
+- [🌲 Forestry Kids][9] (School Project)
+
+My Old Websites
+- [Website 1][10] - These are my old websites.
+- [Website 2][11] - Feel free to use them as templates.
+- [Website 3][12] - I tried to implement blogging features.
+- [Website 4][13] - Edit the blog posts with [the editor][14].
+- [Website 5][15] - Site Not Working :(
 
 ## Games
 
-- [🖲 Cultivate](https://jaysontian.github.io/data/cultivate/index.html) - Incremental game... grow a cell machine.
-- [Boo Crasher](https://jaysontian.github.io/data/games_successful/BooCrasher/index.html) - I can't even call this a game... Something weird I made on Unity.
-- [Echo](https://jaysontian.github.io/data/games_successful/Echo/echo.html) - Simon inspired Javascript game with minimalist design.
-- [Memoir](https://jaezun.itch.io/memoir)- A RPG unity game that's inspired by RPG's in the 90s
-- [Bunkergame](https://jaysontian.github.io/data/games_successful/bunkergame/index.html) - The first clicker game I ever made using firebase and firestore.
-- [The Duck Shop](https://jaysontian.github.io/data/games_failed/theduckshop/test.html) - The 'original' [Milk Corp](https://jaysontian.github.io/data/Milkcorp/site/index.html) that was never finished.
-- [A Tiny Village](https://jaysontian.github.io/data/games_failed/A%20Tiny%20Village/index.html) - The original duck shop that was also never finished. You can tell by the exact same design.
+- [🖲 Cultivate][16] - Cookie clicker cell flavoured
+- [Boo Crasher][17] - My First Unity Test Project
+- [Echo][18] - Simon on JS
+- [Memoir][19]- Pokemon Style RPG on Unity
+- [Bunkergame v1][20] - First website I ever made
+- [Bunkergame v2][21] - BunkerGame v1 on crack
+- [The Duck Shop][22] - The 'original' [Milk Corp][23] that was never finished
+- [A Tiny Village][24] - The original duck shop that was also never finished
+
+## I’m Still Working on…
+
+- [🗂 Memo Cards][25]  Incomplete flashcard app using spaced repetition.
+- [🍵 Matcha][26]
+
+[1]:	https://jaysontian.github.io/Matcha/
+[2]:	https://milk-crop.github.io/index.html
+[3]:	https://soundcloud.com/jayson-tian
+[4]:	https://soundcloud.com/jayson-tian/forgotten-promises
+[5]:	https://soundcloud.com/jayson-tian/a-warm-place
+[6]:	https://soundcloud.com/jayson-tian/the-best-of-us
+[7]:	https://soundcloud.com/jayson-tian/all-the-best
+[8]:	https://soundcloud.com/jayson-tian/somewhere-in-the-sky
+[9]:	https://jaysontian.github.io/Old-Files/Forestry%20Kids/index.html
+[10]:	https://jaysontian.github.io/data/websites/Previous-Sites/oldpage/index.html
+[11]:	https://jaysontian.github.io/Old-Files/oldpage2/oldpage2.html
+[12]:	https://jaysontian.github.io/Old-Files/oldpage3/oldpage3.html
+[13]:	https://jaysontian.github.io/Old-Files/oldpage4/index.html
+[14]:	https://jaysontian.github.io/Old-Files/oldpage4/editor/editor.html
+[15]:	https://jaysontian.github.io/Old-Files/oldpage5/index.html
+[16]:	https://jaysontian.github.io/data/cultivate/index.html
+[17]:	https://jaysontian.github.io/Old-Files/games_successful/BooCrasher/index.html
+[18]:	https://jaysontian.github.io/Old-Files/games_successful/Echo/echo.html
+[19]:	https://jaezun.itch.io/memoir
+[20]:	https://jaysontian.github.io/Old-Files/games_successful/bunkergame/bunkerv1/index.html
+[21]:	https://jaysontian.github.io/Old-Files/games_successful/bunkergame/bunkerv2/index.html
+[22]:	https://jaysontian.github.io/Old-Files/games_failed/theduckshop/test.html
+[23]:	https://milk-crop.github.io/index.html
+[24]:	https://jaysontian.github.io/Old-Files/games_failed/A%20Tiny%20Village/index.html
+[25]:	https://jaysontian.github.io/Memo-Cards/
+[26]:	https://jaysontian.github.io/Matcha/

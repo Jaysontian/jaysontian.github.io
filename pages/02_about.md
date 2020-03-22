@@ -2,39 +2,49 @@
 layout: page
 title: About
 permalink: /aboutme/
-
 ---
 
 # About Me
 
+Hey. I’m Jayson, and I have this website up because I want to record my **hobbies**, things I've **learned**, and my random **thoughts**.
 
-Aloha! I’m Jayson Tian, and I have this website up as a place to record my **hobbies**, things I've **learned**, and my **thoughts**. I want to keep a digital account of my high school life so I can look back at it in the future (like in uni).
+Since this page is about me, I’ll be as narcissistic as possible.
 
-I spent some time trying to make this website look nice and simple. I believe in minimalism and I also enjoy learning about web design and development (It's kinda cool).
-
-Because this page is about me, I'm going to be as narcissistic as possible. I like:
-
-- Binging tons of Netflix - I need to start watching [Suits](https://en.wikipedia.org/wiki/Suits_(American_TV_series)).
-- Watching good horror movies the day they come out.
-- Drinking, rating, and finding the best milk tea in the world.
-- Watching TikToks even though it's a waste of time.
-- Playing a lot of incremental games like [this one](http://cirri.al/sharks/) or games that use up minimal brain cells.
-- Spending more time sorting music and making playlists than listening to it on [Spotify](https://open.spotify.com/user/jaezun?si=15-y63SAQIWCmJ2yh4g8Rg).
-- Reading psychology or biology news.
+- Complete my long Netflix To-Watch list, top three including:
+	- Suits
+	- The Good Doctor
+	- Finish B99 [:)][1]
+- Watch amazing horror movies especially w friends in theatres. Favourites these past two years:
+	- Hereditary
+	- Midsommar
+	- A Silent Voice
+	- Get Out and Us
+	- It (It 2 was a disappointment)
+- Drink, review, and strive to find the best milk tea in the world.
+	- Probs gonna start a milk tea blog soon w a friend
+- Waste time on tiktok
+- Finish good incremental games like [this one][2], [this one][3], and [this one][4] or games that use up the least amount of brain cells.
+- Spend more time sorting music and making playlists instead of listening to it on [Spotify][5].
+- Reading psychology or biology cool stuff (including [corona][6])
 - I can't for the life of me keep Snapchat streaks for more than a week.
-- I am not a morning person and need at least 8 hours of sleep minimum.
 
-## Future Posts
-
-I am going to try to write about something every week as a way to get my ideas out of my head and onto paper ('digitally'). This is the list:
+## Future Blog Ideas
 
 - Milk tea in the GTA
 - Rating horror movies and talking about psychological horror
-- Building a jekyll site like this one
+- Building a jekyll site
 - Cheatsheet for the minimal amount of steps to make an electron application
 - Setting up Google API's, firebase, and firestore minimal steps
-- learning mindsets
+- learning mindset
 - Incremental games - theory, game design, logic, and math
-- Music harmony and progression of current pop music culture in comparison to the 90s.
+- Music harmony and progression of music chord / styles in generations
 - Productivity and School
-- Developing interests and extracurriculars in high school
+- Developing interests and extracurriculars
+- life stuff that’s deep and nonsense
+
+[1]:	https://www.youtube.com/watch?v=rIYuU2_rYP0
+[2]:	http://adarkroom.doublespeakgames.com
+[3]:	https://www.decisionproblem.com/paperclips/
+[4]:	http://cirri.al/sharks/
+[5]:	https://open.spotify.com/user/jaezun?si=15-y63SAQIWCmJ2yh4g8Rg
+[6]:	https://www.sciencedaily.com/releases/2020/03/200317175442.htm
