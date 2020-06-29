@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Coding</title>
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"></link>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<script>
+	var state = localStorage.getItem('dark');
+	if (state){
+		setDark();
+	}
+
+	function toggleDark(){
+		var state = localStorage.getItem('dark');
+		if (state == null){
+			setDark();
+		} else {
+			if (state){
+				setLight();
+			} else {
+				setDark()
+			}
+		}
+	}	
+
+	function setDark(){
+		localStorage.setItem('dark', true);
+    document.documentElement.style.setProperty('--base-color', 'rgb(106, 153, 255);');
+		document.documentElement.style.setProperty('--theme-bg', 'black');
+		document.documentElement.style.setProperty('--theme-fg', 'white');
+    document.documentElement.style.setProperty('--gradient-main', 'rgb(59, 59, 59);');
+    var element = document.getElementById("theme-icon");
+    element.classList.remove("fa-moon");
+    element.classList.add("fa-sun");
+	}
+	function setLight(){
+		localStorage.removeItem('dark');
+		document.documentElement.style.setProperty('--base-color', 'rgb(46, 112, 255);');
+    document.documentElement.style.setProperty('--theme-bg', 'rgb(255, 255, 255)');
+		document.documentElement.style.setProperty('--theme-fg', 'rgb(20, 20, 20)');
+		document.documentElement.style.setProperty('--gradient-main', 'linear-gradient(144deg, rgba(0,67,138,1) 0%, rgba(5,106,205,1) 43%, rgba(67,171,255,1) 100%)');
+    var element = document.getElementById("theme-icon");
+    element.classList.remove("fa-sun");
+    element.classList.add("fa-moon");
+	}
+
+</script>
+
+  <main id='main'>
+    <div class='center-padding-600'>
+      
+<nav>
+	<div id='navholder'>
+		<button id='nav-title' onclick="window.location.href='http://localhost:4000'">Jayson Tian</button>
+		<div style='float:right;'>
+			<button onclick="window.location.href='/aboutme'">About</button>
+			<button onclick="window.location.href='/categories'">Categories</button>
+			<button onclick='toggleDark()'><i id='theme-icon' class='fas fa-moon'></i></button>
+		</div>
+	</div>
+
+</nav>
+
+      <body style='margin-top:120px;'>
+          <main>
+            <article>
+              <h1 class='p-title'>Coding</h1>
+              <p style='text-align:center'>I make questionable things with code. Examples include pointless clicker games and chrome extentions that makes cute cows walk around on your page.</p>
+              <br><br>
+              <h1>Coding things</h1>
+<p>Some things are just more important than others in life.</p>
+
+<li><span>09 Mar 2020</span> &nbsp; <a href="/coding/first-assss/">Coding a Jekyll Site</a></li>
+
+<h1 id="projects">Projects</h1>
+
+<p>I make questionable things.</p>
+
+<h2 id="recent-work">Recent Work</h2>
+
+<ul>
+  <li><a href="https://jaysontian.github.io/Matcha/">🍵 Matcha</a> - Task manager app for MacOS.</li>
+  <li><a href="https://milk-crop.github.io/index.html">🥛 Milk Corp</a> - Milk flavoured cookie clicker game.</li>
+</ul>
+
+<h2 id="music">Music</h2>
+
+<p>I <a href="https://soundcloud.com/jayson-tian">compose music</a>. I use MuseScore and GarageBand to make instrumental pieces.</p>
+
+<ul>
+  <li><a href="https://soundcloud.com/jayson-tian/forgotten-promises">Forgotten Promises</a></li>
+  <li><a href="https://soundcloud.com/jayson-tian/a-warm-place">A Warm Place</a></li>
+  <li><a href="https://soundcloud.com/jayson-tian/the-best-of-us">The Best of Us</a></li>
+  <li><a href="https://soundcloud.com/jayson-tian/all-the-best">All The Best</a></li>
+  <li><a href="https://soundcloud.com/jayson-tian/somewhere-in-the-sky">Somewhere in the Sky</a></li>
+</ul>
+
+<h2 id="websites">Websites</h2>
+
+<ul>
+  <li><a href="https://jaysontian.github.io/Old-Files/Forestry%20Kids/index.html">🌲 Forestry Kids</a> (School Project)</li>
+</ul>
+
+<p>My Old Websites</p>
+<ul>
+  <li><a href="https://jaysontian.github.io/data/websites/Previous-Sites/oldpage/index.html">Website 1</a> - These are my old websites.</li>
+  <li><a href="https://jaysontian.github.io/Old-Files/oldpage2/oldpage2.html">Website 2</a> - Feel free to use them as templates.</li>
+  <li><a href="https://jaysontian.github.io/Old-Files/oldpage3/oldpage3.html">Website 3</a> - I tried to implement blogging features.</li>
+  <li><a href="https://jaysontian.github.io/Old-Files/oldpage4/index.html">Website 4</a> - Edit the blog posts with <a href="https://jaysontian.github.io/Old-Files/oldpage4/editor/editor.html">the editor</a>.</li>
+  <li><a href="https://jaysontian.github.io/Old-Files/oldpage5/index.html">Website 5</a> - Site Not Working :(</li>
+</ul>
+
+<h2 id="games">Games</h2>
+
+<ul>
+  <li><a href="https://jaysontian.github.io/Old-Files/cultivate/index.html">🖲 Cultivate</a> - Cookie clicker cell flavoured</li>
+  <li><a href="https://jaysontian.github.io/Old-Files/games_successful/BooCrasher/index.html">Boo Crasher</a> - My First Unity Test Project</li>
+  <li><a href="https://jaysontian.github.io/Old-Files/games_successful/Echo/echo.html">Echo</a> - Simon on JS</li>
+  <li><a href="https://jaezun.itch.io/memoir">Memoir</a>- Pokemon Style RPG on Unity</li>
+  <li><a href="https://jaysontian.github.io/Old-Files/games_successful/bunkergame/bunkerv1/index.html">Bunkergame v1</a> - First website I ever made</li>
+  <li><a href="https://jaysontian.github.io/Old-Files/games_successful/bunkergame/bunkerv2/index.html">Bunkergame v2</a> - BunkerGame v1 on crack</li>
+  <li><a href="https://jaysontian.github.io/Old-Files/games_failed/theduckshop/test.html">The Duck Shop</a> - The ‘original’ <a href="https://milk-crop.github.io/index.html">Milk Corp</a> that was never finished</li>
+  <li><a href="https://jaysontian.github.io/Old-Files/games_failed/A%20Tiny%20Village/index.html">A Tiny Village</a> - The original duck shop that was also never finished</li>
+</ul>
+
+<h2 id="im-still-working-on">I’m Still Working on…</h2>
+
+<ul>
+  <li><a href="https://jaysontian.github.io/Memo-Cards/">🗂 Memo Cards</a>  Incomplete flashcard app using spaced repetition.</li>
+  <li><a href="https://jaysontian.github.io/Matcha/">🍵 Matcha</a></li>
+</ul>
+
+
+            </article>
+            <footer>
+	
+</footer>
+
+          </main>
+        </body>
+    </div>
+  
+  </main>

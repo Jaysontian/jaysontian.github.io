@@ -2,7 +2,8 @@
 layout: post
 title: "This Year In Retrospect"
 date:   2019-12-31
-categories: life
+tags: life
+categories: blog
 ---
 
 *I'm going to be a better person... I'm going to refrain from bullying my sister... I'm going to get a 7 in every subject at school...*

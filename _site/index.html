@@ -9,78 +9,94 @@
 
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"></link>
-  <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans:400,700|IBM+Plex+Serif:400,500|Lora:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
+<script>
+	var state = localStorage.getItem('dark');
+	if (state){
+		setDark();
+	}
 
-  <body>
-    <nav>
-	<a class='logo' href='/index.html'>Jayson Tian</a>
-	<p style='margin-top:-20px;'>@jaezun</p>
-	<div class='social-con'>
-		<a href="https://www.instagram.com/jaezun/?hl=en"><i class="fab fa-instagram"></i></a>
-		<a href="https://www.youtube.com/channel/UCdwsgMvJzdwnKI8WM5kYO5A/"><i class="fab fa-youtube"></i></a>
-		<a href="https://soundcloud.com/picxight-productions"><i class="fab fa-soundcloud"></i></a>
-		<a href="https://github.com/Jaysontian"><i class="fab fa-github"></i></a>
-	</div>
-	 
-		<a href="/projects/">Projects</a>
-	  
-		<a href="/aboutme/">About</a>
-	  
-		<a href="/blog/">Blog</a>
-	           
-</nav>
+	function toggleDark(){
+		var state = localStorage.getItem('dark');
+		if (state == null){
+			setDark();
+		} else {
+			if (state){
+				setLight();
+			} else {
+				setDark()
+			}
+		}
+	}	
 
-    <main>
-      <article>
-        <div class='background'></div>
+	function setDark(){
+		localStorage.setItem('dark', true);
+    document.documentElement.style.setProperty('--base-color', 'rgb(106, 153, 255);');
+		document.documentElement.style.setProperty('--theme-bg', 'black');
+		document.documentElement.style.setProperty('--theme-fg', 'white');
+    document.documentElement.style.setProperty('--gradient-main', 'rgb(59, 59, 59);');
+    var element = document.getElementById("theme-icon");
+    element.classList.remove("fa-moon");
+    element.classList.add("fa-sun");
+	}
+	function setLight(){
+		localStorage.removeItem('dark');
+		document.documentElement.style.setProperty('--base-color', 'rgb(46, 112, 255);');
+    document.documentElement.style.setProperty('--theme-bg', 'rgb(255, 255, 255)');
+		document.documentElement.style.setProperty('--theme-fg', 'rgb(20, 20, 20)');
+		document.documentElement.style.setProperty('--gradient-main', 'linear-gradient(144deg, rgba(0,67,138,1) 0%, rgba(5,106,205,1) 43%, rgba(67,171,255,1) 100%)');
+    var element = document.getElementById("theme-icon");
+    element.classList.remove("fa-sun");
+    element.classList.add("fa-moon");
+	}
+
+</script>
+
+  <main id='main'>
+    <div class='center-padding-700'>
+      <br><br>
+<h1 id='title'>Aloha! I'm Jayson.</h1>
 <br>
-
-<h2>Howdy, I'm Jayson 👋 </h2>
-<p style='text-align:left;'> I'm concerned about the death and regeneration of my brain cells. When I'm not mentally awake, I'm either playing volleyball, creating <a href='https://soundcloud.com/picxight-productions'>music</a>, drawing digitally, reading <a href='https://www.sciencedaily.com/releases/2019/11/191105133039.htm'>ScienceDaily</a>, or coding fun stuff.</p>
+<p style='text-align:center;'>I'm concerned about the death and regeneration of my brain cells. When I'm not mentally awake, I'm either playing volleyball, creating music, drawing digitally, reading, or coding stuff.</p>
 <p id='flavor-text'></p>
-<div style='margin:25px 0px;'>
-  <button class="btnintro" onclick="window.open('https://github.com/jaysontian')"><i style='margin-right:5px' class='fab fa-github'> </i>  Follow</button>
-  <button class="btnintro" onclick="window.open('http://drive.google.com/uc?export=download&id=1s8vKe2RiNcr2ctfGA9LCma2GEz0dfVhz')" style='margin-left:20px;'><i class="fas fa-file-download" style='margin-right:5px;'> </i>  Resume</button>
+<div id="home-categories">
+  <button onclick="window.location.href='aboutme'">About Me</button>
+  <button onclick="window.location.href='categories/blog'">Blog</button>
+  <button onclick="window.location.href='categories/coding'">Coding</button>
+  <button onclick="window.location.href='categories'">Other</button>
 </div>
-<h2>Recent Articles</h2>
+
+
+
+
+
+
+
 <div class='recent-con'>
 
-  <a class='postitem' href="/code/2020/02/29/how-to-use-matcha.html">
-      <h3>🍵 How to use Matcha</h3>
-      <time>
-      Feb 29, 2020 |
-      
-              Quick read
-      </time>
+  <a class='postitem' href="/food/bubbletea/">
+      <h3>The Best Drinks at the Alley</h3>
+      <div>
+      Jun 3, 2020
+      </div>
+      <p>The Alley is a Taiwanese-based modern bubble tea chain known for their Brown Sugar Deerioca (tapioca pearl) drinks. The Alley’s...</p>
   </a>
 
-  <a class='postitem' href="/life/2019/12/31/the-year-in-review.html">
-      <h3>This Year In Retrospect</h3>
-      <time>
-      Dec 31, 2019 |
-      8 min. read
-      </time>
-  </a>
-
-  <a class='postitem' href="/dev/2019/12/07/react-js-notes.html">
-      <h3>React JS Beginner Notes</h3>
-      <time>
-      Dec 7, 2019 |
-      21 min. read
-      </time>
+  <a class='postitem' href="/coding/first-assss/">
+      <h3>Coding a Jekyll Site</h3>
+      <div>
+      Mar 9, 2020
+      </div>
+      <p>This tutorial will walk you through the steps and basics on jekyll and liquid syntax. It’s actually really simple as...</p>
   </a>
 
 </div>
 
 
-      </article>
-      <footer>
-	<p>made by <a href='https://jaysontian.github.io'>a guy</a> concerned about his existence.</p>
-</footer>
 
-    </main>
-  </body>
+    </div>
+
+  </main>
 </html>

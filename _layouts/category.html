@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <main id='main'>
+    <div class='center-padding-600'>
+      {% include header.html %}
+      <body style='margin-top:120px;'>
+          <main>
+            <article>
+              <h1 class='p-title'>{{page.title}}</h1>
+              <p style='text-align:center'>{{page.description}}</p>
+              <br><br>
+              {{ content }}
+            </article>
+            {% include footer.html %}
+          </main>
+        </body>
+    </div>
+  
+  </main>

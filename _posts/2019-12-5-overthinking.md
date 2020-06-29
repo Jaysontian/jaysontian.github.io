@@ -2,8 +2,9 @@
 layout: post
 title: "Overthinking"
 date:   2019-12-5
-categories: life
+tags: life
 published: true
+categories: blog
 ---
 
 Thinking about something in endless circles --- is exhausting.

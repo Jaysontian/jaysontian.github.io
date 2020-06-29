@@ -2,8 +2,9 @@
 layout: post
 title: "React JS Beginner Notes"
 date:   2019-12-7
-categories: dev
+tags: dev
 published: true
+categories: blog
 
 ---
 * Table of Contents Placeholder

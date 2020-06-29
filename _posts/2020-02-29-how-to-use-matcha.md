@@ -2,7 +2,8 @@
 layout: post
 title: "🍵 Matcha Documentation"
 date:   2020-02-29
-categories: code
+tags: code
+categories: blog
 ---
 
 # What is Matcha?

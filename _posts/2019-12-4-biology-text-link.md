@@ -2,8 +2,9 @@
 layout: post
 title: "Useful Bio Review Link"
 date:   2019-12-4
-categories: misc
+tags: misc
 published: true
+categories: biology
 
 ---
 

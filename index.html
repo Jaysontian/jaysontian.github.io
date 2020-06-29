@@ -1,24 +1,35 @@
 ---
-layout: page
+layout: default
 ---
 
-<h2>Howdy, I'm Jayson 👋 </h2>
-<p style='text-align:left;'> I'm concerned about the death and regeneration of my brain cells. When I'm not mentally awake, I'm either playing volleyball, creating <a href='https://soundcloud.com/picxight-productions'>music</a>, drawing digitally, reading <a href='https://www.sciencedaily.com/releases/2019/11/191105133039.htm'>ScienceDaily</a>, or coding fun stuff.</p>
+<br><br>
+<h1 id='title'>Aloha! I'm Jayson.</h1>
+<br>
+<p style='text-align:center;'>I'm concerned about the death and regeneration of my brain cells. When I'm not mentally awake, I'm either playing volleyball, creating music, drawing digitally, reading, or coding stuff.</p>
 <p id='flavor-text'></p>
-<div style='margin:25px 0px;'>
-  <button class="btnintro" onclick="window.open('https://github.com/jaysontian')"><i style='margin-right:5px' class='fab fa-github'> </i>  Follow</button>
-  <button class="btnintro" onclick="window.open('http://drive.google.com/uc?export=download&id=1s8vKe2RiNcr2ctfGA9LCma2GEz0dfVhz')" style='margin-left:20px;'><i class="fas fa-file-download" style='margin-right:5px;'> </i>  Resume</button>
+<div id="home-categories">
+  <button onclick="window.location.href='aboutme'">About Me</button>
+  <button onclick="window.location.href='categories/blog'">Blog</button>
+  <button onclick="window.location.href='categories/coding'">Coding</button>
+  <button onclick="window.location.href='categories'">Other</button>
 </div>
-<h2>Recent Articles</h2>
+
+
+
+
+
+
+
 <div class='recent-con'>
-{% for post in site.posts limit:4 %}
+{% for post in site.posts limit:2 %}
   <a class='postitem' href="{{ post.url | prepend: site.baseurl }}">
       <h3>{{post.title }}</h3>
-      <time>
-      {{ post.date | date: "%b %-d, %Y" }} |
-      {% capture words %}{{ post.content | number_of_words | minus: 250 }}{% endcapture %}{% if words contains "-" %}
-              Quick read{% else %}{{ words | plus: 250 | divided_by: 120 | append: " min. read" }}{% endif %}
-      </time>
+      <div>
+      {{ post.date | date: "%b %-d, %Y" }}
+      </div>
+      <p>{{ post.content | strip_html | truncatewords:20}}</p>
   </a>
 {% endfor %}
 </div>
+
+

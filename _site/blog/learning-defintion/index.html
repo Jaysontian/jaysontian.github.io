@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>The Definition of Learning</title>
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"></link>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<script>
+	var state = localStorage.getItem('dark');
+	if (state){
+		setDark();
+	}
+
+	function toggleDark(){
+		var state = localStorage.getItem('dark');
+		if (state == null){
+			setDark();
+		} else {
+			if (state){
+				setLight();
+			} else {
+				setDark()
+			}
+		}
+	}	
+
+	function setDark(){
+		localStorage.setItem('dark', true);
+    document.documentElement.style.setProperty('--base-color', 'rgb(106, 153, 255);');
+		document.documentElement.style.setProperty('--theme-bg', 'black');
+		document.documentElement.style.setProperty('--theme-fg', 'white');
+    document.documentElement.style.setProperty('--gradient-main', 'rgb(59, 59, 59);');
+    var element = document.getElementById("theme-icon");
+    element.classList.remove("fa-moon");
+    element.classList.add("fa-sun");
+	}
+	function setLight(){
+		localStorage.removeItem('dark');
+		document.documentElement.style.setProperty('--base-color', 'rgb(46, 112, 255);');
+    document.documentElement.style.setProperty('--theme-bg', 'rgb(255, 255, 255)');
+		document.documentElement.style.setProperty('--theme-fg', 'rgb(20, 20, 20)');
+		document.documentElement.style.setProperty('--gradient-main', 'linear-gradient(144deg, rgba(0,67,138,1) 0%, rgba(5,106,205,1) 43%, rgba(67,171,255,1) 100%)');
+    var element = document.getElementById("theme-icon");
+    element.classList.remove("fa-sun");
+    element.classList.add("fa-moon");
+	}
+
+</script>
+
+
+  <main id='main'>
+    <div class='center-padding-600'>
+      
+<nav>
+	<div id='navholder'>
+		<button id='nav-title' onclick="window.location.href='http://localhost:4000'">Jayson Tian</button>
+		<div style='float:right;'>
+			<button onclick="window.location.href='/aboutme'">About</button>
+			<button onclick="window.location.href='/categories'">Categories</button>
+			<button onclick='toggleDark()'><i id='theme-icon' class='fas fa-moon'></i></button>
+		</div>
+	</div>
+
+</nav>
+
+      <body style='margin-top:120px;'>
+          <main>
+            <article>
+              <h1 class='p-title'>The Definition of Learning</h1>
+              <p class='p-time'>Nov 9, 2019
+              </p>
+              <div class='p-groups'>
+                
+                  <button onclick="window.location.href='/categories/blog'">Blog</button>
+                
+                
+                  <div>Life</div>
+                
+              </div>
+              <h2 id="achievement-oriented-learning">Achievement Oriented Learning</h2>
+
+<p>Recently, I have been thinking a lot about personal growth and achievement. Though the adage of how the journey is more beutiful than the destination is true, it can’t be denied that sometimes the outcome does matter.</p>
+
+<p>For me personally, I have always been more of an achiever kind of guy more than the journey for about as long as I’ve known my goals for. There’s the obvious truth and feeling that you are the ‘best’ when you have the greatest achievement. It is this type of thinking that has shaped our classrooms, work environments, and current society. We are always striving higher, competing with each other to see who has more achievement or a better outcome.</p>
+
+<p>Don’t get me wrong- competition can be beneficial and great in its own way, but it’s the balance between self-growth and achievement that’s is the most difficult to obtain.</p>
+
+<h2 id="self-development">Self-Development</h2>
+
+<p>I have been reflecting on my self-development goals for the past week. I realized how misleading our academic culture can be in this time and age. All of us, as students of some sort, are so accustomed to the achievement-oriented mentality that we often forget the reason behind our motives and actions. To learn, is to experience and understand something unbeknownst to you. At school, especially in competitive environments, we find ourselves seeping into the sinkhole of mindless learning - we don’t think but only remember and regurgitate information to obtain the high marks. When that happens, I believe that we begin to perceive learning opportunities as tasks. We act to fulfill the purpose of completion while disregarding the process.</p>
+
+<p>It is natural to be competitive. As human beings, most of us have egos that makes us believe we are superior to others. But truth said, there must be a line drawn between healthy and unhealthy competition. I now think that it’s important for a student to recognize whether the learning environment they are in is beneficial or harmful to them.</p>
+
+<p>When we are under so much pressure and stress that all we see In our head is a never ending todo list that needs to be completed, I believe one must take a break and rewind their thoughts. It is that balance between how much of the external pressures a student wants to internalize that decides upon whether they learn for self-development or result.</p>
+
+
+            </article>
+            <footer>
+	
+</footer>
+
+          </main>
+        </body>
+    </div>
+  
+  </main>

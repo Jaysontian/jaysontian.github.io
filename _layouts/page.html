@@ -1,8 +1,21 @@
----
-layout: default
----
 
-<div class='background'></div>
-<br>
 
-{{ content }}
+
+{% include head.html %}
+
+<main id='main'>
+  <div class='center-padding-600'>
+    {% include header.html %}
+    <body style='margin-top:80px;'>
+        <main>
+          <article>
+            {{ content }}
+          </article>
+          {% include footer.html %}
+        </main>
+      </body>
+  </div>
+
+</main>
+
+

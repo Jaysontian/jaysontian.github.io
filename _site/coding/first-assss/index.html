@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Coding a Jekyll Site</title>
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"></link>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<script>
+	var state = localStorage.getItem('dark');
+	if (state){
+		setDark();
+	}
+
+	function toggleDark(){
+		var state = localStorage.getItem('dark');
+		if (state == null){
+			setDark();
+		} else {
+			if (state){
+				setLight();
+			} else {
+				setDark()
+			}
+		}
+	}	
+
+	function setDark(){
+		localStorage.setItem('dark', true);
+    document.documentElement.style.setProperty('--base-color', 'rgb(106, 153, 255);');
+		document.documentElement.style.setProperty('--theme-bg', 'black');
+		document.documentElement.style.setProperty('--theme-fg', 'white');
+    document.documentElement.style.setProperty('--gradient-main', 'rgb(59, 59, 59);');
+    var element = document.getElementById("theme-icon");
+    element.classList.remove("fa-moon");
+    element.classList.add("fa-sun");
+	}
+	function setLight(){
+		localStorage.removeItem('dark');
+		document.documentElement.style.setProperty('--base-color', 'rgb(46, 112, 255);');
+    document.documentElement.style.setProperty('--theme-bg', 'rgb(255, 255, 255)');
+		document.documentElement.style.setProperty('--theme-fg', 'rgb(20, 20, 20)');
+		document.documentElement.style.setProperty('--gradient-main', 'linear-gradient(144deg, rgba(0,67,138,1) 0%, rgba(5,106,205,1) 43%, rgba(67,171,255,1) 100%)');
+    var element = document.getElementById("theme-icon");
+    element.classList.remove("fa-sun");
+    element.classList.add("fa-moon");
+	}
+
+</script>
+
+
+  <main id='main'>
+    <div class='center-padding-600'>
+      
+<nav>
+	<div id='navholder'>
+		<button id='nav-title' onclick="window.location.href='http://localhost:4000'">Jayson Tian</button>
+		<div style='float:right;'>
+			<button onclick="window.location.href='/aboutme'">About</button>
+			<button onclick="window.location.href='/categories'">Categories</button>
+			<button onclick='toggleDark()'><i id='theme-icon' class='fas fa-moon'></i></button>
+		</div>
+	</div>
+
+</nav>
+
+      <body style='margin-top:120px;'>
+          <main>
+            <article>
+              <h1 class='p-title'>Coding a Jekyll Site</h1>
+              <p class='p-time'>Mar 9, 2020
+              </p>
+              <div class='p-groups'>
+                
+                  <button onclick="window.location.href='/categories/coding'">Coding</button>
+                
+                
+              </div>
+              <p>This tutorial will walk you through the steps and basics on jekyll and liquid syntax. It’s actually really simple as there is nothing else you need other than HTML, CSS, and Javascript skills!</p>
+
+            </article>
+            <footer>
+	
+</footer>
+
+          </main>
+        </body>
+    </div>
+  
+  </main>

@@ -1,86 +1,144 @@
-<!DOCTYPE html>
-<html>
-  <head>
+
+
+
+<head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>About</title>
+  <title>About Me</title>
 
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"></link>
-  <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans:400,700|IBM+Plex+Serif:400,500|Lora:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
+<script>
+	var state = localStorage.getItem('dark');
+	if (state){
+		setDark();
+	}
 
-  <body>
-    <nav>
-	<a class='logo' href='/index.html'>Jayson Tian</a>
-	<p style='margin-top:-20px;'>@jaezun</p>
-	<div class='social-con'>
-		<a href="https://www.instagram.com/jaezun/?hl=en"><i class="fab fa-instagram"></i></a>
-		<a href="https://www.youtube.com/channel/UCdwsgMvJzdwnKI8WM5kYO5A/"><i class="fab fa-youtube"></i></a>
-		<a href="https://soundcloud.com/picxight-productions"><i class="fab fa-soundcloud"></i></a>
-		<a href="https://github.com/Jaysontian"><i class="fab fa-github"></i></a>
+	function toggleDark(){
+		var state = localStorage.getItem('dark');
+		if (state == null){
+			setDark();
+		} else {
+			if (state){
+				setLight();
+			} else {
+				setDark()
+			}
+		}
+	}	
+
+	function setDark(){
+		localStorage.setItem('dark', true);
+    document.documentElement.style.setProperty('--base-color', 'rgb(106, 153, 255);');
+		document.documentElement.style.setProperty('--theme-bg', 'black');
+		document.documentElement.style.setProperty('--theme-fg', 'white');
+    document.documentElement.style.setProperty('--gradient-main', 'rgb(59, 59, 59);');
+    var element = document.getElementById("theme-icon");
+    element.classList.remove("fa-moon");
+    element.classList.add("fa-sun");
+	}
+	function setLight(){
+		localStorage.removeItem('dark');
+		document.documentElement.style.setProperty('--base-color', 'rgb(46, 112, 255);');
+    document.documentElement.style.setProperty('--theme-bg', 'rgb(255, 255, 255)');
+		document.documentElement.style.setProperty('--theme-fg', 'rgb(20, 20, 20)');
+		document.documentElement.style.setProperty('--gradient-main', 'linear-gradient(144deg, rgba(0,67,138,1) 0%, rgba(5,106,205,1) 43%, rgba(67,171,255,1) 100%)');
+    var element = document.getElementById("theme-icon");
+    element.classList.remove("fa-sun");
+    element.classList.add("fa-moon");
+	}
+
+</script>
+
+<main id='main'>
+  <div class='center-padding-600'>
+    
+<nav>
+	<div id='navholder'>
+		<button id='nav-title' onclick="window.location.href='http://localhost:4000'">Jayson Tian</button>
+		<div style='float:right;'>
+			<button onclick="window.location.href='/aboutme'">About</button>
+			<button onclick="window.location.href='/categories'">Categories</button>
+			<button onclick='toggleDark()'><i id='theme-icon' class='fas fa-moon'></i></button>
+		</div>
 	</div>
-	 
-		<a href="/projects/">Projects</a>
-	  
-		<a href="/aboutme/">About</a>
-	  
-		<a href="/blog/">Blog</a>
-	           
+
 </nav>
 
-    <main>
-      <article>
-        <div class='background'></div>
-<br>
+    <body style='margin-top:80px;'>
+        <main>
+          <article>
+            <div class="social-con">
+  <a href="https://soundcloud.com/picxight-productions"><i class="fab fa-soundcloud"></i></a>
+  <a href="https://github.com/Jaysontian"><i class="fab fa-github"></i></a>
+  <a href="https://github.com/Jaysontian"><i class="fas fa-envelope"></i></a>
+</div>
 
 <h1 id="about-me">About Me</h1>
+<p>Hey. I’m Jayson, and I have this website up because I want to record my <strong>hobbies</strong>, things I’ve <strong>learned</strong>, and my random <strong>thoughts</strong>.</p>
 
-<p>Aloha! I’m Jayson Tian, and I have this website up as a place to record my <strong>hobbies</strong>, things I’ve <strong>learned</strong>, and my <strong>thoughts</strong>. I want to keep a digital account of my high school life so I can look back at it in the future (like in uni).</p>
-
-<p>I spent some time trying to make this website look nice and simple. I believe in minimalism and I also enjoy learning about web design and development (It’s kinda cool).</p>
-
-<p>Because this page is about me, I’m going to be as narcissistic as possible. I like:</p>
+<p>Since this page is about me, I’ll be as narcissistic as possible.</p>
 
 <ul>
-  <li>Binging tons of Netflix - I need to start watching <a href="https://en.wikipedia.org/wiki/Suits_(American_TV_series)">Suits</a>.</li>
-  <li>Watching good horror movies the day they come out.</li>
-  <li>Drinking, rating, and finding the best milk tea in the world.</li>
-  <li>Watching TikToks even though it’s a waste of time.</li>
-  <li>Playing a lot of incremental games like <a href="http://cirri.al/sharks/">this one</a> or games that use up minimal brain cells.</li>
-  <li>Spending more time sorting music and making playlists than listening to it on <a href="https://open.spotify.com/user/jaezun?si=15-y63SAQIWCmJ2yh4g8Rg">Spotify</a>.</li>
-  <li>Reading psychology or biology news.</li>
+  <li>Complete my long Netflix To-Watch list, top three including:
+    <ul>
+      <li>Suits</li>
+      <li>The Good Doctor</li>
+      <li>Finish B99 <a href="https://www.youtube.com/watch?v=rIYuU2_rYP0">:)</a></li>
+    </ul>
+  </li>
+  <li>Watch amazing horror movies especially w friends in theatres. Favourites these past two years:
+    <ul>
+      <li>Hereditary</li>
+      <li>Midsommar</li>
+      <li>A Silent Voice</li>
+      <li>Get Out and Us</li>
+      <li>It (It 2 was a disappointment)</li>
+    </ul>
+  </li>
+  <li>Drink, review, and strive to find the best milk tea in the world.
+    <ul>
+      <li>Probs gonna start a milk tea blog soon w a friend</li>
+    </ul>
+  </li>
+  <li>Waste time on tiktok</li>
+  <li>Finish good incremental games like <a href="http://adarkroom.doublespeakgames.com">this one</a>, <a href="https://www.decisionproblem.com/paperclips/">this one</a>, and <a href="http://cirri.al/sharks/">this one</a> or games that use up the least amount of brain cells.</li>
+  <li>Spend more time sorting music and making playlists instead of listening to it on <a href="https://open.spotify.com/user/jaezun?si=15-y63SAQIWCmJ2yh4g8Rg">Spotify</a>.</li>
+  <li>Reading psychology or biology cool stuff (including <a href="https://www.sciencedaily.com/releases/2020/03/200317175442.htm">corona</a>)</li>
   <li>I can’t for the life of me keep Snapchat streaks for more than a week.</li>
-  <li>I am not a morning person and need at least 8 hours of sleep minimum.</li>
 </ul>
 
-<h2 id="future-posts">Future Posts</h2>
-
-<p>I am going to try to write about something every week as a way to get my ideas out of my head and onto paper (‘digitally’). This is the list:</p>
+<h2 id="future-blog-ideas">Future Blog Ideas</h2>
 
 <ul>
   <li>Milk tea in the GTA</li>
   <li>Rating horror movies and talking about psychological horror</li>
-  <li>Building a jekyll site like this one</li>
+  <li>Building a jekyll site</li>
   <li>Cheatsheet for the minimal amount of steps to make an electron application</li>
   <li>Setting up Google API’s, firebase, and firestore minimal steps</li>
-  <li>learning mindsets</li>
+  <li>learning mindset</li>
   <li>Incremental games - theory, game design, logic, and math</li>
-  <li>Music harmony and progression of current pop music culture in comparison to the 90s.</li>
+  <li>Music harmony and progression of music chord / styles in generations</li>
   <li>Productivity and School</li>
-  <li>Developing interests and extracurriculars in high school</li>
+  <li>Developing interests and extracurriculars</li>
+  <li>life stuff that’s deep and nonsense</li>
 </ul>
 
 
-      </article>
-      <footer>
-	<p>made by <a href='https://jaysontian.github.io'>a guy</a> concerned about his existence.</p>
+          </article>
+          <footer>
+	
 </footer>
 
-    </main>
-  </body>
-</html>
+        </main>
+      </body>
+  </div>
+
+</main>
+
+
