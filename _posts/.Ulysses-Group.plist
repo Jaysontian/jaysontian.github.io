@@ -2,8 +2,58 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>childOrder</key>
+	<array>
+		<string>Blog</string>
+		<string>Food</string>
+		<string>Biology</string>
+		<string>Coding</string>
+	</array>
 	<key>resolutionData</key>
 	<dict>
+		<key>childOrder</key>
+		<dict>
+			<key>Biology</key>
+			<dict>
+				<key>lastModification</key>
+				<real>615141662.56203306</real>
+				<key>version</key>
+				<dict>
+					<key>548fba346eac6e7370d7c4e67823abfc81c9adb0886048a3b31cf339a1a92a91</key>
+					<integer>2</integer>
+				</dict>
+			</dict>
+			<key>Blog</key>
+			<dict>
+				<key>lastModification</key>
+				<real>615141672.48256505</real>
+				<key>version</key>
+				<dict>
+					<key>548fba346eac6e7370d7c4e67823abfc81c9adb0886048a3b31cf339a1a92a91</key>
+					<integer>4</integer>
+				</dict>
+			</dict>
+			<key>Coding</key>
+			<dict>
+				<key>lastModification</key>
+				<real>615141662.56203401</real>
+				<key>version</key>
+				<dict>
+					<key>548fba346eac6e7370d7c4e67823abfc81c9adb0886048a3b31cf339a1a92a91</key>
+					<integer>2</integer>
+				</dict>
+			</dict>
+			<key>Food</key>
+			<dict>
+				<key>lastModification</key>
+				<real>615141662.56203198</real>
+				<key>version</key>
+				<dict>
+					<key>548fba346eac6e7370d7c4e67823abfc81c9adb0886048a3b31cf339a1a92a91</key>
+					<integer>2</integer>
+				</dict>
+			</dict>
+		</dict>
 		<key>sheetClusters</key>
 		<dict/>
 		<key>userIconName</key>
@@ -17,10 +67,17 @@
 	<string>Github</string>
 	<key>versioning</key>
 	<dict>
+		<key>childOrder</key>
+		<dict>
+			<key>548fba346eac6e7370d7c4e67823abfc81c9adb0886048a3b31cf339a1a92a91</key>
+			<integer>4</integer>
+		</dict>
 		<key>sheetClusters</key>
 		<dict>
 			<key>01a0f89e88e3cf562b2c7ba86191f668c394cc70b6e6dbc84e1c12292ae2c3ff</key>
 			<integer>7</integer>
+			<key>548fba346eac6e7370d7c4e67823abfc81c9adb0886048a3b31cf339a1a92a91</key>
+			<integer>10</integer>
 		</dict>
 		<key>userIconName</key>
 		<dict>

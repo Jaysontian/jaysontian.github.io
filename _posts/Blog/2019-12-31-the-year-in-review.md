@@ -4,11 +4,12 @@ title: "This Year In Retrospect"
 date:   2019-12-31
 tags: life
 categories: blog
+published: false
 ---
 
-*I'm going to be a better person... I'm going to refrain from bullying my sister... I'm going to get a 7 in every subject at school...*
+I'm going to be a better person... I'm going to refrain from bullying my sister... I'm going to get a 7 in every subject at school...
 
-The typical quixotic resolutions of the new year. Screw that.
+Typical quixotic resolutions of the new year. Screw that.
 
 I'm never a big dreamer, so I never invest myself in the resolution crap every new year. Instead of making unrealistic goals and wallowing in dreams, it should be a time to reflect on the past year, learn from experiences, and be thankful for everything. Personally, 2019 was a year full of new encounters, experiences, and challenges that made life so much more interesting.
 
@@ -24,15 +25,16 @@ Before I ramble on for too long, I also had some other takeaways this year. With
 
 ### Time Management
 
-In retrospect, this biggest lesson I learned this year was to not overcommit to things I do. It is impossible to give 100% on everything 24/7. For the past year, the piling of various activities posed a major challenge to my time management skills. I constantly felt worn out and I wasn't sure what was depleting all my energy. As I started to let go of things and put what I cared more in prescedence of other less valued things, I felt rocks being lifted off my shoulder.
+In retrospect, this biggest lesson I learned this year was to not overcommit to things I do. It is impossible to give 100% on everything 24/7. For the past year, the piling of various activities posed a major challenge to my time management skills. I constantly felt worn out and I wasn't sure what was depleting all my energy. As I started to let go of things and put what I cared more in precedence of other less valued things, I felt rocks being lifted off my shoulder.
 
 ### Purpose
 
-I blindlessly work at things without thinking. That's me. I often get so distracted by the task at hand that I forget what the goal is. This year, I realized the importance of having purpose in my actions, in a variety of contexts, such as academics, volleyball, and also writing. For example, I realized how the process of learning is so much more crucial than the actual outcome. I realize the need to change my achievement-oriented mentality, which is ironic considering my point at the start of this post. In writing, I am now attempting to get to the point in stead of rambling, which is also ironic.
+I blindly work at things without thinking. That's me. I often get so distracted by the task at hand that I forget what the goal is. This year, I realized the importance of having purpose in my actions, in a variety of contexts, such as academics, volleyball, and also writing. For example, I realized how the process of learning is so much more crucial than the actual outcome. I realize the need to change my achievement-oriented mentality, which is ironic considering my point at the start of this post. In writing, I am now attempting to get to the point in stead of rambling, which is also ironic.
 
 ### Decisions
 
-I like to overthink. Ok I understand that this completely contradicts my statement on how "I work without thinking", but let me explain. When I actually have to descide on something, I have the tendency to consider every aspect of this descision and how it will affect me. This is a major problem as people are impatient (Fun fact: people are becoming more and more impatient according to a [scientific study](https://www.bostonglobe.com/lifestyle/style/2013/02/01/the-growing-culture-impatience-where-instant-gratification-makes-crave-more-instant-gratification/q8tWDNGeJB2mm45fQxtTQP/story.html)). I began to develop myself into being more bold in my descisions and just going for it. This is a long-term goal clearly as I still can't decide if I want vanilla or chocolate when waiting in line at Baskin Robins. Maybe there are too many options nowadays. I will definitely talk about this in a future post.
+I like to overthink. Ok I understand that this completely contradicts my statement on how "I work without thinking", but let me explain. When I actually have to decide on something, I have the tendency to consider every aspect of this decision and how it will affect me. This is a major problem as people are impatient (Fun fact: people are becoming more and more impatient according to a [scientific study][1]). I began to develop myself into being more bold in my decisions and just going for it. This is a long-term goal clearly as I still can't decide if I want vanilla or chocolate when waiting in line at Baskin Robins. Maybe there are too many options nowadays. I will definitely talk about this in a future post.
 
 All in all, there were quite a few morals to my life story this past year! 
 
+[1]:	https://www.bostonglobe.com/lifestyle/style/2013/02/01/the-growing-culture-impatience-where-instant-gratification-makes-crave-more-instant-gratification/q8tWDNGeJB2mm45fQxtTQP/story.html
