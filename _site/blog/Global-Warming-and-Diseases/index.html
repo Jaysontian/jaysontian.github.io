@@ -1,6 +1,4 @@
 
-<!DOCTYPE html>
-<html>
   <head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -10,7 +8,7 @@
 
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"></link>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 
 <script>
@@ -56,26 +54,26 @@
 </script>
 
 
-  <main id='main'>
-    <div class='center-padding-600'>
-      
+  <main>
+    
 <nav>
 	<div id='navholder'>
-		<button id='nav-title' onclick="window.location.href='http://localhost:4000'">Jayson Tian</button>
+		<button id='nav-title' onclick="window.location.href='/notions'">Notions</button>
 		<div style='float:right;'>
-			<button onclick="window.location.href='/aboutme'">About</button>
 			<button onclick="window.location.href='/categories'">Categories</button>
+			<button onclick="window.location.href='/specials'">Specials</button>
+			<button onclick="window.location.href='/notes'">Notes</button>
 			<button onclick='toggleDark()'><i id='theme-icon' class='fas fa-moon'></i></button>
 		</div>
 	</div>
-
 </nav>
 
-      <body style='margin-top:120px;'>
-          <main>
-            <article>
-              <h1 class='p-title'>Diseases and Global Warming</h1>
-              <p class='p-time'>Aug 17, 2019
+    
+    <body style='margin-top:80px; width:100%;'>
+      <main class='pagecon'>
+        <article>
+          <h1 class='p-title'>Diseases and Global Warming</h1>
+              <p class='p-time'>By <a href='/'>Jayson Tian</a> on August 17, 2019
               </p>
               <div class='p-groups'>
                 
@@ -85,7 +83,7 @@
                   <div>Biology</div>
                 
               </div>
-              <p>I recently read an article writing about how new diseases are popping up from random places never seen before. Apparently, they have a significantly higher viral resistance than other common bacteria, and 75% of treatment and vaccines are ineffective against them.</p>
+          <p>I recently read an article writing about how new diseases are popping up from random places never seen before. Apparently, they have a significantly higher viral resistance than other common bacteria, and 75% of treatment and vaccines are ineffective against them.</p>
 
 <p>So I thought it was interesting as most diseases these days can be treated pretty easily. The article did not seem to cite or credit where they got the statistics so I did a little bit of digging on the internet and discovered that these types of bacteria actually carry ancient viruses that are rarely seen present day.</p>
 
@@ -104,13 +102,12 @@
 <p>What I read on permafrost melting: [article here]</p>
 
 
-            </article>
-            <footer>
+        </article>
+        <footer>
 	
 </footer>
 
-          </main>
-        </body>
-    </div>
-  
-  </main>
+      </main>
+    </body>
+
+</main>

@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: page
 permalink: categories/Food/
 title: Food Reviews
 description: Some things are just more important than others in life.

@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: page
 permalink: categories/coding/
 title: Coding
 description: I make questionable things with code. Examples include pointless clicker games and chrome extentions that makes cute cows walk around on your page.

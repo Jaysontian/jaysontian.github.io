@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: page
 permalink: categories/blog/
 title: Blogs
 description: Articles and random braindumps about life and death.

@@ -1,20 +1,16 @@
-
-
-
 {% include head.html %}
 
-<main id='main'>
-  <div class='center-padding-600'>
+<main>
     {% include header.html %}
-    <body style='margin-top:80px;'>
-        <main>
-          <article>
-            {{ content }}
-          </article>
-          {% include footer.html %}
-        </main>
-      </body>
-  </div>
+    
+    <body style='margin-top:80px; width:100%;'>
+      <main class='pagecon'>
+        <article>
+          {{ content }}
+        </article>
+        {% include footer.html %}
+      </main>
+    </body>
 
 </main>
 

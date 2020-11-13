@@ -1,0 +1,47 @@
+
+
+nav {
+    width: 100%;
+    top:0px;
+    left:0px;
+    position: fixed;
+    z-index: 1;
+    padding:5px 0px;
+    background-color:var(--theme-bg);
+    border-bottom:var(--base-color) 2px solid;
+  }
+  
+  
+  #navholder {
+    width:775;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+  }
+  
+  nav button{
+    font-family:Open sans;
+    font-weight:400;
+    border:none;
+    font-size:13pt;
+    background-color:rgba(0, 67, 138, 0);
+    padding:8px 15px;
+    margin:5px 0px;
+    cursor:pointer;
+    border-radius:3px;
+    user-select: none;
+    outline:none;
+    color:rgb(56, 56, 56);
+  }
+  
+  nav button:hover{
+    background-color:rgba(182, 181, 181, 0.192)
+  }
+  
+  #nav-title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight:500;
+    font-size:17pt;
+    margin:0px;
+    margin-left:-15px;
+  }

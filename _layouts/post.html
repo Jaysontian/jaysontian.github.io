@@ -1,17 +1,15 @@
 
-<!DOCTYPE html>
-<html>
   {% include head.html %}
 
 
-  <main id='main'>
-    <div class='center-padding-600'>
-      {% include header.html %}
-      <body style='margin-top:120px;'>
-          <main>
-            <article>
-              <h1 class='p-title'>{{page.title}}</h1>
-              <p class='p-time'>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if
+  <main>
+    {% include header.html %}
+    
+    <body style='margin-top:80px; width:100%;'>
+      <main class='pagecon'>
+        <article>
+          <h1 class='p-title'>{{page.title}}</h1>
+              <p class='p-time'>By <a href='/'>Jayson Tian</a> on {{ page.date | date: "%B %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if
                 page.meta %} • {{ page.meta }}{% endif %}
               </p>
               <div class='p-groups'>
@@ -22,11 +20,10 @@
                   <div>{{tag | capitalize}}</div>
                 {% endfor %}
               </div>
-              {{ content }}
-            </article>
-            {% include footer.html %}
-          </main>
-        </body>
-    </div>
-  
-  </main>
+          {{ content }}
+        </article>
+        {% include footer.html %}
+      </main>
+    </body>
+
+</main>

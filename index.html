@@ -1,12 +1,70 @@
 ---
-layout: default
+layout: index
 ---
 
+<section style='height:800px; padding-top:120px;'>
+  <div class='con flex'>
+    <div style='width:50%;'>
+      <h1 id='title'>Hey! I'm <span>Jayson Tian</span></h1>
+      <p>I spend most of my time thinking about the death and regeneration of my neurons. Aside from that, I'm either playing volleyball, creating music, drawing digitally, reading, or coding stuff.</p>
+      <h3 id='subtitle'>I like <span>biology.</span></h3>
+      <h3 id='subtitle'>I enjoy <span>helping others.</span></h3>
+      <h3 id='subtitle'>I want to find the <span>connection</span> between them.</h3>
+      <br><br>
+      <div style='display:flex'>
+        <button class='btn1' style='margin-right:25px;'><i class='fab fa-github'></i>Github</button>
+        <button class='btn1'><i class='fas fa-file'></i>Resume</button>
+      </div>
+    </div>
+    <div style='width:35%;'>
+      <img id='photo' src='https://i.pinimg.com/originals/12/d0/f3/12d0f3d59879c083d974e64bc252536b.jpg'>
+    </div>
+  </div>
+</section>
 
-<br><br>
-<h1 id='title'>Aloha! I'm Jayson.</h1>
-<br>
-<p style='text-align:center;'>I'm concerned about the death and regeneration of my brain cells. When I'm not mentally awake, I'm either playing volleyball, creating music, drawing digitally, reading, or coding stuff.</p>
+<section>
+  <div class='con flex'>
+    <div style='width:65%;'>
+      <h1>here's more about me</h1>
+      <p>I'm a year 11 IB student at UCC. While trying to survive, I'm dedicated to learning new things, helping others with what I can, and attempting to make the best out of high school. I'm particularly intrigued by biology and how it crosses with policies and technology (specifically computer science).</p>
+      <p>During my downtime, I really like to research, build, and create (very questionable) stuff that vary in subject matter - I draw a webcomic, compose music, blog, design experiments, and I particularly enjoy coding programs (or websites like this). </p>
+      <p>I also value education, learning, and believe everyone should have the right to access free and high-quality education. I spend some of my time tutoring, hosting events, and running a not-for-profit organization supporting students in need.</p>
+    </div>
+    <div style='width:30%;' class='card'>
+      <button class='btn1'>Soundcloud</button><br>
+      <button class='btn1'>Webcomic</button><br>
+      <button class='btn1' onclick='window.location.href = "{{ site.baseurl }}/notions"'>My Blog</button><br>
+      <button class='btn1'>Code Projects</button><br><br>
+      <b>got jokes? or questions?</b>
+      <p>Feel free to reach out anytime! Send me an email at jayson.tian@ucc.on.ca</p>
+    </div>
+  </div>
+</section>
+
+<section style='margin-top:100px;'>
+  <div class='con'>
+    <div class='flex'>
+      <div>
+        <h1>what i'm thinking</h1>
+        <p>Arbitrary thoughts about the things happening around me.</p>
+        <p style='margin-top:-15px;'>Here's the recent articles from my blog.</p>
+      </div>
+      <button class='btn1' style='height:45px; margin-top:75px;'>Read More</button>
+    </div>
+    <br>
+    <div class='flex'>
+      {% for post in site.posts limit:2 %}
+        <div class='preview' onclick='window.location.href = "{{ post.url | prepend: site.baseurl }}"'>
+          <h3>{{post.title }}</h3>
+          <time>{{ post.date | date: "%b %-d, %Y" }}</time>
+          <p>{{ post.content | strip_html | truncatewords:20}}</p>
+        </div>
+      {% endfor %}
+    </div><br>
+  </div>
+</section>
+<div style='height:100px;'></div>
+<!--
 <p id='flavor-text'></p>
 <div id="home-categories">
   <button onclick="window.location.href='aboutme'">About Me</button>
@@ -14,23 +72,6 @@ layout: default
   <button onclick="window.location.href='categories/coding'">Coding</button>
   <button onclick="window.location.href='categories'">Other</button>
 </div>
-
-
-
-
-
-
-
-<div class='recent-con'>
-{% for post in site.posts limit:2 %}
-  <a class='postitem' href="{{ post.url | prepend: site.baseurl }}">
-      <h3>{{post.title }}</h3>
-      <div>
-      {{ post.date | date: "%b %-d, %Y" }}
-      </div>
-      <p>{{ post.content | strip_html | truncatewords:20}}</p>
-  </a>
-{% endfor %}
-</div>
+-->
 
 

@@ -9,7 +9,7 @@
 
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"></link>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 
 <script>
@@ -55,11 +55,76 @@
 </script>
 
   <main id='main'>
-    <div class='center-padding-700'>
+      <section style='height:800px; padding-top:120px;'>
+  <div class='con flex'>
+    <div style='width:50%;'>
+      <h1 id='title'>Hey! I'm <span>Jayson Tian</span></h1>
+      <p>I spend most of my time thinking about the death and regeneration of my neurons. Aside from that, I'm either playing volleyball, creating music, drawing digitally, reading, or coding stuff.</p>
+      <h3 id='subtitle'>I like <span>biology.</span></h3>
+      <h3 id='subtitle'>I enjoy <span>helping others.</span></h3>
+      <h3 id='subtitle'>I want to find the <span>connection</span> between them.</h3>
       <br><br>
-<h1 id='title'>Aloha! I'm Jayson.</h1>
-<br>
-<p style='text-align:center;'>I'm concerned about the death and regeneration of my brain cells. When I'm not mentally awake, I'm either playing volleyball, creating music, drawing digitally, reading, or coding stuff.</p>
+      <div style='display:flex'>
+        <button class='btn1' style='margin-right:25px;'><i class='fab fa-github'></i>Github</button>
+        <button class='btn1'><i class='fas fa-file'></i>Resume</button>
+      </div>
+    </div>
+    <div style='width:35%;'>
+      <img id='photo' src='https://yt3.ggpht.com/a/AATXAJywE2fdJnBZLZ0hjCDB0pl1v6KpA-QKx-nKx4L_7A=s900-c-k-c0x00ffffff-no-rj'>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class='con flex'>
+    <div style='width:65%;'>
+      <h1>here's more about me</h1>
+      <p>I'm a year 11 IB student at UCC. While trying to survive, I'm dedicated to learning new things, helping others with what I can, and attempting to make the best out of high school. I'm particularly intrigued by biology and how it crosses with policies and technology (specifically computer science).</p>
+      <p>During my downtime, I really like to research, build, and create (very questionable) stuff that vary in subject matter - I draw a webcomic, compose music, blog, design experiments, and I particularly enjoy coding programs (or websites like this). </p>
+      <p>I also value education, learning, and believe everyone should have the right to access free and high-quality education. I spend some of my time tutoring, hosting events, and running a not-for-profit organization supporting students in need.</p>
+    </div>
+    <div style='width:30%;' class='card'>
+      <button class='btn1'>Soundcloud</button><br>
+      <button class='btn1'>Webcomic</button><br>
+      <button class='btn1' onclick='window.location.href = "/notions"'>My Blog</button><br>
+      <button class='btn1'>Code Projects</button><br><br>
+      <b>got jokes? or questions?</b>
+      <p>Feel free to reach out anytime! Send me an email at jayson.tian@ucc.on.ca</p>
+    </div>
+  </div>
+</section>
+
+<section style='margin-top:100px;'>
+  <div class='con'>
+    <div class='flex'>
+      <div>
+        <h1>what i'm thinking</h1>
+        <p>Arbitrary thoughts about the things happening around me.</p>
+        <p style='margin-top:-15px;'>Here's the recent articles from my blog.</p>
+      </div>
+      <button class='btn1' style='height:45px; margin-top:75px;'>Read More</button>
+    </div>
+    <br>
+    <div class='flex'>
+      
+        <div class='preview' onclick='window.location.href = "/blog/things-I-realize/"'>
+          <h3>Things I Realize</h3>
+          <time>Nov 11, 2020</time>
+          <p>When we see things we are likely to perceive them as individual atoms but there are also notions that exist...</p>
+        </div>
+      
+        <div class='preview' onclick='window.location.href = "/biology/life/"'>
+          <h3>The Biological Definition of Life</h3>
+          <time>Jun 29, 2020</time>
+          <p>Everyday we are surrounded by millions of organisms that our very eye cannot see.
+</p>
+        </div>
+      
+    </div><br>
+  </div>
+</section>
+<div style='height:100px;'></div>
+<!--
 <p id='flavor-text'></p>
 <div id="home-categories">
   <button onclick="window.location.href='aboutme'">About Me</button>
@@ -67,62 +132,31 @@
   <button onclick="window.location.href='categories/coding'">Coding</button>
   <button onclick="window.location.href='categories'">Other</button>
 </div>
+-->
 
 
 
 
-
-
-
-<div class='recent-con'>
-
-  <a class='postitem' href="/biology/life/">
-      <h3>The Biological Definition of Life</h3>
-      <div>
-      Jun 29, 2020
-      </div>
-      <p>Everyday we are surrounded by millions of organisms that our very eye cannot see.
-</p>
-  </a>
-
-  <a class='postitem' href="/food/bubbletea/">
-      <h3>The Best Drinks at the Alley</h3>
-      <div>
-      Jun 3, 2020
-      </div>
-      <p>The Alley is a Taiwanese-based modern bubble tea chain known for their Brown Sugar Deerioca (tapioca pearl) drinks. The Alley’s...</p>
-  </a>
-
-</div>
-
-
-
-    </div>
-
-
-
-<div id="particles-js"></div>
-
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
-
-<script>
-  particlesJS.load('particles-js', 'assets/config.json', function() {
-    console.log('callback - particles.js config loaded');
-  });
-</script>
-
-<style>
-  #particles-js{
-    position:fixed;
-    top:0px;
-    left:0px;
-    width:100%;
-    height:100%;
-    z-index:-200;
-  }
-</style>
+    <!--<div id="particles-js"></div>-->
 
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'assets/config.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
+  </script>
+  
+  <style>
+    #particles-js{
+      position:fixed;
+      top:0px;
+      left:0px;
+      width:100%;
+      height:100%;
+      z-index:-200;
+    }
+  </style>
+  
 </html>
 
