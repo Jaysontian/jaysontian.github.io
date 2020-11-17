@@ -9,5 +9,4 @@ There are so many important things in our lives that go unnoticed. Not necessari
 
 ## Routines
 
-Yep. We go through the same motions, activities, every single day yet we never really think about the bigger picture of the purpose behind these daily actions. I honestly believe it's because of how good humans are at adapting, but I wouldn't bet it all on that. It's that sometimes we are so caught in the bustle of life that it's hard to recognize where the true goals and desires lie. 
-
+Yep. We go through the same motions, activities, every single day yet we never really think about the bigger picture of the purpose behind these daily actions. I honestly believe it's because of how good humans are at adapting, but I wouldn't bet it all on that. It's that sometimes we are so caught in the bustle of life that it's hard to recognize where the true goals and desires lie.
