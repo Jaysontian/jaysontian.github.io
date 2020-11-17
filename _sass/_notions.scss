@@ -1,0 +1,28 @@
+.articlelink{
+    background-color:rgba(255, 255, 255, 0);
+    font-weight: bold;
+    outline:none;
+    border-radius:5px;
+    color: var(--theme-fg);
+    padding:0px 0px;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+
+.articlelink:hover{
+    color:var(--base-color);
+}
+
+.articlelink h2{
+    margin:5px 0px;
+    font-weight:500;
+    font-size:17pt;
+}
+
+.articlelink p{
+    margin:5px 0px;
+    font-weight:normal;
+    font-size:12pt;
+}

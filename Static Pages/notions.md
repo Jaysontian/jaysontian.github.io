@@ -3,19 +3,36 @@ layout: page
 title: Notions
 permalink: /notions/
 ---
+<h1 id='title' style="margin-top:110px"><span>Notions</span> is my blog.</h1>
+
+Containing my thoughts, experiements, weird ideas, things I want to do... really just a brain dump (the name's pretty self explanatory).
+
+<div class='flex' style='justify-content:left;'>
+    <button class='btn2 marginleft'>Life</button>
+    <button class='btn2 marginleft'>Biology</button>
+    <button class='btn2 marginleft'>Code</button>
+    <button class='btn2 marginleft'>Other</button>
+</div>
+<div class='flex' style='justify-content:left; margin-top:25px;'>
+    <button class='btn2 marginleft'>Milk Tea Reviews</button>
+    <button class='btn2 marginleft'>Documentries</button>
+</div>
+
+
 <br>
-<h1 id='title'><span>Notions</span> is a blog by Jayson</h1>
 
-It contains my thoughts, experiements, artwork, things I did, things I want to do... really just a jumble of ideas (the name's pretty self explanatory).
-
-<p>You can also return to the <a href="/">main website</a>.</p>
-
+# All Articles
+<hr style='margin-bottom:30px'>
 {% for post in site.posts %}
- <li><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
+<div onclick="window.location.href='{{ post.url }}'" class='articlelink'>
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.date | date: "%b %d, %Y" }}</p>
+</div>
+ 
 {% endfor %}
 
 
-
+<br>
 
 
 
