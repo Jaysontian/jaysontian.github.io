@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-date: {}
+date: 2020-11-12T00:00:00.000Z
 tags: life
 categories: blog
 ---
