@@ -303,7 +303,8 @@ button {
 
 .card {
   border-left: var(--base-color) 2px solid;
-  padding-left: 30px; }
+  padding-left: 30px;
+  width: 30%; }
 
 .preview {
   width: 48%;
@@ -321,6 +322,29 @@ button {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical; }
 
+@media only screen and (max-width: 760px) {
+  body .con {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column; }
+  body #splash {
+    flex-direction: column-reverse;
+    margin-top: -100px; }
+  body .con div {
+    width: 100%; }
+  body .card {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 50px; }
+  body .card button {
+    margin: auto; }
+  body .preview {
+    width: 100%;
+    margin-bottom: 20px; }
+  body .flex {
+    flex-direction: column; }
+  body nav {
+    display: none; } }
 .articlelink {
   background-color: rgba(255, 255, 255, 0);
   font-weight: bold;

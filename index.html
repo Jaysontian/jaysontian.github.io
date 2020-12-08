@@ -3,8 +3,8 @@ layout: index
 ---
 
 <section style='height:800px; padding-top:120px;'>
-  <div class='con flex'>
-    <div style='width:50%;'>
+  <div class='con flex' id='splash'>
+    <div>
       <h1 id='title'>Hey! I'm <span>Jayson Tian</span></h1>
       <p>I spend most of my time thinking about the death and regeneration of my neurons. Aside from that, I'm either playing volleyball, creating music, drawing digitally, reading, or coding stuff.</p>
       <h3 id='subtitle'>I like <span>biology.</span></h3>
@@ -16,7 +16,8 @@ layout: index
         <button class='btn1'><i class='fas fa-file'></i>Resume</button>
       </div>
     </div>
-    <div style='width:35%;'>
+    <div style='width:350px;'></div>
+    <div>
       <img id='photo' src='/assets/prof.png' style='border:4px solid var(--base-color)'>
     </div>
   </div>
@@ -24,14 +25,15 @@ layout: index
 
 <section>
   <div class='con flex'>
-    <div style='width:65%;'>
+    <div>
       <h1>here's more about me</h1>
       <p>I'm a year 11 IB student at UCC. While trying to survive, I'm dedicated to learning new things, helping others with what I can, and attempting to make the best out of high school. I'm particularly intrigued by biology and how it crosses with policies and technology (specifically computer science).</p>
       <p>During my downtime, I really like to research, build, and create (very questionable) stuff that vary in subject matter - I draw a webcomic, compose music, blog, design experiments, and I particularly enjoy coding programs (or websites like this). </p>
       <p>I also value education, learning, and believe everyone should have the right to access free and high-quality education. I spend some of my time tutoring, hosting events, and running a not-for-profit organization supporting students in need.</p>
       <button class='btn1' onclick="window.location.href='/aboutme'">More</button>
     </div>
-    <div style='width:30%;' class='card'>
+    <div style='width:350px;'></div>
+    <div class='card'>
       <button class='btn1'>Soundcloud</button><br>
       <button class='btn1'>Webcomic</button><br>
       <button class='btn1' onclick='window.location.href = "{{ site.baseurl }}/blog"'>My Blog</button><br>
@@ -50,7 +52,7 @@ layout: index
         <p>Arbitrary thoughts about the things happening around me.</p>
         <p style='margin-top:-15px;'>Here's the recent articles from my blog.</p>
       </div>
-      <button class='btn1' style='height:45px; margin-top:75px;'>Read More</button>
+      <button class='btn1' onclick='window.location.href = "{{ site.baseurl }}/blog"' style='height:45px; margin-top:75px;'>Read More</button>
     </div>
     <br>
     <div class='flex'>
