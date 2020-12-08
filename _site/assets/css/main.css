@@ -280,7 +280,8 @@ button {
 #title span {
   background-color: var(--base-color);
   color: white;
-  padding: 0px 8px; }
+  padding: 0px 18px;
+  border-radius: 6px; }
 
 #subtitle {
   font-family: 'IBM Plex Sans', sans-serif;
@@ -338,12 +339,12 @@ button {
 .articlelink h2 {
   margin: 5px 0px;
   font-weight: 500;
-  font-size: 17pt; }
+  font-size: 14pt; }
 
 .articlelink p {
   margin: 5px 0px;
   font-weight: normal;
-  font-size: 12pt; }
+  font-size: 11pt; }
 
 .highlight {
   background: #fff; }

@@ -1,0 +1,190 @@
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Tea-rrific Reviews 🧋</title>
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"></link>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<script>
+	var state = localStorage.getItem('dark');
+	if (state){
+		setDark();
+	}
+
+	function toggleDark(){
+		var state = localStorage.getItem('dark');
+		if (state == null){
+			setDark();
+		} else {
+			if (state){
+				setLight();
+			} else {
+				setDark()
+			}
+		}
+	}	
+
+	function setDark(){
+		localStorage.setItem('dark', true);
+    document.documentElement.style.setProperty('--base-color', 'rgb(106, 153, 255);');
+		document.documentElement.style.setProperty('--theme-bg', 'black');
+		document.documentElement.style.setProperty('--theme-fg', 'white');
+    document.documentElement.style.setProperty('--gradient-main', 'rgb(59, 59, 59);');
+    var element = document.getElementById("theme-icon");
+    element.classList.remove("fa-moon");
+    element.classList.add("fa-sun");
+	}
+	function setLight(){
+		localStorage.removeItem('dark');
+		document.documentElement.style.setProperty('--base-color', 'rgb(46, 112, 255);');
+    document.documentElement.style.setProperty('--theme-bg', 'rgb(255, 255, 255)');
+		document.documentElement.style.setProperty('--theme-fg', 'rgb(20, 20, 20)');
+		document.documentElement.style.setProperty('--gradient-main', 'linear-gradient(144deg, rgba(0,67,138,1) 0%, rgba(5,106,205,1) 43%, rgba(67,171,255,1) 100%)');
+    var element = document.getElementById("theme-icon");
+    element.classList.remove("fa-sun");
+    element.classList.add("fa-moon");
+	}
+
+</script>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+<main>
+    
+<nav>
+	<div id='navholder'>
+		<button id='nav-title' onclick="window.location.href='/'">Jayson Tian</button>
+		<div style='float:right;'>
+			<button onclick="window.location.href='/aboutme'">About</button>
+			<button onclick="window.location.href='/blog'">Blog</button>
+			<button onclick="window.location.href='/other'">Other</button>
+			<button onclick='toggleDark()'><i id='theme-icon' class='fas fa-moon'></i></button>
+		</div>
+	</div>
+</nav>
+
+    
+    <body style='margin-top:80px; width:100%;'>
+      <main class='pagecon'>
+        <article>
+          <h1 id='title' style="margin-top:110px"><span>Tea-rrific Reviews 🧋</span></h1>
+
+<p></p>
+
+<!--
+<div class='flex' style='justify-content:left;'>
+    <button class='btn2 marginleft' onclick="window.location.href='/categories/life'">Life</button>
+    <button class='btn2 marginleft' onclick="window.location.href='/categories/biology'">Biology</button>
+    <button class='btn2 marginleft' onclick="window.location.href='/categories/coding'">Code</button>
+</div>-->
+
+<hr />
+
+<div class="con-holder">
+    <img id="load" style="margin-left:34%;" src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" />
+    <div id="clone" class="container" style="display:none;">
+        <br />
+        <div class="flex">
+            <img class="pic" src="https://restaurants-static.skipthedishes.com/images/resized/item-7b5dd6b5603595063a2f.jpg" />
+            <div class="info">
+                <h2 class="name">Name</h2>
+                <p>Stars: <span class="stars">5/10</span></p>
+                <p>Location: <span class="location">Coco Tea</span></p>
+                <p class="text">A really good fruit tea to enjoy on a summer day. It's very sweet and also sour. This drink will sure throw lemons at your life.</p>
+            </div>
+        </div> <hr />
+    </div>
+</div>
+<div style="height:300px;"></div>
+
+<style>
+    #title {
+        width:100%;
+        text-align:center;
+    }
+    .btn2 {
+        background-color:white;
+        border-color:#855d3e;
+        color:#855d3e;
+    }
+    #title span{
+        background-color:#855d3e;
+        margin:auto;
+    }
+    #subtitle {
+
+    }
+    nav {
+        border-color:#855d3e;
+    }
+    hr {
+        background-color:#855d3e;
+        border-color:#855d3e;
+    }
+    .articlelink:hover{
+        color:#855d3e;
+    }
+
+    span {
+        background-color:#855d3e;
+        border-radius:5px;
+        padding:0px 10px;
+        color:white;
+        font-weight:bold;
+        margin:auto;
+    }
+
+    .container img {
+        width:200px;
+        height:200px;
+        object-fit:cover;
+        border-radius:10px;
+    }
+    .container h2 {
+        margin-top:0px;
+    }
+    .container .info{
+        width:70%;
+    }
+</style>
+
+<script>
+    let url = 'https://api.sheety.co/0da62c90c97120e1a5f12eec2c4d1e89/tearrificReviews/sheet1';
+    fetch(url)
+    .then((response) => response.json())
+    .then(json => {
+        (json.sheet1).forEach((tea)=>{
+            console.log(tea.name)
+
+            var teas = $('#clone').clone().appendTo('.con-holder');
+            teas.find('.name').text(tea.name);
+            teas.find('.stars').text(tea.stars+' / 10');
+            teas.find('.location').text(tea.location);
+            teas.find('.text').text(tea.review);
+            teas.find('.pic').attr('src', tea.image);
+            teas.show();
+
+        });
+        $('#load').remove()
+    });
+</script>
+
+
+        </article>
+        <footer>
+	
+</footer>
+
+      </main>
+    </body>
+
+</main>
+
+
