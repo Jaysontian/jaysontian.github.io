@@ -6,16 +6,16 @@ permalink: /blog/
 
 <div class='flex' style='margin-top:-40px;'>
 <div>
-    <h1 id='title' style="margin-top:110px"><span>Thoughts</span> and Tea</h1>
-    <p style='margin-bottom:45px;'>Organizing ideas, experiements, weird ideas, things I want to do...  just a braindump of things in my life.</p>
+    <h1 id='title' style="margin-top:110px"><span>Thoughts</span> + Tea</h1>
+    <p style='margin-bottom:45px;'>Opinions, experiments, weird ideas, things I want to do...  just a braindump of things.</p>
     <div class='flex' style='justify-content:left;'>
         <button class='btn2 marginleft' onclick="window.location.href='/categories/life'">Life</button>
         <button class='btn2 marginleft' onclick="window.location.href='/categories/biology'">Biology</button>
         <button class='btn2 marginleft' onclick="window.location.href='/categories/coding'">Code</button>
     </div>
     <div class='flex' style='justify-content:left; margin-top:25px;'>
-        <button class='btn2 marginleft' onclick="window.location.href='/specials/milk-tea/'">Milk Tea Reviews</button>
-        <button class='btn2 marginleft'>Documentries</button>
+        <button class='btn2 marginleft' onclick="window.location.href='/specials/milk-tea/'">Boba Reviews</button>
+        <!--<button class='btn2 marginleft'>Documentries</button>-->
     </div>
 </div>
 
@@ -27,7 +27,7 @@ permalink: /blog/
 
 <br>
 
-# All Articles
+## Inside My Brain
 <hr style='margin-bottom:30px'>
 {% for post in site.posts %}
 <div onclick="window.location.href='{{ post.url }}'" class='articlelink'>

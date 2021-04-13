@@ -4,6 +4,11 @@ title: About Me
 permalink: /aboutme/
 ---
 
+<div class='flex' style='margin-top:-40px;'></div>
+<div>
+	<h1 id='title' style="margin-top:110px"><span>About</span> Me</h1>
+</div>
+
 <div class='social-con'>
   <a href="https://soundcloud.com/picxight-productions"><i class="fab fa-soundcloud"></i></a>
   <a href="https://github.com/Jaysontian"><i class="fab fa-github"></i></a>

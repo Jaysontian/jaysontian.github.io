@@ -78,12 +78,16 @@
 			</dict>
 			<key>2020-06-11-Global Warming and Diseases.md</key>
 			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>629780846.07067299</real>
 				<key>lastModification</key>
-				<real>615141677.62692595</real>
+				<real>629780846.07067299</real>
 				<key>version</key>
 				<dict>
 					<key>548fba346eac6e7370d7c4e67823abfc81c9adb0886048a3b31cf339a1a92a91</key>
-					<integer>9</integer>
+					<integer>11</integer>
 				</dict>
 			</dict>
 			<key>2020-06-11-Road Trip Ontario.md</key>
@@ -96,12 +100,49 @@
 					<integer>10</integer>
 				</dict>
 			</dict>
+			<key>2020-11-12-things-I-realize.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>629780849.98045301</real>
+				<key>version</key>
+				<dict>
+					<key>548fba346eac6e7370d7c4e67823abfc81c9adb0886048a3b31cf339a1a92a91</key>
+					<integer>13</integer>
+				</dict>
+			</dict>
+			<key>2020-11-16-being-efficient.md</key>
+			<dict>
+				<key>lastModification</key>
+				<real>629780849.98045397</real>
+				<key>version</key>
+				<dict>
+					<key>548fba346eac6e7370d7c4e67823abfc81c9adb0886048a3b31cf339a1a92a91</key>
+					<integer>13</integer>
+				</dict>
+			</dict>
+			<key>Untitled.md</key>
+			<dict>
+				<key>explicitUnassignment</key>
+				<true/>
+				<key>firstUnassignment</key>
+				<real>629780858.03886604</real>
+				<key>lastModification</key>
+				<real>629780858.03886604</real>
+				<key>version</key>
+				<dict>
+					<key>548fba346eac6e7370d7c4e67823abfc81c9adb0886048a3b31cf339a1a92a91</key>
+					<integer>14</integer>
+				</dict>
+			</dict>
 		</dict>
 	</dict>
 	<key>sheetClusters</key>
 	<array>
 		<array>
 			<string>2019-11-09-learning-defintion.md</string>
+		</array>
+		<array>
+			<string>Untitled.md</string>
 		</array>
 		<array>
 			<string>2019-12-07-react-js-notes.md</string>
@@ -127,6 +168,12 @@
 		<array>
 			<string>2020-06-11-Road Trip Ontario.md</string>
 		</array>
+		<array>
+			<string>2020-11-12-things-I-realize.md</string>
+		</array>
+		<array>
+			<string>2020-11-16-being-efficient.md</string>
+		</array>
 	</array>
 	<key>storeFormatVersion</key>
 	<integer>1</integer>
@@ -135,7 +182,7 @@
 		<key>sheetClusters</key>
 		<dict>
 			<key>548fba346eac6e7370d7c4e67823abfc81c9adb0886048a3b31cf339a1a92a91</key>
-			<integer>10</integer>
+			<integer>14</integer>
 		</dict>
 	</dict>
 </dict>

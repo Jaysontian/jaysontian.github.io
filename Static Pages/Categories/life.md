@@ -2,7 +2,7 @@
 layout: category
 permalink: categories/life/
 title: Life
-description: I have no life, hence no articles.
+description: I have no life.
 ---
 
 # Articles

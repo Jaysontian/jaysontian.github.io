@@ -1,9 +1,8 @@
 ---
 published: true
 layout: post
-date: 2020-11-12T00:00:00.000Z
-tags: life
-categories: blog
+date: 2020-11-12
+categories: life
 ---
 There are so many important things in our lives that go unnoticed. Not necessarily from a philosophical point of view, but more of a mindset approach on getting things done. There's so many things we perceive and recognize but it never is processed in our brain. Might sound abstract, but it may make more sense when put in examples. I honestly thought about it, and I can lsit so many thigns that are underacknowledged.
 
