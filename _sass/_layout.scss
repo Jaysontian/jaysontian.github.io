@@ -28,6 +28,7 @@ a {
   text-decoration:none;
   color:var(--base-color);
   font-weight:bold;
+  cursor:pointer;
 }
 
 a:hover{
@@ -185,11 +186,7 @@ a:hover{
 // main article
 
 p, li {
-  line-height: 28px;
+  font-size:11pt;
+  line-height: 23px;
 }
 
-h2 {
-  font-family: Inter;
-  font-weight:700;
-  font-size:18pt;
-}

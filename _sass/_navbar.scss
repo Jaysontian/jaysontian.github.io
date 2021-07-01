@@ -1,37 +1,55 @@
 
 
+.nav-frame {
+  width:100%;
+  height:70px;
+  top:0px;
+  left:0px;
+  position:fixed;
+  z-index:50;
+}
 nav {
-    width: 100%;
-    top:0px;
-    left:0px;
-    position: fixed;
+    width: 85%;
+    max-width: 1000px;
+    height:100%;
     z-index: 1;
-    padding:5px 0px;
-    background-color:var(--theme-bg);
-    border-bottom:var(--base-color) 2px solid;
+    padding:20px 0px;
+    margin:auto;
+    color:rgb(36, 36, 36);
+    background-color:white;
   }
   
+  .seperator {
+    list-style: none;
+    margin-left: 0;
+    padding: 0px 0.3em;
+    font-size:13pt;
+    font-family:Barlow Condensed;
+  }
   
   #navholder {
-    width:775px;
-    margin:auto;
+    width:auto;
+    float:right;
     display:flex;
     justify-content: space-between;
+    background-color:white;
   }
   
   nav button{
-    font-family:Open sans;
+    font-family:Barlow Condensed;
     font-weight:400;
     border:none;
     font-size:13pt;
     background-color:rgba(0, 67, 138, 0);
-    padding:8px 15px;
-    margin:5px 0px;
+    padding:0px 5px;
+    margin:0px 0px;
+    line-height: 0px;
     cursor:pointer;
     border-radius:3px;
     user-select: none;
     outline:none;
-    color:rgb(56, 56, 56);
+    color:rgb(36, 36, 36);
+    padding-bottom:1px;
   }
   
   nav button:hover{
