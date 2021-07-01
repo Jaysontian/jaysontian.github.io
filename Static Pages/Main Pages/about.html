@@ -1,0 +1,138 @@
+---
+layout: index
+permalink: /about/
+---
+
+<div class='page'>
+    <div class='frame-holder'>
+        <div class='frame' id='aboutframe'>
+            <img src='/assets/about4.png' data-depth="0.1" style='margin-top:25px;'>
+            <img src='/assets/about2.png' data-depth="0.1">
+            <img src='/assets/about3.png' data-depth="0.6">
+            <img src='/assets/about1.png' data-depth="1.5">
+        </div>
+        <div class='credit'><p>All backgrounds, images, and assets on this site are illustrated and programmed by myself! Since it's all open source, feel free to use them! If you're interested in how I made them, read this!</p><i class='far fa-question-circle'></i></div>
+    </div>
+    <div class='frame-content'>
+        <div class='frame-content-body flex'>
+            <div id='planet-con'>
+                <div id='red-planet'>Education</div>
+                <div id='blue-planet'>STEAM</div>
+                <div id='white-planet'>Design</div>
+            </div>
+            <div style='width:60%; max-width:600px;margin-right:100px;color:white;'>
+                <br><br>
+                <h2>About Me</h2>
+                <p>I'm a year 11 IB student at UCC. While trying to survive, I'm dedicated to learning new things and attempting to make the best out of high school. I'm particularly intrigued by biology and how the biologyical concepts intercept with design and technology (specifically computer science).</p>
+                <p>During my downtime, I like to research, build, and create very questionable things that vary in subject matter – I draw a <a onclick='window.open("https://www.webtoons.com/en/challenge/beyond-my-soul/list?title_no=450905")'>webcomic</a>, blog, design experiments, <a onclick='window.open("https://soundcloud.com/jayson-tian")'>compose music</a>, and I particularly enjoy coding programs (or websites like this). In addition, I'm a bubble tea fanatic and regularly write <a onclick='window.open("{{ site.baseurl }}/specials/milk-tea")'>boba reviews</a> with my friend.</p>
+                <p>I also value education and believe free and high-quality education should be accessible for everyone. I spend some of my time tutoring, hosting events, and leading a <a onclick='window.open("https://vantagetutoring.org/")'>not-for-profit organization</a> supporting students in need.</p>
+                <button class='btn1' onclick='window.open("https://docs.google.com/document/d/11Uzq2D16F4xSFJKR-5pk35_Zydx0WhMQfGa_pZEFlhE/edit?usp=sharing")'><i class='fas fa-file'></i> Resume</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <script>
+    var scene = document.getElementById('aboutframe');
+    var parallaxInstance = new Parallax(scene);
+  </script>
+  
+<style>
+
+    #planet-con{
+        display:flex;
+        width:40%;
+        flex-direction: column;
+        align-items: center;
+        padding:75px 0px;
+    }
+    #planet-con div{
+        width:100px;
+        height:100px;
+        display:fixed;
+        font-family:Barlow condensed;
+        text-transform: uppercase;
+        font-weight:600;
+        align-items: center;
+        text-align: center;
+        padding:35px 0px;
+        cursor:pointer;
+        z-index:100;
+        margin:auto;
+        border-radius:100px;
+        border: 3px solid rgba(255, 255, 255, 0);
+        background-size: cover;
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat;
+    }
+    #planet-con div:hover{
+        border: 3px solid white;
+    }
+
+    #red-planet{
+        background-image:url(/assets/planetred.png);
+    }
+    #blue-planet{
+        background-image:url(/assets/planetblue.png);
+    }
+    #white-planet{
+        background-image:url(/assets/planetwhite.png);
+    }
+
+    
+    .planet{
+        height:100px;
+        width:100px;
+        display:flex;
+        justify-content: space-around;
+        border-radius:100px;
+        font-family:Barlow condensed;
+        text-transform: uppercase;
+        font-weight:600;
+        align-items: center;
+        cursor:pointer;
+        z-index:-50;
+    }
+
+    #planet-steam{
+        background-image:url(/assets/planetwhite.png);
+        background-size: cover;
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat;
+        position:relative;
+        left:90%;
+        top:-70px;
+        animation: planet-education-orbit 12s linear infinite;
+        animation-delay: 1s;
+        z-index:-49;
+    }
+    #planet-design{
+        background-image:url(/assets/planetred.png);
+        background-size: cover;
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat;
+        position:relative;
+        left:90%;
+        top:-70px;
+        animation: planet-education-orbit 12s linear infinite;
+        animation-delay: 3s;
+        z-index:-49;
+    }
+    #education-track{
+        position:relative;
+        left:65%;
+        top:-450px;
+        height:600px;
+        width:600px;
+        border: 2px solid rgba(255, 255, 255, 0.438);
+        border-radius:100%;
+        z-index:-50;
+    }
+
+    @keyframes planet-education-orbit {
+        from { transform: rotate(0deg) translateX(290px) rotate(0deg); }
+        to   { transform: rotate(360deg) translateX(290px) rotate(-360deg); }
+    }
+
+
+</style>

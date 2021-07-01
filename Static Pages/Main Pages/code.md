@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Code
-permalink: /code/
+permalink: /work/code/
 ---
 
 <div class='flex' style='margin-top:-40px;'></div>
