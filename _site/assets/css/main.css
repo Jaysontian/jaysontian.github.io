@@ -7,14 +7,14 @@
 
 h1, h2, h3, h4 {
   font-family: Barlow Condensed, sans-serif;
-  font-weight: 600; }
+  font-weight: 500; }
 
 h1 {
-  font-size: 22pt;
+  font-size: 25pt;
   text-transform: uppercase; }
 
 h2 {
-  font-size: 25pt;
+  font-size: 20pt;
   text-transform: uppercase; }
 
 button {
@@ -131,7 +131,7 @@ nav button:hover {
   --base-color-lighter: rgb(155, 187, 255);
   --base-color-lightest:rgb(227, 236, 255);
   --theme-bg: rgb(255, 255, 255);
-  --theme-fg: rgb(33, 35, 36);
+  --theme-fg: rgb(25, 28, 29);
   --light-secondary: rgb(201, 218, 250);
   --dark-secondary:rgb(62, 116, 233);
   --gradient-main:linear-gradient(144deg, rgba(0,67,138,1) 0%, rgba(5,106,205,1) 43%, rgba(67,171,255,1) 100%); }
@@ -372,8 +372,8 @@ p, li {
   justify-content: space-between; }
 
 .work-con button {
-  height: 160px;
-  width: 240px;
+  height: 150px;
+  width: 225px;
   padding: 0px;
   cursor: pointer;
   border: none;
@@ -394,7 +394,7 @@ p, li {
   font-size: 11pt;
   z-index: 2;
   position: relative;
-  top: -155px;
+  top: -145px;
   width: fit-content;
   padding: 2px 8px;
   height: auto;
@@ -406,7 +406,8 @@ p, li {
 
 .work-heading {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin: 20px 0px; }
 
 .work-heading a {
   height: 25px;

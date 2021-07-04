@@ -4,7 +4,7 @@
   --base-color-lighter: rgb(155, 187, 255);
   --base-color-lightest:rgb(227, 236, 255);
 	--theme-bg: rgb(255, 255, 255);
-  --theme-fg: rgb(33, 35, 36);
+  --theme-fg: rgb(25, 28, 29);
   --light-secondary: rgb(201, 218, 250);
   --dark-secondary:rgb(62, 116, 233);
 	--gradient-main:linear-gradient(144deg, rgba(0,67,138,1) 0%, rgba(5,106,205,1) 43%, rgba(67,171,255,1) 100%);
@@ -22,6 +22,7 @@ body{
   background-color: rgba(255, 255, 255, 0);
   color:var(--theme-fg);
 }
+
 
 a {
   border-bottom: 2px solid var(--base-color);
