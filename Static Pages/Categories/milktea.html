@@ -2,7 +2,7 @@
 layout: category
 title: Tea-rrific Reviews 🧋
 permalink: /bbt
-description: A collection of bubble tea my friends and I have tried. Take the stars with a grain of salt, flavors taste different for every person!
+description: A collection of bubble tea my friends and I have tried. Take the stars with a grain of salt, BBT tastes different for everyone!
 ---
 <!--
 <div class='flex' style='justify-content:left;'>
@@ -18,7 +18,7 @@ description: A collection of bubble tea my friends and I have tried. Take the st
     <div id='clone' class='container' style='display:none;'>
         <br>
         <div class='flex'>
-            <img class='pic' src='https://restaurants-static.skipthedishes.com/images/resized/item-7b5dd6b5603595063a2f.jpg' >
+            <img class='pic' >
             <div class='info'>
                 <h2 class='name'>Name</h2>
                 <p>Stars: <span class='stars'>5/10</span></p>
@@ -95,8 +95,13 @@ description: A collection of bubble tea my friends and I have tried. Take the st
             teas.find('.name').text(tea.name);
             teas.find('.stars').text(tea.stars+' / 10');
             teas.find('.location').text(tea.location);
-            teas.find('.text').text(tea.review);
-            teas.find('.pic').attr('src', tea.image);
+            teas.find('.text').html(tea.review + ' (Review by ' + tea.reviewer + ')');
+            if (tea.image == null | tea.image == undefined | tea.image == ''){
+                teas.find('.pic').attr('src', 'https://cel.ac/wp-content/uploads/2016/02/placeholder-img-1.jpg');
+            } else {
+                teas.find('.pic').attr('src', tea.image);
+            }
+
             teas.show();
 
         });
