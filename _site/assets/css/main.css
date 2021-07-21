@@ -593,6 +593,15 @@ p, li, article ul, article ol {
   font-size: 12pt;
   line-height: 24px; }
 
+article img, article p img {
+  max-width: 100%;
+  width: auto;
+  border-radius: 7px;
+  margin: 20px auto;
+  max-height: 400px;
+  align-self: center;
+  padding: auto; }
+
 .highlight {
   background: #fff; }
   .highlight .c {

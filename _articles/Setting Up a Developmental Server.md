@@ -22,4 +22,4 @@ You might be wondering what server models. Basically, it determines everything.
 
 
 
-[image-1]:	https://i.imgur.com/vEsGYci.png
+[image-1]:	https://media.blogto.com/listings/20181025-Yang17.jpg?w=2048&cmd=resize_then_crop&height=1365&quality=70
