@@ -49,9 +49,13 @@
     <button class='btn2 marginleft' onclick="window.location.href='/categories/biology'">Biology</button>
     <button class='btn2 marginleft' onclick="window.location.href='/categories/coding'">Code</button>
 </div>-->
-
+<div class='flex' id='filter' style='justify-content:left;'>
+    <button class='btn2' onclick='showtea("tea")'>All</button>
+    <button class='btn2' onclick='showtea("starred")'>Starred</button>
+    <button class='btn2' onclick='showtea("special")'>Special</button>
+</div>
+<br>
 <hr>
-
 <div class='con-holder'>
     <img id='load' style='margin-left:34%;' src='https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif'>
     <div id='clone' class='container' style='display:none;'>
@@ -92,6 +96,9 @@
     hr {
         background-color:var(--base-color);
         border-color:var(--base-color);
+        color:var(--base-color);
+        border-width:2px;
+        border-top:none;
     }
     .articlelink:hover{
         color:var(--base-color);
@@ -119,6 +126,37 @@
     .container .info{
         width:70%;
     }
+    .btn2 {
+        text-transform: uppercase;
+        min-width:75px;
+        padding:7px auto;
+        margin-right:20px;
+        text-align:center;
+    }
+    @media screen and (max-width: 600px) {
+        #title {
+            font-size:17pt;
+            margin-bottom:20px;
+        }
+        .btn2 {
+            max-width:120px;
+        }
+        #filter {
+            flex-direction:row;
+        }
+        p {
+            font-size:10pt;
+            line-height: 19.5px;
+        }
+        .container .info {
+            width:100%;
+        }
+        .container img {
+            width:150px;
+            height:150px;
+            margin-bottom:20px;
+        }
+    }
 </style>
 
 
@@ -142,10 +180,24 @@
             }
 
             teas.show();
-
+            if (tea.name == undefined | tea.name ==''){
+                teas.remove();
+            }
+            if (tea.tag == 'starred'){
+                teas.addClass('starred')
+            }
+            if (tea.tag == 'special'){
+                teas.addClass('special')
+            }
+            teas.addClass('tea')
         });
         $('#load').remove()
     });
+
+    function showtea(tea){
+        $('.tea').hide();
+        $('.'+tea).show();
+    }
 </script>
 
     </div>
