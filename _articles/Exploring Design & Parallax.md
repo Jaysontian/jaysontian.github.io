@@ -1,7 +1,7 @@
 ---
 title: Exploring Design & Parallax
 date:   2021-07-16
-category: biology
+category: coding
 ---
 
 This article talks about some elements of web design and shining a spotlight on Parallax scrolling, which is becoming quite popular as a way to involve user interaction with more visual design on sites.

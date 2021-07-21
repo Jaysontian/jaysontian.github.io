@@ -8,7 +8,7 @@ Language to articulate skills - proactive way to support students on academic jo
 
 Mental health, we usually have a more reactive solution (talk), but shift to a more proactive solution is probably better
 
-file:///var/folders/kk/6_gqqd711wb50l8hyhx3jjym0000gn/T/TemporaryItems/NSIRD_screencaptureui_EFu9FB/Screen%20Shot%202021-07-16%20at%2012.16.59%20PM.png_
+file:///var/folders/kk/6\_gqqd711wb50l8hyhx3jjym0000gn/T/TemporaryItems/NSIRD\_screencaptureui\_EFu9FB/Screen%20Shot%202021-07-16%20at%2012.16.59%20PM.png\_
 
 
 The hidden curriculum

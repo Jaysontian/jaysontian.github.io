@@ -28,6 +28,8 @@
     font-size:10pt;
 }
 
-article p{
+
+p, li, article ul, article ol {
     font-size:12pt;
-}
+    line-height: 24px;
+  }

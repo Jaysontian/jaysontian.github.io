@@ -279,7 +279,7 @@ a:hover {
   cursor: pointer;
   text-decoration: none; }
 
-p, li {
+p, li, article ul, article ol {
   font-size: 11pt;
   line-height: 23px; }
 
@@ -589,8 +589,9 @@ article {
   font-weight: normal;
   font-size: 10pt; }
 
-article p {
-  font-size: 12pt; }
+p, li, article ul, article ol {
+  font-size: 12pt;
+  line-height: 24px; }
 
 .highlight {
   background: #fff; }
