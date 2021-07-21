@@ -1,0 +1,17 @@
+---
+layout: category
+permalink: categories/general/
+title: General
+description: Arbitrary thoughts, brought to you by my brain.
+---
+
+<hr style='margin-bottom:20px'>
+{% for post in site.articles %}
+    {% if post.category == "general" %}
+    <div onclick="window.location.href='{{ post.url }}'" class='articlelink'>
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.date | date: "%b %d, %Y" }}</p>
+    </div>
+    {% endif %}
+{% endfor %}
+<br>

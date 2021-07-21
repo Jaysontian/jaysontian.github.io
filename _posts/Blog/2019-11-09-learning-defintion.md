@@ -1,14 +1,13 @@
 ---
 layout: post
-title: A quick though on learning
+title: A Quick Thought on Learning
 date:   2019-11-09
 tags: life
 published: true
 categories: blog
-
 ---
 
-# Achievement Oriented Learning
+## Achievement Oriented Learning
 
 Recently, I have been thinking a lot about personal growth and achievement. Though the adage of how the journey is more beautiful than the destination is true, it can't be denied that sometimes the outcome does matter.
 

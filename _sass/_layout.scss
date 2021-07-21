@@ -108,13 +108,14 @@ a:hover{
 
 
 .p-title{
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-weight:700;
-  font-size:30pt;
+  font-family:Barlow;
+  font-weight:600;
+  font-size:25pt;
   text-align: left;
   margin-bottom:20px;
   margin-top:150px;
   color:rgb(53, 52, 52);
+  text-transform:none;
 }
 
 .p-time {
@@ -191,3 +192,21 @@ p, li {
   line-height: 23px;
 }
 
+
+article h1, article h2, article h3 {
+  font-family: Barlow;
+  font-weight:400;
+  text-transform: none;
+  color:rgb(39, 39, 39);
+  margin-block-start: 1.5em;
+}
+
+article h2 {
+  font-size: 19pt;
+  font-weight:600;
+  margin-block-start: 1.5em;
+}
+
+article {
+margin-bottom:200px;
+}

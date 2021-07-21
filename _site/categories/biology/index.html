@@ -1,4 +1,7 @@
-<head>
+<!DOCTYPE html>
+<html>
+  <div class='screen'></div>
+  <head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,13 +12,9 @@
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"></link>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&display=swap" rel="stylesheet">
 </head>
-
-
-
-
-<main>
-    
+  
 
 <div class='nav-frame'>
 	<nav>
@@ -34,53 +33,61 @@
 </div>
 
 
+  
+  <script src="/assets/jquery.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="/assets/parallax.js"></script>
+  <main id='main'>
+      <div class='page'>
+    <div class='frame-holder' style='max-width:750px;'>
+        <h1 id='title' style="margin-top:20px"><span>Biology</span></h1>
+
+        <p>Recording some cool experiments and thoughts on the current bio-"culture". Maybe also taking some occasional cell-fies.</p>
+
+        <hr style='margin-bottom:20px'>
+
     
-    <body>
-      <main class='pagecon'>
-        <article>
-          <h1 id='title' style="margin-top:110px"><span>Biology</span></h1>
 
-<p>Recording some cool experiments and trends in bio "culture". Aha.</p>
+    
 
-<h1 id="articles">Articles</h1>
-<hr style="margin-bottom:30px" />
+    
+    <div onclick="window.location.href='/blog/exploring-design-parallax'" class='articlelink'>
+        <h2>Exploring Design & Parallax</h2>
+        <p>Jul 16, 2021</p>
+    </div>
+    
 
-<div onclick="window.location.href='/biology/ECG-Modelling/'" class="articlelink">
-    <h2>Basic ECG Modelling with Trigonometry</h2>
-    <p>Dec 07, 2020</p>
+<br>
+    </div>
 </div>
 
-<div onclick="window.location.href='/biology/life/'" class="articlelink">
-    <h2>The Biological Definition of Life</h2>
-    <p>Jun 29, 2020</p>
-</div>
+  </main>
+  
+</html>
 
-<div onclick="window.location.href='/biology/Global-Warming-and-Diseases/'" class="articlelink">
-    <h2>Diseases and Global Warming</h2>
-    <p>Aug 17, 2019</p>
-</div>
+<script>
+  window.onload = function(){$('.screen').fadeOut()};
+
+    $('.fa-question-circle').click(()=>{
+    $('.credit p').show();
+    $('.credit').addClass('active');
+    $('.fa-question-circle').hide();
+    $('<i class="far fa-times-circle"></i>').appendTo('.credit').click(()=>{
+      $('.credit p').hide();
+      $('.credit').removeClass('active');
+      $('.fa-question-circle').show(); 
+      $('.fa-times-circle').remove()
+    })
+  })
+</script>
 
 <style>
-    #title span{
-        background-color:#3f9627;
-    }
-    nav {
-        border-color:#3f9627;
-    }
-    hr {
-        background-color:#3f9627;
-        border-color:#3f9627;
-    }
-    .articlelink:hover{
-        color:#3f9627;
-    }
+  .screen{
+    position:fixed;
+    height:100%;
+    width:100%;
+    background-color: white;
+    top:0px;
+    left:0px;
+    z-index:100000;
+  }
 </style>
-
-
-        </article>
-      </main>
-    </body>
-
-</main>
-
-

@@ -210,13 +210,14 @@ a:hover {
   background-color: var(--dark-secondary); }
 
 .p-title {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-weight: 700;
-  font-size: 30pt;
+  font-family: Barlow;
+  font-weight: 600;
+  font-size: 25pt;
   text-align: left;
   margin-bottom: 20px;
   margin-top: 150px;
-  color: #353434; }
+  color: #353434;
+  text-transform: none; }
 
 .p-time {
   text-align: left;
@@ -281,6 +282,21 @@ a:hover {
 p, li {
   font-size: 11pt;
   line-height: 23px; }
+
+article h1, article h2, article h3 {
+  font-family: Barlow;
+  font-weight: 400;
+  text-transform: none;
+  color: #272727;
+  margin-block-start: 1.5em; }
+
+article h2 {
+  font-size: 19pt;
+  font-weight: 600;
+  margin-block-start: 1.5em; }
+
+article {
+  margin-bottom: 200px; }
 
 .page {
   width: 100%;
@@ -572,6 +588,9 @@ p, li {
   margin: 3px 0px;
   font-weight: normal;
   font-size: 10pt; }
+
+article p {
+  font-size: 12pt; }
 
 .highlight {
   background: #fff; }

@@ -1,10 +1,14 @@
 ---
 layout: page
+permalink: /404.html
 ---
+
+{% include head.html %}
 
 <style type="text/css" media="screen">
   .container {
     text-align: center;
+    margin-top:170px;
   }
   h1 {
     margin: 30px 0;
@@ -12,11 +16,14 @@ layout: page
     line-height: 1;
     letter-spacing: -1px;
   }
+  .btn1{
+    margin:auto;
+  }
 </style>
 
 <div class="container">
   <h1>Oh No.</h1>
-  <p>You either got the wrong link or I might've messed up big time.</p>
-  <p><strong>This page doesn't exist (404).</strong></p>
-  <button onclick="location.replace('{{site.baseurl}}/index.html')"><i class='fas fa-home'> </i> To my humble abode</button>
+  <p>The link is incorrect or I might've messed up big time. Sorry!</p>
+  <p><strong>This page doesn't exist (404).</strong></p><br>
+  <button class='btn1' onclick="location.replace('{{site.baseurl}}/index.html')"><i class='fas fa-home'> </i> Back Home</button>
 </div>
