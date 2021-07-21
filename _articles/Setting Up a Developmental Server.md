@@ -17,12 +17,8 @@ And finally, there are [links!]() and annotations!
 
 ## Server Mode
 You might be wondering what server models. Basically, it determines everything.
+![https://i.imgur.com/hExmMQe.gif][2]
+!￼￼￼[https://i.imgur.com/lZad0Xd.png][3]
 
-![Parallax Effect][2]
-
-[https://i.imgur.com/hExmMQe.gif][3]
-￼￼￼[https://i.imgur.com/lZad0Xd.png][4]
-
-[2]:	https://i.imgur.com/hExmMQe.gif "Parallax Effect"
-[3]:	https://i.imgur.com/lZad0Xd.png "Image"
-[4]:	https://i.imgur.com/lZad0Xd.png
+[2]:	https://i.imgur.com/lZad0Xd.png "Image"
+[3]:	https://i.imgur.com/lZad0Xd.png
