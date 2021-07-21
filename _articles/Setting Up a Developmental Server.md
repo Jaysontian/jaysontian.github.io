@@ -18,6 +18,8 @@ And finally, there are [links!]() and annotations!
 ## Server Mode
 You might be wondering what server models. Basically, it determines everything.
 
-![https://i.imgur.com/hExmMQe.mp4][2]
+![][image-1]
 
-[2]:	https://i.imgur.com/05T2mYW.mp4 "Parralax example"
+
+
+[image-1]:	https://i.imgur.com/vEsGYci.png
