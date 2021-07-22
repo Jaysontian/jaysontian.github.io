@@ -1,8 +1,7 @@
 ---
-layout: post
-title: "Diseases and Global Warming"
+title: Global Warming & Pathogens
 date:   2019-8-17
-categories: biology
+category: biology
 ---
 
 I recently read an article writing about how new diseases are popping up from random places never seen before. Apparently, they have a significantly higher viral resistance than other common bacteria, and 75% of treatment and vaccines are ineffective against them.
@@ -15,7 +14,7 @@ Anyways, for now in the 21st century most of us are safe from any deadly virus r
 
 Scientists have started to discover certain forms of archaic viruses from places of the most unimaginable. These include underground caves miles deep with no sunlight 24/7 (anaerobic bacteria), mummies from pyramids, and one fairly recent location of discovery: the arctic.
 
-
+![][image-1]
 
 Of course we see the cliché ice cap melting and polar bear cub dying commercial and also hear about our sea levels rising but nobody has really considered another big effect of global warming: What would happen when we are suddenly exposed to the outbreak of nocuous diseases and prehistoric viruses that most modern vaccines have no effect on? Well, we basically have a post-apocalyptic world. Damn, what if the viruses were zombie diseases and we basically have a real life Walking Dead?
 
@@ -27,3 +26,5 @@ Long story short, don't contribute to global warming 🔥
 What I read on permafrost melting: [article here]
 
 [1]:	http://www.bbc.com/earth/story/20170504-there-are-diseases-hidden-in-ice-and-they-are-waking-up
+
+[image-1]:	https://cdn.mos.cms.futurecdn.net/pbVGgJ7s7BSJysoaBfVcxa.jpg

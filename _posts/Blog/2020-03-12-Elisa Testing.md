@@ -1,15 +1,10 @@
 ---
-layout: post
-title: "What is the ELISA Test?"
+title: The ELISA Test
 date:   2019-11-06
-tags: biology
-categories: blog
+category: biology
 ---
 
-* Table of Contents Placeholder
-{:toc}
-
-An enzyme-linked immunosorbent assay (ELISA) is a test that uses enzymes and colour changes to identify a substance.
+The enzyme-linked immunosorbent assay (ELISA) is a test that uses enzymes and colour changes to identify a substance.
 
 It can be used to identify specific surface markers or metabolites associated with particular diseases. Different variations of the ELISA test exist, but one of the most common protocols involves the sandwich method:
 

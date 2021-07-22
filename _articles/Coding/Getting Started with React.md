@@ -1,13 +1,11 @@
 ---
 title: Getting Started with React
 date:   2019-12-7
-categories: coding
+category: coding
 ---
-# Introduction
-
 ## What is React?
 
-ReactJS is a JavaScript library framework that helps build user interfaces. It is open-source and created by Facebook. What makes it special is its use of the virtual JavaScript DOM and Web Components to make rendering code faster and easier.
+ReactJS is an open-source JavaScript framework built by Facebook that helps build more flexible user interfaces. What makes it special is its use of the virtual JavaScript DOM and Web Components to make rendering code faster and easier.
 
 ## Why is it Useful?
 
@@ -23,7 +21,7 @@ Web Components allow for developers to create custom 'elements' for a webpage th
 
 Here, it can be seen that the component `<MyCustomNavBar />` will be called from a function which will return all the HTML or JavaScript code to render that specific component. This makes web components that are reusable. Also, it is very fast as it uses the [virtualDOM][1].
 
-# Creating A New React App
+# Creating a New React App
 
 > Be sure you have [npm installed][2] beforehand.
 
@@ -42,13 +40,13 @@ Open up the src folder in a code editor and create a file named `index.js`.
 
 In every react file, there will be an import statement. This refers to the dependencies installed so that we can actually __use__ react. And don't forget the ReactDOM dependecy too.
 
-```jsx
+```ts
 import React from "react"
 import ReactDOM from "react-dom"
 ```
 Now, we will use ReactDOM's render method to render something to the screen.
 
-```jsx
+```ts
 ReactDOM.render(
   /* the component or HTML element that we want to render*/
   , document.getElementById('root') // styles it to the root element <body> in this case
