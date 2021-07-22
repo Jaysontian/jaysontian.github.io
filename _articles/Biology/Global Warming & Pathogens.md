@@ -18,13 +18,14 @@ Scientists have started to discover certain forms of archaic viruses from places
 
 Of course we see the cliché ice cap melting and polar bear cub dying commercial and also hear about our sea levels rising but nobody has really considered another big effect of global warming: What would happen when we are suddenly exposed to the outbreak of nocuous diseases and prehistoric viruses that most modern vaccines have no effect on? Well, we basically have a post-apocalyptic world. Damn, what if the viruses were zombie diseases and we basically have a real life Walking Dead?
 
-It's actually the thought of how nobody is concerned about all this that is actually scary. Most people believe that they won't be affected as long as they are far away. Well, think about the Walking Dead again 🧟‍♂️. In 2007, [a group of scientists revived a 8 million year old bacterium frozen in dormant ice at Beacon Valley in Antarctica][1]. Honestly, the entire point is to show that the melting of ice will ultimately release terrible difficult-to-treat viruses into our international population and infect most people. Some of us will be able to become resistant and fight it off while some of us may die.
+It's actually the thought of how nobody is concerned about all this that is actually scary. Most people believe that they won't be affected as long as they are far away. Well, think about the Walking Dead again 🧟‍♂️. In 2007, [a group of scientists revived a 8 million year old bacterium frozen in dormant ice at Beacon Valley in Antarctica][1]. To sum up, the entire point is to show that the melting of ice will ultimately release terrible difficult-to-treat viruses into our international population and infect most people. Some of us will be able to become resistant and fight it off while some of us may die.
 
-Long story short, don't contribute to global warming 🔥
+Long story short, let’s avoid another pandemic by helping mitigate global warming.
 
-
-What I read on permafrost melting: [article here]
+## Links
+[Permafrost Melting Article][2]
 
 [1]:	http://www.bbc.com/earth/story/20170504-there-are-diseases-hidden-in-ice-and-they-are-waking-up
+[2]:	https://e360.yale.edu/features/how-melting-permafrost-is-beginning-to-transform-the-arctic
 
 [image-1]:	https://cdn.mos.cms.futurecdn.net/pbVGgJ7s7BSJysoaBfVcxa.jpg
