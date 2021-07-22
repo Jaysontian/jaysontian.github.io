@@ -1,15 +1,8 @@
 ---
-layout: post
-title: "React JS Beginner Notes"
+title: Getting Started with React
 date:   2019-12-7
-tags: dev
-published: true
-categories: blog
-
+categories: coding
 ---
-* Table of Contents Placeholder
-{:toc}
-
 # Introduction
 
 ## What is React?
@@ -417,9 +410,6 @@ class App extends Component {
 ```
 
 This will return the character name when finished loading, but if there is slow internet, it will show the text loading while it loads.
-
-
-# Forms
 
 [1]:	https://reactjs.org/docs/faq-internals.html
 [2]:	https://www.npmjs.com/get-npm
