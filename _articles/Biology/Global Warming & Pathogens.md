@@ -20,7 +20,7 @@ Of course we see the cliché ice cap melting and polar bear cub dying commercial
 
 It's actually the thought of how nobody is concerned about all this that is actually scary. Most people believe that they won't be affected as long as they are far away. Well, think about the Walking Dead again 🧟‍♂️. In 2007, [a group of scientists revived a 8 million year old bacterium frozen in dormant ice at Beacon Valley in Antarctica][1]. To sum up, the entire point is to show that the melting of ice will ultimately release terrible difficult-to-treat viruses into our international population and infect most people. Some of us will be able to become resistant and fight it off while some of us may die.
 
-Long story short, let’s avoid another pandemic by helping mitigate global warming.
+Long story short, let’s avoid a future pandemic by stopping global warming.
 
 ## Links
 [Permafrost Melting Article][2]

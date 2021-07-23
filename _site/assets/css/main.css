@@ -602,6 +602,12 @@ article img, article p img {
   align-self: center;
   padding: auto; }
 
+article .highlight, pre {
+  background-color: #dddddd;
+  padding: 5px 15px;
+  border-radius: 6px;
+  white-space: pre-wrap; }
+
 .highlight {
   background: #fff; }
   .highlight .c {
