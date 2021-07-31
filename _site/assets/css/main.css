@@ -210,26 +210,27 @@ a:hover {
   background-color: var(--dark-secondary); }
 
 .p-title {
-  font-family: Barlow;
-  font-weight: 600;
-  font-size: 25pt;
+  font-family: Messina Sans;
+  font-weight: 900;
+  font-size: 30pt;
   text-align: left;
-  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+  margin-bottom: 15px;
   margin-top: 150px;
-  color: #353434;
+  color: #3d414e;
   text-transform: none; }
 
 .p-time {
   text-align: left;
-  font-size: 13pt;
-  font-family: open sans;
+  font-size: 15pt;
+  font-family: Messina Sans;
   margin-top: 0px;
-  margin-bottom: 25px;
-  color: #9b9b9b; }
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #959aa1; }
 
 .p-time a {
-  color: #9b9b9b;
-  font-weight: normal;
+  font-weight: bold;
   border: none; }
 
 .p-groups {
@@ -280,23 +281,67 @@ a:hover {
   text-decoration: none; }
 
 p, li, article ul, article ol {
-  font-size: 11pt;
-  line-height: 23px; }
+  font-family: Messina Sans;
+  font-size: 13.5pt;
+  line-height: 28px;
+  font-weight: 400;
+  color: #4e4f55;
+  letter-spacing: -0.35px;
+  -webkit-font-smoothing: antialiased; }
 
 article h1, article h2, article h3 {
-  font-family: Barlow;
-  font-weight: 400;
+  font-family: Messina Sans;
+  font-weight: 900;
   text-transform: none;
-  color: #272727;
-  margin-block-start: 1.5em; }
+  color: #2d3033;
+  margin-block-start: 2em; }
+
+article h1 {
+  font-size: 20pt;
+  font-weight: Bold;
+  letter-spacing: -0.6px;
+  margin-block-start: 2.5em;
+  margin-block-end: 1em; }
 
 article h2 {
-  font-size: 19pt;
-  font-weight: 600;
-  margin-block-start: 1.5em; }
+  font-size: 20pt;
+  font-weight: Bold;
+  letter-spacing: -0.6px;
+  margin-block-start: 2.5em;
+  margin-block-end: 1em; }
 
 article {
   margin-bottom: 200px; }
+
+article img {
+  max-width: 100%;
+  width: auto;
+  border-radius: 7px;
+  margin: 20px auto;
+  max-height: 400px;
+  align-self: center;
+  padding: auto; }
+
+p > img {
+  display: block;
+  margin: 40px auto;
+  height: auto;
+  max-height: 60vh;
+  width: auto;
+  max-width: 100%; }
+
+article .highlight, pre {
+  background-color: #f1efef;
+  padding: 5px 15px;
+  border-radius: 6px;
+  white-space: pre-wrap; }
+
+article blockquote {
+  border-left: 5px var(--base-color) solid;
+  padding: 5px 20px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  background-color: var(--base-color-lightest); }
 
 .page {
   width: 100%;
@@ -347,6 +392,12 @@ article {
   max-width: 1000px;
   height: 75vh;
   margin: auto; }
+
+::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */ }
 
 .credit {
   position: relative;
@@ -448,6 +499,16 @@ article {
   justify-content: space-between;
   flex-direction: column; }
 
+#intro-holder-text p {
+  font-size: 12.5pt;
+  line-height: 24px;
+  letter-spacing: -0.4px; }
+
+.frame-content-body p {
+  font-size: 12pt;
+  line-height: 23px;
+  color: white; }
+
 #what {
   margin: 0px;
   padding: 0px;
@@ -503,14 +564,17 @@ article {
   z-index: 100; }
 
 #subtitle {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-weight: 500;
+  font-family: Messina Sans;
+  font-weight: 600;
   color: #2e2e2e;
   font-size: 16pt;
-  margin-bottom: -10px; }
+  letter-spacing: -0.5px;
+  margin-bottom: -15px;
+  margin-block-start: 0px; }
 
 #subtitle span {
   color: var(--base-color);
+  letter-spacing: -0.5px;
   /*border-bottom: 3px solid var(--base-color-lighter);*/ }
 
 #photo {
@@ -580,33 +644,18 @@ article {
   color: var(--base-color); }
 
 .articlelink h2 {
+  font-family: Messina Sans;
+  text-transform: none;
   margin: 5px 0px;
   font-weight: 400;
-  font-size: 15pt; }
+  font-size: 13pt;
+  letter-spacing: -0.4px; }
 
 .articlelink p {
   margin: 3px 0px;
-  font-weight: normal;
-  font-size: 10pt; }
-
-p, li, article ul, article ol {
-  font-size: 12pt;
-  line-height: 24px; }
-
-article img, article p img {
-  max-width: 100%;
-  width: auto;
-  border-radius: 7px;
-  margin: 20px auto;
-  max-height: 400px;
-  align-self: center;
-  padding: auto; }
-
-article .highlight, pre {
-  background-color: #dddddd;
-  padding: 5px 15px;
-  border-radius: 6px;
-  white-space: pre-wrap; }
+  font-weight: 600;
+  font-size: 10pt;
+  color: #47494d; }
 
 .highlight {
   background: #fff; }

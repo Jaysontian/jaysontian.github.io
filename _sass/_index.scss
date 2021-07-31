@@ -56,6 +56,13 @@
     margin:auto;
 }
 
+
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
 .credit {
     position:relative;
     top:-63px;
@@ -167,6 +174,17 @@
     justify-content: space-between;
     flex-direction: column;
 }
+#intro-holder-text p {
+    font-size:12.5pt;
+    line-height:24px;
+    letter-spacing: -0.4px;
+}
+
+.frame-content-body p{
+    font-size:12pt;
+    line-height:23px;
+    color:white;
+}
 
 #what {
     margin:0px;
@@ -221,15 +239,18 @@
 }
 
 #subtitle {
-    font-family:'IBM Plex Sans', sans-serif;
-    font-weight: 500;
+    font-family:Messina Sans;
+    font-weight: 600;
     color:rgb(46, 46, 46);
     font-size:16pt;
-    margin-bottom:-10px;
+    letter-spacing: -0.5px;
+    margin-bottom:-15px;
+    margin-block-start: 0px;
 }
 
 #subtitle span{
     color:var(--base-color);
+    letter-spacing: -0.5px;
     /*border-bottom: 3px solid var(--base-color-lighter);*/
 }
 

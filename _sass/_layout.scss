@@ -108,28 +108,29 @@ a:hover{
 
 
 .p-title{
-  font-family:Barlow;
-  font-weight:600;
-  font-size:25pt;
+  font-family:Messina Sans;
+  font-weight:900;
+  font-size:30pt;
   text-align: left;
-  margin-bottom:20px;
+  letter-spacing: -0.5px;
+  margin-bottom:15px;
   margin-top:150px;
-  color:rgb(53, 52, 52);
+  color:rgb(61, 65, 78);
   text-transform:none;
 }
 
 .p-time {
   text-align: left;
-  font-size:13pt;
-  font-family:open sans;
+  font-size:15pt;
+  font-family:Messina Sans;
   margin-top:0px;
-  margin-bottom:25px;
-  color:rgb(155, 155, 155);
+  margin-bottom:15px;
+  font-weight:600;
+  color:rgb(149, 154, 161);
 }
 
 .p-time a{
-  color:rgb(155, 155, 155);
-  font-weight:normal;
+  font-weight:bold;
   border:none;
 }
 
@@ -188,25 +189,76 @@ a:hover{
 // main article
 
 p, li, article ul, article ol {
-  font-size:11pt;
-  line-height: 23px;
+  font-family:Messina Sans;
+  font-size:13.5pt;
+  line-height: 28px;
+  font-weight:400;
+  color:rgb(78, 79, 85);
+  letter-spacing: -0.35px;
+  -webkit-font-smoothing:antialiased;
 }
+
 
 
 article h1, article h2, article h3 {
-  font-family: Barlow;
-  font-weight:400;
+  font-family: Messina Sans;
+  font-weight:900;
   text-transform: none;
-  color:rgb(39, 39, 39);
-  margin-block-start: 1.5em;
+  color:rgb(45, 48, 51);
+  margin-block-start: 2em;
 }
 
+article h1{
+  font-size: 20pt;
+  font-weight:Bold;
+  letter-spacing: -0.6px;;
+  margin-block-start: 2.5em;
+  margin-block-end: 1em;
+}
+
+
 article h2 {
-  font-size: 19pt;
-  font-weight:600;
-  margin-block-start: 1.5em;
+  font-size: 20pt;
+  font-weight:Bold;
+  letter-spacing: -0.6px;;
+  margin-block-start: 2.5em;
+  margin-block-end: 1em;
 }
 
 article {
-margin-bottom:200px;
+  margin-bottom:200px;
+}
+
+article img {
+  max-width:100%;
+  width:auto;
+  border-radius:7px;
+  margin:20px auto;
+  max-height:400px;
+  align-self: center;
+  padding: auto;
+}
+
+p > img {
+  display: block;
+  margin: 40px auto;
+  height:auto;
+  max-height: 60vh;
+  width: auto;
+  max-width:100%;
+}
+
+article .highlight, pre{
+  background-color:rgb(241, 239, 239);
+  padding:5px 15px;
+  border-radius: 6px;
+  white-space: pre-wrap;
+}
+
+article blockquote{
+  border-left: 5px var(--base-color) solid;
+  padding:5px 20px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  background-color: var(--base-color-lightest);
 }

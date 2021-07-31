@@ -1,3 +1,5 @@
+
+
 .articlelink{
     background-color:rgba(255, 255, 255, 0);
     font-weight: bold;
@@ -17,36 +19,19 @@
 }
 
 .articlelink h2{
+    font-family:Messina Sans;
+    text-transform: none;
     margin:5px 0px;
     font-weight:400;
-    font-size:15pt;
+    font-size:13pt;
+    letter-spacing: -0.4px;
 }
 
 .articlelink p{
     margin:3px 0px;
-    font-weight:normal;
+    font-weight:600;
     font-size:10pt;
+    color:rgb(71, 73, 77);
 }
 
 
-p, li, article ul, article ol {
-    font-size:12pt;
-    line-height: 24px;
-  }
-
-article img, article p img {
-    max-width:100%;
-    width:auto;
-    border-radius:7px;
-    margin:20px auto;
-    max-height:400px;
-    align-self: center;
-    padding: auto;
-}
-
-article .highlight, pre{
-    background-color:rgb(221, 221, 221);
-    padding:5px 15px;
-    border-radius: 6px;
-    white-space: pre-wrap;
-}

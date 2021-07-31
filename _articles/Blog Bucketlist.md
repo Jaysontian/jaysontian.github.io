@@ -4,7 +4,7 @@ date: 2021-07-02
 published: true
 --- 
 
-This page is a dump of ideas for possible blog articles:
+Future blog article ideas
 
 - Converting Google Sheets to JSON
 - Godot Horror Game Tutorial
