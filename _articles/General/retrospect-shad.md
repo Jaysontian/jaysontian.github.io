@@ -2,7 +2,7 @@
 title: Retrospection – SHAD 2021
 date: 2021-07-31
 category: life
-published: false
+published: true
 ---
 
 Hung on the set of doors which lead to the locker rooms at school, the SHAD promotional poster first caught my eye in year 9. At the time, I had no idea what I was interested in. But after a few classes in coding and a couple of sessions at the design lab, my heart was set: I knew I wanted to learn more about STEAM in some way. I was intrigued to explore the intersections of tech and science. 
@@ -19,9 +19,15 @@ However, the pandemic came, and with it came emails of program cancellations and
 
 I was not expecting to attend SHAD. I was either going to do an internship (if I was hired) or get a job somewhere . I felt that, considering it’s the summer before grade 12, I needed to step it up and learn to work in the “real” world.
 
-Honestly I don’t know if it’s just laziness or just burnout from the past school year, but in the end, I decided to still do it. I believed if I don’t like it, I can just dip half-way through. Boy, was it totally different than how I imagined it to be – in both good and bad ways. But overall, it was a **phenomenal** “learning” experience. 
+Honestly I don’t know if it’s just laziness or just burnout from the past school year, but in the end, I decided to still do it. My mindset going in: if I hate it, I can just dip half-way through. But now, after experiencing it, I can say it was totally different than what I expected – in both good and bad ways. Overall, though, it was a **phenomenal** “learning” experience. 
 
 ## Takeaway 1: Hello - Business - World
+
+Going in, I completely believed SHAD focused on engineering, sciences, and math. I was very wrong. Every year, program directors choose a global theme that needs to be addressed. For the rest of the month, the students must design a solution to address that issue. 
+
+Believing this was “science” focused was the first mistake I made (as well as everyone in my design group). Reflecting on the entire experience, the program really did focus heavily on “design”, which took away copious time for people to individually connect and form friendships. However, aside from that flaw (as well as the cliché water theme we received), the project itself is not too bad in theory.
+
+Seeing the design world through “science”, especially as someone who focuses on CS, Bio, and Behavioural Sciences is problematic. Only until the last day of the program, our entire group realized how essential the entrepreneurial side was to the overall success of the design.
 
 ## Takeaway 2: Design Thinking
 
