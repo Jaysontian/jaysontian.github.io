@@ -1,0 +1,64 @@
+.bbt-description{
+    display:flex;
+    p {
+        width:80%;
+    }
+    img{
+        width:200px;
+        height:200px;
+        margin-top:25px;
+        margin-right:50px;
+    }
+}
+
+
+.starred-con {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .drink{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        width:48%;
+        min-width:300px;
+        margin-right:10px;
+        border:rgb(225, 231, 236) solid 2px;
+        border-radius:5px;
+        margin-bottom:14px;
+
+        .info {
+            width:60%;
+            margin-left:30px;
+            margin-right:20px;
+        }
+        .img {
+            align-self: center;
+            width:150px;
+            height:150px;
+            object-fit: cover;
+            border-radius:3px;
+        }
+
+        h2 {
+            font-size:13pt;
+            font-weight:bold;
+            line-height:22px;
+            margin:0px;
+            margin-bottom:5px;
+        }
+        p {
+            margin:0px;
+            margin-top:0px;
+            font-size:12pt;
+        }
+        .stars {
+            background-color:$base-color;
+            color:white;
+            padding: 3px 7px;
+            border-radius:3px;
+            font-weight:bold;
+        }
+    }
+}

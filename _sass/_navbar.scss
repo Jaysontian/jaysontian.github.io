@@ -1,65 +1,48 @@
-
-
-.nav-frame {
-  width:100%;
-  height:70px;
-  top:0px;
-  left:0px;
-  position:fixed;
-  z-index:50;
+.navbar-con {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    z-index:1000;
 }
-nav {
-    width: 85%;
-    max-width: 1000px;
-    height:100%;
-    z-index: 1;
-    padding:20px 0px;
+
+.navbar {
+    background-color:rgb(255, 255, 255);
+    max-width: $content-width;
+    width:100%;
+    padding: 20px $padding;
     margin:auto;
-    color:rgb(36, 36, 36);
-    background-color:white;
-  }
-  
-  .seperator {
-    list-style: none;
-    margin-left: 0;
-    padding: 0px 0.3em;
-    font-size:13pt;
-    font-family:Barlow Condensed;
-  }
-  
-  #navholder {
-    width:auto;
-    float:right;
     display:flex;
     justify-content: space-between;
-    background-color:white;
-  }
-  
-  nav button{
-    font-family:Barlow Condensed;
-    font-weight:400;
-    border:none;
+}
+
+.tab-container{
+    width:250px;
+    background-color:rgb(255, 255, 255);
+    display:flex;
+    justify-content: space-around;
+}
+
+.tab-container a{
+    color:$dark-grey;
+    text-decoration: none;
+    font-weight:600;
     font-size:13pt;
-    background-color:rgba(0, 67, 138, 0);
-    padding:0px 5px;
-    margin:0px 0px;
-    line-height: 0px;
-    cursor:pointer;
+    letter-spacing: -0.5px;
+    padding: 0px 6px;
     border-radius:3px;
-    user-select: none;
-    outline:none;
-    color:rgb(36, 36, 36);
-    padding-bottom:1px;
-  }
-  
-  nav button:hover{
-    background-color:rgba(182, 181, 181, 0.192)
-  }
-  
-  #nav-title {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight:500;
-    font-size:17pt;
-    margin:0px;
-    margin-left:-15px;
+    background-color:rgb(255, 255, 255);
+    cursor:pointer;
+    border-bottom:none;
+}
+
+.tab-container a:hover{
+    background-color:rgb(241, 241, 241);
+}
+
+.seperator {
+    list-style: none;
+    margin-left: 0px;
+    padding: 0px 0.05em;
+    color:rgb(185, 190, 199);
   }

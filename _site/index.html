@@ -1,109 +1,124 @@
 <!DOCTYPE html>
 <html>
-  <div class='screen'></div>
   <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Jayson Tian | home</title>
-  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon"/>
-
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="stylesheet" href="/assets/font/stylesheet.css">
-  <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"></link>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <title>Jayson Tian | Home</title>
+  
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/font/stylesheet.css">
+    <link rel="canonical"
+      href="http://jaysontian.com/"
+    />
 </head>
-  
 
-<div class='nav-frame'>
-	<nav>
-		<div id='navholder'>
-			<!--<button onclick="window.location.href='/aboutme'">About</button>-->
-			<button onclick="window.location.href='/'">HOME</button>
-			<li class='seperator'>/</li>
-			<button onclick="window.location.href='/about'">ABOUT</button>
-			<li class='seperator'>/</li>
-			<button onclick="window.location.href='/work'">WORK</button>
-			<li class='seperator'>/</li>
-			<button onclick="window.location.href='/blog'">BLOG</button>
-			<!--<button onclick='toggleDark()'><i id='theme-icon' class='fas fa-moon'></i></button>-->
-		</div>
-	</nav>
+  <body>
+    
+
+<div class='navbar-con'>
+    <nav class='navbar'>
+        <br>
+        <div class='tab-container'>   
+            <a href='/' target='_top'>Home</a>
+            <li class='seperator'>/</li>
+            <a href='/about' target='_top'>About</a>
+            <li class='seperator'>/</li>
+            <a href='/work' target='_top'>Work</a>
+            <li class='seperator'>/</li>
+            <a href='/blog' target='_top'>Blog</a>
+        </div>
+    </nav>
+</div>
+    <main>
+      <article><div class='padding'>
+    <div class='home'>
+    <div id='home-bg-pad'>
+        <div id='frame'>
+            <section id='home-bg'>
+                <img src='assets/bg/bg2.webp' data-speed="-2" class='layer' style='height:110%;'>
+                <img src='assets/bg/bg3.webp' data-speed="12" class='layer'>
+                <img src='assets/bg/bg1.webp' data-speed="-6" class='layer' style='margin-top:-160px;'>
+            </section>
+        </div>
+    </div>
+    
+    <section class='scrollpage'>
+        <div id='intro-con'>
+            <div id='info'>
+                <h1>Hey, I'm <span>Jayson Tian</span></h1>
+                <p>I spend most of my time thinking about the death and regeneration of my neurons.  Aside from that, I'm either playing volleyball, drawing digitally, coding, or  helping out in educational initiatives.</p>
+                <h2>Life's short, <span>waste it wisely.</span></h2>
+                <div style='display:flex'>
+                    <a class='btn1'  href='https://github.com/Jaysontian' target='_blank' style='margin-right:25px;'><img src='assets/icons/typicon/social-github.svg' class='icon'>Github</a>
+                    <a class='btn1' href='mailto:jaysontian444@gmail.com' target='_blank'><img src="assets/icons/capicon/white/019.png" class='capicon'></i>Email</a>
+                  </div>
+            </div>
+            <img id='pfp' src='assets/site-images/prof.webp'>
+        </div>
+    </section>
+    <section class='scrollpage'>
+
+    </section>
 </div>
 
+<script type='text/javascript'>
+    document.addEventListener("mousemove", parallax);
+    document.addEventListener("mouseleave", restore);
+    function parallax(e){
+        this.querySelectorAll('.layer').forEach(layer =>{
+            var speed = layer.getAttribute('data-speed');
+            var x = (window.innerWidth - e.pageX*speed)/100
+            var y = (window.innerHeight - e.pageY*speed)/100
+            console.log(x, y)
 
-  
-  <script src="/assets/jquery.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="/assets/parallax.js"></script>
-  <main id='main'>
-      <div class='page'>
-  <div class='frame-holder'>
-    <div class='frame' id='scene'>
-      <img src='assets/bg/bg2.webp' data-depth="0.2" style='margin-top:20px;'>
-      <img src='assets/bg/bg3.webp' data-depth="0.9">
-      <img src='assets/bg/bg1.webp' data-depth="0.6">
-      <img src='assets/prof.webp' style='margin-left:600px; border-radius:7px; margin-top:150px; width:300px; height:300px; '>
-    </div>
-    <div class='credit'><p>All backgrounds, images, and assets on this site are illustrated and programmed by myself! Since it's all open source, feel free to use them! If you're interested in how I made them, read this!</p><i class='far fa-question-circle'></i></div>
-  </div>
-  <div id='intro-holder-text'>
-    <h1 id='title' style='font-size:30pt;'>Hey, I'm <span class='active'>Jayson Tian</span></h1>
-    <p>I spend most of my time thinking about the death and regeneration of my neurons. Aside from that, I'm either playing volleyball, drawing digitally, coding, or helping out in educational initiatives.</p>
-    <h3 id='subtitle'>Life is short, <span>waste it wisely.</span></h3>
-    <br><br>
-    <div style='display:flex'>
-      <button class='btn1'  onclick="window.open('https://github.com/Jaysontian')" style='margin-right:25px;'><i class='fab fa-github'></i>GITHUB</button>
-      <button class='btn1' onclick="window.open('mailto:jaysontian444@gmail.com')"><i class='fas fa-envelope'></i>EMAIL</button>
-    </div>
-  </div>
-</div>
-
-<script>
-  var scene = document.getElementById('scene');
-  var parallaxInstance = new Parallax(scene);
+            layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+            
+        })
+    }
+    function restore(){
+        this.querySelectorAll('.layer').forEach(layer =>{
+            layer.transition = 'transform 0.6s ease-in-out';
+            layer.style.transform = `translateX(0px) translateY(0px)`
+        })
+    }
 </script>
 
 <style>
-  body{
-    overflow:hidden;
-  }
+    .padding{
+        margin-top:0px;
+    }
+    main{
+        margin-bottom:0px;
+    }
+    html {
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
+    @media only screen and (max-width: 700px) {
+        #intro-con{
+            width:100%;
+            flex-direction: column-reverse;
+        }
+        #intro-con #info {
+            width:100%;
+        }
+        #intro-con #pfp{
+            width:150px;
+            height:150px;
+            margin-bottom:30px;
+        }
+        #home-bg {
+            height:100vh;
+        }
+    }
 </style>
 
-
-
-
-
-
-  </main>
-  
+</div></article>
+      <footer>
+	<!--<p>By <a href="http://jaysontian.com">Jayson</p>-->
+</footer>
+    </main>
+  </body>
 </html>
-
-<script>
-  window.onload = function(){$('.screen').fadeOut()};
-
-    $('.fa-question-circle').click(()=>{
-    $('.credit p').show();
-    $('.credit').addClass('active');
-    $('.fa-question-circle').hide();
-    $('<i class="far fa-times-circle"></i>').appendTo('.credit').click(()=>{
-      $('.credit p').hide();
-      $('.credit').removeClass('active');
-      $('.fa-question-circle').show(); 
-      $('.fa-times-circle').remove()
-    })
-  })
-</script>
-
-<style>
-  .screen{
-    position:fixed;
-    height:100%;
-    width:100%;
-    background-color: white;
-    top:0px;
-    left:0px;
-    z-index:100000;
-  }
-</style>

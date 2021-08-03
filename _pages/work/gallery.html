@@ -1,0 +1,32 @@
+---
+layout: page
+title: Gallery
+permalink: /work/gallery
+---
+
+<h1>Artwork</h1>
+<p>I'm certainly not Picasso, but I'm always learning. I tamper with a lot of styles, but I mainly draw comics – check it out on <a href="https://www.webtoons.com/en/challenge/beyond-my-soul/list?title_no=450905">webtoon</a>! My current setup is: 8th Gen iPad, Apple Pencil, Procreate, Clip Studio Paint, and sometimes I use a Wacom tablet.</p>
+<br>
+<div class='gallery'>
+{% for image in site.static_files %}
+    {% if image.path contains 'assets/art/' %}
+    <img src="{{ image.path }}" onclick='display("{{image.path}}")' alt="">
+    {% endif %}
+{% endfor %}
+</div>
+
+
+<style>
+    .gallery {
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .gallery img{
+        height:200px;
+        width:auto;
+        object-fit:cover;
+        border-radius:3px;
+        margin-right:20px;
+        margin-bottom:20px;
+    }
+</style>

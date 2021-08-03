@@ -1,42 +1,87 @@
 ---
-layout: index
-title: home
+layout: page
+title: Home
+permalink: /
 ---
 
-<div class='page'>
-  <div class='frame-holder'>
-    <div class='frame' id='scene'>
-      <img src='assets/bg/bg2.webp' data-depth="0.2" style='margin-top:20px;'>
-      <img src='assets/bg/bg3.webp' data-depth="0.9">
-      <img src='assets/bg/bg1.webp' data-depth="0.6">
-      <img src='assets/prof.webp' style='margin-left:600px; border-radius:7px; margin-top:150px; width:300px; height:300px; '>
+<div class='home'>
+    <div id='home-bg-pad'>
+        <div id='frame'>
+            <section id='home-bg'>
+                <img src='assets/bg/bg2.webp' data-speed="-2" class='layer' style='height:110%;'>
+                <img src='assets/bg/bg3.webp' data-speed="12" class='layer'>
+                <img src='assets/bg/bg1.webp' data-speed="-6" class='layer' style='margin-top:-160px;'>
+            </section>
+        </div>
     </div>
-    <div class='credit'><p>All backgrounds, images, and assets on this site are illustrated and programmed by myself! Since it's all open source, feel free to use them! If you're interested in how I made them, read this!</p><i class='far fa-question-circle'></i></div>
-  </div>
-  <div id='intro-holder-text'>
-    <h1 id='title' style='font-size:30pt;'>Hey, I'm <span class='active'>Jayson Tian</span></h1>
-    <p>I spend most of my time thinking about the death and regeneration of my neurons. Aside from that, I'm either playing volleyball, drawing digitally, coding, or helping out in educational initiatives.</p>
-    <h3 id='subtitle'>Life is short, <span>waste it wisely.</span></h3>
-    <br><br>
-    <div style='display:flex'>
-      <button class='btn1'  onclick="window.open('https://github.com/Jaysontian')" style='margin-right:25px;'><i class='fab fa-github'></i>GITHUB</button>
-      <button class='btn1' onclick="window.open('mailto:jaysontian444@gmail.com')"><i class='fas fa-envelope'></i>EMAIL</button>
-    </div>
-  </div>
+    
+    <section class='scrollpage'>
+        <div id='intro-con'>
+            <div id='info'>
+                <h1>Hey, I'm <span>Jayson Tian</span></h1>
+                <p>{{site.description}}</p>
+                <h2>Life's short, <span>waste it wisely.</span></h2>
+                <div style='display:flex'>
+                    <a class='btn1'  href='https://github.com/Jaysontian' target='_blank' style='margin-right:25px;'><img src='assets/icons/typicon/social-github.svg' class='icon'>Github</a>
+                    <a class='btn1' href='mailto:jaysontian444@gmail.com' target='_blank'><img src="assets/icons/capicon/white/019.png" class='capicon'></i>Email</a>
+                  </div>
+            </div>
+            <img id='pfp' src='assets/site-images/prof.webp'>
+        </div>
+    </section>
+    <section class='scrollpage'>
+
+    </section>
 </div>
 
-<script>
-  var scene = document.getElementById('scene');
-  var parallaxInstance = new Parallax(scene);
+<script type='text/javascript'>
+    document.addEventListener("mousemove", parallax);
+    document.addEventListener("mouseleave", restore);
+    function parallax(e){
+        this.querySelectorAll('.layer').forEach(layer =>{
+            var speed = layer.getAttribute('data-speed');
+            var x = (window.innerWidth - e.pageX*speed)/100
+            var y = (window.innerHeight - e.pageY*speed)/100
+            console.log(x, y)
+
+            layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+            
+        })
+    }
+    function restore(){
+        this.querySelectorAll('.layer').forEach(layer =>{
+            layer.transition = 'transform 0.6s ease-in-out';
+            layer.style.transform = `translateX(0px) translateY(0px)`
+        })
+    }
 </script>
 
 <style>
-  body{
-    overflow:hidden;
-  }
+    .padding{
+        margin-top:0px;
+    }
+    main{
+        margin-bottom:0px;
+    }
+    html {
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
+    @media only screen and (max-width: 700px) {
+        #intro-con{
+            width:100%;
+            flex-direction: column-reverse;
+        }
+        #intro-con #info {
+            width:100%;
+        }
+        #intro-con #pfp{
+            width:150px;
+            height:150px;
+            margin-bottom:30px;
+        }
+        #home-bg {
+            height:100vh;
+        }
+    }
 </style>
-
-
-
-
-

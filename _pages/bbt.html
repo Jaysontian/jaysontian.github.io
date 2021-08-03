@@ -1,0 +1,47 @@
+---
+layout: page
+title: Tearrific Reviews
+permalink: /bbt
+---
+
+<div class='bbt-description'>
+    <div>
+        <h1>{{page.title}} 🧋</h1>
+        <p>A not so organized bubble tea blog – just to record and review some drinks my friends and I have tried. Take the stars with a grain of salt, tea tastes different for everyone 😎</p>    
+    </div>
+    <img src="/assets/site-images/bbt.png" alt="">
+</div>
+
+<div style='display:flex; align-items: center;'><h2 style='margin-right:20px;'>Starred</h2><a>All Reviews</a></div>
+
+<div class='starred-con'>
+    <div id='clone' class='drink' visibility='hidden'>
+        <img class='img'>
+        <div class='info'>
+            <h2 class='name'>Bubble Gaga</h2>
+            <p class='shop'>Coco Tea Shop</p>
+            <p><span class='stars'>4</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div style='display:flex; align-items: center;'><h2 style='margin-right:20px;'>Articles</h2><a>Read All</a></div>
+<div class='articles-con'>
+    {% assign articles = site.articles | sort: 'date' | reverse %}
+    {% for post in articles %}
+        {% if post.category == "bbt" %}
+        <a href='{{ post.url }}' class='articlelink'>
+            <h2>{{ post.title }}</h2>
+            <b>{{ post.date | date: "%b %d, %Y" }}</b>
+            <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
+        </a>
+        {% endif %}
+    {% endfor %}
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://jaysontian.com/Sheet2JSON/sheet2json.js"></script>
+<script src='/assets/script/bbt.js'></script>

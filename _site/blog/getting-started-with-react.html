@@ -1,56 +1,44 @@
-
+<!DOCTYPE html>
+<html>
   <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Jayson Tian | Getting Started with React</title>
-  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon"/>
-
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="stylesheet" href="/assets/font/stylesheet.css">
-  <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"></link>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <title>Jayson Tian | Getting Started with React</title>
+  
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/font/stylesheet.css">
+    <link rel="canonical"
+      href="http://jaysontian.com/blog/getting-started-with-react"
+    />
 </head>
 
-<head>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
-</head>
-  <main>
+  <body>
     
 
-<div class='nav-frame'>
-	<nav>
-		<div id='navholder'>
-			<!--<button onclick="window.location.href='/aboutme'">About</button>-->
-			<button onclick="window.location.href='/'">HOME</button>
-			<li class='seperator'>/</li>
-			<button onclick="window.location.href='/about'">ABOUT</button>
-			<li class='seperator'>/</li>
-			<button onclick="window.location.href='/work'">WORK</button>
-			<li class='seperator'>/</li>
-			<button onclick="window.location.href='/blog'">BLOG</button>
-			<!--<button onclick='toggleDark()'><i id='theme-icon' class='fas fa-moon'></i></button>-->
-		</div>
-	</nav>
+<div class='navbar-con'>
+    <nav class='navbar'>
+        <br>
+        <div class='tab-container'>   
+            <a href='/' target='_top'>Home</a>
+            <li class='seperator'>/</li>
+            <a href='/about' target='_top'>About</a>
+            <li class='seperator'>/</li>
+            <a href='/work' target='_top'>Work</a>
+            <li class='seperator'>/</li>
+            <a href='/blog' target='_top'>Blog</a>
+        </div>
+    </nav>
 </div>
-
-
-    
-    <body style='margin-top:80px; width:100%;'>
-      <main class='pagecon'>
-        <article>
-          <h1 class='p-title'>Getting Started with React</h1>
-              <p class='p-time'>By <a href='/'>Jayson Tian</a> on December 7, 2019
-              </p>
-              <div class='p-groups'>
-                
-                  <button onclick="window.location.href='/categories/coding'">Coding</button>
-                
-                
-              </div>
-          <h2 id="what-is-react">What is React?</h2>
+    <main>
+      <article><div class='padding'>
+    <div class='article'>
+  <h1 id='title'>Getting Started with React</h1>
+  
+  <article>
+    <div class='content'>
+      <h2 id="what-is-react">What is React?</h2>
 
 <p>ReactJS is an open-source JavaScript framework built by Facebook that helps build more flexible user interfaces. What makes it special is its use of the virtual JavaScript DOM and Web Components to make rendering code faster and easier.</p>
 
@@ -65,7 +53,7 @@
 <span class="nt">&lt;body&gt;</span>
 </code></pre></div></div>
 
-<p>Here, it can be seen that the component <code class="highlighter-rouge">&lt;MyCustomNavBar /&gt;</code> will be called from a function which will return all the HTML or JavaScript code to render that specific component. This makes web components that are reusable. Also, it is very fast as it uses the <a href="https://reactjs.org/docs/faq-internals.html">virtualDOM</a>.</p>
+<p>Here, it can be seen that the component <code class="language-plaintext highlighter-rouge">&lt;MyCustomNavBar /&gt;</code> will be called from a function which will return all the HTML or JavaScript code to render that specific component. This makes web components that are reusable. Also, it is very fast as it uses the <a href="https://reactjs.org/docs/faq-internals.html">virtualDOM</a>.</p>
 
 <h1 id="creating-a-new-react-app">Creating a New React App</h1>
 
@@ -80,10 +68,10 @@
 cd app-name
 npm start
 </code></pre>
-<p>It’s incredibly straight forward. Now go into files and delete everything in the folder <code class="highlighter-rouge">src</code>.</p>
+<p>It’s incredibly straight forward. Now go into files and delete everything in the folder <code class="language-plaintext highlighter-rouge">src</code>.</p>
 
 <h2 id="import-and-render">Import and Render</h2>
-<p>Open up the src folder in a code editor and create a file named <code class="highlighter-rouge">index.js</code>.</p>
+<p>Open up the src folder in a code editor and create a file named <code class="language-plaintext highlighter-rouge">index.js</code>.</p>
 
 <p>In every react file, there will be an import statement. This refers to the dependencies installed so that we can actually <strong>use</strong> react. And don’t forget the ReactDOM dependecy too.</p>
 
@@ -104,14 +92,14 @@ npm start
 <span class="p">)</span>
 </code></pre></div></div>
 
-<p>Now it is obvious it will become crowded when there are more than one element, so one can replace it with a component. We are going to call the component <code class="highlighter-rouge">&lt;App /&gt;</code> in this example and call it, which will return the block of HTML code.</p>
+<p>Now it is obvious it will become crowded when there are more than one element, so one can replace it with a component. We are going to call the component <code class="language-plaintext highlighter-rouge">&lt;App /&gt;</code> in this example and call it, which will return the block of HTML code.</p>
 
 <div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
   <span class="k">return</span> <span class="p">{</span>
     <span class="o">&lt;</span><span class="nx">ul</span><span class="o">&gt;</span>
       <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Buy Milk<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
       <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Eat Spaghetti<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="err">/</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="err">/</span><span class="na">ul</span><span class="p">&gt;</span>
   }
 }
 
@@ -124,14 +112,14 @@ ReactDOM.render(
 
 <p>It is usual for there to be many components, which can be stored in their separate files.</p>
 
-<p>You must create a file with that name, using the example above, <code class="highlighter-rouge">App.js</code>. It is common to store many components in a folder called ‘components’. Then accessing this <code class="highlighter-rouge">App.js</code> file from <code class="highlighter-rouge">index.js</code>:</p>
+<p>You must create a file with that name, using the example above, <code class="language-plaintext highlighter-rouge">App.js</code>. It is common to store many components in a folder called ‘components’. Then accessing this <code class="language-plaintext highlighter-rouge">App.js</code> file from <code class="language-plaintext highlighter-rouge">index.js</code>:</p>
 
 <div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">App</span> <span class="k">from</span> <span class="p">.</span><span class="o">/</span><span class="nx">components</span><span class="o">/</span><span class="nx">App</span>
 </code></pre></div></div>
 
-<p>it is already assumed that App is a JS file so no need to put <code class="highlighter-rouge">.js</code>.</p>
+<p>it is already assumed that App is a JS file so no need to put <code class="language-plaintext highlighter-rouge">.js</code>.</p>
 
-<p>In the beggining of the new component file created, <code class="highlighter-rouge">App.js</code>, import React, as we want it to run not in vanilla JS. Copy the function returning the elements of the component into the main body and then conclude with an <strong>EXPORT</strong> statement. This part is crucial.</p>
+<p>In the beggining of the new component file created, <code class="language-plaintext highlighter-rouge">App.js</code>, import React, as we want it to run not in vanilla JS. Copy the function returning the elements of the component into the main body and then conclude with an <strong>EXPORT</strong> statement. This part is crucial.</p>
 
 <div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span>
 
@@ -157,7 +145,7 @@ ReactDOM.render(
 
 <p>In regular HTML code, class = ‘navbar’ would work, however because jsx runs, it must be in Camel Case:</p>
 
-<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">'</span><span class="s1">navbar</span><span class="dl">'</span><span class="o">&gt;</span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">className</span><span class="p">=</span><span class="s">'navbar'</span><span class="p">&gt;&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
 </code></pre></div></div>
 <blockquote>
   <p>Only apply classname to react elements, NOT components!</p>
@@ -166,9 +154,9 @@ ReactDOM.render(
 <h2 id="inline-styling">Inline Styling</h2>
 
 <p>Inline styling is placed between double curly brackets, as this recognizes the first as JSX and the second as the data for the style.
-For example, <code class="highlighter-rouge">&lt;h1 style={'{font-size:5pt}}'&gt;&lt;/h1&gt;</code></p>
+For example, <code class="language-plaintext highlighter-rouge">&lt;h1 style={'{font-size:5pt}}'&gt;&lt;/h1&gt;</code></p>
 
-<p>Notice that styling options with dash such as <code class="highlighter-rouge">background-color</code> must be camel cased, which now becomes <code class="highlighter-rouge">backgroundColor</code>.</p>
+<p>Notice that styling options with dash such as <code class="language-plaintext highlighter-rouge">background-color</code> must be camel cased, which now becomes <code class="language-plaintext highlighter-rouge">backgroundColor</code>.</p>
 
 <h1 id="props">Props</h1>
 
@@ -196,13 +184,13 @@ For example, <code class="highlighter-rouge">&lt;h1 style={'{font-size:5pt}}'&gt
     <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
       <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
       <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">job</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="err">/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="err">/</span><span class="na">div</span><span class="p">&gt;</span>
   }
 }
 
 ReactDOM.render(<span class="p">&lt;</span><span class="nc">Contacts</span>
-  <span class="na">name=</span><span class="s2">"Mario"</span>
-  <span class="na">job=</span><span class="s2">"Chef"</span>
+  <span class="na">name</span><span class="p">=</span><span class="s">"Mario"</span>
+  <span class="na">job</span><span class="p">=</span><span class="s">"Chef"</span>
 <span class="p">/&gt;</span>)
 </code></pre></div></div>
 
@@ -213,15 +201,15 @@ ReactDOM.render(<span class="p">&lt;</span><span class="nc">Contacts</span>
     <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
       <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">info</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
       <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">info</span><span class="p">.</span><span class="nx">job</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="err">/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="err">/</span><span class="na">div</span><span class="p">&gt;</span>
   }
 }
 
 ReactDOM.render(<span class="p">&lt;</span><span class="nc">Contacts</span>
-  <span class="nt">info</span> <span class="err">=</span> <span class="err">{</span> <span class="err">{</span>
-      <span class="err">'</span><span class="nt">name</span><span class="err">':'</span><span class="nc">Mario</span><span class="err">',</span>
-      <span class="err">'</span><span class="nt">job</span><span class="err">':'</span><span class="nc">Chef</span><span class="err">'</span>
-    <span class="err">}</span> <span class="err">}</span>
+  <span class="na">info</span> <span class="p">=</span> <span class="si">{</span> <span class="p">{</span>
+      <span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span><span class="dl">'</span><span class="s1">Mario</span><span class="dl">'</span><span class="p">,</span>
+      <span class="dl">'</span><span class="s1">job</span><span class="dl">'</span><span class="p">:</span><span class="dl">'</span><span class="s1">Chef</span><span class="dl">'</span>
+    <span class="p">}</span> <span class="si">}</span>
 <span class="p">/&gt;</span>)
 </code></pre></div></div>
 
@@ -229,7 +217,7 @@ ReactDOM.render(<span class="p">&lt;</span><span class="nc">Contacts</span>
 
 <p>For example, if I have an app showing emails and I want to show any message that doesn’t have a reply to be red.</p>
 
-<p>Here will be <code class="highlighter-rouge">index.js</code>:</p>
+<p>Here will be <code class="language-plaintext highlighter-rouge">index.js</code>:</p>
 
 <div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span>
 <span class="k">import</span> <span class="nx">ReactDOM</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react-dom</span><span class="dl">'</span>
@@ -239,12 +227,12 @@ ReactDOM.render(<span class="p">&lt;</span><span class="nc">Contacts</span>
 <span class="kd">function</span> <span class="nx">Inbox</span><span class="p">(){</span>
   <span class="k">return</span><span class="p">(){</span>
     <span class="p">&lt;</span><span class="nc">Email</span>
-      <span class="na">text=</span><span class="s1">'Call me back'</span>
-      <span class="na">reply=</span><span class="s1">'Ok boomer.'</span>
+      <span class="na">text</span><span class="p">=</span><span class="s">'Call me back'</span>
+      <span class="na">reply</span><span class="p">=</span><span class="s">'Ok boomer.'</span>
     <span class="p">/&gt;</span>
     <span class="p">&lt;</span><span class="nc">Email</span>
-      <span class="na">text=</span><span class="s1">'Remember to send me links!'</span>
-      <span class="na">reply=</span><span class="s1">''</span>
+      <span class="na">text</span><span class="p">=</span><span class="s">'Remember to send me links!'</span>
+      <span class="na">reply</span><span class="p">=</span><span class="s">''</span>
     <span class="p">/&gt;</span>
   <span class="p">}</span>
 <span class="p">}</span>
@@ -254,41 +242,41 @@ ReactDOM.render(<span class="p">&lt;</span><span class="nc">Contacts</span>
   <span class="p">)</span>
 </code></pre></div></div>
 
-<p>This is <code class="highlighter-rouge">Email.js</code> for each email component:</p>
+<p>This is <code class="language-plaintext highlighter-rouge">Email.js</code> for each email component:</p>
 
 <div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span>
 
 <span class="kd">function</span> <span class="nx">Email</span><span class="p">(</span><span class="nx">props</span><span class="p">){</span>
   <span class="k">return</span><span class="p">(</span>
       <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">h1</span> <span class="nt">style</span> <span class="err">=</span> <span class="err">{</span> <span class="err">{</span><span class="nt">display</span><span class="err">:</span> <span class="err">!</span><span class="nt">props</span><span class="p">.</span><span class="nt">reply</span> <span class="err">&amp;&amp;</span> <span class="err">'</span><span class="nt">none</span><span class="err">'}</span> <span class="err">}</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">text</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">p</span> <span class="nt">style</span> <span class="err">=</span> <span class="err">{</span> <span class="err">{</span><span class="nt">backgroundColor</span><span class="err">:</span> <span class="err">!</span><span class="nt">props</span><span class="p">.</span><span class="nt">reply</span> <span class="err">&amp;&amp;</span> <span class="nt">red</span><span class="err">}</span> <span class="err">}</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">reply</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">style</span> <span class="p">=</span> <span class="si">{</span> <span class="p">{</span><span class="na">display</span><span class="p">:</span> <span class="o">!</span><span class="nx">props</span><span class="p">.</span><span class="nx">reply</span> <span class="o">&amp;&amp;</span> <span class="dl">'</span><span class="s1">none</span><span class="dl">'</span><span class="p">}</span> <span class="si">}</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">text</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span> <span class="p">=</span> <span class="si">{</span> <span class="p">{</span><span class="na">backgroundColor</span><span class="p">:</span> <span class="o">!</span><span class="nx">props</span><span class="p">.</span><span class="nx">reply</span> <span class="o">&amp;&amp;</span> <span class="nx">red</span><span class="p">}</span> <span class="si">}</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">reply</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
       <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
     <span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p><code class="highlighter-rouge">display: !props.reply &amp;&amp; 'none'</code> reads if there is no reply then display equals none.</p>
+<p><code class="language-plaintext highlighter-rouge">display: !props.reply &amp;&amp; 'none'</code> reads if there is no reply then display equals none.</p>
 
 <h1 id="mapping-for-loop">Mapping (For Loop)</h1>
 
 <p>Now with the email example above, it can be very inefficient if there were three hundred emails and I needed to copy and paste that component from 300 different emails.</p>
 
-<p>Mapping, is like the for loop where given an array of props, it will render a component for each in the list. For example, I have a JSON data named <code class="highlighter-rouge">inboxData.js</code> that contains a 300 properties for name and details, and I import it.</p>
+<p>Mapping, is like the for loop where given an array of props, it will render a component for each in the list. For example, I have a JSON data named <code class="language-plaintext highlighter-rouge">inboxData.js</code> that contains a 300 properties for name and details, and I import it.</p>
 
 <div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">inboxData</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./inboxData</span><span class="dl">'</span>
 
 <span class="kd">function</span> <span class="nx">App</span><span class="p">(){</span>
-    <span class="kd">const</span> <span class="nx">allEmails</span> <span class="o">=</span> <span class="nx">inboxData</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">item</span> <span class="o">=&gt;</span> <span class="p">&lt;</span><span class="nc">Email</span> <span class="na">sender=</span><span class="si">{</span><span class="nx">item</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span> <span class="na">message=</span><span class="si">{</span><span class="nx">item</span><span class="p">.</span><span class="nx">details</span><span class="si">}</span> <span class="err">)</span>
+    <span class="kd">const</span> <span class="nx">allEmails</span> <span class="o">=</span> <span class="nx">inboxData</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">item</span> <span class="o">=&gt;</span> <span class="p">&lt;</span><span class="nc">Email</span> <span class="na">sender</span><span class="p">=</span><span class="si">{</span><span class="nx">item</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span> <span class="na">message</span><span class="p">=</span><span class="si">{</span><span class="nx">item</span><span class="p">.</span><span class="nx">details</span><span class="si">}</span> <span class="err">)</span>
 <span class="err">}</span>
 
-<span class="nt">return</span> <span class="err">{</span>
-  <span class="err">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="na">return</span> <span class="si">{</span>
+  <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
     <span class="si">{</span><span class="nx">allEmails</span><span class="si">}</span>
   <span class="p">&lt;/</span><span class="nt">div</span><span class="p">.</span>
 <span class="err">}</span>
 </code></pre></div></div>
-<p>the <code class="highlighter-rouge">.map()</code> function looped through all the props of the data and then created a new component for each. Each was defined as item in this example, but it can really be any word. ‘Item’ represents each in data (inboxData) that is being mapped.</p>
+<p>the <code class="language-plaintext highlighter-rouge">.map()</code> function looped through all the props of the data and then created a new component for each. Each was defined as item in this example, but it can really be any word. ‘Item’ represents each in data (inboxData) that is being mapped.</p>
 
 <h1 id="class-based-components">Class Based Components</h1>
 
@@ -298,7 +286,7 @@ ReactDOM.render(<span class="p">&lt;</span><span class="nc">Contacts</span>
   <span class="k">return</span> <span class="p">{</span>
     <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
       <span class="p">&lt;</span><span class="nc">PizzaMenu</span> <span class="p">/&gt;</span>
-    <span class="p">&lt;</span><span class="err">/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="err">/</span><span class="na">div</span><span class="p">&gt;</span>
   }
 }
 </code></pre></div></div>
@@ -308,27 +296,27 @@ ReactDOM.render(<span class="p">&lt;</span><span class="nc">Contacts</span>
     <span class="k">return</span> <span class="p">{</span>
       <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
         <span class="p">&lt;</span><span class="nc">PizzaMenu</span> <span class="p">/&gt;</span>
-      <span class="p">&lt;</span><span class="err">/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="err">/</span><span class="na">div</span><span class="p">&gt;</span>
     }
   }
 }
 </code></pre></div></div>
-<p>When switching to a class, function parameters are recognized from <code class="highlighter-rouge">this</code>. For example in this function based component where a property is passed so that the name data can be accessed:</p>
+<p>When switching to a class, function parameters are recognized from <code class="language-plaintext highlighter-rouge">this</code>. For example in this function based component where a property is passed so that the name data can be accessed:</p>
 <div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Header</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">return</span> <span class="p">{</span>
     <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
       <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello <span class="si">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="err">/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="err">/</span><span class="na">div</span><span class="p">&gt;</span>
   }
 }
 </code></pre></div></div>
-<p>is changed where props is recognized from <code class="highlighter-rouge">this</code> instead. So from <code class="highlighter-rouge">props.name</code> it is changed to <code class="highlighter-rouge">this.props.name</code>. Notice how there is still the render function.</p>
+<p>is changed where props is recognized from <code class="language-plaintext highlighter-rouge">this</code> instead. So from <code class="language-plaintext highlighter-rouge">props.name</code> it is changed to <code class="language-plaintext highlighter-rouge">this.props.name</code>. Notice how there is still the render function.</p>
 <div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Header</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
   <span class="nx">render</span><span class="p">(){</span>
     <span class="k">return</span> <span class="p">{</span>
       <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
         <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="err">/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="err">/</span><span class="na">div</span><span class="p">&gt;</span>
     }
   }
 }
@@ -351,7 +339,7 @@ ReactDOM.render(<span class="p">&lt;</span><span class="nc">Contacts</span>
     <span class="k">return</span> <span class="p">(</span>
       <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
         <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Are you really that important? <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">answer</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nc">RandomComponent</span> <span class="nt">answer</span> <span class="err">=</span> <span class="err">{</span><span class="nt">this</span><span class="p">.</span><span class="nt">state</span><span class="p">.</span><span class="nt">answer</span><span class="err">}</span><span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nc">RandomComponent</span> <span class="na">answer</span> <span class="p">=</span> <span class="si">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">answer</span><span class="si">}</span><span class="p">/&gt;</span>
       <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
       <span class="p">)</span>
   <span class="p">}</span>
@@ -397,9 +385,9 @@ ReactDOM.render(<span class="p">&lt;</span><span class="nc">Contacts</span>
 
 <h1 id="lifecycle-methods">Lifecycle Methods</h1>
 
-<p>Lifecycle methods are function motifs that can be used to refer the different states of a component. For example, in the example below, the function <code class="highlighter-rouge">componentDidMount</code> will only return something once the component is mounted (loaded).</p>
+<p>Lifecycle methods are function motifs that can be used to refer the different states of a component. For example, in the example below, the function <code class="language-plaintext highlighter-rouge">componentDidMount</code> will only return something once the component is mounted (loaded).</p>
 
-<p>The code below fetches for some api data and then turns it into accessible JSON data. Then, the character state is set as the data. If the data was ‘name: John’, then in code, <code class="highlighter-rouge">this.state.character.name</code> will return  <code class="highlighter-rouge">John</code></p>
+<p>The code below fetches for some api data and then turns it into accessible JSON data. Then, the character state is set as the data. If the data was ‘name: John’, then in code, <code class="language-plaintext highlighter-rouge">this.state.character.name</code> will return  <code class="language-plaintext highlighter-rouge">John</code></p>
 
 <div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span><span class="nx">Component</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span>
 
@@ -427,7 +415,7 @@ ReactDOM.render(<span class="p">&lt;</span><span class="nc">Contacts</span>
   <span class="nx">render</span><span class="p">(){</span>
     <span class="kd">const</span> <span class="nx">text</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">loading</span> <span class="p">?</span> <span class="dl">"</span><span class="s2">loading...</span><span class="dl">"</span> <span class="p">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">character</span><span class="p">.</span><span class="nx">name</span>
     <span class="k">return</span><span class="p">{</span>
-      <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span> <span class="p">{</span><span class="nx">text</span><span class="p">}</span> <span class="p">&lt;</span><span class="err">/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span> <span class="p">{</span><span class="nx">text</span><span class="p">}</span> <span class="p">&lt;</span><span class="err">/</span><span class="na">div</span><span class="p">&gt;</span>
     }
   }
 }
@@ -436,11 +424,45 @@ ReactDOM.render(<span class="p">&lt;</span><span class="nc">Contacts</span>
 <p>This will return the character name when finished loading, but if there is slow internet, it will show the text loading while it loads.</p>
 
 
-        </article>
-        <footer>
+    </div>
+    <div class='info'>
+      <p><b>December 7, 2019</b></p>
+      <p>By Jayson Tian</p><br>
+      <div class='p-groups'>
+        
+          
+          <a href='/blog/coding' class='category-link'>Coding</a>
+          
+        
+      </div>
+
+      <div class='related-con'>
+        <h2>Related Articles</h2>
+        <hr>
+        
+        
+          
+        
+          
+            <a href='/blog/creating-a-blog-with-jekyll' class='related-articles-link'>
+              
+              <p><span>Creating a Blog With Jekyll</span></p>
+              <p>Jul 31, 2021</p>
+            </a>
+          
+        
+      </div>
+
+    </div>
+
+  </article>
+
+
+</div>
+</div></article>
+      <footer>
+	<!--<p>By <a href="http://jaysontian.com">Jayson</p>-->
 </footer>
-
-      </main>
-    </body>
-
-</main>
+    </main>
+  </body>
+</html>

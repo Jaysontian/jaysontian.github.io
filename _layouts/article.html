@@ -1,0 +1,45 @@
+---
+layout: page
+---
+
+<div class='article'>
+  <h1 id='title'>{{page.title}}</h1>
+  
+  <article>
+    <div class='content'>
+      {{ content }}
+    </div>
+    <div class='info'>
+      <p><b>{{ page.date | date: "%B %-d, %Y" }}</b></p>
+      <p>By Jayson Tian</p><br>
+      <div class='p-groups'>
+        {% for category in page.categories %}
+          {% if category == 'bbt' %} 
+          <a href='/bbt' class='category-link'>Bubble Tea</a>
+          {% else %}
+          <a href='/blog/{{category}}' class='category-link'>{{category | capitalize}}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class='related-con'>
+        <h2>Related Articles</h2>
+        <hr>
+        {% assign posts = site.articles | where_exp:"post", "post.category == page.category" | sample:4 %}
+        {% for post in posts %}
+          {% if post.url != page.url %}
+            <a href='{{post.url}}' class='related-articles-link'>
+              
+              <p><span>{{post.title}}</span></p>
+              <p>{{ post.date | date: "%b %d, %Y" }}</p>
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+    </div>
+
+  </article>
+
+
+</div>

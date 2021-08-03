@@ -2,6 +2,7 @@
 title: Blog Bucketlist
 date: 2021-07-02
 published: true
+category: general
 --- 
 
 Future blog article ideas
