@@ -1,44 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
-  
-    <title>Jayson Tian | A Quick Thought on Learning</title>
-  
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/font/stylesheet.css">
-    <link rel="canonical"
-      href="http://jaysontian.com/blog/a-quick-thought-on-learning"
-    />
-</head>
-
-  <body>
-    
-
-<div class='navbar-con'>
-    <nav class='navbar'>
-        <br>
-        <div class='tab-container'>   
-            <a href='/' target='_top'>Home</a>
-            <li class='seperator'>/</li>
-            <a href='/about' target='_top'>About</a>
-            <li class='seperator'>/</li>
-            <a href='/work' target='_top'>Work</a>
-            <li class='seperator'>/</li>
-            <a href='/blog' target='_top'>Blog</a>
-        </div>
-    </nav>
-</div>
-    <main>
-      <article><div class='padding'>
-    <div class='article'>
-  <h1 id='title'>A Quick Thought on Learning</h1>
-  
-  <article>
-    <div class='content'>
-      <p>Recently, I’ve been thinking a lot about personal growth and achievement. Although the adage of how the journey is more beautiful than the destination is valid, it can’t be denied that sometimes the outcome does matter.</p>
+I"�
+<p>Recently, I’ve been thinking a lot about personal growth and achievement. Although the adage of how the journey is more beautiful than the destination is valid, it can’t be denied that sometimes the outcome does matter.</p>
 
 <p>I realized, however, that this mindset is ingrained in most students nowadays: we are constantly competing for the top spot in everything – the learning atmosphere created in schools and our society has made us blind to appreciating the learning experience.</p>
 
@@ -57,54 +18,4 @@
 <p>It is natural to be competitive. As human beings, most of us have egos that makes us believe we are superior to others. But truth said, there must be a line drawn between healthy and unhealthy competition. I now think that it’s important for a student to recognize whether the learning environment they are in is beneficial or harmful to them.</p>
 
 <p>When we are under so much pressure and stress that all we see In our head is a never ending todo list that needs to be completed, I believe one must take a break and rewind their thoughts. It’s that balance between the amount of external pressure a student chooses to internalize that decides upon whether they learn for self-development or result.</p>
-
-    </div>
-    <div class='info'>
-      <p><b>November 9, 2019</b></p>
-      <p>By Jayson Tian</p><br>
-      <div class='p-groups'>
-        
-          
-          <a href='/blog/general' class='category-link'>General</a>
-          
-        
-      </div>
-
-      <div class='related-con'>
-        <h2>Related Articles</h2>
-        <hr>
-        
-        
-          
-        
-          
-            <a href='/blog/blog-bucketlist' class='related-articles-link'>
-              
-              <p><span>Blog Bucketlist</span></p>
-              <p>Jul 02, 2021</p>
-            </a>
-          
-        
-          
-            <a href='/blog/retrospect-shad' class='related-articles-link'>
-              
-              <p><span>Retrospection – SHAD 2021</span></p>
-              <p>Jul 31, 2021</p>
-            </a>
-          
-        
-      </div>
-
-    </div>
-
-  </article>
-
-
-</div>
-</div></article>
-      <footer>
-	<!--<p>By <a href="http://jaysontian.com">Jayson</p>-->
-</footer>
-    </main>
-  </body>
-</html>
+:ET

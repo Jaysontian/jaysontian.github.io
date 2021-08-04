@@ -1,44 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
-  
-    <title>Jayson Tian | Global Warming & Pathogens</title>
-  
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/font/stylesheet.css">
-    <link rel="canonical"
-      href="http://jaysontian.com/blog/global-warming-pathogens"
-    />
-</head>
-
-  <body>
-    
-
-<div class='navbar-con'>
-    <nav class='navbar'>
-        <br>
-        <div class='tab-container'>   
-            <a href='/' target='_top'>Home</a>
-            <li class='seperator'>/</li>
-            <a href='/about' target='_top'>About</a>
-            <li class='seperator'>/</li>
-            <a href='/work' target='_top'>Work</a>
-            <li class='seperator'>/</li>
-            <a href='/blog' target='_top'>Blog</a>
-        </div>
-    </nav>
-</div>
-    <main>
-      <article><div class='padding'>
-    <div class='article'>
-  <h1 id='title'>Global Warming & Pathogens</h1>
-  
-  <article>
-    <div class='content'>
-      <p>I recently read an article writing about how new diseases are popping up from random places never seen before. Apparently, they have a significantly higher viral resistance than other common bacteria, and 75% of treatment and vaccines are ineffective against them.</p>
+I"²<p>I recently read an article writing about how new diseases are popping up from random places never seen before. Apparently, they have a significantly higher viral resistance than other common bacteria, and 75% of treatment and vaccines are ineffective against them.</p>
 
 <p>So I thought it was interesting as most diseases these days can be treated pretty easily. The article did not seem to cite or credit where they got the statistics so I did a little bit of digging on the internet and discovered that these types of bacteria actually carry ancient viruses that are rarely seen present day.</p>
 
@@ -59,54 +19,4 @@
 <h2 id="links">Links</h2>
 <p><a href="https://e360.yale.edu/features/how-melting-permafrost-is-beginning-to-transform-the-arctic">Permafrost Melting Article</a></p>
 
-
-    </div>
-    <div class='info'>
-      <p><b>August 17, 2019</b></p>
-      <p>By Jayson Tian</p><br>
-      <div class='p-groups'>
-        
-          
-          <a href='/blog/biology' class='category-link'>Biology</a>
-          
-        
-      </div>
-
-      <div class='related-con'>
-        <h2>Related Articles</h2>
-        <hr>
-        
-        
-          
-            <a href='/blog/elisa-testing' class='related-articles-link'>
-              
-              <p><span>The ELISA Test</span></p>
-              <p>Nov 06, 2019</p>
-            </a>
-          
-        
-          
-            <a href='/blog/ecg-modelling' class='related-articles-link'>
-              
-              <p><span>ECG Modelling with Trig</span></p>
-              <p>Dec 07, 2020</p>
-            </a>
-          
-        
-          
-        
-      </div>
-
-    </div>
-
-  </article>
-
-
-</div>
-</div></article>
-      <footer>
-	<!--<p>By <a href="http://jaysontian.com">Jayson</p>-->
-</footer>
-    </main>
-  </body>
-</html>
+:ET

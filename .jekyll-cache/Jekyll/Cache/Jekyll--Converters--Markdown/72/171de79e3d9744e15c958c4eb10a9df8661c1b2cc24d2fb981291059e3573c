@@ -1,44 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
-  
-    <title>Jayson Tian | Getting Started with React</title>
-  
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/font/stylesheet.css">
-    <link rel="canonical"
-      href="http://jaysontian.com/blog/getting-started-with-react"
-    />
-</head>
-
-  <body>
-    
-
-<div class='navbar-con'>
-    <nav class='navbar'>
-        <br>
-        <div class='tab-container'>   
-            <a href='/' target='_top'>Home</a>
-            <li class='seperator'>/</li>
-            <a href='/about' target='_top'>About</a>
-            <li class='seperator'>/</li>
-            <a href='/work' target='_top'>Work</a>
-            <li class='seperator'>/</li>
-            <a href='/blog' target='_top'>Blog</a>
-        </div>
-    </nav>
-</div>
-    <main>
-      <article><div class='padding'>
-    <div class='article'>
-  <h1 id='title'>Getting Started with React</h1>
-  
-  <article>
-    <div class='content'>
-      <h2 id="what-is-react">What is React?</h2>
+I"!‰<h2 id="what-is-react">What is React?</h2>
 
 <p>ReactJS is an open-source JavaScript framework built by Facebook that helps build more flexible user interfaces. What makes it special is its use of the virtual JavaScript DOM and Web Components to make rendering code faster and easier.</p>
 
@@ -423,46 +383,4 @@ ReactDOM.render(<span class="p">&lt;</span><span class="nc">Contacts</span>
 
 <p>This will return the character name when finished loading, but if there is slow internet, it will show the text loading while it loads.</p>
 
-
-    </div>
-    <div class='info'>
-      <p><b>December 7, 2019</b></p>
-      <p>By Jayson Tian</p><br>
-      <div class='p-groups'>
-        
-          
-          <a href='/blog/coding' class='category-link'>Coding</a>
-          
-        
-      </div>
-
-      <div class='related-con'>
-        <h2>Related Articles</h2>
-        <hr>
-        
-        
-          
-            <a href='/blog/creating-a-blog-with-jekyll' class='related-articles-link'>
-              
-              <p><span>Creating a Blog With Jekyll</span></p>
-              <p>Jul 31, 2021</p>
-            </a>
-          
-        
-          
-        
-      </div>
-
-    </div>
-
-  </article>
-
-
-</div>
-</div></article>
-      <footer>
-	<!--<p>By <a href="http://jaysontian.com">Jayson</p>-->
-</footer>
-    </main>
-  </body>
-</html>
+:ET
