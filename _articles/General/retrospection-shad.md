@@ -47,7 +47,7 @@ I would say I also learned some lessons on efficiency, engagement, and leadershi
 
 ## Afterword
 
-I feel that SHAD was a great learning experience and the lectures were rewarding, but it certainly did not live up even close to its proposed mantra of “making life-long connections”. Of course, it’s important to acknowledge that it was difficult considering its shift to a second year of virtual sessions; yet I do believe, as many of my SHAD friends would agree, it was a bit of a letdown as one expected a bit more sophistication and depth in terms of the STEAM programming. 
+I feel that SHAD was a great learning experience and the lectures were rewarding, but it certainly did not live up to its proposed mantra of “making life-long connections”. Of course, it’s important to acknowledge that it was difficult considering its shift to a second year of virtual sessions; yet I do believe, as many of my SHAD friends would agree, it was a bit of a letdown as one expected a bit more sophistication and depth in terms of the STEAM programming. 
 
 [image-1]:	https://i1.wp.com/perspect.it/wp-content/uploads/2018/12/Schermafbeelding-2018-12-28-om-16.14.34.png?fit=518%2C263&ssl=1
 [image-2]:	https://cdn.shopify.com/s/files/1/0259/7876/5396/files/desirabiilty-feasibility-viability-1200x628.jpg?v=1586285394
