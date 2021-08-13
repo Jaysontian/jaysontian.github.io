@@ -14,3 +14,4 @@ Future blog article ideas
 - Productivity Apps
 - Horror Movies
 - Revenge Bedtime Procrastination
+- Email Productivity
