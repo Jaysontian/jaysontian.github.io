@@ -14,18 +14,15 @@ The benefit of this dashboard design and system is that all users can update the
 
 Sheets2JSON can be found on GitHub [here][1]. It can be easily used via insertion as a script tag on an HTML page. The source link is the raw GitHub file of the script on my site. Note that the reference should be put **before** the main script. In addition, include **jQuery** at the very start. The final script tags should look like this:
 
-```html
+```js
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://jaysontian.com/Sheet2JSON/sheet2json.js"></script>
 <script src="your-script.js"></script>
 ```
-
 To request to convert the Google sheets file to JSON, the spreadsheet ID needs to be obtained. For any Google Sheets file, the URL behind `/d/` is typically the ID.
 
 ![][image-1]
-
 Next, the Google sheets file needs to be published to the public. This can be done by going to `FILE -> PUBLISH TO WEB` on Google sheets. Make sure to also check “Automatically republish when changes are made”.
-
 ![][image-2]
 
 Then, in the code editor, request for the JSON using the `send2JSON()` function when the document is ready:

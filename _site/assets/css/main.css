@@ -106,9 +106,11 @@ a { color: #3c7aff; cursor: pointer; font-weight: bold; text-decoration: none; b
 
 .article p > img { display: block; margin: 40px auto; height: auto; max-height: 60vh; width: auto; max-width: 100%; }
 
-.article .highlight, .article pre { background-color: #f1efef; padding: 5px 15px; border-radius: 6px; white-space: pre-wrap; }
+.article .highlight, .article pre { background-color: #e6e8eb; padding: 5px 15px; border-radius: 6px; white-space: pre-wrap; font-size: 12pt; }
 
-.article blockquote { border-left: 5px var(--base-color) solid; padding: 5px 20px; margin-inline-start: 0px; margin-inline-end: 0px; background-color: var(--base-color-lightest); }
+.article code .language-plaintext, .article code .highlighter-rouge { background-color: #43454b; color: white; padding: 3px 10px; font-size: 12pt; border-radius: 3px; }
+
+.article blockquote { border-left: 5px #3c7aff solid; padding: 5px 20px; margin-inline-start: 0px; margin-inline-end: 0px; background-color: #e0e9ff; }
 
 .article .content hr { margin: 60px auto; width: 50%; min-width: 400px; height: 3px; border: none; background-color: #c7cedb; }
 

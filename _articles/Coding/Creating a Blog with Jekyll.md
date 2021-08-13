@@ -12,7 +12,7 @@ If that explanation means absolutely nothing to you, have no fear! It’s really
 - What is a **static site generator**? Normally, blogs are hosted from a backend server. This requires you to have articles stored in a cloud and then your website will fetch that data. On the other hand, Jekyll hosts all your files live from folders that code your site, so it becomes super easy to start a blog and update it! Many people use Github to host their Jekyll blogs, but you can use whatever you want.
 - **Markdown** is a text editing language. Just like text files (.txt), markdown has its own formatting and allows easy styling. For example, you can use \* to make words bold and dashes (-) to create a bullet list. These are the files that blog articles and posts will be written in. Once in the folder, Jekyll will generate the markdown files into live HTML pages for the site.
 
-## Why is Jekyll (IMO) Superior?
+## Why is Jekyll Superior (IMO)?
 There are numerous benefits of using a static site generator like Jekyll in comparison to plain HTML code. For example, normally, for each article that is published, you would need to create the HTML tags, the heads, scripts, and hard code each text with \<p\> and \<h2\> tags. With Jekyll, it is possible to include a header and footer in every single page –– this way, you don’t need to update the header for every HTML page if you need to make one change.
 
 Another comparison people usually make is between Jekyll and a **dynamic** site with a back-end. Fetching data and server communication is certainly the traditional way to do it, however, there are other pros of using Jekyll that make it so appealing to bloggers and developers:
@@ -27,10 +27,9 @@ This is basically installing “Jekyll” on your computer so that you can use i
 ### Install Ruby
 
 Ruby comes pre-installed on most MacBook computers. For more information if you don’t have Ruby, visit Ruby’s [home site][3]. If you’re unsure you can check terminal by entering:
+```test
+$ ruby -v
 ```
-ruby -v
-```
-
 You can also update Ruby:
 ```test
 $ sudo gem install ruby

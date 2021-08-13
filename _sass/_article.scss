@@ -139,19 +139,29 @@
     }
 
     .highlight, pre{
-        background-color:rgb(241, 239, 239);
+        background-color:rgb(230, 232, 235);
         padding:5px 15px;
         border-radius: 6px;
         white-space: pre-wrap;
-      }
+        font-size:12pt;
+    }
+    
+    code .language-plaintext, code .highlighter-rouge {
+        background-color:rgb(67, 69, 75);
+        color:white;
+        padding:3px 10px;
+        font-size:12pt;
+        border-radius:3px;
+    }
       
     blockquote{
-        border-left: 5px var(--base-color) solid;
+        border-left: 5px $base-color solid;
         padding:5px 20px;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
-        background-color: var(--base-color-lightest);
-      }
+        background-color: $base-color-light;
+    }
+
     .content hr {
         margin: 60px auto;
         width:50%;

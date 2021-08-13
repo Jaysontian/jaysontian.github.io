@@ -1,44 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
-  
-    <title>Jayson Tian | Spreadsheets to JSON — Better Admin UI</title>
-  
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/font/stylesheet.css">
-    <link rel="canonical"
-      href="http://jaysontian.com/blog/sheets-to-json-dashboard-ui"
-    />
-</head>
-
-  <body>
-    
-
-<div class='navbar-con'>
-    <nav class='navbar'>
-        <br>
-        <div class='tab-container'>   
-            <a href='/' target='_top'>Home</a>
-            <li class='seperator'>/</li>
-            <a href='/about' target='_top'>About</a>
-            <li class='seperator'>/</li>
-            <a href='/work' target='_top'>Work</a>
-            <li class='seperator'>/</li>
-            <a href='/blog' target='_top'>Blog</a>
-        </div>
-    </nav>
-</div>
-    <main>
-      <article><div class='padding'>
-    <div class='article'>
-  <h1 id='title'>Spreadsheets to JSON — Better Admin UI</h1>
-  
-  <article>
-    <div class='content'>
-      <p>When programming a content-based website or an app, developers are always seeking for a way to make the content accessible and convenient to update. However, the problems of programming a full-on backend are evident — it’s incredibly time-consuming and requires lots of code. Although it may be customizable, it still requires a custom dashboard and hosting using paid services (when you surpass a limit), such as Google’s Firebase or AWS.</p>
+I"
+ <p>When programming a content-based website or an app, developers are always seeking for a way to make the content accessible and convenient to update. However, the problems of programming a full-on backend are evident — it’s incredibly time-consuming and requires lots of code. Although it may be customizable, it still requires a custom dashboard and hosting using paid services (when you surpass a limit), such as Google’s Firebase or AWS.</p>
 
 <p>I realized how difficult this was a few months back when I was trying to design a website which fetches content that will be updated regularly. Another issue that made it even harder was that I wanted the “editing” page to be user-friendly. My friends needed to edit the page, but they don’t know how to code. What’s the solution? I realized that Google Sheets can act as a “database” for the back-end and render JSON files. Then, using simple Javascript on the site, I convert, parse, and clean the fetched JSON into a proper JSON file with the correct data values and keys from the sheet.</p>
 
@@ -54,9 +15,11 @@
 </span></code></pre></div></div>
 <p>To request to convert the Google sheets file to JSON, the spreadsheet ID needs to be obtained. For any Google Sheets file, the URL behind <code class="language-plaintext highlighter-rouge">/d/</code> is typically the ID.</p>
 
-<p><img src="https://i.imgur.com/AjBaPWo.png" alt="" />
-Next, the Google sheets file needs to be published to the public. This can be done by going to <code class="language-plaintext highlighter-rouge">FILE -&gt; PUBLISH TO WEB</code> on Google sheets. Make sure to also check “Automatically republish when changes are made”.
-<img src="https://i.imgur.com/8YRffJO.png" alt="" /></p>
+<p><img src="https://i.imgur.com/AjBaPWo.png" alt="" /></p>
+
+<p>Next, the Google sheets file needs to be published to the public. This can be done by going to <code class="language-plaintext highlighter-rouge">FILE -&gt; PUBLISH TO WEB</code> on Google sheets. Make sure to also check “Automatically republish when changes are made”.</p>
+
+<p><img src="https://i.imgur.com/8YRffJO.png" alt="" /></p>
 
 <p>Then, in the code editor, request for the JSON using the <code class="language-plaintext highlighter-rouge">send2JSON()</code> function when the document is ready:</p>
 
@@ -110,54 +73,4 @@ Dude
 
 <p>Evidently, this system offers customization for webpages that needs content to be updated regularly, in addition to being incredibly simple and fast to set up.</p>
 
-
-    </div>
-    <div class='info'>
-      <p><b>August 12, 2021</b></p>
-      <p>By Jayson Tian</p><br>
-      <div class='p-groups'>
-        
-          
-          <a href='/blog/coding' class='category-link'>Coding</a>
-          
-        
-      </div>
-
-      <div class='related-con'>
-        <h2>Related Articles</h2>
-        <hr>
-        
-        
-          
-            <a href='/blog/creating-a-blog-with-jekyll' class='related-articles-link'>
-              
-              <p><span>Coding a Blog With Jekyll</span></p>
-              <p>Jul 31, 2021</p>
-            </a>
-          
-        
-          
-        
-          
-            <a href='/blog/getting-started-with-react' class='related-articles-link'>
-              
-              <p><span>Getting Started with React</span></p>
-              <p>Dec 07, 2019</p>
-            </a>
-          
-        
-      </div>
-
-    </div>
-
-  </article>
-
-
-</div>
-</div></article>
-      <footer>
-	<!--<p>By <a href="http://jaysontian.com">Jayson</p>-->
-</footer>
-    </main>
-  </body>
-</html>
+:ET
