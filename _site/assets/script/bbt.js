@@ -43,5 +43,6 @@ function receive2JSON(data){
                 teas.find('.img').attr('src', tea.image);
             }
         }
-    })
+    });
+    $('#clone').remove();
 }
