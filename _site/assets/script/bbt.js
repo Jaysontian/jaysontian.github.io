@@ -3,26 +3,27 @@ var teadata;
 
 function send2JSON(id){
     var newdata = [];
-    $.getJSON('https://spreadsheets.google.com/feeds/list/' + id + '/od6/public/values?alt=json', function(returned) {
-        data = returned.feed.entry;
-
-        data.forEach(tag => {
-            var newrow = {};
-
-            for (var key of Object.keys(tag)) {
-                if ((key.toString()).includes('gsx')){
-                    var keyname = (key.toString()).substring(4);
-                    //console.log(keyname + ' -> ' + tag[key]['$t']);
-                    newrow[keyname] = tag[key]['$t'];
-                }
-            }
-            (newdata).push(newrow);
+    fetch(`https://docs.google.com/spreadsheets/d/` + id + `/gviz/tq?tqx=out:json`)
+        .then(res => res.text())
+        .then(text => {
+            const json = JSON.parse(text.substr(47).slice(0, -2));
+            console.log(json);
+            (json.table.rows).forEach(row => {
+                var newrow ={};
+                (row.c).forEach((col, index) => {
+                    if (json.table.cols[index].label != ''){
+                        if (col != null){
+                            newrow[json.table.cols[index].label] = col.v
+                        } else {
+                            newrow[json.table.cols[index].label] = null
+                        }
+                    }
+                });
+                (newdata).push(newrow);
+            });
+        }).then(()=>{
+            receive2JSON(newdata);
         });
-
-        receive2JSON(newdata)
-    }).fail(()=>{
-        location.reload();
-    });
 }
 
 

@@ -35,8 +35,10 @@
         }
         .img {
             align-self: center;
-            width:150px;
-            height:150px;
+            min-width:150px;
+            max-width:150px;
+            min-height:150px;
+            max-height:150px;
             object-fit: cover;
             border-radius:3px;
         }
@@ -59,6 +61,27 @@
             padding: 3px 7px;
             border-radius:3px;
             font-weight:bold;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .bbt-description{
+        display:flex;
+        p {
+            width:100%;
+            font-size:12pt;
+            line-height:24px;
+        }
+        img{
+            display:none;
+        }
+    }
+    .starred-con {
+        flex-direction: column;
+        .drink{
+            width:100%;
         }
     }
 }

@@ -64,6 +64,8 @@ a { color: #3c7aff; cursor: pointer; font-weight: bold; text-decoration: none; b
 
 .articles-con .articlelink:nth-child(1), .articles-con .articlelink:nth-child(2) { border-top: 2px #d8dce4 solid; }
 
+@media only screen and (max-width: 700px) { #blog-1 { display: flex; flex-direction: column-reverse; justify-content: space-between; } #blog-1 #info, #blog-1 h1, #blog-1 p { width: fit-content; max-width: 680px; z-index: 1; } #blog-1 img { width: 180px; height: 200px; margin-top: -60px; margin-left: -50px; margin-bottom: -40px; z-index: 0; } #tags-con a { min-width: auto; max-width: 300px; padding-bottom: 5px; } #tags-con p { display: none; } .articles-con { display: flex; flex-direction: column; } .articles-con .articlelink { width: 100%; border: 2px #d8dce4 solid; margin-bottom: 15px; } }
+
 .article #title { font-size: 30pt; font-weight: 900; letter-spacing: -1px; margin-top: 75px; margin-bottom: 75px; }
 
 .article article { display: flex; }
@@ -118,6 +120,8 @@ a { color: #3c7aff; cursor: pointer; font-weight: bold; text-decoration: none; b
 
 .article .content a:hover { background-color: #e0e9ff; }
 
+@media only screen and (max-width: 700px) { article { flex-direction: column-reverse; } .article h1 { line-height: 50px; } .article .content { width: 100%; } .article .info { display: flex; flex-wrap: wrap; position: static; width: 100%; max-width: 100%; top: 0px; height: auto; margin-top: -40px; margin-bottom: 50px; margin-left: 0px; } .article .info p { margin: 0px; font-size: 13pt; margin-right: 20px; } .article .related-con { display: none; } }
+
 #home-bg-pad { position: fixed; top: 0px; left: 0px; width: 100vw; height: 100vh; z-index: -100; }
 
 #home-bg-pad #frame { width: 1100px; height: 600px; margin: auto; margin-top: 68px; }
@@ -171,6 +175,8 @@ a { color: #3c7aff; cursor: pointer; font-weight: bold; text-decoration: none; b
 
 .type h2 { font-weight: 900; font-size: 15pt; }
 
+@media only screen and (max-width: 700px) { .work-type { flex-direction: column; } .work-type #tags-con { width: 100%; flex-direction: column; } .work-type #tags-con a { margin: auto; min-width: 75%; margin-top: 30px; } .type { width: 75%; margin: auto; display: flex; flex-direction: row-reverse; align-content: center; align-items: center; padding: 0px 20px; justify-content: space-between; } .type img { margin: 0px 0px; height: 30px; width: 30px; } }
+
 .bbt-description { display: flex; }
 
 .bbt-description p { width: 80%; }
@@ -183,13 +189,15 @@ a { color: #3c7aff; cursor: pointer; font-weight: bold; text-decoration: none; b
 
 .starred-con .drink .info { width: 60%; margin-left: 30px; margin-right: 20px; }
 
-.starred-con .drink .img { align-self: center; width: 150px; height: 150px; object-fit: cover; border-radius: 3px; }
+.starred-con .drink .img { align-self: center; min-width: 150px; max-width: 150px; min-height: 150px; max-height: 150px; object-fit: cover; border-radius: 3px; }
 
 .starred-con .drink h2 { font-size: 13pt; font-weight: bold; line-height: 22px; margin: 0px; margin-bottom: 5px; }
 
 .starred-con .drink p { margin: 0px; margin-top: 0px; font-size: 12pt; }
 
 .starred-con .drink .stars { background-color: #3c7aff; color: white; padding: 3px 7px; border-radius: 3px; font-weight: bold; }
+
+@media only screen and (max-width: 700px) { .bbt-description { display: flex; } .bbt-description p { width: 100%; font-size: 12pt; line-height: 24px; } .bbt-description img { display: none; } .starred-con { flex-direction: column; } .starred-con .drink { width: 100%; } }
 
 .highlight { background: #fff; }
 

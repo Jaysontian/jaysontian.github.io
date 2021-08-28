@@ -15,7 +15,7 @@ permalink: /
         </div>
     </div>
     
-    <section class='scrollpage'>
+    <section class='scrollpage'><br><br><br><br>
         <div id='intro-con'>
             <div id='info'>
                 <h1>Hey, I'm <span>Jayson Tian</span></h1>
@@ -29,9 +29,9 @@ permalink: /
             <img id='pfp' src='assets/site-images/prof.webp'>
         </div>
     </section>
-    <section class='scrollpage'>
+    <!--<section class='scrollpage'>
 
-    </section>
+    </section>-->
 </div>
 
 <script type='text/javascript'>
@@ -64,7 +64,7 @@ permalink: /
         margin-bottom:0px;
     }
     html {
-        scroll-snap-type: y mandatory;
+        scroll-snap-type: none; /* change to y mandatory for snapping */
         scroll-behavior: smooth;
     }
     @media only screen and (max-width: 700px) {
@@ -82,6 +82,9 @@ permalink: /
         }
         #home-bg {
             height:100vh;
+        }
+        #pfp {
+            margin-top:30px;
         }
     }
 </style>

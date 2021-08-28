@@ -113,3 +113,48 @@
         border-top:2px rgb(216, 220, 228) solid;
     }
 }
+
+
+@media only screen and (max-width: 700px) {
+    #blog-1{
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        
+        #info, h1, p {
+            width:fit-content;
+            max-width:680px;
+            z-index:1;
+
+        }
+        img{
+            width:180px;
+            height:200px;
+            margin-top:-60px;
+            margin-left:-50px;
+            margin-bottom: -40px;
+            z-index:0;
+        }
+    }
+
+    #tags-con{
+        a {
+            min-width:auto;
+            max-width:300px;
+            padding-bottom:5px;
+        }
+        p {
+            display:none;
+        }
+    }
+
+    .articles-con{
+        display:flex;
+        flex-direction: column;
+        .articlelink {
+            width:100%;
+            border: 2px rgb(216, 220, 228) solid;
+            margin-bottom:15px;
+        }
+    }
+}

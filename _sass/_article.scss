@@ -183,3 +183,38 @@
         background-color:$base-color-light;
     }
 }
+
+@media only screen and (max-width: 700px) {
+    article {
+        flex-direction: column-reverse;
+    }
+    .article {
+        h1 {
+            line-height:50px;
+        }
+        .content {
+            width:100%;
+        }
+        .info{
+            display:flex;
+            flex-wrap: wrap;
+            position:static;
+            width:100%;
+            max-width:100%;
+            top:0px;
+            height:auto;
+            margin-top:-40px;
+            margin-bottom:50px;
+            margin-left:0px;
+    
+            p{
+                margin:0px;
+                font-size:13pt;
+                margin-right:20px;
+            }
+        }
+        .related-con{
+            display:none;
+        }
+    }
+}
