@@ -58,6 +58,7 @@ function receive2JSON(data){
         teas.find('.name').text(tea.name);
         teas.find('.stars').text(tea.stars+' / 10');
         teas.find('.shop').text(tea.location);
+        console.log(tea.image);
         if (tea.image == null | tea.image == undefined | tea.image == ''){
             teas.find('.img').attr('src', 'https://cel.ac/wp-content/uploads/2016/02/placeholder-img-1.jpg');
         } else {
