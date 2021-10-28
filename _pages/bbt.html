@@ -12,7 +12,7 @@ permalink: /bbt
     <img src="/assets/site-images/bbt.png" alt="">
 </div>
 
-<div style='display:flex; align-items: center;'><h2 style='margin-right:20px;'>Starred</h2><a>All Reviews</a></div>
+<div style='display:flex; align-items: center;'><h2 style='margin-right:20px;'>Starred</h2><a href='#all'>All Reviews</a></div>
 
 <div class='starred-con'>
     <img class='loader' src='https://www.inspiredled.com/wp-content/plugins/fyrelazyload/assets/img/loader.gif'>
@@ -28,7 +28,7 @@ permalink: /bbt
 
 
 
-<div style='display:flex; align-items: center;'><h2 style='margin-right:20px;'>Articles</h2></div>
+<div style='display:flex; align-items: center;'><h2 style='margin-right:20px;'>Articles ✍️</h2></div>
 <div class='articles-con'>
     {% assign articles = site.articles | sort: 'date' | reverse %}
     {% for post in articles %}
@@ -40,6 +40,29 @@ permalink: /bbt
         </a>
         {% endif %}
     {% endfor %}
+</div>
+
+<br><br>
+<div style='display:flex; align-items: center;' id='all'><h2 style='margin-right:20px;'>All Reviews 🗃</h2></div>
+<label for="cars">Sort</label>
+<select name="cars" id="cars">
+    <optgroup label="Beta feature – coming soon">
+        <option>All</option>
+    </optgroup>
+</select>
+<br><br>
+
+<div class='all-con'>
+    <img class='loader' src='https://www.inspiredled.com/wp-content/plugins/fyrelazyload/assets/img/loader.gif'>
+    <div id='clone2' class='drink full' style='display:none;'>
+        <img class='img'>
+        <div class='info'>
+            <h2 class='name'>Bubble Gaga</h2>
+            <p class='shop'>Coco Tea Shop</p>
+            <p><span class='stars'>4</p>
+        </div>
+        <div class='detail'>I tried this after being stuffed stomach-full with sushi and it still blew my mind – and taste buds – away. An atypical pairing between your typical milk tea (which, certainly well made, but is also not over-sugared) with the sweet creamy torched crème brûlée you find off the streets of Paris and London (a connoisseur must know the origins of deserts). A specialty drink and a must-try if you visit Machi Machi; albeit a little bit pricey, it'll still be well worth it!</div>
+    </div>
 </div>
 
 

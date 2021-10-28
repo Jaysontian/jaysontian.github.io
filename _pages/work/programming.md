@@ -15,19 +15,21 @@ permalink: /work/programming
 ## Recent / Featured
 I've been exploring data processing and bioinformatics recently.
 
-- July 2021 - **📊 Sheet2JSON** - Exploring how to efficiently use Google Sheets to fetch realtime JSON data
+- October 2021 – [🍵 Matcha 3](https://jaysontian.com/Matcha) – Fully Updated Matcha with back-end design overhaul. Works for all platforms with integration of notifications and shortcuts (lots of improvements!)
+- September 2021 – [🐺 McHughs Website](https://mchughshouse.me) – Website made for my house with updates.
+- August 2021 - **🦗 Chirp Processor** - Soundwave analysis w/ fourier algorithm & Matplotlib (In Progress) 
+- July 2021 - [📊 Sheet2JSON](https://jaysontian.com/blog/sheets-to-json-dashboard-ui) - Exploring how to efficiently use Google Sheets to fetch realtime JSON data
 - June 2021 - [👻 It's Home](https://jaezun.itch.io/its-home) - Horror 3D Godot game, demo and learning for Gamecon
-- March 2021 - **🦗 Chirp Processor** - Soundwave analysis w/ fourier algorithm & Matplotlib (In Progress)
 - Feburary 2021 - [🍵 Matcha 2](https://matcha-productivity.github.io/) - Calendar + To-Do hybrid app for Web, Mobile, Windows, & MacOS
 - December 2019 - [🥛 Milk Corp][2] - Milk-flavored cookie clicker game. Become an a-COW-ntant.
 
 ## Applications
 
-- **🩸 PrickNotes** - Android App for Diabetes Patients to log glucose levels by voice (In Development)
+- **🩸 PrickNotes** - Android App for Diabetes Patients to log glucose levels by voice (In Beta)
 - [🍵 Matcha][1] - Task manager app for MacOS (Complete)
 - [🗂 Memo Cards][25]  Flashcard app with spaced repetition (In Development)
 - [✏️ Stylo]() - Note taking app based on command keys
-- [📔 Notelog](https://github.com/Jaysontian/Notelog) - My first electron note-taking app (it's very very bad)
+- [📔 Notelog](https://github.com/Jaysontian/Notelog) - My first electron note-taking app (warning: it's very very bad)
 
 ## Websites
 - [UCC STEM](https://uccstem.com) - STEM Website and Blog for Upper Canada College

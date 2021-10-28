@@ -22,6 +22,7 @@ function send2JSON(id){
                 (newdata).push(newrow);
             });
         }).then(()=>{
+            console.log("receiving the data...");
             receive2JSON(newdata);
         });
 }
@@ -45,7 +46,25 @@ function receive2JSON(data){
             }
             teas.show();
         }
+
+        var teas;
+        if (tea.review != null){
+            teas = $('#clone2').clone().appendTo('.all-con');
+            teas.addClass('full');
+            teas.find('.detail').text(tea.review);
+        } else {
+            teas = $('#clone').clone().appendTo('.all-con');
+        }
+        teas.find('.name').text(tea.name);
+        teas.find('.stars').text(tea.stars+' / 10');
+        teas.find('.shop').text(tea.location);
+        if (tea.image == null | tea.image == undefined | tea.image == ''){
+            teas.find('.img').attr('src', 'https://cel.ac/wp-content/uploads/2016/02/placeholder-img-1.jpg');
+        } else {
+            teas.find('.img').attr('src', tea.image);
+        }
+        teas.show();
+        
     });
     $('.loader').hide();
-    $('#clone').remove();
 }

@@ -177,27 +177,37 @@ a { color: #3c7aff; cursor: pointer; font-weight: bold; text-decoration: none; b
 
 @media only screen and (max-width: 700px) { .work-type { flex-direction: column; } .work-type #tags-con { width: 100%; flex-direction: column; } .work-type #tags-con a { margin: auto; min-width: 75%; margin-top: 30px; } .type { width: 75%; margin: auto; display: flex; flex-direction: row-reverse; align-content: center; align-items: center; padding: 0px 20px; justify-content: space-between; } .type img { margin: 0px 0px; height: 30px; width: 30px; } }
 
+html { scroll-behavior: smooth; }
+
 .bbt-description { display: flex; }
 
 .bbt-description p { width: 80%; }
 
-.bbt-description img { width: 200px; height: 200px; margin-top: 25px; margin-right: 50px; }
+.bbt-description img { width: 230px; height: 230px; margin-top: 25px; margin-right: 70px; }
+
+.all-con { display: flex; flex-wrap: wrap; }
 
 .starred-con { display: flex; flex-wrap: wrap; justify-content: space-between; }
 
-.starred-con .drink { display: flex; align-items: center; justify-content: space-between; width: 48%; min-width: 300px; margin-right: 10px; border: #e1e7ec solid 2px; border-radius: 5px; margin-bottom: 14px; }
+.drink { display: flex; align-items: center; justify-content: space-between; width: 48%; min-width: 300px; margin-right: 10px; border: #e1e7ec solid 2px; border-radius: 5px; margin-bottom: 14px; }
 
-.starred-con .drink .info { width: 60%; margin-left: 30px; margin-right: 20px; }
+.drink .info { width: 60%; margin-left: 30px; margin-right: 20px; }
 
-.starred-con .drink .img { align-self: center; min-width: 150px; max-width: 150px; min-height: 150px; max-height: 150px; object-fit: cover; border-radius: 3px; }
+.drink .img { align-self: center; min-width: 150px; max-width: 150px; min-height: 150px; max-height: 150px; object-fit: cover; border-radius: 3px; }
 
-.starred-con .drink h2 { font-size: 13pt; font-weight: bold; line-height: 22px; margin: 0px; margin-bottom: 5px; }
+.drink h2 { font-size: 13pt; font-weight: bold; line-height: 22px; margin: 0px; margin-bottom: 5px; }
 
-.starred-con .drink p { margin: 0px; margin-top: 0px; font-size: 12pt; }
+.drink p { margin: 0px; margin-top: 0px; font-size: 12pt; }
 
-.starred-con .drink .stars { background-color: #3c7aff; color: white; padding: 3px 7px; border-radius: 3px; font-weight: bold; }
+.drink .stars { background-color: #3c7aff; color: white; padding: 3px 7px; border-radius: 3px; font-weight: bold; }
 
-@media only screen and (max-width: 700px) { .bbt-description { display: flex; } .bbt-description p { width: 100%; font-size: 12pt; line-height: 24px; } .bbt-description img { display: none; } .starred-con { flex-direction: column; } .starred-con .drink { width: 100%; } }
+.drink .detail { font-size: 12pt; line-height: 22px; padding: 20px 10px; padding-right: 50px; width: 200%; }
+
+.full { min-width: 600px; width: 98%; }
+
+.full img { margin: 20px; }
+
+@media only screen and (max-width: 700px) { .bbt-description { display: flex; } .bbt-description p { width: 100%; font-size: 12pt; line-height: 24px; } .bbt-description img { display: none; } .starred-con { flex-direction: column; } .drink { width: 100%; } .drink .detail { width: 100%; padding-right: 0px; padding: 20px 20px; } .full { width: 100%; min-width: 100%; flex-direction: column; text-align: center; } .full img { margin: 20px 0px; } }
 
 .highlight { background: #fff; }
 
