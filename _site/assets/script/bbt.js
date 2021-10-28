@@ -40,7 +40,7 @@ function receive2JSON(data){
             teas.find('.stars').text(tea.stars+' / 10');
             teas.find('.shop').text(tea.location);
             if (tea.image == null | tea.image == undefined | tea.image == ''){
-                teas.find('.img').attr('src', 'https://cel.ac/wp-content/uploads/2016/02/placeholder-img-1.jpg');
+                teas.find('.img').attr('src', 'https://rmacl.org/rmacl/wp-content/uploads/placeholder.png');
             } else {
                 teas.find('.img').attr('src', tea.image);
             }
