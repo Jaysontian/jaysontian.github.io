@@ -43,7 +43,9 @@ function receive2JSON(data){
             } else {
                 teas.find('.img').attr('src', tea.image);
             }
+            teas.show();
         }
     });
+    $('.loader').hide();
     $('#clone').remove();
 }

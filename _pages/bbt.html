@@ -15,7 +15,8 @@ permalink: /bbt
 <div style='display:flex; align-items: center;'><h2 style='margin-right:20px;'>Starred</h2><a>All Reviews</a></div>
 
 <div class='starred-con'>
-    <div id='clone' class='drink'>
+    <img class='loader' src='https://www.inspiredled.com/wp-content/plugins/fyrelazyload/assets/img/loader.gif'>
+    <div id='clone' class='drink' style='display:none;'>
         <img class='img'>
         <div class='info'>
             <h2 class='name'>Bubble Gaga</h2>
@@ -27,7 +28,7 @@ permalink: /bbt
 
 
 
-<div style='display:flex; align-items: center;'><h2 style='margin-right:20px;'>Articles</h2><a>Read All</a></div>
+<div style='display:flex; align-items: center;'><h2 style='margin-right:20px;'>Articles</h2></div>
 <div class='articles-con'>
     {% assign articles = site.articles | sort: 'date' | reverse %}
     {% for post in articles %}
