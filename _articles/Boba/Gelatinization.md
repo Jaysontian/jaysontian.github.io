@@ -8,3 +8,4 @@ What is so good about tapioca? Is it the addicting chewiness of its texture or i
 
 *How can we adjust its recipes and ingredients to obtain the best tapioca? Let’s find out!*
 
+And then there's other things that are crucial, like for example, there are a variety of options 
