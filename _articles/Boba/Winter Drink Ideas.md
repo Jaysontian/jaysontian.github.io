@@ -21,7 +21,7 @@ I always feel that chocolate in milk tea is quite a contentious and questionable
 
 ## Pumpkins
 
-This one might be for more of the autumn fans, but I feel that it's still worth including. The pumpkin spice latte has always been the popular go-to for a fall-themed drink that warms the heart when studying at a coffee shop. Therefore, I recently attempted to make a **pumpkin spice milk tea**. The main tea variety that I thought of immediately was  Thai tea leaves. Thai tea incorporates a fusion of spices and ingredients, mainly based off a mix of traditional and asian inspired plant variety:
+This one might be for more of the autumn fans, but I feel that it's still worth including. The pumpkin spice latte has always been the popular go-to for a fall-themed drink that warms the heart when studying at a coffee shop. Therefore, I recently attempted to make a **pumpkin spice milk tea**. The main tea variety that I thought of immediately was  Thai tea leaves. Thai tea incorporates a fusion of spices and ingredients, mainly based off a mix of traditional and asian inspired plant varieties:
 
 * **Ceylon** (Locally grown as landrace) – For Thai tea leaves, only traditional wild tea leaves are used and it is known as *bai miang*
 * **Star Anise** – this is almost equivalent to pepper and is widely used in asian cooking; when used in high quantities it gives a numbing effect to the taste buds 
