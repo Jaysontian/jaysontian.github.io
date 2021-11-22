@@ -9,7 +9,7 @@ Winter approaches and as we pack up the candles from Thanksgiving dinner and beg
 
 Some touches and variations that I have seen in previous years are usually all inspired by western drinks. For example, looking at the flavor of peppermint, it is integrated with a variety of caffinated drinks and espressos. Take Starbucks for example, every winter they introduce a series of drinks that are peppermint based. On the other hand, hot chocolate is the go-to for warmth after getting freezed up by the cold Canadian weather.
 
-![Boozy Buttermint White Hot Chocolate | Southern Living](https://tva1.sinaimg.cn/large/008i3skNgy1gwoqcfyalzj319s0u0n3b.jpg)
+![Hot Choco](https://tva1.sinaimg.cn/large/008i3skNgy1gwoqcfyalzj319s0u0n3b.jpg)
 
 ## Peppermint
 
@@ -30,7 +30,7 @@ This one might be for more of the autumn fans, but I feel that it's still worth 
 
 The combination of these spices produces a flavor that is very similar to the pumpkin spice latte components. 
 
-![What is Up with Pumpkin Spice? | English Language Blog](https://tva1.sinaimg.cn/large/008i3skNgy1gwoqdbeukuj30zk0nptcw.jpg)
+![PSL](https://tva1.sinaimg.cn/large/008i3skNgy1gwoqdbeukuj30zk0nptcw.jpg)
 
 I started off by making a pumpkin puree. I first chopped up the pumpkins and boiled it in water with sugar and a hint of salt and cinammon. After 20 minutes, the pumpkins soften and become ready to be blended. Using a blender and some milk, the puree can be made with maximum *smoothness*. 
 
