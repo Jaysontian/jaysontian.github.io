@@ -1,0 +1,28 @@
+
+
+$content-width: 1000px;
+$padding:30px;
+$base-color:rgb(60, 122, 255);
+$base-color-light:rgb(224, 233, 255);
+
+$black:rgb(27, 31, 37);
+$dark-grey: rgb(58, 65, 75);
+$light-grey: rgb(86, 88, 94);
+
+$main: #19ccaa;
+$font-style: 'Open Sans', sans-serif;
+$font-color: #262626;
+$link-color: #425469;
+$link-hover-color: $main;
+$heading-font: 'Muli', sans-serif;
+$heading-font-color: #425469;
+$light: #e7edf4;
+$header: #1d1425;
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

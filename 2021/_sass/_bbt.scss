@@ -1,0 +1,124 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.bbt-description{
+    display:flex;
+    p {
+        width:80%;
+    }
+    img{
+        width:230px;
+        height:230px;
+        margin-top:25px;
+        margin-right:70px;
+    }
+}
+
+.all-con {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+
+.starred-con {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.drink{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:48%;
+    min-width:300px;
+    margin-right:10px;
+    border:rgb(225, 231, 236) solid 2px;
+    border-radius:5px;
+    margin-bottom:14px;
+
+    .info {
+        width:60%;
+        margin-left:30px;
+        margin-right:20px;
+    }
+    .img {
+        align-self: center;
+        min-width:150px;
+        max-width:150px;
+        min-height:150px;
+        max-height:150px;
+        object-fit: cover;
+        border-radius:3px;
+    }
+
+    h2 {
+        font-size:13pt;
+        font-weight:bold;
+        line-height:22px;
+        margin:0px;
+        margin-bottom:5px;
+    }
+    p {
+        margin:0px;
+        margin-top:0px;
+        font-size:12pt;
+    }
+    .stars {
+        background-color:$base-color;
+        color:white;
+        padding: 3px 7px;
+        border-radius:3px;
+        font-weight:bold;
+    }
+    .detail {
+        font-size:12pt;
+        line-height:22px;
+        padding:20px 10px;
+        padding-right:50px;
+        width:200%;
+    }
+}
+.full{
+    min-width:600px;
+    width:98%;
+    img {
+        margin:20px;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .bbt-description{
+        display:flex;
+        p {
+            width:100%;
+            font-size:12pt;
+            line-height:24px;
+        }
+        img{
+            display:none;
+        }
+    }
+    .starred-con {
+        flex-direction: column;
+    }
+    .drink{
+        width:100%;
+
+        .detail{
+            width:100%;
+            padding-right:0px;
+            padding: 20px 20px;
+        }
+    }
+    .full {
+        width:100%;
+        min-width:100%;
+        flex-direction: column;
+        text-align:center;
+        img {
+            margin:20px 0px;
+        }
+    }
+}
